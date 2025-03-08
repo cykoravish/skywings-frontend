@@ -15,6 +15,7 @@ import Employes from './componentes/employe'
 import Career from './componentes/carrer'
 import Fresher from './componentes/fresher'
 import DetailService from './componentes/DetailService'
+import Nws from './componentes/news/Nws'
 
 
 
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
     {path:'/jobdetails/:id', element:<JobDtails/>},
     {path:'/services', element: <Services/>},
     {path :'/blog', element: <Blog/>},
+    {path :'/news', element: <Nws/>},
     {path:'/employes', element:<Employes/>},
     {path: '/carrers', element: <Career/>},
     {path:'/fresher', element: <Fresher/>},

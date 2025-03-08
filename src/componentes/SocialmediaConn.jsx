@@ -9,7 +9,7 @@ function SocialmediaConn() {
 
 
       <Link
-        to="https://chat.whatsapp.com/invite/YOUR_GROUP_ID_HERE" // Add your WhatsApp number
+        to="https://api.whatsapp.com/send?phone=918860159136&text=Hello%21+I+found+your+website+https%3A%2F%2Fwww.assuredjob.in+and+am+interested+in+your+products." // Add your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-500 text-3xl hover:scale-110  transition-transform"

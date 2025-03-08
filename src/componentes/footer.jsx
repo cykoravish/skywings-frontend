@@ -171,7 +171,7 @@ const Footer = () => {
                 </li>
                 <li className="text-gray-600 mb-1 flex items-center">
                   <HiMail className="mr-2 text-gray-600 hover:text-blue-500" />{" "}
-                  hr@asfuredjob.com
+                  hr@assuredjob.com
                 </li>
               </ul>
             </div>
