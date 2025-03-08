@@ -1,5 +1,4 @@
 
-import React from 'react'
 
 import mountain from '../../assets/products/image(10).png'
 import tech from "../../assets/products/image(11).png";

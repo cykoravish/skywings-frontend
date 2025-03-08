@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 
 import { useNavigate } from "react-router-dom";
@@ -52,31 +53,31 @@ function Cont2() {
     return () => {
       window.removeEventListener('resize', checkScreenSize);
     };
-    const fetchJobs = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch("http://localhost:5000/api/jobs");
+    // const fetchJobs = async () => {
+    //   try {
+    //     setLoading(true);
+    //     const response = await fetch("http://localhost:5000/api/jobs");
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+    //     if (!response.ok) {
+    //       throw new Error(`HTTP error! Status: ${response.status}`);
+    //     }
 
-        const data = await response.json();
-        setJobs(data);
-        setError(null);
-      } catch (err) {
-        console.error("Error fetching jobs:", err);
-        setError("Failed to load jobs. Please try again later.");
-        // Fallback to local data if API fails
-        import("../../data").then((module) => {
-          setJobs(module.jobs);
-        });
-      } finally {
-        setLoading(false);
-      }
-    };
+    //     const data = await response.json();
+    //     setJobs(data);
+    //     setError(null);
+    //   } catch (err) {
+    //     console.error("Error fetching jobs:", err);
+    //     setError("Failed to load jobs. Please try again later.");
+    //     // Fallback to local data if API fails
+    //     import("../../data").then((module) => {
+    //       setJobs(module.jobs);
+    //     });
+    //   } finally {
+    //     setLoading(false);
+    //   }
+    // };
 
-    fetchJobs();
+    // fetchJobs();
   }, []);
 
   // const filteredJobs = jobs.filter((job) => 
@@ -157,7 +158,7 @@ function Cont2() {
     const fetchJobs = async () => {
       try {
         setLoading(true);
-        const response = await fetch("http://localhost:5000/api/jobs");
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs`);
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

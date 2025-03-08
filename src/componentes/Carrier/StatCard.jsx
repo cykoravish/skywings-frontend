@@ -1,5 +1,5 @@
-import React from "react";
 
+// eslint-disable-next-line react/prop-types
 const StatCard = ({ count, platform }) => {
     return (
         <div className="flex flex-col items-center justify-center p-4 bg-[#F5F5F5] rounded-lg shadow-md w-32 sm:w-40 md:w-48">

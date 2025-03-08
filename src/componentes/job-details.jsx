@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import { MdLocationOn } from "react-icons/md";
 import { useParams } from "react-router-dom";
 import bag from "../assets/products/Vector.png";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { useNavigate } from "react-router-dom";
 // Remove the import for static data
@@ -27,7 +28,7 @@ const JobDetails = () => {
     const fetchJobDetails = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:5000/api/jobs/${id}`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs/${id}`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -53,7 +54,7 @@ const JobDetails = () => {
 
     const fetchRelatedJobs = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/jobs");
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useRef } from 'react';
 import img from '../../assets/products/image.png';
 import testm_1 from '../../assets/products/textm_1.jpg'
@@ -188,6 +189,7 @@ const Cont5 = () => {
         clearInterval(studentInterval);
       };
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isMobile, clientCurrentIndex, studentCurrentIndex]);
 
   // Render a testimonial card
@@ -246,7 +248,7 @@ const Cont5 = () => {
         TESTIMONIALS
       </span>
       <h1 className="text-4xl text-[#42307D] font-bold my-3">
-        Don't just take our word for it
+        Don&apos;t just take our word for it
       </h1>
       <p className="text-purple-600 mt-4 text-lg">
         Read what our clients have to say

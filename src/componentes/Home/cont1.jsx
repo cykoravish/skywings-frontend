@@ -1,6 +1,6 @@
-import img2 from "../../assets/products/image 16.png";
+// import img2 from "../../assets/products/image 16.png";
 
-import Cont2 from "./cont2";
+// import Cont2 from "./cont2";
 
 const Cont1 = () => {
   

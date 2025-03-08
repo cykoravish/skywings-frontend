@@ -1,10 +1,10 @@
-import React from "react";
 import img19 from "../../assets/products/image 19.png";
 import img20 from "../../assets/products/image 20.png";
 
 import reddot from "../../assets/products/reddot.png";
 import Cont1A from "../Home/cont1-A";
 
+// eslint-disable-next-line no-unused-vars
 const awards = new Array(10).fill({ title: "Red Dot", image: reddot });
 
 const Cont7 = () => {
@@ -27,19 +27,19 @@ const Cont7 = () => {
               stress-free and recruitment faster.
             </h2>
             <p className="text-gray-600 mb-4">
-              The world of job hunting and hiring can feel overwhelming. We're
-              here to change that. Whether you're just starting your career or
+              The world of job hunting and hiring can feel overwhelming. We&apos;re
+              here to change that. Whether you&apos;re just starting your career or
               looking for your next big break, Assured Job simplifies the
               process so you can focus on what matters.
             </p>
             <p className="text-gray-600 mb-4">
-              The world of job hunting and hiring can feel overwhelming. We're
-              here to change that. Whether you're just starting your career or
+              The world of job hunting and hiring can feel overwhelming. We&apos;re
+              here to change that. Whether you&apos;re just starting your career or
               looking for your next big break, Assured Job simplifies the
               process so you can focus on what matters.
             </p>
             <p className="text-gray-600 mb-4">
-              Over the years, we've grown into a trusted platform that connects
+              Over the years, we&apos;ve grown into a trusted platform that connects
               job seekers with opportunities that truly align with their skills
               and aspirations.
             </p>
@@ -72,8 +72,8 @@ const Cont7 = () => {
               Our Mission
             </h3>
             <p className="text-gray-600 mb-4">
-              The world of job hunting and hiring can feel overwhelming. We're
-              here to change that. Whether you're just starting your career or
+              The world of job hunting and hiring can feel overwhelming. We&apos;re
+              here to change that. Whether you&apos;re just starting your career or
               looking for your next big break, Assured Job simplifies the
               process.
             </p>

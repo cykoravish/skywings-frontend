@@ -1,4 +1,3 @@
-import React from "react";
 import { FaTwitter, FaLinkedin, FaDribbble } from "react-icons/fa";
 import img1 from "../../assets/products/team1.png";
 import img2 from "../../assets/products/team2.png";

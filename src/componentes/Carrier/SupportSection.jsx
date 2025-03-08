@@ -1,4 +1,3 @@
-import React from "react";
 import img1 from '../../assets/carrier/img1.png'
 import img2 from '../../assets/carrier/img2.png'
 import img3 from '../../assets/carrier/img3.png'
@@ -25,7 +24,7 @@ const SupportSection = () => {
 
             <h3 className="text-lg font-semibold text-[#101828]">Still have questions?</h3>
             <p className="text-[#667085s] text-center max-w-md">
-                Can't find the answer you're looking for? Please chat with our friendly team.
+                Can&apos;t find the answer you&apos;re looking for? Please chat with our friendly team.
             </p>
         </div>
     );

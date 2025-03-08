@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import min from '../../../src/assets/carrier/mineus.png';
 import add from '../../../src/assets/carrier/addicon.png';
 const faqs = [

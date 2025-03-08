@@ -1,5 +1,5 @@
-import ig1 from "../../assets/products/image 55.png";
-import ig2 from "../../assets/products/image 56.png";
+// import ig1 from "../../assets/products/image 55.png";
+// import ig2 from "../../assets/products/image 56.png";
 const Cont9 = () => {
   return (
     <>

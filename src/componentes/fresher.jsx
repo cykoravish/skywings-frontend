@@ -1,4 +1,3 @@
-import React from 'react'
 import img1 from '../assets/products/image 23.png'
 import img2 from '../assets/products/Frame 129.png'
 import Cont5 from './Home/cont5'

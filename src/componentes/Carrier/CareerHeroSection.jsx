@@ -1,4 +1,3 @@
-import React from 'react'
 import img from '../../assets/carrier/herosectionimg.png'
 const CareerHeroSection = () => {
     return (
@@ -13,7 +12,7 @@ const CareerHeroSection = () => {
                     <p className="text-[#2B2B2B] mt-2 leading-6">
                         At <span className="font-semibold text-[#000000]">AssuredJob.com</span>,
                         we are on a mission to revolutionize staffing and recruitment by
-                        connecting top talent with leading employers across industries.Whether you're an  executive, job-seeker, or industry professional , we offer exciting career opportunities that empower you to grow and
+                        connecting top talent with leading employers across industries.Whether you&apos;re an  executive, job-seeker, or industry professional , we offer exciting career opportunities that empower you to grow and
                         make a difference.
                     </p>
 
