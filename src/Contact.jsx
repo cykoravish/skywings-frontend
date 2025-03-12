@@ -229,7 +229,7 @@ function Contact() {
     className="w-full text-gray-400 px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
   >
     <option value="" disabled selected>
-      Select a country
+      enquire
     </option>
     <option value="usa">IT Service</option>
     <option value="canada">Sales</option>
