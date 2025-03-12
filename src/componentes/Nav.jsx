@@ -46,7 +46,7 @@ const Nav = ({ setIsMobileMenuOpen }) => {
   }, []);
 
   return (
-    <nav className="flex z-50 flex-col lg:flex-row items-start lg:items-center space-x-1">
+    <nav className="flex z-50 flex-col lg:flex-row pl-2.5 lg:pl-0 items-start lg:items-center space-x-1">
       <div className="relative">
         <span
           onClick={() => navigate("/job")}

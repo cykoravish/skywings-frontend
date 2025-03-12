@@ -226,13 +226,13 @@ const Footer = () => {
             <p className="text-sm sm:text-base text-slate-300 mb-4">
               Subscribe to our newsletter to receive updates, news, and exclusive offers.
             </p>
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+            <form onSubmit={handleSubscribe} className="flex  ">
               <div className="flex-1 relative">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={18} />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-600" size={18} />
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="pl-10 bg-slate-800 border-slate-700 text-white placeholder:text-slate-400 w-full h-10 sm:h-11"
+                  className="pl-10 bg-slate-400 border-slate-700 text-white placeholder:text-slate-600 w-full h-10 sm:h-11"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -240,7 +240,7 @@ const Footer = () => {
               </div>
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 h-10 sm:h-11 whitespace-nowrap"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base font-medium px-2 md:px-4 py-2 h-10 sm:h-11 whitespace-nowrap"
               >
                 Subscribe
               </button>

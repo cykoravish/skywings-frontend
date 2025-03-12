@@ -11,8 +11,8 @@ const Navbar = () => {
 
   return (
     <header
-      className="sticky bg-white top-0 z-50 w-full min-h-[8vh] max-h-[15vh] lg:h-56  lg:px-14 flex items-center justify-between shadow-md 
-    backdrop-blur-3xl"
+      className="sticky bg-white top-0 z-50 w-full min-h-[8vh] max-h-[15vh] lg:h-56  lg:px-5 px-3.5 flex items-center justify-between  shadow-md 
+    backdrop-blur-3xl  "
     >
       {/* Logo */}
       <div className="flex-shrink-0">
@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
 
       <button
-        className="lg:hidden text-gray-700 hover:text-black"
+        className=" lg:hidden text-gray-700 hover:text-black"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
         {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

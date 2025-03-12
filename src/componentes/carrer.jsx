@@ -29,9 +29,9 @@ const jobCards = [
 
 const platFormCard = [
     { count: "70", platform: "Instagram" },
-    { count: "10K", platform: "Facebook" },
-    { count: "565", platform: "Linkedin" },
-    { count: "100K", platform: "X" },
+    { count: "565", platform: "Facebook" },
+    { count: "10K", platform: "Linkedin" },
+    { count: "600", platform: "YouTube" },
 ]
 
 const Career = () => {
