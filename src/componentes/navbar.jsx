@@ -6,6 +6,8 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  console.log(isMobileMenuOpen);
+  
 
   return (
     <header

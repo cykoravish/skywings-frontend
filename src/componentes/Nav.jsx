@@ -28,13 +28,17 @@ const Nav = ({ setIsMobileMenuOpen }) => {
 
   const closeDropdown = () => {
     setOpenDropdown(null);
-    setIsMobileMenuOpen(false);
+    
+    // setIsMobileMenuOpen(false);
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest(".dropdown")) {
+        
         closeDropdown();
+       
+       
       }
     };
     document.addEventListener("click", handleClickOutside);
@@ -154,7 +158,7 @@ const Nav = ({ setIsMobileMenuOpen }) => {
         </span>
 
         {openDropdown === "innovations" && (
-          <div className="absolute left-0  w-48 rounded-md shadow-lg bg-white z-10 p-2">
+          <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white z-10 p-2">
             <a
               href="https://pool-campus.com/"
               className={`${baseStyles} block ${inactiveStyles}`}
