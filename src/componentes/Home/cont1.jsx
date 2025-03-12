@@ -11,7 +11,7 @@ const Cont1 = () => {
         
         <div className="text-[#42307D] w-full  text-center  px-4 lg:px-8">
           <p className="text-2xl sm:text-3xl lg:text-5xl font-semibold leading-tight">
-          find your dream job with us
+          Find your dream job with us
           </p>
           
           <p className="text-[#6941C6] mt-4 text-lg sm:text-base lg:text-lg">

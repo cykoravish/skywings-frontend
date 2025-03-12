@@ -159,12 +159,15 @@ function Cont2() {
       try {
         setLoading(true);
         const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs`);
+       
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
         const data = await response.json();
+        console.log(data);
+        
         setJobs(data);
         setError(null);
       } catch (err) {
@@ -234,7 +237,7 @@ function Cont2() {
         name="job"
         value={jobSearch}
         onChange={(e) => setJobSearch(e.target.value)}
-        placeholder="Search by job or skill"
+        placeholder="job title or Keyword"
         aria-label="Job Search"
         className="w-full pl-10 pr-4 py-2 outline-0 border rounded text-sm md:text-base"
         required
@@ -335,6 +338,7 @@ function Cont2() {
           className="w-4 h-4 sm:w-5 sm:h-5"
         />
         <span>{job.experience}</span>
+        <span>{job.job_start_date}</span>
       </p>
        <Link to={`/jobdetails/${job.id}`}>
                         <button className="mt-4 w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg py-1">

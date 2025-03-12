@@ -15,7 +15,7 @@ function DetailService() {
     
   return (
    <>
-    <button onClick={()=> navigate("/services")} className='text-gray-400 font-semibold flex mx-5 cursor-pointer gap-3 border-gray-400  py-1 rounded-lg'><p className='flex items-center'><FaArrowLeft/></p><p>Back</p></button>
+    <button onClick={()=> navigate("/services")} className='text-gray-400 font-semibold flex px-10 mx-10 cursor-pointer gap-3 border-gray-400  py-1 rounded-lg'><p className='flex items-center'><FaArrowLeft/></p><p>Back</p></button>
     <div className="flex flex-col md:flex-row w-full mt-4 gap-4">
   {/* Left Section - Image */}
   <div className="md:w-1/2 w-full p-4">
@@ -27,15 +27,17 @@ function DetailService() {
   </div>
 
   {/* Right Section - Text Content */}
-  <div className="md:w-1/2 w-full flex flex-col justify-center p-4">
+  <div className="md:w-1/2 w-full flex flex-col justify-center p-4 ">
     <h3 className="text-lg md:text-2xl font-semibold mb-2">{service.title}</h3>
-    <p className="text-base md:text-lg leading-relaxed">{service.content}</p>
+    <p className="w-full h-[400px] overflow-auto text-base md:text-lg leading-relaxed  border-4 rounded-lg  border-gray-100 bg-gray-50 px-3.5 " dangerouslySetInnerHTML={{ __html: service.content }}>
+      {/* {service.content} */}
+      </p>
   </div>
 </div>
 
 
 
-    <div className="grid mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full ">
+    <div className="grid mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full px-10 ">
           {list.map((service, index) => (
             <div
             key={index}
@@ -51,7 +53,7 @@ function DetailService() {
             </div>
           </div>
           ))}
-        </div>s
+        </div>
    </>
   )
 }

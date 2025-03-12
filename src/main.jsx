@@ -16,6 +16,7 @@ import Career from './componentes/carrer'
 import Fresher from './componentes/fresher'
 import DetailService from './componentes/DetailService'
 import Nws from './componentes/news/Nws'
+import Upload from './componentes/Upload'
 
 
 
@@ -34,7 +35,8 @@ const router = createBrowserRouter([
     {path:'/employes', element:<Employes/>},
     {path: '/carrers', element: <Career/>},
     {path:'/fresher', element: <Fresher/>},
-    {path:'/DetailService/:id', element: <DetailService/>}
+    {path:'/DetailService/:id', element: <DetailService/>},
+    {path:'/upload', element: <Upload/>}
 
 
 

@@ -1,5 +1,6 @@
 import Cont5 from "./componentes/Home/cont5";
-
+import { Mail } from 'lucide-react';
+import { Phone } from 'lucide-react'
 function Contact() {
   return (
     <>
@@ -19,17 +20,87 @@ function Contact() {
 
       {/* Form Section */}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6 md:px-12 lg:px-20 py-10">
+      <div className="grid bg-gray-50 grid-cols-1 lg:grid-cols-2 gap-10  px-6 md:px-12 lg:px-20 py-10">
         {/* Image Section */}
-        <div className="flex justify-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.5282803438927!2d78.0209715745825!3d30.335932804703045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929ec1f76b89d%3A0xf5c5f81fa6e9af6c!2sSkywings%20Advisors%20Private%20Limited!5e0!3m2!1sen!2sin!4v1741413952815!5m2!1sen!2sin"
-            width="600"
-            height="550"
-            allowFullscreen=""
-            loading="fast"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className="flex ">
+         <div className="flex flex-col  mt-20 "> 
+         <div className="mb-4">
+  <h3 className="text-3xl text-zinc-800 font-bold mb-2">Contact Details</h3>
+ <div>
+  <h3 className="text-xl font-semibold text-gray-500">Email</h3>
+  <div className="flex flex-col space-y-3">
+    {/* Email Section */}
+    <div className="flex  items-center space-x-3">
+      <Mail className="w-8 h-8 text-blue-500  " />
+      <li className="list-none">hiring@assuredjob.com</li>
+      
+</div> 
+<div className="flex items-center space-x-3">
+      <Mail className="w-8 h-8 text-blue-500  " />
+      <li className="list-none">careers@assuredjob.com</li>
+      
+</div>
+<div className="flex items-center space-x-3">
+      <Mail className="w-8 h-8 text-blue-500  " />
+      <li className="list-none">business@assuredjob.com</li>
+      
+</div>
+<div className="flex items-center space-x-3">
+      <Mail className="w-8 h-8 text-blue-500  " />
+      <li className="list-none">hr@assuredjob.com</li>
+      
+</div>
+
+      {/* <p className="text-lg font-semibold text-zinc-800">hr@assuredjob.com</p>
+      <p className="text-lg font-semibold text-zinc-800"> <Mail/>hiring@assuredjob.com</p>
+      <p className="text-lg font-semibold text-zinc-800">      <p className="text-lg font-semibold text-zinc-800"> <Mail/>business@assuredjob.com</p></p> */}
+      <div className="flex flex-col font-semibold text-lg">
+{/*        
+        <li className="list-none">business@assuredjob.com</li>
+        <li className="list-none">hiring@assuredjob.com</li>
+        <li className="list-none">careers@assuredjob.com</li> */}
+      </div>
+   
+    {/* Phone Section */}
+    
+  </div>
+ </div>
+ <div>
+  <h3 className="text-xl font-semibold text-gray-500">Phone Number</h3>
+  <div className="flex flex-col space-y-3">
+    {/* Email Section */}
+    
+
+<div className="flex items-center space-x-3">
+      <Phone className="w-8 h-8 text-blue-500  " />
+      <li className="list-none">+91 8368002731</li>
+      
+</div>
+<div className="flex items-center space-x-3">
+          <Phone className="w-8 h-8 text-blue-500  " />
+    
+      <li className="list-none">+91-8860159136</li>
+      
+</div>
+
+      {/* <p className="text-lg font-semibold text-zinc-800">hr@assuredjob.com</p>
+      <p className="text-lg font-semibold text-zinc-800"> <Mail/>hiring@assuredjob.com</p>
+      <p className="text-lg font-semibold text-zinc-800">      <p className="text-lg font-semibold text-zinc-800"> <Mail/>business@assuredjob.com</p></p> */}
+      <div className="flex flex-col font-semibold text-lg">
+{/*        
+        <li className="list-none">business@assuredjob.com</li>
+        <li className="list-none">hiring@assuredjob.com</li>
+        <li className="list-none">careers@assuredjob.com</li> */}
+      </div>
+   
+    {/* Phone Section */}
+    
+  </div>
+ </div>
+</div>
+
+        
+         </div>
         </div>
 
         {/* Form Section */}
@@ -46,7 +117,7 @@ function Contact() {
               <input
                 type="text"
                 id="name"
-                placeholder="Esther Howard"
+                placeholder="Abhinav Kumar"
                 className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
@@ -62,7 +133,7 @@ function Contact() {
               <input
                 type="tel"
                 id="contact"
-                placeholder="(480) 555-0103"
+                placeholder="9547646378"
                 className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
@@ -78,23 +149,39 @@ function Contact() {
               <input
                 type="email"
                 id="email"
-                placeholder="tanya.hill@example.com"
-                className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="abc@example.com"
+                className="w-full px-4 py-2 text-black mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
             {/* City Field */}
             <div>
-              <label htmlFor="city" className="block text-gray-700 font-medium">
-                City
-              </label>
-              <input
-                type="text"
-                id="city"
-                placeholder="Austin"
-                className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-              />
-            </div>
+  <label htmlFor="city" className="block text-gray-700 font-medium">
+    City
+  </label>
+  <div>
+  
+  <select
+    id="city"
+    className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-400"
+  >
+    <option value="" disabled selected>
+      Select a city
+    </option>
+    <option value="new-york">New York</option>
+    <option value="los-angeles">Los Angeles</option>
+    <option value="chicago">Chicago</option>
+    <option value="houston">Houston</option>
+    <option value="miami">Miami</option>
+    <option value="london">London</option>
+    <option value="paris">Paris</option>
+    <option value="tokyo">Tokyo</option>
+    <option value="sydney">Sydney</option>
+  </select>
+</div>
+
+</div>
+
 
             {/* Country Field */}
             <div>
@@ -104,12 +191,29 @@ function Contact() {
               >
                 Country
               </label>
-              <input
-                type="text"
-                id="country"
-                placeholder="Australia"
-                className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-              />
+              <select
+    id="country"
+    className="w-full text-gray-400 px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+  >
+    <option value="" disabled selected>
+      Select a country
+    </option>
+    <option value="usa">United States</option>
+    <option value="canada">Canada</option>
+    <option value="uk">United Kingdom</option>
+    <option value="australia">Australia</option>
+    <option value="germany">Germany</option>
+    <option value="france">France</option>
+    <option value="india">India</option>
+    <option value="japan">Japan</option>
+    <option value="china">China</option>
+    <option value="brazil">Brazil</option>
+    <option value="south-africa">South Africa</option>
+    <option value="russia">Russia</option>
+    <option value="mexico">Mexico</option>
+    <option value="italy">Italy</option>
+    <option value="spain">Spain</option>
+  </select>
             </div>
 
             {/* Enquire Field */}
@@ -121,11 +225,18 @@ function Contact() {
                 Enquire
               </label>
               <select
-                id="enquire"
-                className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-              >
-                <option value="">---Select---</option>
-              </select>
+    id="country"
+    className="w-full text-gray-400 px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+  >
+    <option value="" disabled selected>
+      Select a country
+    </option>
+    <option value="usa">IT Service</option>
+    <option value="canada">Sales</option>
+    <option value="uk">Mangement</option>
+    
+    
+  </select>
             </div>
 
             {/* Enquire Detail Field */}
@@ -145,6 +256,7 @@ function Contact() {
 
             {/* Submit Button */}
             <div>
+
               <button
                 type="submit"
                 className="w-full bg-purple-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
@@ -154,6 +266,17 @@ function Contact() {
             </div>
           </form>
         </div>
+      </div>
+      <div className='flex w-full '>
+      <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.5282803438927!2d78.0209715745825!3d30.335932804703045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929ec1f76b89d%3A0xf5c5f81fa6e9af6c!2sSkywings%20Advisors%20Private%20Limited!5e0!3m2!1sen!2sin!4v1741413952815!5m2!1sen!2sin"
+            width=""
+            height=""
+            className='w-full mx-10 h-96'
+            allowFullscreen=""
+            loading="fast"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
       </div>
 
       <Cont5></Cont5>

@@ -9,20 +9,45 @@ const Cont6 = () => {
 
   const faqs = [
     {
-      question: "Can I change my plan later?",
+      question: "What services does AssuredJob.com offer?",
       answer:
-        "Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+        "AssuredJob.com specializes in recruitment, HR support, RPOs, labour compliances, payroll services, staffing solutions, campus hirings, career counselling, internships, and article ships. We provide end-to-end hiring solutions for employers and career guidance for job seekers.",
     },
     {
-      question: "What payment methods do you accept?",
+      question: "How can I apply for jobs through AssuredJob.com?",
       answer:
-        "We accept major credit cards, PayPal, and bank transfers for annual plans.",
+        " Visit our Current Openings section, browse available positions, and submit your application. Our recruitment team will review your profile and contact you if you’re a fit.",
+    }, {
+      question: "How can employers hire through AssuredJob.com?",
+      answer:
+        "Employers can partner with us for permanent recruitment, RPO services, temporary staffing, payroll outsourcing, and compliance management. Reach out via our Contact Us page or email hiring@assuredjob.com.",
     },
     {
-      question: "Is there a discount for annual billing?",
+      question: " Do you offer campus hiring services",
       answer:
-        "Yes! We offer a 20% discount if you choose the annual plan instead of monthly billing.",
-    },
+        " Yes, we collaborate with colleges and universities to conduct campus recruitment drives, pre-placement training, and graduate hiring programs for fresher candidates.",
+    },{
+      question: "How can I become a freelance recruiter with AssuredJob.com?",
+      answer:" If you have experience in recruitment and want to work on your own terms, apply through our Freelance Recruiter Sign-up Page to start earning commissions on successful placements. Alternatively, you can visit our website FreelanceRecruiter.in and apply as a Freelance Recruiter or Consultant. "
+    },{
+      question: "What is RPO, and how does it benefit companies?",
+      answer:" Recruitment Process Outsourcing (RPO) allows companies to outsource their hiring process to us, reducing hiring costs, improving efficiency, and streamlining workforce planning."
+    },{
+      question: " Do you provide labour compliance services?",
+      answer:" Yes, we assist companies with EPF, ESIC, payroll management, labour law compliances, and regulatory compliance support to ensure smooth HR operations."
+    },{
+      question: " Can AssuredJob.com help with career counselling?",
+      answer:"  Absolutely! We offer career counselling, resume building, LinkedIn profile optimization, interview preparation, and job market insights to help job seekers enhance their employability."
+    },{
+      question: "Do you provide assistance for internships and articleships?",
+      answer:"Yes, we connect students with internship and articleship opportunities across various industries to help them gain practical experience and improve job readiness."
+    },{
+      question: "How can I stay updated with job openings and recruitment news?",
+      answer:"Follow us on LinkedIn, Facebook, Twitter/X, and Instagram or visit our Current Openings page regularly. We also provide job alerts and newsletters for the latest hiring trends."
+    },{
+      question: " How can I contact AssuredJob.com for further inquiries?",
+      answer:"You can reach us via phone at +91 8860159136, email at hr@assuredjob.com, or through our Contact Us form. Our support team is available to assist you."
+    }
   ];
 
   const toggleFAQ = (index) => {

@@ -5,6 +5,7 @@ import bag from "./../assets/products/Vector.png";
 import { Link } from "react-router-dom";
 import { FaSearch, FaMapMarkerAlt, FaLocationArrow } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import Cont1 from "./Home/cont1";
 
 function Job() {
   const navigate = useNavigate();
@@ -88,6 +89,7 @@ function Job() {
 
   return (
     <>
+    <Cont1/>
        <div className="bg-gray-100  sticky top-20 w-full">
            <form
          action="/search"

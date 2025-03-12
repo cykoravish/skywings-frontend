@@ -1,4 +1,4 @@
-import { list } from '../data'
+import { list } from '../data.jsx'
 import Cont5 from './Home/cont5'
 import { useNavigate } from 'react-router-dom';
 function Services() {
