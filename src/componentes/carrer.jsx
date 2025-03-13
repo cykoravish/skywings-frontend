@@ -10,7 +10,7 @@ import StatCard from "../componentes/Carrier/StatCard";
 import FAQAccordion from "../componentes/Carrier/FAQAccordion";
 import SupportSection from "../componentes/Carrier/SupportSection";
 import Arrows from "../componentes/Carrier/Arrows";
-import Cont2 from "./Home/Cont2";
+import Cont2 from "./Home/cont2";
 import img_ from '../assets/carr.png'
 import linkedin from '../assets/linkedincarr.png'
 import insta from '../assets/instacarr.png'

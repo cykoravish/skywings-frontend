@@ -171,6 +171,9 @@ const JobDetails = () => {
             <p className="text-gray-700">
               <strong>Experience:</strong> {job.experience || "Experience not specified"}
             </p>
+            <p className="text-gray-700">
+              <strong>Job posted:</strong> {job.posted || "not available"}
+            </p>
             {job.salary && (
               <p className="text-gray-700">
                 <strong>Salary:</strong> {job.salary}
