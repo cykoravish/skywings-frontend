@@ -336,8 +336,10 @@ export const jobs = [
   
    
   ];
+import {useNavigate} from 'react-router-dom'
 
  export const list = [
+  
     {id:1, title: "Permanent Staffing Services | Hire Top Talent Across Industries with AssuredJob", image: img1, content:`<h3 class="font-bold text-gray-600 text-2xl">Secure Long-Term Talent with Our Permanent Hiring Solutions</h3>
 <br />
 <p>
@@ -550,7 +552,7 @@ export const jobs = [
     <div class="mt-12 text-center">
         <h3 class="text-xl font-bold text-gray-800">Get Started with AssuredJob’s Permanent Staffing Solutions Today!</h3>
         <p class="text-gray-600 mt-2">Need skilled professionals to join your team? Looking for an expert recruitment partner?</p>
-        <button class="mt-4 px-6 py-3 bg-gray-100 text-gray-600 font-semibold rounded-lg shadow hover:bg-blue-700">
+        <button class="mt-4 px-6 py-3 bg-gray-100 hover:bg-gray-300 text-gray-600 hover:text-gray-800 cursor-pointer font-semibold rounded-lg shadow ">
             Contact Us Now
         </button>
     </div>
@@ -698,7 +700,7 @@ export const jobs = [
         <section class="bg-white p-6 rounded-lg shadow-md text-center">
             <h2 class="text-2xl font-semibold text-blue-500 mb-4">Get Started with AssuredJob Today!</h2>
             <p class="text-gray-700 mb-4">Need skilled professionals for short-term projects? Looking for cost-effective workforce solutions?</p>
-            <a href="https://www.assuredjob.in" class="bg-gray-100 text-gray-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">Hire Now</a>
+            <a href="https://www.assuredjob.in" class="bg-gray-100 hover:bg-gray-300  text-gray-600 px-6 py-3 rounded-lg text-lg font-semibold  transition">Hire Now</a>
         </section>
     </div>`},
     // {id:4, title: "Executive Search", image: img4 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
@@ -753,7 +755,7 @@ export const jobs = [
         <h2 class="mt-6 text-2xl font-semibold text-center">Get Started Today!</h2>
         <p class="mt-2 text-center">Optimize your hiring process with AssuredJob's RPO solutions.</p>
         <div class="mt-4 text-center">
-            <a href="#" class="bg-gray-100 text-gray-600 px-6 py-2 rounded-lg shadow-md hover:bg-blue-700">Contact Us</a>
+            <a href="#" class="bg-gray-100 text-gray-600 px-6 py-2 rounded-lg shadow-md ">Contact Us</a>
         </div>
     </div>`},
     {id:6, title: "Skill Gap Assessment Services | AssuredJob", image: img6, content:`<div class="max-w-5xl mx-auto p-6">
@@ -1482,7 +1484,7 @@ export const jobs = [
     <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6 text-center">
         <h2 class="text-2xl font-semibold text-blue-600">Get Started with AssuredJob’s Outplacement Services Today!</h2>
         <p class="mt-4 text-gray-700">Help your employees transition smoothly, find new opportunities, and build successful careers with AssuredJob!</p>
-        <button class="mt-6 bg-blue-600 text-gray-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Contact Us</button>
+        <button class="mt-6 bg-blue-600 text-gray-600 px-6 py-3 rounded-lg shadow  transition">Contact Us</button>
     </section>
     
     <footer class="text-center p-4 mt-6 bg-gray-800 text-gray-600">
