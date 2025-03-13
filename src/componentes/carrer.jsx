@@ -14,7 +14,7 @@ import Cont2 from "./Home/cont2";
 import img_ from '../assets/carr.png'
 import linkedin from '../assets/linkedincarr.png'
 import insta from '../assets/instacarr.png'
-import what from '../assets/Whatappcarr.png'
+import what from '../assets/whatappcarr.png'
 
 
 
