@@ -10,6 +10,14 @@ import StatCard from "../componentes/Carrier/StatCard";
 import FAQAccordion from "../componentes/Carrier/FAQAccordion";
 import SupportSection from "../componentes/Carrier/SupportSection";
 import Arrows from "../componentes/Carrier/Arrows";
+import Cont2 from "./Home/Cont2";
+import img_ from '../assets/carr.png'
+import linkedin from '../assets/linkedincarr.png'
+import insta from '../assets/instacarr.png'
+import what from '../assets/Whatappcarr.png'
+
+
+
 
 const cards = [
     { title: "Dynamic Work Culture", description: "We foster innovation, collaboration, and growth." },
@@ -17,6 +25,19 @@ const cards = [
     { title: "Career Advancement", description: "Learning & development programs to help you upskill." },
     { title: "Flexible Work Options", description: "Remote, hybrid, and in-office roles available." },
     { title: "Industry-Leading Expertise", description: "Work with recruitment experts and top clients." },
+];
+const scan =[
+    {
+        name:'linkedin',
+        img:linkedin
+    },
+    {
+        name:'instagram',
+        img:insta
+    }, {
+        name:'Whatsapp',
+        img:what
+    }
 ];
 
 const jobCards = [
@@ -33,6 +54,9 @@ const platFormCard = [
     { count: "10K", platform: "Linkedin" },
     { count: "600", platform: "YouTube" },
 ]
+
+
+
 
 const Career = () => {
 
@@ -55,14 +79,19 @@ const Career = () => {
             <CareerHeroSection />
 
 
-            <div className="flex flex-col items-center gap-5 py-15 bg-[#F5F5F5]">
+            <div className="flex flex-col items-center gap-5 py-15 bg-white">
                 <h2 className="text-[#000000] text-2xl font-[500]">Why Work with Us?</h2>
 
-                <div className="hidden md:flex justify-between gap-4 px-7 py-2">
+                <div className="hidden md:flex justify-between gap-4 px-7 py-2 b ">
                     {cards.map((card, index) => (
                         <Card key={index} title={card.title} description={card.description} />
                     ))}
                 </div>
+                <div className='flex justify-between w-full px-7'>
+                    <p className='font-semibold'>Open Position (10)</p>
+                    <p className='pr-8'>Send Your Resume :careers@assuredjob.com</p>
+                </div>
+                <Cont2 className='z-40'/>
 
                 <div className="md:hidden w-full flex flex-col items-center relative overflow-hidden my-3">
                     <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${cardIndex * 100}%)`, width: "100%" }}>
@@ -73,6 +102,49 @@ const Career = () => {
                         ))}
                     </div>
                     <Arrows nextSlide={nextCardSlide} prevSlide={prevCardSlide} />
+                </div>
+                <div className='flex w-full flex-col'>
+                    <h3 className='text-center font-semibold'>Scan Code</h3>
+                    <div className="w-full bg-white-200 py-10 px-4">
+                    <div className="grid w-full justify-center mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-12 py-10">
+  {scan.map((list, index) => (
+    <div key={index} className="flex flex-col items-center bg-white shadow-lg rounded-lg pt-5">
+      {/* Contact Text */}
+      <p className="text-center text-lg font-semibold text-gray-800">
+        Contact us on {list.name}
+      </p>
+
+      {/* Profile Image */}
+      <div className="flex z-10 justify-center mt-2">
+        <img 
+          src={img_} 
+          className="h-36 w-36 rounded-full object-cover " 
+          alt="Profile"
+        />
+      </div>
+
+      {/* Information Box */}
+      <div className="bg-gray-100 -mt-24 sm:-mt-28 p-4 w-full rounded-lg shadow-sm text-center space-y-2">
+        <p className="text-lg font-semibold text-gray-900 pt-14 md:pt-16">Skywings</p>
+        <p className="text-sm text-gray-600">Assure you a better tomorrow</p>
+
+        {/* LinkedIn Logo */}
+        <div className="flex justify-center mt-4">
+          <img 
+            src={list.img} 
+            alt="LinkedIn Logo" 
+            className="h-32 w-32 sm:h-24 sm:w-24 md:h-40 md:w-40"
+          />
+        </div>
+        <p className='text-center text-sm font-medium text-gray-700'>Scan Code</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+</div>
+
+
                 </div>
             </div>
 

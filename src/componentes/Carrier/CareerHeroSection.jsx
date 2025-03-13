@@ -9,7 +9,7 @@ const CareerHeroSection = () => {
     }
     return (
         <>
-            <section className="flex flex-col md:flex-row items-center justify-between mx-auto p-6 bg-[#F5F5F5] rounded-lg ">
+            <section className="flex flex-col md:flex-row items-center justify-between mx-auto p-6 bg-white rounded-lg ">
 
                 <div className="md:w-1/2 text-center md:text-left">
                     <h2 className="text-2xl font-bold text-[#000000]">
@@ -40,22 +40,23 @@ const CareerHeroSection = () => {
                     </p>
                     <div 
     onClick={handleopen} 
-    className='flex px-10 w-64 justify-between py-1 border border-gray-300 rounded-md mt-4 cursor-pointer'
+    className='flex px-10 w-72 font-semibold justify-between py-1 border border-purple-600 text-purple-600 rounded-md mt-4 cursor-pointer'
 >
     <p>Join Now</p>
-    <p><ChevronRight size={24} /></p>
+    <p>{openDropdown ? <ChevronDown size={24}/> :<ChevronRight size={24} />}</p>
 </div>
 
 <div 
-    className={`flex flex-col transition-all duration-300 ease-in-out overflow-hidden ${
+    className={`flex w-72 flex-col transition-all duration-300 ease-in-out overflow-hidden ${
         openDropdown ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
     }`}
 >
-    <button className="px-4 py-2 cursor-pointer text-[#000000] rounded-md border border-[#000000] hover:bg-gray-200">
-        Join as a Full-Time Employee
+    <button className="px-4 mt-1.5 ml- bg-white py-2 justify-between flex cursor-pointer  rounded-md   border border-purple-600 text-purple-600  hover:bg-purple-200">
+        <p>Join as a Full-Time Employee</p><ChevronRight size={24} />
     </button>
-    <button className="px-4 py-2 cursor-pointer border border-[#000000] text-[#000000] rounded-md hover:bg-gray-200">
-        Join as a Freelance Recruiter
+    <button onClick={()=> window.open('https://www.freelancerecruiter.in/', '_blank')} className="px-4 bg-white justify-between flex py-2 cursor-pointer  border border-purple-600 text-purple-600  rounded-md hover:bg-purple-200">
+    <p>Join as a Freelance Recruiter</p><ChevronRight size={24} />
+        
     </button>
 </div>
 

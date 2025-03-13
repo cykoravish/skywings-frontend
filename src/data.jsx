@@ -552,7 +552,7 @@ import {useNavigate} from 'react-router-dom'
     <div class="mt-12 text-center">
         <h3 class="text-xl font-bold text-gray-800">Get Started with AssuredJob’s Permanent Staffing Solutions Today!</h3>
         <p class="text-gray-600 mt-2">Need skilled professionals to join your team? Looking for an expert recruitment partner?</p>
-        <button class="mt-4 px-6 py-3 bg-gray-100 hover:bg-gray-300 text-gray-600 hover:text-gray-800 cursor-pointer font-semibold rounded-lg shadow ">
+        <button  class="mt-4 px-6 py-3 bg-gray-100 hover:bg-gray-300 text-gray-600 hover:text-gray-800 cursor-pointer font-semibold rounded-lg shadow ">
             Contact Us Now
         </button>
     </div>
