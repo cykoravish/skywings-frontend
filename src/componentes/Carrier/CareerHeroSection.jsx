@@ -1,5 +1,12 @@
 import img from '../../assets/carrier/herosectionimg.png'
+import { ChevronRight } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
+import { useState } from 'react';
 const CareerHeroSection = () => {
+    const [openDropdown, setOpenDropdown] = useState(false);
+    const handleopen = () => {
+        setOpenDropdown(!openDropdown);
+    }
     return (
         <>
             <section className="flex flex-col md:flex-row items-center justify-between mx-auto p-6 bg-[#F5F5F5] rounded-lg ">
@@ -16,14 +23,14 @@ const CareerHeroSection = () => {
                         make a difference.
                     </p>
 
-                    <div className="mt-4 flex flex-col md:flex-row gap-3">
+                    {/* <div className="mt-4 flex flex-col md:flex-row gap-3">
                         <button className="px-4 py-2 cursor-pointer text-[#000000] rounded-md border border-[#000000]  hover:bg-gray-200">
                             Join as a Full-Time Employee
                         </button>
                         <button className="px-4 py-2 cursor-pointer border border-[#000000] text-[#000000] rounded-md hover:bg-gray-200">
                             Join as a Freelance Recruiter
                         </button>
-                    </div>
+                    </div> */}
 
                     <p className="mt-4 text-sm text-[#000000]">
                         Send your resume:{" "}
@@ -31,6 +38,28 @@ const CareerHeroSection = () => {
                             careers@assuredjob.com
                         </a>
                     </p>
+                    <div 
+    onClick={handleopen} 
+    className='flex px-10 w-64 justify-between py-1 border border-gray-300 rounded-md mt-4 cursor-pointer'
+>
+    <p>Join Now</p>
+    <p><ChevronRight size={24} /></p>
+</div>
+
+<div 
+    className={`flex flex-col transition-all duration-300 ease-in-out overflow-hidden ${
+        openDropdown ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+    }`}
+>
+    <button className="px-4 py-2 cursor-pointer text-[#000000] rounded-md border border-[#000000] hover:bg-gray-200">
+        Join as a Full-Time Employee
+    </button>
+    <button className="px-4 py-2 cursor-pointer border border-[#000000] text-[#000000] rounded-md hover:bg-gray-200">
+        Join as a Freelance Recruiter
+    </button>
+</div>
+
+                    
                 </div>
 
                 <div className="md:w-1/2 flex justify-center">
@@ -40,6 +69,7 @@ const CareerHeroSection = () => {
                         className="w-full max-w-sm"
                     />
                 </div>
+                
             </section>
         </>
     )

@@ -338,7 +338,7 @@ export const jobs = [
   ];
 
  export const list = [
-    {id:1, title: "Permanent Staffing Services | Hire Top Talent Across Industries with AssuredJob", image: img1, content:`<h3 class="font-semibold text-lg">Secure Long-Term Talent with Our Permanent Hiring Solutions</h3>
+    {id:1, title: "Permanent Staffing Services | Hire Top Talent Across Industries with AssuredJob", image: img1, content:`<h3 class="font-bold text-gray-600 text-2xl">Secure Long-Term Talent with Our Permanent Hiring Solutions</h3>
 <br />
 <p>
   Finding the right full-time employees is essential for sustained business success. At AssuredJob, 
@@ -550,7 +550,7 @@ export const jobs = [
     <div class="mt-12 text-center">
         <h3 class="text-xl font-bold text-gray-800">Get Started with AssuredJob’s Permanent Staffing Solutions Today!</h3>
         <p class="text-gray-600 mt-2">Need skilled professionals to join your team? Looking for an expert recruitment partner?</p>
-        <button class="mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700">
+        <button class="mt-4 px-6 py-3 bg-gray-100 text-gray-600 font-semibold rounded-lg shadow hover:bg-blue-700">
             Contact Us Now
         </button>
     </div>
@@ -560,130 +560,95 @@ export const jobs = [
 
 `
  },
-    {id:2, title: "Temporary Staffing Services | AssuredJob", image: img2, content:`<section class="mt-12 space-y-8">
-    <!-- Intro Section -->
-    <div>
-        <h2 class="text-2xl font-bold text-gray-800">Flexible Workforce Solutions for Your Business Needs</h2>
-        <p class="text-gray-600 mt-2">
-            In today’s dynamic business environment, companies require agile and cost-effective staffing solutions 
-            to meet seasonal demands, short-term projects, or sudden workforce shortages. At AssuredJob, we specialize 
-            in temporary staffing services, helping businesses hire skilled professionals for short-term, contractual, 
-            or project-based roles without the complexities of permanent hiring.
-        </p>
-        <p class="text-gray-600 mt-2">
-            Whether you need temporary workers for a few months or long-term contract professionals, our AI-driven 
-            recruitment solutions ensure quick, hassle-free staffing while maintaining compliance with Indian labor laws 
-            and payroll regulations.
-        </p>
-    </div>
-
-    <!-- Why Choose Temporary Staffing -->
-    <div>
-        <h3 class="text-xl font-semibold text-gray-700">Why Choose Temporary Staffing?</h3>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ <strong>Scalable Workforce Solutions</strong> – Quickly adjust to fluctuating business demands.</li>
-            <li>✔️ <strong>Cost-Effective Hiring</strong> – Reduce expenses on permanent salaries & hiring processes.</li>
-            <li>✔️ <strong>Faster Hiring & Deployment</strong> – Pre-vetted professionals ready to work immediately.</li>
-            <li>✔️ <strong>End-to-End Compliance & Payroll Management</strong> – We handle EPF, ESIC, TDS & labor law formalities.</li>
-            <li>✔️ <strong>Reduced HR Burden</strong> – Let us manage recruitment, onboarding, payroll & exits.</li>
-            <li>✔️ <strong>Try Before You Hire</strong> – Convert top-performing temp staff into permanent employees.</li>
+    {id:2, title: "Temporary Staffing Services | AssuredJob", image: img2, content:`<header class="text-gray-600  py-6  text-2xl font-bold">
+        Flexible Workforce Solutions for Your Business Needs
+    </header>
+    
+    <section class="max-w-7xl mx-auto p-6">
+        <p class="text-lg">In today’s dynamic business environment, companies require agile and cost-effective staffing solutions to meet seasonal demands, short-term projects, or sudden workforce shortages. At <strong>AssuredJob</strong>, we specialize in temporary staffing services, helping businesses hire skilled professionals for short-term, contractual, or project-based roles without the complexities of permanent hiring.</p>
+    </section>
+    
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Choose Temporary Staffing?</h2>
+        <ul class="list-none pl-5 mt-3 space-y-2">
+            <li>✔️ Scalable Workforce Solutions – Quickly adjust to fluctuating business demands.</li>
+            <li>✔️ Cost-Effective Hiring – Reduce expenses on permanent salaries and benefits.</li>
+            <li>✔️ Faster Hiring & Deployment – Get pre-vetted professionals ready to work immediately.</li>
+            <li>✔️ End-to-End Compliance & Payroll Management – We handle EPF, ESIC, TDS, and labor law formalities.</li>
+            <li>✔️ Reduced HR Burden – Let us manage recruitment, onboarding, payroll, and exits.</li>
+            <li>✔️ Try Before You Hire – Convert top-performing temp staff into permanent employees.</li>
         </ul>
-    </div>
-
-    <!-- Temporary Staffing Solutions -->
-    <div>
-        <h3 class="text-xl font-semibold text-gray-700">Our Temporary Staffing Solutions</h3>
-        <div class="mt-4 space-y-6">
-            <div>
-                <h4 class="text-lg font-semibold text-gray-800">1. Short-Term & Contract-Based Staffing</h4>
-                <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-                    <li>✅ Project-based hires for specialized assignments.</li>
-                    <li>✅ Contractual employees for seasonal, peak-period, or leave replacement roles.</li>
-                    <li>✅ Remote & hybrid contract staffing solutions.</li>
+    </section>
+    
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Our Temporary Staffing Solutions</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg">Short-Term & Contract-Based Staffing</h3>
+                <ul class="list-disc pl-4 mt-2">
+                    <li>Project-based hires for specialized assignments.</li>
+                    <li>Contractual employees for seasonal or peak-period roles.</li>
+                    <li>Remote & hybrid contract staffing solutions.</li>
                 </ul>
             </div>
-            <div>
-                <h4 class="text-lg font-semibold text-gray-800">2. Flexi-Staffing & Workforce Augmentation</h4>
-                <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-                    <li>✅ On-demand hiring to quickly scale your workforce.</li>
-                    <li>✅ Temporary staffing for retail, logistics, IT, and customer support.</li>
-                    <li>✅ Flexible work arrangements – part-time, shift-based, or rotational staffing.</li>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg">Flexi-Staffing & Workforce Augmentation</h3>
+                <ul class="list-disc pl-4 mt-2">
+                    <li>On-demand hiring to scale workforce quickly.</li>
+                    <li>Temporary staffing for IT, logistics, customer support.</li>
+                    <li>Flexible work arrangements – part-time, shift-based.</li>
                 </ul>
             </div>
-            <div>
-                <h4 class="text-lg font-semibold text-gray-800">3. Temp-to-Perm Hiring (Try & Hire Model)</h4>
-                <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-                    <li>✅ Hire temporary staff with the option to convert them into full-time employees.</li>
-                    <li>✅ Performance monitoring & evaluation before offering a permanent contract.</li>
-                    <li>✅ Cost-effective hiring with low recruitment risks.</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-lg font-semibold text-gray-800">4. Payroll & Compliance Management for Temp Staff</h4>
-                <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-                    <li>✅ End-to-end payroll processing & statutory compliance.</li>
-                    <li>✅ Employee benefits management (PF, ESIC, PT, LWF, Bonus Act).</li>
-                    <li>✅ On-time salary disbursement & tax deductions (TDS management).</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-lg font-semibold text-gray-800">5. Mass/Bulk Hiring for Temporary Roles</h4>
-                <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-                    <li>✅ Rapid deployment of skilled temp workers for seasonal or high-volume hiring needs.</li>
-                    <li>✅ Ideal for e-commerce, logistics, BPOs, and event-based industries.</li>
-                    <li>✅ Pre-screened, trained workforce for immediate hiring.</li>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg">Temp-to-Perm Hiring</h3>
+                <ul class="list-disc pl-4 mt-2">
+                    <li>Hire temp staff with an option to make them permanent.</li>
+                    <li>Performance monitoring & evaluation before a full-time contract.</li>
+                    <li>Cost-effective hiring with low recruitment risks.</li>
                 </ul>
             </div>
         </div>
-    </div>
-
-    <!-- Industries Benefiting from Temporary Staffing -->
-    <div>
-        <h3 class="text-xl font-semibold text-gray-700">Industries Benefiting from Temporary Staffing</h3>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ <strong>IT & Software Development</strong> – Temporary developers, testers, IT support engineers.</li>
-            <li>✔️ <strong>BFSI</strong> – Contract-based loan officers, financial analysts, data entry operators.</li>
-            <li>✔️ <strong>Healthcare & Pharma</strong> – Temporary nurses, lab technicians, research analysts.</li>
-            <li>✔️ <strong>Retail & E-commerce</strong> – Flexi-hiring for store associates, warehouse staff.</li>
-            <li>✔️ <strong>BPO & KPO</strong> – On-demand staffing for call centers, data analysts, tech support.</li>
-            <li>✔️ <strong>Manufacturing & Engineering</strong> – Skilled temp workers for production, quality control.</li>
-            <li>✔️ <strong>Hospitality & Tourism</strong> – Event staffing, chefs, front desk managers.</li>
-            <li>✔️ <strong>Education & EdTech</strong> – Temporary teachers, academic consultants, curriculum designers.</li>
-            <li>✔️ <strong>Logistics & Supply Chain</strong> – Short-term hires for delivery staff, warehouse assistants.</li>
-            <li>✔️ <strong>Media & Entertainment</strong> – Project-based hiring for designers, video editors.</li>
+    </section>
+    
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Industries Benefiting from Temporary Staffing</h2>
+        <p class="mt-2">We provide temporary staffing solutions across multiple industries:</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Finance & Banking)</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
+        </div>
+    </section>
+    
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
+        <ul class="list-none pl-5 mt-3 space-y-2">
+            <li className='list-none'>✅ Fast & Flexible Hiring Solutions</li>
+            <li  className='list-none'>✅ AI-Driven Talent Matching</li>
+            <li  className='list-none'>✅ End-to-End HR & Payroll Management</li>
+            <li  className='list-none'>✅ Industry-Specific Hiring Expertise</li>
+            <li  className='list-none'>✅ Scalable Workforce Support</li>
+            <li  className='list-none'>✅ Risk-Free Hiring Model</li>
         </ul>
-    </div>
-
-    <!-- Why Choose AssuredJob -->
-    <div class="mt-12 bg-gray-100 p-6 rounded-lg shadow">
-        <h2 class="text-2xl font-bold text-gray-800">Why Choose AssuredJob for Temporary Staffing?</h2>
-        <ul class="list-none list-inside text-gray-700 mt-4 space-y-2">
-            <li>✅ <strong>Fast & Flexible Hiring</strong> – Deploy qualified temporary employees within days.</li>
-            <li>✅ <strong>AI-Driven Talent Matching</strong> – Smart hiring process for high-quality candidates.</li>
-            <li>✅ <strong>End-to-End HR & Payroll Management</strong> – Salary processing, tax deductions, compliance.</li>
-            <li>✅ <strong>Industry-Specific Expertise</strong> – Customized staffing solutions for various sectors.</li>
-            <li>✅ <strong>Scalable Workforce Support</strong> – Adjust staff levels based on business needs.</li>
-            <li>✅ <strong>Risk-Free Hiring</strong> – Try temp-to-perm staffing before committing to full-time hires.</li>
-        </ul>
-    </div>
-
-    <!-- Call to Action -->
-    <div class="mt-12 text-center">
-        <h3 class="text-xl font-bold text-gray-800">Get Started with AssuredJob’s Temporary Staffing Services Today!</h3>
-        <p class="text-gray-600 mt-2">Need skilled professionals for short-term projects? Looking for cost-effective workforce solutions?</p>
-        <button class="mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700">
-            Contact Us Now
-        </button>
-    </div>
-</section>
-`},
+    </section>
+    
+    <footer class="bg-gray-100 text-gray-600 py-6 text-center mt-8">
+        <p class="text-lg font-semibold">Get Started with AssuredJob’s Temporary Staffing Services Today!</p>
+        <p class="mt-2">Need skilled professionals for short-term projects?</p>
+        <p>Looking for cost-effective workforce solutions?</p>
+        <p>Want to scale your team with flexible temp hiring?</p>
+        <p class="mt-4 font-bold">Partner with AssuredJob for Hassle-Free Temporary Staffing Solutions!</p>
+    </footer>`},
     {id:3, title: "Contract Staffing Services | AssuredJob", image: img3, content:`<div class="max-w-6xl mx-auto p-6">
-        <h1 class="text-4xl font-bold text-center text-blue-600 mb-6">Flexible & Cost-Effective Contract Staffing Solutions</h1>
+        <h2 class="text-2xl font-bold text-gray-700 mb-6">Flexible & Cost-Effective Contract Staffing Solutions</h2>
         <p class="text-lg text-gray-700 text-center mb-8">Scale operations, reduce hiring costs, and maintain workforce flexibility with AssuredJob’s contract staffing services.</p>
         
         <section class="bg-white p-6 rounded-lg shadow-md mb-8">
             <h2 class="text-2xl font-semibold text-blue-500 mb-4">Why Choose Contract Staffing?</h2>
-            <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <ul class="list-none pl-6 space-y-2 text-gray-700">
                 <li><strong>Scalable Workforce Solutions</strong> – Quickly hire contract professionals.</li>
                 <li><strong>Cost-Effective Hiring Model</strong> – Save on full-time salaries.</li>
                 <li><strong>Faster Hiring & Deployment</strong> – Get pre-screened candidates instantly.</li>
@@ -697,19 +662,19 @@ export const jobs = [
             <h2 class="text-2xl font-semibold text-blue-500 mb-4">Our Contract Staffing Solutions</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-gray-50 p-4 rounded-lg shadow">
-                    <h3 class="text-lg font-semibold text-blue-600">Short-Term & Project-Based Staffing</h3>
+                    <h3 class="text-lg font-semibold text-gray-700">Short-Term & Project-Based Staffing</h3>
                     <p class="text-gray-700">Hire on-demand professionals for IT, BFSI, Healthcare, and Manufacturing.</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg shadow">
-                    <h3 class="text-lg font-semibold text-blue-600">Long-Term & Fixed-Contract Hiring</h3>
+                    <h3 class="text-lg font-semibold text-gray-700">Long-Term & Fixed-Contract Hiring</h3>
                     <p class="text-gray-700">Get dedicated workforce solutions for extended projects.</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg shadow">
-                    <h3 class="text-lg font-semibold text-blue-600">Flexi-Staffing & Workforce Augmentation</h3>
+                    <h3 class="text-lg font-semibold text-gray-700">Flexi-Staffing & Workforce Augmentation</h3>
                     <p class="text-gray-700">Temporary workforce solutions for seasonal demands.</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg shadow">
-                    <h3 class="text-lg font-semibold text-blue-600">Contract-to-Permanent Hiring (Temp-to-Perm)</h3>
+                    <h3 class="text-lg font-semibold text-gray-700">Contract-to-Permanent Hiring (Temp-to-Perm)</h3>
                     <p class="text-gray-700">Low-risk hiring with evaluation before full-time placement.</p>
                 </div>
             </div>
@@ -733,23 +698,866 @@ export const jobs = [
         <section class="bg-white p-6 rounded-lg shadow-md text-center">
             <h2 class="text-2xl font-semibold text-blue-500 mb-4">Get Started with AssuredJob Today!</h2>
             <p class="text-gray-700 mb-4">Need skilled professionals for short-term projects? Looking for cost-effective workforce solutions?</p>
-            <a href="https://www.assuredjob.in" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">Hire Now</a>
+            <a href="https://www.assuredjob.in" class="bg-gray-100 text-gray-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">Hire Now</a>
         </section>
     </div>`},
-    {id:4, title: "Executive Search", image: img4 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:5, title: "Recruitment Process Outsourcing (RPO)", image: img5, content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:6, title: "Skill Gap Assessment", image: img6, content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:7, title: "Internship Program Management", image: img7, content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for qualitygrowth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:9, title: "Graduate Trainee Programs", image: img9, content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:10, title: "Diversity & Inclusion Hiring Initiatives", image: img10 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality"},
-    {id:11, title: "Onboarding and Training Support", image: img11 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:12, title: "Pre-Placement Offer (PPO) Recruitment", image: img12, content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m" },
-    {id:13,title:'Remote Talent Pooling', image:img13, content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m "},
-    {id:14,title:'Payroll Management', image:img14, content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:15,title:'Labour Compliance Management', image:img15, content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:16,title:'Freelance Recruiter Partnership', image:img16 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:17,title:'Outplacement Services', image:img17 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:18,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:19,title:'Talent Mapping and Market Intelligence', image:img19 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
+    // {id:4, title: "Executive Search", image: img4 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
+    {id:5, title: "Recruitment Process Outsourcing (RPO) Services | AssuredJob", image: img5, content:`<div class="max-w-4xl mx-auto p-6">
+        <h2 class="text-3xl font-bold  text-gray-700">Streamline Your Hiring with AssuredJob’s RPO Solutions</h2>
+        <p class="mt-4 text-lg text-gray-700">Struggling with high-volume hiring, talent shortages, or lengthy recruitment cycles?</p>
+        <p class="mt-2">AssuredJob’s Recruitment Process Outsourcing (RPO) services offer a scalable, cost-effective solution to optimize your hiring process, reduce time-to-fill, and improve candidate quality.</p>
+        
+        <h2 class="mt-6 text-2xl font-semibold">What is Recruitment Process Outsourcing (RPO)?</h2>
+        <p class="mt-2">RPO is a strategic hiring solution where companies outsource part or all of their recruitment functions to an expert provider like AssuredJob.</p>
+        
+        <h2 class="mt-6 text-2xl font-semibold">Why Choose RPO Services?</h2>
+        <ul class="mt-2 list-disc list-inside space-y-2">
+            <li><strong>Faster Hiring Process</strong> – Reduce time-to-hire with an optimized recruitment strategy.</li>
+            <li><strong>Cost Savings</strong> – Lower recruitment costs by eliminating inefficiencies.</li>
+            <li><strong>Scalable & Flexible Solutions</strong> – Expand or reduce hiring operations as needed.</li>
+            <li><strong>Better Candidate Quality</strong> – Leverage AI-driven talent sourcing & screening.</li>
+        </ul>
+        
+        <h2 class="mt-6 text-2xl font-semibold">Our RPO Solutions</h2>
+        <div class="mt-4 bg-white shadow-lg p-4 rounded-lg">
+            <h3 class="text-xl font-semibold">Full-Cycle RPO</h3>
+            <p>Complete outsourcing model managing the entire recruitment lifecycle:</p>
+            <ul class="list-none list-inside mt-2 space-y-1">
+                <li>Job Posting & Employer Branding</li>
+                <li>Talent Sourcing & AI-Driven Screening</li>
+                <li>Interview Coordination & Assessments</li>
+            </ul>
+        </div>
+        
+        <div class="mt-4 bg-white shadow-lg p-4 rounded-lg">
+            <h3 class="text-xl font-semibold">Partial RPO</h3>
+            <p>Outsource specific hiring functions like:</p>
+            <ul class="list-none list-inside mt-2 space-y-1">
+                <li>Resume Screening & Shortlisting</li>
+                <li>Technical & Behavioral Assessments</li>
+            </ul>
+        </div>
+        
+        <h2 class="mt-6 text-2xl font-semibold">Industries We Serve</h2>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="p-4 bg-white shadow-lg rounded-lg">
+                <h3 class="font-semibold">IT & Technology</h3>
+                <p>Software Developers, Cloud Engineers, AI & ML Engineers</p>
+            </div>
+            <div class="p-4 bg-white shadow-lg rounded-lg">
+                <h3 class="font-semibold">Healthcare</h3>
+                <p>Doctors, Nurses, Clinical Research Experts</p>
+            </div>
+        </div>
+        
+        <h2 class="mt-6 text-2xl font-semibold text-center">Get Started Today!</h2>
+        <p class="mt-2 text-center">Optimize your hiring process with AssuredJob's RPO solutions.</p>
+        <div class="mt-4 text-center">
+            <a href="#" class="bg-gray-100 text-gray-600 px-6 py-2 rounded-lg shadow-md hover:bg-blue-700">Contact Us</a>
+        </div>
+    </div>`},
+    {id:6, title: "Skill Gap Assessment Services | AssuredJob", image: img6, content:`<div class="max-w-5xl mx-auto p-6">
+        <h2 class="text-3xl font-bold text-gray-700">Identify Workforce Skill Gaps & Bridge Them for Business Growth</h2>
+        <p class="mt-4 text-lg">AssuredJob’s Skill Gap Assessment Services help businesses analyze workforce capabilities, identify skill deficiencies, and implement training programs to enhance employee performance.</p>
+
+        <h2 class="mt-6 text-2xl font-semibold">Why Skill Gap Assessment is Important?</h2>
+        <ul class=" pl-6 mt-2 space-y-2 list-none">
+            <li>✔️ Improve Workforce Efficiency – Identify areas where employees need training & development.</li>
+            <li>✔️ Enhance Employee Productivity – Address performance gaps to increase efficiency.</li>
+            <li>✔️ Stay Competitive in Your Industry – Ensure your team has in-demand skills for business success.</li>
+            <li>✔️ Reduce Hiring & Training Costs – Upskill your existing workforce instead of hiring externally.</li>
+            <li>✔️ Boost Employee Engagement & Retention – Provide employees with growth & career advancement opportunities.</li>
+        </ul>
+
+        <h2 class="mt-6 text-2xl font-semibold">Our Skill Gap Assessment Solutions</h2>
+        <div class="mt-4 space-y-4">
+            <div class="p-4 bg-white shadow rounded-lg">
+                <h3 class="text-xl font-semibold">1. Workforce Skills Assessment & Gap Analysis</h3>
+                <p>✅ AI-powered competency mapping & benchmarking</p>
+                <p>✅ Role-specific skill assessments & industry comparisons</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded-lg">
+                <h3 class="text-xl font-semibold">2. Technical & Soft Skills Evaluation</h3>
+                <p>✅ Domain-specific technical skills testing</p>
+                <p>✅ Leadership, communication, and problem-solving skill assessment</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded-lg">
+                <h3 class="text-xl font-semibold">3. Training & Upskilling Recommendations</h3>
+                <p>✅ Customized learning & development (L&D) programs</p>
+                <p>✅ Online courses, workshops, and on-the-job training plans</p>
+            </div>
+        </div>
+
+        <h2 class="mt-6 text-2xl font-semibold">Industries Benefiting from Skill Gap Assessment</h2>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="p-4 bg-white shadow rounded-lg">✔️ Information Technology (AI, Machine Learning, Cybersecurity)</div>
+            <div class="p-4 bg-white shadow rounded-lg">✔️ Banking & Financial Services (Risk Analysis, Fintech)</div>
+            <div class="p-4 bg-white shadow rounded-lg">✔️ Healthcare & Pharmaceuticals (Telemedicine, Medical Tech)</div>
+            <div class="p-4 bg-white shadow rounded-lg">✔️ Retail & E-commerce (Digital Marketing, Supply Chain)</div>
+        </div>
+
+        <h2 class="mt-6 text-2xl font-semibold">Why Choose AssuredJob?</h2>
+        <ul class="list-disc pl-6 mt-2 space-y-2">
+            <li>✅ AI-Driven Skill Assessment & Data Analytics</li>
+            <li>✅ Customized Learning & Development Solutions</li>
+            <li>✅ Industry-Specific Talent Benchmarking</li>
+            <li>✅ Proven Upskilling & Reskilling Strategies</li>
+        </ul>
+
+        <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Skill Gap Assessment Today!</h2>
+        <p class="mt-4 text-lg">Future-proof your workforce, enhance employee skills, and drive business success with AssuredJob’s Skill Gap Assessment Services!</p>
+    </div>`},
+    {id:7, title: "Internship & Articleship Programs | AssuredJob", image: img7, content:`<header class=" text-gray-600 p-6 text-2xl font-bold">
+        Build a Skilled Workforce with Structured Internship & Articleship Programs
+    </header>
+    
+    <main class="max-w-6xl mx-auto p-6">
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Why Invest in an Internship & Articleship Program?</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>✔️ Build a Talent Pipeline – Identify high-potential candidates for future hiring.</li>
+                <li>✔️ Cost-Effective Workforce Support – Get skilled interns & trainees at minimal hiring costs.</li>
+                <li>✔️ Enhance Brand Visibility – Strengthen your employer branding by offering structured programs.</li>
+                <li>✔️ Practical Training for Young Talent – Equip fresh graduates with industry-relevant skills.</li>
+                <li>✔️ Flexible Hiring Model – Convert top-performing interns into full-time employees.</li>
+                <li>✔️ Bridge the Skill Gap – Train freshers in job-specific technical & soft skills.</li>
+            </ul>
+        </section>
+        
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Our Internship & Articleship Solutions</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold">Corporate Internship Programs</h3>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Paid & unpaid internship opportunities across industries.</li>
+                        <li>Live projects, hands-on experience, and mentorship.</li>
+                        <li>Pre-placement offer (PPO) options for top interns.</li>
+                    </ul>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold">Articleship Programs for Professional Courses</h3>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>CA, CS, CMA articleship placements with reputed firms.</li>
+                        <li>Practical experience in taxation, auditing & financial management.</li>
+                        <li>Compliance with ICAI, ICSI, and ICMAI guidelines.</li>
+                    </ul>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold">Summer & Winter Internship Programs</h3>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Short-term internships (1-6 months) for students & freshers.</li>
+                        <li>Opportunities in IT, BFSI, Healthcare, Marketing, and more.</li>
+                        <li>Project-based learning & certification upon completion.</li>
+                    </ul>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold">Remote & Work-From-Home Internships</h3>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Flexible online internship opportunities.</li>
+                        <li>Virtual mentoring, training sessions & assignments.</li>
+                        <li>AI-driven remote hiring & tracking tools.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Industries Benefiting from Internship & Articleship Programs</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <span class="p-2 border rounded-lg">✔️ Information Technology</span>
+                <span class="p-2 border rounded-lg">✔️ Banking & Finance</span>
+                <span class="p-2 border rounded-lg">✔️ Healthcare & Pharmaceuticals</span>
+                <span class="p-2 border rounded-lg">✔️ Retail & E-commerce</span>
+                <span class="p-2 border rounded-lg">✔️ BPO & KPO</span>
+                <span class="p-2 border rounded-lg">✔️ Education & EdTech</span>
+                <span class="p-2 border rounded-lg">✔️ Media & Entertainment</span>
+                <span class="p-2 border rounded-lg">✔️ Manufacturing & Engineering</span>
+                <span class="p-2 border rounded-lg">✔️ Legal & Compliance</span>
+            </div>
+        </section>
+        
+        <section class="bg-gray-100 text-gray-600 p-6 rounded-lg text-center">
+            <h2 class="text-2xl font-semibold mb-4">Get Started with AssuredJob’s Internship & Articleship Programs Today!</h2>
+            <p class="mb-4">Bridge the skill gap, nurture young talent, and create future leaders with AssuredJob.</p>
+            <button class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
+                Contact Us
+            </button>
+        </section>
+    </main>`},
+    {id:11, title: "Onboarding &amp; Training Support Services | AssuredJob", image: img11 , content:` <header class=" text-gray-600 py-12 ">
+        <h1 class="text-3xl font-bold">Seamless Employee Onboarding & Training</h1>
+        <p class="mt-2 text-lg">Boost Productivity & Retention with Structured Learning & AI-Driven Solutions</p>
+    </header>
+
+    <!-- Introduction -->
+    <section class="max-w-7xl mx-auto p-6">
+        <p class="text-lg text-gray-700">
+            A well-structured onboarding and training program is essential for <strong class="text-blue-600">employee engagement, productivity, and retention.</strong> 
+            At AssuredJob, we provide <span class="text-blue-600">comprehensive onboarding & training</span> to help businesses integrate new hires smoothly 
+            and equip them with the right skills for success.
+        </p>
+    </section>
+
+    <!-- Why Onboarding & Training? -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Onboarding & Training Support is Essential?</h2>
+        <ul class="mt-3 space-y-2">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Faster Employee Integration – Reduce time-to-productivity with structured onboarding.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Higher Employee Retention – Well-trained employees are more engaged & loyal.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Enhanced Productivity – Employees perform better with proper training & knowledge transfer.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Stronger Employer Branding – A positive onboarding experience improves employer reputation.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Compliance & Policy Adherence – Ensures employees understand HR policies & workplace expectations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Reduced Hiring Costs – Well-trained employees stay longer, reducing turnover costs.</li>
+        </ul>
+    </section>
+
+    <!-- Our Solutions -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Our Onboarding & Training Solutions</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">New Hire Onboarding Programs</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>Pre-boarding support (documentation, IT setup)</li>
+                    <li>Virtual & in-person orientation programs</li>
+                    <li>Company culture & compliance training</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Customized Employee Training</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>Role-specific training for different job functions</li>
+                    <li>Technical, soft skills, and leadership training</li>
+                    <li>AI-powered personalized learning paths</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Learning & Development (L&D)</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>E-learning modules & interactive training</li>
+                    <li>Gamification & simulation-based learning</li>
+                    <li>Live instructor-led training & on-demand courses</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Benefiting -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Industries Benefiting from Onboarding & Training</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Finance & Banking)</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
+        <ul class="mt-3 space-y-2">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Structured & AI-Driven Onboarding Process</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Industry-Specific Training Solutions</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Blended Learning (Virtual, In-Person, Gamification)</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Scalable Training for Startups, SMEs & Enterprises</li>
+        </ul>
+    </section>
+
+    <!-- CTA Footer -->
+    <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
+        <h3 class="text-xl font-bold">Get Started with AssuredJob’s Onboarding & Training Support Today!</h3>
+        <p class="mt-2">Need structured onboarding or upskilling programs?</p>
+        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
+            Contact Us
+        </button>
+    </footer>`},
+    {id:12, title: "Pre-Placement Recruitment Services | AssuredJob", image: img12, content:`<!-- Hero Section -->
+    <header class=" text-gray-600 py-12 ">
+        <h1 class="text-3xl font-bold">Hire Top Talent Early with Pre-Placement Offer (PPO) Recruitment</h1>
+        <p class="mt-2 text-lg">Connect with high-potential candidates before they enter the workforce.</p>
+    </header>
+
+    <!-- Introduction -->
+    <section class="max-w-7xl mx-auto p-6">
+        <p class="text-lg text-gray-700">
+            In today’s competitive job market, securing the <strong class="text-blue-600">best young talent before graduation</strong> is a game-changer. 
+            AssuredJob’s Pre-Placement Recruitment Services help companies <span class="text-blue-600">hire top-performing students</span> 
+            through structured PPOs, ensuring reduced hiring costs and improved workforce quality.
+        </p>
+    </section>
+
+    <!-- Why PPO Recruitment? -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Pre-Placement Recruitment is a Game-Changer?</h2>
+        <ul class="mt-3 space-y-2">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Secure top graduates before competitors hire them.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Reduce hiring costs & time with internship-based hiring.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Ensure a seamless transition from training to employment.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Improve retention rates by hiring pre-assessed candidates.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Strengthen employer branding with PPO tie-ups.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Tailor hiring strategies to match your industry needs.</li>
+        </ul>
+    </section>
+
+    <!-- Our PPO Solutions -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Our Pre-Placement Recruitment Solutions</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Internship-to-PPO Model</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>Identify top interns & offer PPOs.</li>
+                    <li>Performance-based hiring & live projects.</li>
+                    <li>Seamless intern-to-employee transition.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Campus Recruitment & Tie-Ups</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>Direct hiring from top colleges & universities.</li>
+                    <li>Final-year student placement drives.</li>
+                    <li>Hackathons & industry workshops.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Skill-Based Assessments</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>AI-powered screening & psychometric tests.</li>
+                    <li>Technical & domain-specific evaluations.</li>
+                    <li>Behavioral & cultural fit analysis.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Benefiting -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Industries Benefiting from Pre-Placement Recruitment</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Finance & Banking)</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ EdTech & Education</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Hospitality & Tourism</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Media & Entertainment</span>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
+        <ul class="mt-3 space-y-2">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>AI-driven talent screening for high-quality hires.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Exclusive access to campus talent.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Flexible PPO models (internships, hackathons, direct offers).</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Cost-effective hiring with pre-assessed candidates.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Enhanced employer branding & student engagement.</li>
+        </ul>
+    </section>
+
+    <!-- CTA Footer -->
+    <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
+        <h3 class="text-xl font-bold">Get Started with AssuredJob’s Pre-Placement Recruitment Today!</h3>
+        <p class="mt-2">Secure top talent before they enter the job market.</p>
+        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
+            Contact Us
+        </button>
+    </footer>` },
+    {id:13,title:'Remote Talent Pooling Services | AssuredJob', image:img13, content:`<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <header class=" text-gray-600 py-12 ">
+        <h1 class="text-3xl font-bold">Access Top Remote Talent & Build a Future-Ready Workforce</h1>
+        <p class="mt-2 text-lg">Expand your business, reduce hiring costs, and access top global talent with AssuredJob.</p>
+    </header>
+
+    <!-- Introduction -->
+    <section class="max-w-7xl mx-auto p-6">
+        <p class="text-lg text-gray-700">
+            In today’s <strong class="text-blue-600">digital-first world</strong>, businesses are leveraging remote talent to scale operations, 
+            access global expertise, and reduce costs. AssuredJob specializes in 
+            <span class="text-blue-600">remote talent pooling</span>, helping companies find, vet, and onboard top remote professionals worldwide.
+        </p>
+    </section>
+
+    <!-- Why Remote Talent Pooling? -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Remote Talent Pooling?</h2>
+        <ul class="mt-3 space-y-2">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Access a global talent pool with no geographic limitations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Reduce infrastructure, relocation & operational costs.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Expand your workforce on-demand with remote hiring.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Boost productivity with highly efficient remote employees.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Promote diversity & inclusion with a global workforce.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Reduce time-to-hire with AI-driven pre-vetted candidates.</li>
+        </ul>
+    </section>
+
+    <!-- Our Remote Talent Pooling Solutions -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Our Remote Talent Pooling Solutions</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Remote Talent Sourcing & Screening</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>AI-driven remote candidate sourcing & profiling.</li>
+                    <li>Skill-based & industry-specific hiring.</li>
+                    <li>Resume screening & background verification.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Virtual Interviews & Assessments</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>Video interviews & behavioral assessments.</li>
+                    <li>Technical & non-technical skills evaluation.</li>
+                    <li>AI-based psychometric & cultural fit analysis.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Remote Onboarding & Compliance</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>Digital documentation & contract signing.</li>
+                    <li>Payroll & labor law compliance for remote teams.</li>
+                    <li>HR policies & virtual onboarding support.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Benefiting -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Industries Benefiting from Remote Talent Pooling</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Finance & Banking)</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Media & Entertainment</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ EdTech & Education</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Consulting & Professional Services</span>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
+        <ul class="mt-3 space-y-2">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Instant access to a global pre-vetted talent pool.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>AI-driven candidate matching for faster hiring.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Seamless virtual onboarding & legal compliance.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Customizable remote workforce solutions.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Secure, confidential & compliant hiring processes.</li>
+        </ul>
+    </section>
+
+    <!-- CTA Footer -->
+    <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
+        <h3 class="text-xl font-bold">Get Started with AssuredJob’s Remote Talent Pooling Services Today!</h3>
+        <p class="mt-2">Hire top remote talent and scale your workforce effortlessly.</p>
+        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
+            Contact Us
+        </button>
+    </footer>
+
+</body>`},
+    {id:14,title:'Payroll Management Services | AssuredJob', image:img14, content:`<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <header class=" text-gray-600 py-12 ">
+        <h1 class="text-3xl font-bold">Seamless Payroll Processing & Compliance</h1>
+        <p class="mt-2 text-lg">Automate payroll, ensure compliance, and streamline salary disbursement with AssuredJob.</p>
+    </header>
+
+    <!-- Introduction -->
+    <section class="max-w-7xl mx-auto p-6">
+        <p class="text-lg text-gray-700">
+            Managing payroll processing, tax compliance, and employee benefits can be a complex challenge. 
+            <span class="text-blue-600 font-semibold">AssuredJob</span> provides end-to-end payroll management solutions to help companies 
+            <strong>automate payroll, ensure 100% compliance, and handle payroll complexities</strong> efficiently.
+        </p>
+    </section>
+
+    <!-- Why Outsource Payroll Management? -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Outsource Payroll Management?</h2>
+        <ul class="mt-3 space-y-2">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>100% Statutory Compliance (EPF, ESIC, PT, TDS, Gratuity, Bonus Act).</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Error-Free Payroll Processing with Automated Calculations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Cost & Time Efficiency – Reduce HR workload.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Secure Payroll Data Handling with Encryption.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Seamless Integration with HR & Accounting Systems.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Multi-Location Payroll Support – Manage payroll across India & globally.</li>
+        </ul>
+    </section>
+
+    <!-- Our Payroll Management Services -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Our Payroll Management Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Salary Processing & Payroll Outsourcing</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>Automated salary calculations & disbursements.</li>
+                    <li>TDS, PF, ESIC, PT, and other deductions.</li>
+                    <li>Attendance & leave management integration.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Statutory Compliance & Tax Filing</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>EPF, ESIC, PT, and labor law compliance.</li>
+                    <li>Payroll tax (TDS) calculations & filings.</li>
+                    <li>Government filings & statutory reports.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg text-blue-600">Payroll Reports & Tax Documentation</h3>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>Form 16, Form 24Q, and tax return assistance.</li>
+                    <li>Salary breakup reports & payroll analytics.</li>
+                    <li>Payroll MIS reports for financial planning.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Industries We Serve</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Banking & Finance)</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Hospitality & Tourism</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Education & EdTech</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Logistics & Supply Chain</span>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
+        <ul class="mt-3 space-y-2">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Automated Payroll Processing with AI-driven calculations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>100% Compliance with Indian tax & labor laws.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Multi-Location & International Payroll Support.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Seamless HR & Finance System Integration.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Secure & Confidential Payroll Data Handling.</li>
+        </ul>
+    </section>
+
+    <!-- CTA Footer -->
+    <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
+        <h3 class="text-xl font-bold">Get Started with AssuredJob’s Payroll Management Services!</h3>
+        <p class="mt-2">Automate payroll, ensure compliance, and focus on business growth.</p>
+        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
+            Contact Us
+        </button>
+    </footer>
+
+</body>`},
+    {id:15,title:'Labour Compliance Management Services | AssuredJob', image:img15, content:`<div class="max-w-5xl mx-auto p-6">
+        <h2 class="text-3xl font-bold text-gray-700">Ensure 100% Compliance with Indian Labour Laws & Regulations</h2>
+        <p class="mt-4 text-lg">AssuredJob provides end-to-end labour compliance management services, ensuring businesses stay legally compliant while focusing on their core operations.</p>
+
+        <h2 class="mt-6 text-2xl font-semibold">Why Labour Compliance Management is Essential?</h2>
+        <ul class="list-disc pl-6 mt-2 space-y-2">
+            <li>✔️ Avoid Legal Risks & Penalties – Stay updated with EPF, ESIC, PT, LWF, Bonus Act, and more.</li>
+            <li>✔️ Ensure Smooth Payroll Processing – Automate PF, ESIC, gratuity, and TDS deductions.</li>
+            <li>✔️ Stay Aligned with Government Regulations – Meet all state & central labour law mandates.</li>
+            <li>✔️ Improve Employer Brand & Trust – Show commitment to employee rights & fair labour practices.</li>
+        </ul>
+
+        <h2 class="mt-6 text-2xl font-semibold">Our Labour Compliance Management Solutions</h2>
+        <div class="mt-4 space-y-4">
+            <div class="p-4 bg-white shadow rounded-lg">
+                <h3 class="text-xl font-semibold">1. Payroll Compliance & Statutory Deductions</h3>
+                <p>✅ EPF & ESIC management</p>
+                <p>✅ Professional Tax (PT), Labour Welfare Fund (LWF), and TDS deductions</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded-lg">
+                <h3 class="text-xl font-semibold">2. Contract Labour & Workforce Compliance</h3>
+                <p>✅ Adherence to the Contract Labour (Regulation & Abolition) Act</p>
+                <p>✅ Registration, licensing, and compliance management</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded-lg">
+                <h3 class="text-xl font-semibold">3. Minimum Wages & Employee Benefits Compliance</h3>
+                <p>✅ Enforcement of state-wise minimum wages & fair pay structures</p>
+                <p>✅ Implementation of maternity benefits & gratuity schemes</p>
+            </div>
+        </div>
+
+        <h2 class="mt-6 text-2xl font-semibold">Industries Benefiting from Labour Compliance Management</h2>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="p-4 bg-white shadow rounded-lg">✔️ Information Technology (IT & Software Development)</div>
+            <div class="p-4 bg-white shadow rounded-lg">✔️ Banking & Financial Services (BFSI)</div>
+            <div class="p-4 bg-white shadow rounded-lg">✔️ Healthcare & Pharmaceuticals</div>
+            <div class="p-4 bg-white shadow rounded-lg">✔️ Retail & E-commerce</div>
+        </div>
+
+        <h2 class="mt-6 text-2xl font-semibold">Why Choose AssuredJob?</h2>
+        <ul class="list-disc pl-6 mt-2 space-y-2">
+            <li>✅ 100% Legal Compliance Assurance</li>
+            <li>✅ AI-Driven Compliance Automation</li>
+            <li>✅ Multi-Industry Expertise</li>
+            <li>✅ End-to-End Payroll & HR Integration</li>
+        </ul>
+
+        <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Labour Compliance Management Today!</h2>
+        <p class="mt-4 text-lg">Stay compliant, avoid legal risks, and streamline workforce management with AssuredJob’s expert labour compliance solutions!</p>
+    </div>`},
+    {id:16,title:'Freelance Recruiter Program | AssuredJob', image:img16 ,content:`<body class="bg-gray-100 font-sans">
+    <!-- Hero Section -->
+    <header class=" text-gray-600 py-12 ">
+        <h1 class="text-3xl font-bold">Earn Big with AssuredJob’s Freelance Recruiter Program</h1>
+        <p class="mt-2 text-lg">Work remotely, earn high commissions, and build a successful career in recruitment.</p>
+    </header>
+    
+    <!-- Introduction -->
+    <section class="max-w-7xl mx-auto p-6">
+        <p class="text-lg text-gray-700">Are you an HR professional, recruitment consultant, or someone with a strong network of job seekers? 
+            AssuredJob’s Freelance Recruiter Program allows you to work remotely, earn high commissions, and build a successful career in recruitment—all while having the flexibility to work on your own terms.</p>
+    </section>
+
+    <!-- Why Join -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Join AssuredJob as a Freelance Recruiter?</h2>
+        <ul class="mt-3 space-y-2">
+            <li>✔️ Work from Anywhere – No office required! Work remotely at your convenience.</li>
+            <li>✔️ Earn High Commissions – Get paid for every successful hire.</li>
+            <li>✔️ Access to Top Job Openings – Work with leading companies across multiple industries.</li>
+            <li>✔️ AI-Driven Recruitment Platform – Use advanced tools to source, track, and place candidates.</li>
+            <li>✔️ No Investment Required – Start your recruitment career without any upfront costs.</li>
+            <li>✔️ Training & Support Provided – Learn best recruitment practices & hiring techniques.</li>
+        </ul>
+    </section>
+
+    <!-- How It Works -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">How It Works?</h2>
+        <ol class="list-decimal pl-6 mt-3 space-y-2">
+            <li>✅ Register & Get Onboarded – Sign up, complete your profile & attend training sessions.</li>
+            <li>✅ Source & Screen Candidates – Use AI-driven tools & portals to find top candidates.</li>
+            <li>✅ Get Paid – Earn commissions for every successful hire with no limit on earnings.</li>
+        </ol>
+    </section>
+
+    <!-- Who Can Join? -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Who Can Become a Freelance Recruiter?</h2>
+        <ul class="mt-3 space-y-2">
+            <li>✔️ HR professionals & recruitment consultants.</li>
+            <li>✔️ Work-from-home professionals seeking flexibility.</li>
+            <li>✔️ Freelancers & independent consultants with strong networks.</li>
+            <li>✔️ Industry experts who can source top talent.</li>
+            <li>✔️ College placement coordinators & career counselors.</li>
+            <li>✔️ Stay-at-home parents, retirees & part-time job seekers.</li>
+        </ul>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="max-w-7xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Industries & Job Roles We Recruit For</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Banking & Finance)</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Education & EdTech</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Logistics & Supply Chain</span>
+            <span class="bg-gray-200 p-2 rounded-md">✔️ Media & Entertainment</span>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob’s Freelance Recruiter Program?</h2>
+        <ul class="mt-3 space-y-2">
+            <li>✅ AI-Driven Recruitment Portal – Find jobs, track candidates, and earn commissions easily.</li>
+            <li>✅ High Earning Potential – Earn commissions on every successful hire.</li>
+            <li>✅ Flexible Working Hours – Work at your convenience.</li>
+            <li>✅ Access to a Wide Network of Job Openings.</li>
+            <li>✅ Recruitment Training & Support Provided.</li>
+            <li>✅ No Fixed Targets, No Investment Required.</li>
+        </ul>
+    </section>
+
+    <!-- CTA Footer -->
+    <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
+        <h3 class="text-xl font-bold">Get Started with AssuredJob’s Freelance Recruiter Program Today!</h3>
+        <p class="mt-2">Join India’s top freelance recruitment network and start earning today!</p>
+        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
+            Sign Up Now
+        </button>
+    </footer>
+</body>`},
+    {id:17,title:'Outplacement Services | AssuredJobs', image:img17 ,content:`<body class=" text-gray-800">
+    <header class="bg-gray-100 text-gray-600  p-6">
+        <h1 class="text-3xl font-bold">Empowering Employees with Career Transition Support</h1>
+    </header>
+    
+    <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+        <h2 class="text-2xl font-semibold text-blue-600">Why Invest in Outplacement Services?</h2>
+        <ul class="mt-4 space-y-2 text-gray-700">
+            <li>✔️ Protect Your Employer Brand – Show commitment to employee welfare during layoffs.</li>
+            <li>✔️ Reduce Legal & Compliance Risks – Ensure smooth transitions to prevent legal disputes.</li>
+            <li>✔️ Improve Employee Morale – Help affected employees find new opportunities quickly.</li>
+            <li>✔️ Minimize Business Disruptions – Maintain productivity during restructuring.</li>
+            <li>✔️ Cost-Effective Workforce Transition – Reduce severance costs with rapid job placement.</li>
+        </ul>
+    </section>
+    
+    <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+        <h2 class="text-2xl font-semibold text-blue-600">Our Outplacement Solutions</h2>
+        <div class="grid md:grid-cols-2 gap-6 mt-4 text-gray-700">
+            <div>
+                <h3 class="text-lg font-semibold">Career Counseling & Transition Planning</h3>
+                <ul class="list-disc ml-5">
+                    <li>Personalized career coaching</li>
+                    <li>One-on-one career assessment</li>
+                    <li>Psychometric evaluations</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Resume Writing & LinkedIn Optimization</h3>
+                <ul class="list-disc ml-5">
+                    <li>ATS-friendly resume writing</li>
+                    <li>Professional LinkedIn profile optimization</li>
+                    <li>Cover letter drafting</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Job Search Assistance & Employer Networking</h3>
+                <ul class="list-disc ml-5">
+                    <li>Exclusive access to recruiters</li>
+                    <li>Targeted job matching</li>
+                    <li>Application tracking & interview scheduling</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Interview Preparation & Soft Skills Training</h3>
+                <ul class="list-disc ml-5">
+                    <li>Mock interview sessions</li>
+                    <li>Behavioral & technical interview coaching</li>
+                    <li>Salary negotiation strategies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+        <h2 class="text-2xl font-semibold text-blue-600">Industries We Serve</h2>
+        <div class="grid md:grid-cols-2 gap-4 mt-4 text-gray-700">
+            <ul class="list-disc ml-5">
+                <li>✔️ Information Technology (IT & Software Development)</li>
+                <li>✔️ Banking, Financial Services & Insurance (BFSI)</li>
+                <li>✔️ Healthcare & Pharmaceuticals</li>
+                <li>✔️ Retail & E-commerce</li>
+                <li>✔️ Manufacturing & Engineering</li>
+            </ul>
+            <ul class="list-disc ml-5">
+                <li>✔️ Business Process Outsourcing (BPO) & KPO</li>
+                <li>✔️ Education & EdTech</li>
+                <li>✔️ Hospitality & Tourism</li>
+                <li>✔️ Media & Entertainment</li>
+                <li>✔️ Startups & Small Businesses</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6 text-center">
+        <h2 class="text-2xl font-semibold text-blue-600">Get Started with AssuredJob’s Outplacement Services Today!</h2>
+        <p class="mt-4 text-gray-700">Help your employees transition smoothly, find new opportunities, and build successful careers with AssuredJob!</p>
+        <button class="mt-6 bg-blue-600 text-gray-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Contact Us</button>
+    </section>
+    
+    <footer class="text-center p-4 mt-6 bg-gray-800 text-gray-600">
+        <p>&copy; 2025 AssuredJob. All rights reserved.</p>
+    </footer>
+</body>`},
+    // {id:18,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
+    {id:19,title:'Talent Mapping & Market Intelligence Services | AssuredJob', image:img19 ,content:`<body class="bg-gray-100 text-gray-900">
+    <header class=" text-gray-600  py-6">
+        <h1 class="text-3xl font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
+    </header>
+    
+    <section class="container mx-auto p-6">
+        <p class="text-lg text-gray-700 mb-6">In today’s competitive job market, businesses need a data-driven recruitment strategy to attract and retain top talent. AssuredJob’s Talent Mapping & Market Intelligence Services provide deep industry insights, competitor benchmarking, and workforce planning solutions.</p>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Why Talent Mapping & Market Intelligence is Crucial?</h2>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li>Identify Future Talent Needs – Forecast hiring trends.</li>
+                <li>Gain Competitor Insights – Benchmark against industry leaders.</li>
+                <li>Attract & Retain Top Talent – Understand salary benchmarks.</li>
+                <li>Reduce Hiring Time & Costs – Build a pre-qualified talent pipeline.</li>
+                <li>Enhance Employer Branding – Position your company competitively.</li>
+                <li>Data-Driven Workforce Planning – Make informed hiring decisions.</li>
+            </ul>
+        </div>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-xl font-semibold mb-4">Our Talent Mapping & Market Intelligence Solutions</h2>
+            <ol class="list-decimal pl-6 text-gray-700">
+                <li><strong>Workforce Talent Mapping & Future Hiring Trends:</strong> Analyzing skill availability, market demand & geographical distribution.</li>
+                <li><strong>Competitor Benchmarking & Salary Insights:</strong> Compare hiring trends, salaries, and retention strategies.</li>
+                <li><strong>Industry-Specific Talent Insights & Hiring Analytics:</strong> Real-time hiring trends & demand-supply analysis.</li>
+                <li><strong>AI-Powered Candidate Profiling & Predictive Hiring:</strong> Identifying high-potential candidates with AI-driven assessments.</li>
+                <li><strong>Global Talent Acquisition & Workforce Expansion Planning:</strong> Best hiring locations, remote hiring intelligence.</li>
+            </ol>
+        </div>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-xl font-semibold mb-4">Industries Benefiting from Our Services</h2>
+            <p class="text-gray-700">Our data-driven talent insights & workforce analytics cater to multiple industries, ensuring businesses stay ahead in hiring & workforce planning.</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-gray-700">
+                <p>✔️ IT & Software Development</p>
+                <p>✔️ BFSI & Fintech</p>
+                <p>✔️ Healthcare & Pharmaceuticals</p>
+                <p>✔️ Retail & E-commerce</p>
+                <p>✔️ BPO & KPO</p>
+                <p>✔️ Manufacturing & Engineering</p>
+                <p>✔️ EdTech & Online Learning</p>
+                <p>✔️ Hospitality & Tourism</p>
+                <p>✔️ Logistics & Supply Chain</p>
+            </div>
+        </div>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-xl font-semibold mb-4">Why Choose AssuredJob?</h2>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li>AI-Driven Market Intelligence & Real-time Hiring Trends.</li>
+                <li>Custom Workforce Planning Strategies.</li>
+                <li>Competitive Benchmarking & Salary Analysis.</li>
+                <li>Faster Hiring with Predictive Models.</li>
+                <li>Employer Branding Enhancement.</li>
+                <li>Scalable Talent Acquisition Solutions.</li>
+            </ul>
+        </div>
+    
+        <div class="bg-gray-100 text-gray-600 p-6 rounded-lg shadow-md mt-6 text-center">
+            <h2 class="text-2xl font-semibold">Get Started with AssuredJob’s Talent Mapping & Market Intelligence Today!</h2>
+            <p class="mt-4">✅ Need insights on hiring trends & competitor benchmarking?</p>
+            <p>✅ Want to create a data-driven talent acquisition strategy?</p>
+            <p>✅ Looking to expand your workforce with strategic hiring intelligence?</p>
+            <p class="mt-4 text-lg font-bold">Partner with AssuredJob for Expert Talent Mapping & Market Intelligence Solutions!</p>
+            <button class="mt-6 bg-white text-blue-600 font-bold py-2 px-6 rounded-full shadow-md hover:bg-gray-200">Get Started</button>
+        </div>
+    </section>
+</body>`},
     
   ];
