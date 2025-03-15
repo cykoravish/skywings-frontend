@@ -2,6 +2,7 @@ import img from '../../assets/carrier/herosectionimg.png'
 import { ChevronRight } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 const CareerHeroSection = () => {
     const [openDropdown, setOpenDropdown] = useState(false);
     const handleopen = () => {
@@ -23,14 +24,7 @@ const CareerHeroSection = () => {
                         make a difference.
                     </p>
 
-                    {/* <div className="mt-4 flex flex-col md:flex-row gap-3">
-                        <button className="px-4 py-2 cursor-pointer text-[#000000] rounded-md border border-[#000000]  hover:bg-gray-200">
-                            Join as a Full-Time Employee
-                        </button>
-                        <button className="px-4 py-2 cursor-pointer border border-[#000000] text-[#000000] rounded-md hover:bg-gray-200">
-                            Join as a Freelance Recruiter
-                        </button>
-                    </div> */}
+                  
 
                     <p className="mt-4 text-sm text-[#000000]">
                         Send your resume:{" "}
@@ -51,9 +45,15 @@ const CareerHeroSection = () => {
         openDropdown ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
     }`}
 >
-    <button className="px-4 mt-1.5 ml- bg-white py-2 justify-between flex cursor-pointer  rounded-md   border border-purple-600 text-purple-600  hover:bg-purple-200">
+    <Link
+    to="full_time" 
+    spy={true} 
+    smooth={true} 
+    offset={-80} 
+    duration={600}  
+    className="px-4 mt-1.5 ml- bg-white py-2 justify-between flex cursor-pointer  rounded-md   border border-purple-600 text-purple-600  hover:bg-purple-200">
         <p>Join as a Full-Time Employee</p><ChevronRight size={24} />
-    </button>
+    </Link>
     <button onClick={()=> window.open('https://www.freelancerecruiter.in/', '_blank')} className="px-4 bg-white justify-between flex py-2 cursor-pointer  border border-purple-600 text-purple-600  rounded-md hover:bg-purple-200">
     <p>Join as a Freelance Recruiter</p><ChevronRight size={24} />
         

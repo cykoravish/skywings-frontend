@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-
+import { Element } from 'react-scroll';
 import React, { useState } from "react";
 import CareerHeroSection from '../componentes/Carrier/CareerHeroSection'
 import Card from "../componentes/Carrier/Card";
@@ -87,12 +87,13 @@ const Career = () => {
                         <Card key={index} title={card.title} description={card.description} />
                     ))}
                 </div>
+                <Element name="full_time">
                 <div className='flex justify-between w-full px-7'>
                     <p className='font-semibold'>Open Position (10)</p>
                     <p className='pr-8'>Send Your Resume :careers@assuredjob.com</p>
                 </div>
                 <Cont2 className='z-40'/>
-
+                </Element>
                 <div className="md:hidden w-full flex flex-col items-center relative overflow-hidden my-3">
                     <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${cardIndex * 100}%)`, width: "100%" }}>
                         {cards.map((card, index) => (

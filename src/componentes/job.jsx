@@ -5,6 +5,7 @@ import bag from "./../assets/products/Vector.png";
 import { Link } from "react-router-dom";
 import { FaSearch, FaMapMarkerAlt, FaLocationArrow } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { CalendarDays } from "lucide-react";
 import Cont1 from "./Home/cont1";
 
 function Job() {
@@ -84,14 +85,40 @@ function Job() {
       setIsLoading(false);
     }
   };
-  console.log("jobssss: ", jobs);
+
+  // const filteredJobs = jobs
+  //   .filter((job) => job.title.toLowerCase().includes(jobSearch.toLowerCase()))
+  //   .filter((job) => job.location.toLowerCase().includes(locationSearch.toLowerCase()));
   const filteredJobs = jobs?.results
-    ?.filter((job) =>
-      job?.position_title?.toLowerCase().includes(jobSearch?.toLowerCase())
-    )
-    .filter((job) =>
-      job?.city?.toLowerCase().includes(locationSearch.toLowerCase())
-    );
+    ?.filter((job) => {
+      const jobTitleMatch = job.position_title
+        ?.toLowerCase()
+        .includes(jobSearch.toLowerCase());
+      const companyMatch =
+        job.company && typeof job.company === "string"
+          ? job.company.toLowerCase().includes(jobSearch.toLowerCase())
+          : false;
+
+      return jobTitleMatch || companyMatch;
+    })
+    .filter((job) => {
+      const cityMatch = job.city
+        ?.toLowerCase()
+        .includes(locationSearch.toLowerCase());
+
+      const postalCodeMatch = job.postal_code
+        ?.toString()
+        .includes(locationSearch);
+
+      // Match either city or postal code (or both)
+      return cityMatch || postalCodeMatch;
+    });
+
+  function decodeEntities(encodedString) {
+    const textarea = document.createElement("textarea");
+    textarea.innerHTML = encodedString;
+    return textarea.value;
+  }
 
   return (
     <>
@@ -138,7 +165,9 @@ function Job() {
                 className="w-full pl-10 pr-4 py-2 outline-0 border rounded text-sm md:text-base"
               />
             </div>
-
+            <button className="px-4 text-lg py-2 bg-blue-500 text-white  rounded-lg ">
+              <p>search {jobs.count} jobs</p>
+            </button>
             {/* Submit Button */}
             {/* <button
              type="submit"
@@ -193,11 +222,21 @@ function Job() {
                   <MdLocationOn className="text-purple-500 min-w-5 max-w-5 h-4 sm:w-5 sm:h-5" />{" "}
                   {job.city} {!job.city ? "" : ","} {job.country}
                 </p>
-                <p className="text-gray-600 gap-2.5 flex items-center">
-                  <img src={bag} alt="Experience" className=" w-4 h-4" />{" "}
-                  {job.experience}
-                  <span>{job.job_start_date}</span>
-                </p>
+                <span className="min-h-12 max-h-14 text-gray-600 flex items-center gap-2.5 mb-3">
+                  skills:{" "}
+                  {job.skills &&
+                    decodeEntities(job.skills)
+                      .split(",")
+                      .map((skill) =>
+                        skill.trim().replace(/^"|"$/g, "").slice(0, 10)
+                      ) // trims, removes quotes, limits to 10 chars
+                      .slice(0, 2)
+                      .join(", ")}
+                </span>
+                <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
+                  <CalendarDays />
+                  {job.job_start_date ? job.job_start_date : "Not Specified"}
+                </span>
                 <Link to={`/jobdetails/${job.id}`}>
                   <button className="mt-4 w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg py-1">
                     View Details

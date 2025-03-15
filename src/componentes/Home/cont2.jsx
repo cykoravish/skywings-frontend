@@ -5,6 +5,7 @@ import img2 from "../../assets/products/image 2.png";
 import { MdLocationOn } from "react-icons/md";
 import bag from "../../assets/products/Vector.png";
 import { Link } from "react-router-dom";
+import { CalendarDays } from "lucide-react";
 import {
   FaSearch,
   FaMapMarkerAlt,
@@ -175,31 +176,30 @@ function Cont2() {
   //   .slice(0, 5);
 
   const filteredJobs = jobs?.results
-  ?.filter((job) => {
-    const jobTitleMatch = job.position_title
-      ?.toLowerCase()
-      .includes(jobSearch.toLowerCase());
+    ?.filter((job) => {
+      const jobTitleMatch = job.position_title
+        ?.toLowerCase()
+        .includes(jobSearch.toLowerCase());
+      const companyMatch =
+        job.company && typeof job.company === "string"
+          ? job.company.toLowerCase().includes(jobSearch.toLowerCase())
+          : false;
 
-    const companyMatch =
-      job.company && typeof job.company === "string"
-        ? job.company.toLowerCase().includes(jobSearch.toLowerCase())
-        : false;
+      return jobTitleMatch || companyMatch;
+    })
+    .filter((job) => {
+      const cityMatch = job.city
+        ?.toLowerCase()
+        .includes(locationSearch.toLowerCase());
 
-    return jobTitleMatch || companyMatch;
-  })
-  .filter((job) => {
-    const cityMatch = job.city
-      ?.toLowerCase()
-      .includes(locationSearch.toLowerCase());
+      const postalCodeMatch = job.postal_code
+        ?.toString()
+        .includes(locationSearch);
 
-    const postalCodeMatch = job.postal_code
-      ?.toString()
-      .includes(locationSearch);
-
-    // Match either city or postal code (or both)
-    return cityMatch || postalCodeMatch;
-  })
-  .slice(0, 5);
+      // Match either city or postal code (or both)
+      return cityMatch || postalCodeMatch;
+    })
+    .slice(0, 5);
 
   console.log("filteredJobs:", filteredJobs);
   return (
@@ -246,6 +246,9 @@ function Cont2() {
                 className="w-full pl-10 pr-4 py-2 outline-0 border rounded text-sm md:text-base"
               />
             </div>
+            <button className="px-4 text-lg py-2 bg-blue-500 text-white  rounded-lg ">
+              <p>search {jobs.count} jobs</p>
+            </button>
 
             {/* Submit Button */}
             {/* <button
@@ -297,17 +300,17 @@ function Cont2() {
               </div>
             ) : (
               <>
-              <h2>total jobs: {jobs.count}</h2>
+                {/* <h2>total jobs: {jobs.count}</h2> */}
                 <div
-                  className={`grid ${getGridCols()}  gap-1 mt-6  w-full max-w-6xl`}
+                  className={`grid ${getGridCols()}  gap-2 mt-6  w-full max-w-6xl`}
                 >
                   {filteredJobs?.map((job, index) => (
                     <div
                       key={index}
-                      className="bg-white shadow-md rounded-2xl px-2 md:px-3.5 py-4 md:py-6 border w-full border-gray-200 transition-transform hover:scale-102 hover:shadow-lg min-h-[220px] flex flex-col  "
+                      className="bg-white shadow-md rounded-2xl px-1 md:px-3.5 py-4 md:py-6 border w-full border-gray-200 transition-transform hover:scale-102 hover:shadow-lg min-h-[220px] flex flex-col  "
                     >
                       <div className="">
-                        <h3 className="min-h-[36px] max-h-[52px]  flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold clamp-2-lines">
+                        <h3 className="min-h-[52px] max-h-[52px]  flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold min-clamp-2-lines max-clamp-2-lines">
                           {job.position_title}
                         </h3>
 
@@ -319,7 +322,7 @@ function Cont2() {
                       <div className="pt-5  text-gray-600 space-y-1">
                         <p className="flex items-center space-x-2  text-xs sm:text-sm lg:text-base">
                           <MdLocationOn className="text-purple-500 w-4 h-4 sm:w-5 sm:h-5" />
-                          <span className="flex flex-wrap min-h-8 max-h-12 w-full">
+                          <span className="flex flex-wrap min-h-8 max-h-12 w-full truncate">
                             {job.city} {!job.city ? "" : ","} {job.country}
                           </span>
                         </p>
@@ -329,9 +332,15 @@ function Cont2() {
                             alt="Experience Icon"
                             className="w-4 h-4 sm:w-5 sm:h-5"
                           />
-                          <span>{job.experience}</span>
-                          <span>{job.job_start_date}</span>
+                          <span className="truncate w-full">
+                            {job.experience}
+                          </span>
+                          {/* <span>{job.job_start_date}</span> */}
                         </p>
+                        <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
+                          <CalendarDays />
+                          {job.job_start_date}
+                        </span>
                         <Link to={`/jobdetails/${job.id}`}>
                           <button className="mt-4 w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg py-1">
                             View Details

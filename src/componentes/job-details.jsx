@@ -5,6 +5,8 @@ import bag from "../assets/products/Vector.png";
 import { useState, useEffect, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { useNavigate } from "react-router-dom";
+
+import { format, isToday, isYesterday, parseISO } from "date-fns";
 // Remove the import for static data
 // import { jobs } from "../data";
 
@@ -16,7 +18,19 @@ const JobDetails = () => {
   const toggleModal = () => setIsOpen(!isOpen);
   const closeModal = () => setIsOpen(false);
   const { id } = useParams();
+  const formatJobDate = (dateString) => {
+    if (!dateString) return "Not available";
   
+    const date = parseISO(dateString); // Convert to Date object
+  
+    if (isToday(date)) {
+      return "Today";
+    } else if (isYesterday(date)) {
+      return "Yesterday";
+    } else {
+      return format(date, "do MMM yyyy"); // Example: 12/01/2025
+    }
+  };
   // State for job details and related jobs
   const [job, setJob] = useState(null);
   const [relatedJobs, setRelatedJobs] = useState([]);
@@ -128,7 +142,7 @@ const JobDetails = () => {
                     <h3 className="md:text-lg text-sm font-semibold">
                       {relatedJob.title}
                     </h3>
-                    <p className="text-gray-500">{relatedJob.company}</p>
+                    {/* <p className="text-gray-500">{relatedJob.company}</p> */}
                   </div>
                 </div>
 
@@ -141,6 +155,7 @@ const JobDetails = () => {
                     <img src={bag || "/placeholder.svg"} alt="" />
                     <span>{relatedJob.experience || "Experience not specified"}</span>
                   </p>
+                  <span>{relatedJob.job_start_date || "Date of posting not Found"}</span>
                 </div>
 
                 <button
@@ -173,7 +188,7 @@ const JobDetails = () => {
               <strong>Experience:</strong> {job.experience || "Experience not specified"}
             </p>
             <p className="text-gray-700">
-              <strong>Job posted:</strong> {job.posted || "not available"}
+            <strong>Job posted:</strong> {formatJobDate(job.job_start_date)}
             </p>
             {job.salary && (
               <p className="text-gray-700">
