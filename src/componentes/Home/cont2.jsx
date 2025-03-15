@@ -206,7 +206,7 @@ function Cont2() {
   //   setFilteredJobs(filtered);
   // };
 
-  const filteredJobs = jobs
+  const allfilteredJobs = jobs
   .filter((job) => {
     const jobTitleMatch = job.title?.toLowerCase().includes(jobSearch.toLowerCase());
     const companyMatch = job.company && typeof job.company === "string"
@@ -214,11 +214,12 @@ function Cont2() {
       : false;
     return jobTitleMatch || companyMatch;
   })
-  .filter((job) => job.location?.toLowerCase().includes(locationSearch.toLowerCase()))
-  .slice(0, 5);
+  .filter((job) => job.location?.toLowerCase().includes(locationSearch.toLowerCase()));
 
 
-  const totalJobs = filteredJobs.length;
+  const totalJobs = allfilteredJobs.length;
+  
+const filteredJobs = allfilteredJobs.slice(0, 5);
 
   return (
     <>
