@@ -6,6 +6,7 @@ import img2 from "../../assets/products/image 2.png";
 import { MdLocationOn } from "react-icons/md";
 import bag from "../../assets/products/Vector.png";
 import { Link } from "react-router-dom";
+import { CalendarDays } from 'lucide-react';
 import { FaSearch, FaMapMarkerAlt, FaLocationArrow, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -216,6 +217,9 @@ function Cont2() {
   .filter((job) => job.location?.toLowerCase().includes(locationSearch.toLowerCase()))
   .slice(0, 5);
 
+
+  const totalJobs = filteredJobs.length;
+
   return (
     <>
     <div className="bg-gray-100  z-30 sticky top-15 sm:top-15 md:top-21 w-full ">
@@ -260,6 +264,9 @@ function Cont2() {
         className="w-full pl-10 pr-4 py-2 outline-0 border rounded text-sm md:text-base"
       />
     </div>
+    <button className='px-4 text-lg py-2 bg-blue-500 text-white  rounded-lg '>
+  <p>search { totalJobs ?? '...'} jobs</p>
+</button>
     
     {/* Submit Button */}
     {/* <button
@@ -307,16 +314,16 @@ function Cont2() {
           <div className="text-red-500 bg-red-100 p-4 rounded-lg">{error}</div>
         ) : (
           <>
-            <div className={`grid ${getGridCols()}  gap-1 mt-6  w-full max-w-6xl`}>
+            <div className={`grid ${getGridCols()}  gap-2 mt-6  w-full max-w-6xl`}>
             
               
             {filteredJobs.map((job, index) => (
   <div
     key={index}
-    className="bg-white shadow-md rounded-2xl px-2 md:px-3.5 py-4 md:py-6 border w-full border-gray-200 transition-transform hover:scale-102 hover:shadow-lg min-h-[220px] flex flex-col  "
+    className="bg-white shadow-md rounded-2xl px-1 md:px-3.5 py-4 md:py-6 border w-full border-gray-200 transition-transform hover:scale-102 hover:shadow-lg min-h-[220px] flex flex-col  "
   >
     <div className="">
-    <h3 className="min-h-[36px] max-h-[52px]  flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold clamp-2-lines">
+    <h3 className="min-h-[52px] max-h-[52px]  flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold min-clamp-2-lines max-clamp-2-lines">
   {job.title}
 </h3>
 
@@ -329,7 +336,7 @@ function Cont2() {
     <div className="pt-5  text-gray-600 space-y-1">
     <p className="flex items-center space-x-2  text-xs sm:text-sm lg:text-base">
   <MdLocationOn className="text-purple-500 w-4 h-4 sm:w-5 sm:h-5" />
-  <span className="flex flex-wrap min-h-8 max-h-12 w-full">{job.location}</span>
+  <span className="flex flex-wrap min-h-8 max-h-12 w-full truncate">{job.location}</span>
 </p>
       <p className="flex min-h-10 max-h-10 items-center text-xs sm:text-sm lg:text-base space-x-2">
         <img
@@ -337,9 +344,12 @@ function Cont2() {
           alt="Experience Icon"
           className="w-4 h-4 sm:w-5 sm:h-5"
         />
-        <span>{job.experience}</span>
-        <span>{job.job_start_date}</span>
+      <span className="truncate w-full">{job.experience}</span>
+        {/* <span>{job.job_start_date}</span> */}
       </p>
+      <span className='flex gap-2 space-x-2.5 text-blue-500 font-semibold'>
+      <CalendarDays/>
+        {job.job_start_date}</span>
        <Link to={`/jobdetails/${job.id}`}>
                         <button className="mt-4 w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg py-1">
                           View Details
