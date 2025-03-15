@@ -83,7 +83,7 @@ const Cont6 = () => {
         ))}
         </div>
         <div className="flex justify-center  mt-5">
-           <img src={groupImage} alt="Responsive Image" class="max-w-full h-auto" />
+           <img src={groupImage} alt="Responsive Image" className="max-w-full h-auto" />
         </div>
         <div className="text">
            <h1 className="text-2xl font-medium">Still have Question ?</h1>
