@@ -5,7 +5,7 @@ import { FaYoutube } from "react-icons/fa";
 function SocialmediaConn() {
   return (
     <>
-       <div className=" bg-white px-1 my-auto fixed z-50 right-1 top-1/2 transform -translate-y-1/2 grid  gap-5 hover:gap-5 transition-all duration-[1000ms]">
+       <div className=" bg-white px-1 my-auto fixed z-50 left-1 top-1/2 transform -translate-y-1/2 grid  gap-5 hover:gap-5 transition-all duration-[1000ms]">
 
 
        <Link

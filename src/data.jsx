@@ -816,7 +816,7 @@ import {useNavigate} from 'react-router-dom'
     <main class="max-w-6xl mx-auto p-6">
         <section class="bg-white p-6 rounded-lg shadow-md mb-6">
             <h2 class="text-2xl font-semibold mb-4">Why Invest in an Internship & Articleship Program?</h2>
-            <ul class="list-disc list-inside space-y-2">
+            <ul class="list-none list-inside space-y-2">
                 <li>✔️ Build a Talent Pipeline – Identify high-potential candidates for future hiring.</li>
                 <li>✔️ Cost-Effective Workforce Support – Get skilled interns & trainees at minimal hiring costs.</li>
                 <li>✔️ Enhance Brand Visibility – Strengthen your employer branding by offering structured programs.</li>
@@ -882,7 +882,7 @@ import {useNavigate} from 'react-router-dom'
         <section class="bg-gray-100 text-gray-600 p-6 rounded-lg text-center">
             <h2 class="text-2xl font-semibold mb-4">Get Started with AssuredJob’s Internship & Articleship Programs Today!</h2>
             <p class="mb-4">Bridge the skill gap, nurture young talent, and create future leaders with AssuredJob.</p>
-            <button class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
+            <button  class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
                 Contact Us
             </button>
         </section>

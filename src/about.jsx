@@ -7,7 +7,7 @@ const About =()=>{
         <>
         <Cont7/>
         <Cont9/>
-        <Cont8/>
+        {/* <Cont8/> */}
         </>
     )
 }

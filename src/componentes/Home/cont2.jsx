@@ -350,7 +350,7 @@ const filteredJobs = allfilteredJobs.slice(0, 5);
       </p>
       <span className='flex gap-2 space-x-2.5 text-blue-500 font-semibold'>
       <CalendarDays/>
-        {job.job_start_date}</span>
+        {job.job_start_date ?? 'Not specified'}</span>
        <Link to={`/jobdetails/${job.id}`}>
                         <button className="mt-4 w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg py-1">
                           View Details

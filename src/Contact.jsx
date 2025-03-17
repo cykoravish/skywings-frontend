@@ -166,17 +166,45 @@ function Contact() {
     className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-400"
   >
     <option value="" disabled selected>
-      Select a city
-    </option>
-    <option value="new-york">New York</option>
-    <option value="los-angeles">Los Angeles</option>
-    <option value="chicago">Chicago</option>
-    <option value="houston">Houston</option>
-    <option value="miami">Miami</option>
-    <option value="london">London</option>
-    <option value="paris">Paris</option>
-    <option value="tokyo">Tokyo</option>
-    <option value="sydney">Sydney</option>
+  Select a city
+</option>
+<option value="mumbai">Mumbai</option>
+<option value="delhi">Delhi</option>
+<option value="bangalore">Bangalore</option>
+<option value="hyderabad">Hyderabad</option>
+<option value="chennai">Chennai</option>
+<option value="kolkata">Kolkata</option>
+<option value="pune">Pune</option>
+<option value="jaipur">Jaipur</option>
+<option value="ahmedabad">Ahmedabad</option>
+<option value="lucknow">Lucknow</option>
+<option value="chandigarh">Chandigarh</option>
+<option value="bhopal">Bhopal</option>
+<option value="indore">Indore</option>
+<option value="patna">Patna</option>
+<option value="kochi">Kochi</option>
+<option value="bhubaneswar">Bhubaneswar</option>
+<option value="visakhapatnam">Visakhapatnam</option>
+<option value="nagpur">Nagpur</option>
+<option value="surat">Surat</option>
+<option value="varanasi">Varanasi</option>
+<option value="guwahati">Guwahati</option>
+<option value="dehradun">Dehradun</option>
+<option value="madurai">Madurai</option>
+<option value="coimbatore">Coimbatore</option>
+<option value="amritsar">Amritsar</option>
+<option value="meerut">Meerut</option>
+<option value="ranchi">Ranchi</option>
+<option value="vadodara">Vadodara</option>
+<option value="nashik">Nashik</option>
+<option value="rajkot">Rajkot</option>
+<option value="mysore">Mysore</option>
+<option value="trivandrum">Thiruvananthapuram</option>
+<option value="jodhpur">Jodhpur</option>
+<option value="udaipur">Udaipur</option>
+<option value="gwalior">Gwalior</option>
+<option value="jamshedpur">Jamshedpur</option>
+
   </select>
 </div>
 

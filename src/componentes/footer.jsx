@@ -24,10 +24,9 @@ const Footer = () => {
           <div className="first ">
             <img src={logo} alt="Logo" className="mb-6 w-32" />
             <p className="text-gray-600 mb-6 w-40 lg:w-full">
-              Clarity gives you the blocks and components you need to create a
-              truly professional website.
+             
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <FaTwitter className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-blue-500" />
               <a
                 href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
@@ -38,7 +37,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/assuredjob/" target="_blank">
                 <FaInstagram className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-pink-500" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Second Section (Company Links) */}
@@ -57,9 +56,9 @@ const Footer = () => {
               <li onClick={()=>{navigate('/services'), window.scrollTo(0,0)}} className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
                 Services
               </li>
-              <li className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
+              {/* <li className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
                 Industries
-              </li>
+              </li> */}
             </ul>
           </div>
 
