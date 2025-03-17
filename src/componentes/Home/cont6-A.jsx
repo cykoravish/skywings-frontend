@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import group from "../../assets/products/Group (1).png";
 import group2 from "../../assets/products/Group.png";

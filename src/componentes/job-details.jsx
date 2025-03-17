@@ -43,12 +43,13 @@ const JobDetails = () => {
       try {
         setLoading(true);
         const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs/${id}`);
-        
+
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         
         const data = await response.json();
+        console.log("single job api data: ", data);
         setJob(data);
         setError(null);
       } catch (err) {
