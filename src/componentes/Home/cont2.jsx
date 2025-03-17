@@ -202,6 +202,13 @@ function Cont2() {
     .slice(0, 5);
 
   console.log("filteredJobs:", filteredJobs);
+
+  function decodeEntities(encodedString) {
+    const textarea = document.createElement("textarea");
+    textarea.innerHTML = encodedString;
+    return textarea.value;
+  }
+
   return (
     <>
       <div className="bg-gray-100  z-30 sticky top-15 sm:top-15 md:top-21 w-full ">
@@ -327,14 +334,25 @@ function Cont2() {
                           </span>
                         </p>
                         <p className="flex min-h-10 max-h-10 items-center text-xs sm:text-sm lg:text-base space-x-2">
-                          <img
+                        <span className="min-h-12 max-h-14 text-gray-600 flex items-center gap-2.5 mb-3">
+                  skills:{" "}
+                  {job.skills &&
+                    decodeEntities(job.skills)
+                      .split(",")
+                      .map((skill) =>
+                        skill.trim().replace(/^"|"$/g, "").slice(0, 10)
+                      ) // trims, removes quotes, limits to 10 chars
+                      .slice(0, 2)
+                      .join(", ")}
+                </span>
+                          {/* <img
                             src={bag || "/placeholder.svg"}
                             alt="Experience Icon"
                             className="w-4 h-4 sm:w-5 sm:h-5"
                           />
                           <span className="truncate w-full">
                             {job.experience}
-                          </span>
+                          </span> */}
                           {/* <span>{job.job_start_date}</span> */}
                         </p>
                         <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
