@@ -6,7 +6,7 @@ import img6 from './assets/service/image39.png'
 import img7 from './assets/service/image40.png'
 import img9 from './assets/service/image43.png'
 import img8 from './assets/service/image51.png';
-import img18 from './assets/service/image40.png'
+import img18 from './assets/service/image42.png'
 import img11 from './assets/service/image44.png'
 import img12 from './assets/service/image45.png'
 import img13 from './assets/service/image46.png'
