@@ -7,11 +7,11 @@ function PrivacyPolicy() {
       {/* <span className="bg-purple-200 text-purple-700 text-xs font-semibold px-3 py-1 my-2 rounded-full">
         COOKIE POLICY
       </span>{" "} */}
-      <p><strong>Effective Date:</strong> [Insert Date]</p>
-      <p><strong>Last Updated:</strong> [Insert Date]</p>
+      <p><strong>Effective Date:</strong> </p>
+      <p><strong>Last Updated:</strong> </p>
       
       <h2 className="text-xl font-semibold mt-4">Introduction</h2>
-      <p>At AssuredJob.com ("we," "us," or "our"), we use cookies and similar tracking technologies to improve your browsing experience, analyze website traffic, and personalize content. This Cookie Policy explains what cookies are, how we use them, and how you can manage your preferences.</p>
+      <p>At AssuredJob.com , we use cookies and similar tracking technologies to improve your browsing experience, analyze website traffic, and personalize content. This Cookie Policy explains what cookies are, how we use them, and how you can manage your preferences.</p>
       <p>By continuing to use our website, you consent to our use of cookies in accordance with this policy.</p>
       
       <h2 className="text-xl font-semibold mt-4">What Are Cookies?</h2>
