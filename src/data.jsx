@@ -5,7 +5,8 @@ import img5 from './assets/service/image38.png'
 import img6 from './assets/service/image39.png'
 import img7 from './assets/service/image40.png'
 import img9 from './assets/service/image43.png'
-
+import img8 from './assets/service/image51.png';
+import img18 from './assets/service/image40.png'
 import img11 from './assets/service/image44.png'
 import img12 from './assets/service/image45.png'
 import img13 from './assets/service/image46.png'
@@ -697,7 +698,7 @@ import {useNavigate} from 'react-router-dom'
            
         </section>
     </div>`, button:' Hire Now'},
-    // {id:4, title: "Executive Search", image: img4 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
+    {id:4, title: "Executive Search", image: img8 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
     {id:5, title: "Recruitment Process Outsourcing (RPO) Services | AssuredJob", image: img5, content:`<div class="max-w-4xl mx-auto p-6">
         <h2 class="text-3xl font-bold  text-gray-700">Streamline Your Hiring with AssuredJob’s RPO Solutions</h2>
         <p class="mt-4 text-lg text-gray-700">Struggling with high-volume hiring, talent shortages, or lengthy recruitment cycles?</p>
@@ -877,7 +878,7 @@ import {useNavigate} from 'react-router-dom'
            
         </section>
     </main>`, button:' Contact Us'},
-    {id:9, title: "Onboarding and Training Support | AssuredJob", image: img9, content : `<section class="max-w-5xl mx-auto p-6">
+    {id:8, title: "Onboarding and Training Support | AssuredJob", image: img9, content : `<section class="max-w-5xl mx-auto p-6">
         <h2 class="text-3xl font-bold text-gray-600">Seamless Employee Onboarding & Training for a Productive Workforce</h2>
         <p class="mt-4">A well-structured onboarding and training program is essential for employee engagement, productivity, and retention. At AssuredJob, we provide comprehensive onboarding & training support to help businesses integrate new hires smoothly and equip them with the skills & knowledge needed to succeed in their roles.</p>
     </section>
@@ -1024,7 +1025,7 @@ import {useNavigate} from 'react-router-dom'
         <p class="mt-2">Need structured onboarding or upskilling programs?</p>
         
     </footer>`, button:' Contact Us'},
-    {id:12, title: "Pre-Placement Recruitment Services | AssuredJob", image: img12, content:`<!-- Hero Section -->
+    {id:9, title: "Pre-Placement Recruitment Services | AssuredJob", image: img12, content:`<!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
         <h1 class="text-3xl font-bold">Hire Top Talent Early with Pre-Placement Offer (PPO) Recruitment</h1>
         <p class="mt-2 text-lg">Connect with high-potential candidates before they enter the workforce.</p>
@@ -1117,7 +1118,7 @@ import {useNavigate} from 'react-router-dom'
         <p class="mt-2">Secure top talent before they enter the job market.</p>
        
     </footer>`, button:' Contact Us' },
-    {id:13,title:'Remote Talent Pooling Services | AssuredJob', image:img13, content:`<body class="bg-gray-100">
+    {id:10,title:'Remote Talent Pooling Services | AssuredJob', image:img13, content:`<body class="bg-gray-100">
 
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
@@ -1311,7 +1312,7 @@ import {useNavigate} from 'react-router-dom'
     </footer>
 
 </body>`},
-    {id:15,title:'Labour Compliance Management Services | AssuredJob', image:img15, content:`<div class="max-w-5xl mx-auto p-6">
+    {id:12,title:'Labour Compliance Management Services | AssuredJob', image:img15, content:`<div class="max-w-5xl mx-auto p-6">
         <h2 class="text-3xl font-bold text-gray-700">Ensure 100% Compliance with Indian Labour Laws & Regulations</h2>
         <p class="mt-4 text-lg">AssuredJob provides end-to-end labour compliance management services, ensuring businesses stay legally compliant while focusing on their core operations.</p>
 
@@ -1361,7 +1362,7 @@ import {useNavigate} from 'react-router-dom'
         <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Labour Compliance Management Today!</h2>
         <p class="mt-4 text-lg">Stay compliant, avoid legal risks, and streamline workforce management with AssuredJob’s expert labour compliance solutions!</p>
     </div>`, button:' Contact Us'},
-    {id:16,title:'Freelance Recruiter Program | AssuredJob', image:img16 ,content:`<body class="bg-gray-100 font-sans">
+    {id:13,title:'Freelance Recruiter Program | AssuredJob', image:img16 ,content:`<body class="bg-gray-100 font-sans">
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
         <h1 class="text-3xl font-bold">Earn Big with AssuredJob’s Freelance Recruiter Program</h1>
@@ -1528,7 +1529,7 @@ import {useNavigate} from 'react-router-dom'
     
     
 </body>`, button:' Contact us '},
-    // {id:18,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
+    {id:16,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
     {id:19,title:'Talent Mapping & Market Intelligence Services | AssuredJob', image:img19 ,content:`<body class="bg-gray-100 text-gray-900">
     <header class=" text-gray-600  py-6">
         <h1 class="text-3xl font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
