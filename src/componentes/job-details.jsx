@@ -3,7 +3,7 @@ import { MdLocationOn } from "react-icons/md";
 import { useParams } from "react-router-dom";
 import bag from "../assets/products/Vector.png";
 import { useState, useEffect, useRef } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 
 import { format, isToday, isYesterday, parseISO } from "date-fns";
@@ -14,15 +14,15 @@ const JobDetails = () => {
   const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
   const form = useRef();
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleModal = () => setIsOpen(!isOpen);
-  const closeModal = () => setIsOpen(false);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const toggleModal = () => setIsOpen(!isOpen);
+  // const closeModal = () => setIsOpen(false);
   const { id } = useParams();
   const formatJobDate = (dateString) => {
     if (!dateString) return "Not available";
-  
+
     const date = parseISO(dateString); // Convert to Date object
-  
+
     if (isToday(date)) {
       return "Today";
     } else if (isYesterday(date)) {
@@ -42,12 +42,14 @@ const JobDetails = () => {
     const fetchJobDetails = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs/${id}`);
+        const response = await fetch(
+          `${import.meta.env.VITE_API_URL}/api/jobs/${id}`
+        );
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        
+
         const data = await response.json();
         console.log("single job api data: ", data);
         setJob(data);
@@ -57,7 +59,9 @@ const JobDetails = () => {
         setError("Failed to load job details. Please try again later.");
         // Fallback to local data if API fails
         import("../data").then((module) => {
-          const localJob = module.jobs.find(j => j.id.toString() === id.toString());
+          const localJob = module.jobs.find(
+            (j) => j.id.toString() === id.toString()
+          );
           if (localJob) {
             setJob(localJob);
           }
@@ -69,19 +73,23 @@ const JobDetails = () => {
 
     const fetchRelatedJobs = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs`);
-        
+        const response = await fetch(
+          `${import.meta.env.VITE_API_URL}/api/jobs`
+        );
+
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        
+
         const data = await response.json();
-        setRelatedJobs(data.filter(j => j.id.toString() !== id.toString()));
+        setRelatedJobs(data.filter((j) => j.id.toString() !== id.toString()));
       } catch (err) {
         console.error("Error fetching related jobs:", err);
         // Fallback to local data if API fails
         import("../data").then((module) => {
-          setRelatedJobs(module.jobs.filter(j => j.id.toString() !== id.toString()));
+          setRelatedJobs(
+            module.jobs.filter((j) => j.id.toString() !== id.toString())
+          );
         });
       }
     };
@@ -94,18 +102,18 @@ const JobDetails = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_0czxrfs', 'template_vjhksjv', form.current, {
-        publicKey: 'qiG11gfWE86es3ObM',
+      .sendForm("service_0czxrfs", "template_vjhksjv", form.current, {
+        publicKey: "qiG11gfWE86es3ObM",
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("SUCCESS!");
           alert(`Applied successfully: ${job.title}`);
-          closeModal();
+          // closeModal();
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log("FAILED...", error.text);
+        }
       );
   };
 
@@ -153,9 +161,13 @@ const JobDetails = () => {
                   </p>
                   <p className="flex items-center text-sm lg:text-base space-x-2">
                     <img src={bag || "/placeholder.svg"} alt="" />
-                    <span>{relatedJob.experience || "Experience not specified"}</span>
+                    <span>
+                      {relatedJob.experience || "Experience not specified"}
+                    </span>
                   </p>
-                  <span>{relatedJob.job_start_date || "Date of posting not Found"}</span>
+                  <span>
+                    {relatedJob.job_start_date || "Date of posting not Found"}
+                  </span>
                 </div>
 
                 <button
@@ -175,9 +187,7 @@ const JobDetails = () => {
         {/* ------------------------- Job Details (Right Side) ------------------------- */}
         <div className="bg-white w-full md:w-6/12 p-6 rounded-lg shadow-lg">
           <div>
-            <h2 className="text-2xl font-bold text-purple-600">
-              {job.title}
-            </h2>
+            <h2 className="text-2xl font-bold text-purple-600">{job.title}</h2>
             <p className="mt-2 text-gray-700">
               <strong>Company:</strong> {job.company}
             </p>
@@ -185,10 +195,11 @@ const JobDetails = () => {
               <strong>Location:</strong> {job.location}
             </p>
             <p className="text-gray-700">
-              <strong>Experience:</strong> {job.experience || "Experience not specified"}
+              <strong>Experience:</strong>{" "}
+              {job.experience || "Experience not specified"}
             </p>
             <p className="text-gray-700">
-            <strong>Job posted:</strong> {formatJobDate(job.job_start_date)}
+              <strong>Job posted:</strong> {formatJobDate(job.job_start_date)}
             </p>
             {job.salary && (
               <p className="text-gray-700">
@@ -211,32 +222,40 @@ const JobDetails = () => {
             <div className="mt-4">
               <h3 className="text-lg font-semibold">Key Responsibilities:</h3>
               <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-600">
-                {Array.isArray(job.details.responsibilities) ? 
+                {Array.isArray(job.details.responsibilities) ? (
                   job.details.responsibilities.map((resp, idx) => (
                     <li key={idx}>{resp}</li>
-                  )) : 
-                  <li>{job.details.responsibilities || "No responsibilities specified"}</li>
-                }
+                  ))
+                ) : (
+                  <li>
+                    {job.details.responsibilities ||
+                      "No responsibilities specified"}
+                  </li>
+                )}
               </ul>
             </div>
 
-            {job.details?.qualifications && job.details.qualifications.length > 0 && (
-              <div className="mt-4">
-                <h3 className="text-lg font-semibold">Qualifications:</h3>
-                <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-600">
-                  {job.details.qualifications.map((qual, idx) => (
-                    <li key={idx}>{qual}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            {job.details?.qualifications &&
+              job.details.qualifications.length > 0 && (
+                <div className="mt-4">
+                  <h3 className="text-lg font-semibold">Qualifications:</h3>
+                  <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                    {job.details.qualifications.map((qual, idx) => (
+                      <li key={idx}>{qual}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
             {job.details?.skills && job.details.skills.length > 0 && (
               <div className="mt-4">
                 <h3 className="text-lg font-semibold">Skills:</h3>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {job.details.skills.map((skill, idx) => (
-                    <span key={idx} className="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-sm">
+                    <span
+                      key={idx}
+                      className="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-sm"
+                    >
                       {skill}
                     </span>
                   ))}
@@ -246,7 +265,8 @@ const JobDetails = () => {
 
             <div className="mt-4">
               <p className="text-gray-600">
-                <strong>Total Experience:</strong> {job.experience || "Experience not specified"}
+                <strong>Total Experience:</strong>{" "}
+                {job.experience || "Experience not specified"}
               </p>
               <p className="text-gray-600">
                 <strong>Work Location:</strong> {job.location}
@@ -257,10 +277,11 @@ const JobDetails = () => {
                 </p>
               )}
             </div>
-
+{console.log("apply url: ", job)}
             <button
               className="mt-4 py-2 px-4 bg-green-600 text-white rounded-lg hover:bg-green-700"
-              onClick={toggleModal}
+              // onClick={toggleModal}
+              onClick={() => window.open(job.apply_job, '_blank')}
             >
               Apply Now
             </button>
@@ -269,13 +290,12 @@ const JobDetails = () => {
       </div>
 
       {/*--------------------------- Modal toggle--------------------- */}
-      {isOpen && (
+      {/* {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 p-4 bg-gray-50">
           <div
             className="relative w-full h-fit sm:max-w-md md:max-w-lg lg:max-w-xl bg-white rounded-lg shadow-lg p-6 dark:bg-gray-800"
             style={{ boxShadow: "10px 10px #2979FE" }}
           >
-            {/* Modal Header */}
             <div className="flex justify-between items-center pb-4 border-b">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                 User Information
@@ -289,9 +309,7 @@ const JobDetails = () => {
             </div>
 
             <div className="">
-              {/* Modal Body */}
               <form className="space-y-2" ref={form} onSubmit={sendEmail}>
-                {/* Name */}
                 <div>
                   <label className="block text-gray-600 text-sm font-medium">
                     Name
@@ -316,12 +334,14 @@ const JobDetails = () => {
                   />
                 </div>
 
-                {/* Gender */}
                 <div>
                   <label className="block text-gray-600 text-sm font-medium">
                     Gender
                   </label>
-                  <select className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                  <select
+                    className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    required
+                  >
                     <option value="">Select Gender</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
@@ -329,7 +349,6 @@ const JobDetails = () => {
                   </select>
                 </div>
 
-                {/* Contact */}
                 <div>
                   <label className="block text-gray-600 text-sm font-medium">
                     Contact
@@ -342,7 +361,6 @@ const JobDetails = () => {
                   />
                 </div>
 
-                {/* Email */}
                 <div>
                   <label className="block text-gray-600 text-sm font-medium">
                     Email
@@ -356,7 +374,6 @@ const JobDetails = () => {
                   />
                 </div>
 
-                {/* Country */}
                 <div>
                   <label className="block text-gray-600 text-sm font-medium">
                     Country
@@ -369,7 +386,6 @@ const JobDetails = () => {
                   />
                 </div>
 
-                {/* City */}
                 <div>
                   <label className="block text-gray-600 text-sm font-medium">
                     City
@@ -382,7 +398,6 @@ const JobDetails = () => {
                   />
                 </div>
 
-                {/* Buttons */}
                 <div className="flex flex-col sm:flex-row justify-between gap-2 mt-4">
                   <div className="w-full sm:w-1/2">
                     <input
@@ -390,17 +405,17 @@ const JobDetails = () => {
                       className="w-full border border-purple-500 text-purple-600 py-2 rounded-lg cursor-pointer file:mr-2 file:py-1 file:px-2 file:border file:rounded-lg file:bg-purple-500 file:text-white hover:file:bg-purple-700"
                     />
                   </div>
-                  <input 
-                    className="w-full sm:w-1/2 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 cursor-pointer" 
-                    type="submit" 
-                    value="Send" 
+                  <input
+                    className="w-full sm:w-1/2 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 cursor-pointer"
+                    type="submit"
+                    value="Send"
                   />
                 </div>
               </form>
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
