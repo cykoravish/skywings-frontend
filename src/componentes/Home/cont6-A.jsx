@@ -8,11 +8,16 @@ import logo from "../../assets/Brand/logo_.png";
 import logo1 from "../../assets/Brand/name.png";
 import gro from "../../assets/Brand/e.png";
 import first from "../../assets/Brand/first.png";
-
 import grou from "../../assets/Brand/hhhh.jpg";
+import a from '../../assets/Brand/b.webp'
+import b from '../../assets/Brand/c.png';
+import c from '../../assets/Brand/d.webp';
+import d from '../../assets/Brand/e.png';
+import f from '../../assets/Brand/f.png';
+import g from '../../assets/Brand/g.webp'
 
 
-const images = [img1, img2, group2, , logo, logo1, gr, , gro, , grou,first];
+const images = [img1, img2, group2, , logo, logo1, gr, , gro, , grou,first, a, b,c,d ,f,g];
 
 const Cont6A = () => {
   return (
