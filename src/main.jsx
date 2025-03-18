@@ -17,6 +17,8 @@ import Fresher from './componentes/fresher'
 import DetailService from './componentes/DetailService'
 import Nws from './componentes/news/Nws'
 import Upload from './componentes/Upload'
+import Faq from './componentes/Faq'
+import PrivacyPolicy from './componentes/PrivacyPolicy'
 
 
 
@@ -36,7 +38,9 @@ const router = createBrowserRouter([
     {path: '/carrers', element: <Career/>},
     {path:'/fresher', element: <Fresher/>},
     {path:'/DetailService/:id', element: <DetailService/>},
-    {path:'/upload', element: <Upload/>}
+    {path:'/upload', element: <Upload/>},
+    {path:'/faq', element: <Faq/>},
+    {path:'/policy', element: <PrivacyPolicy/>},
 
 
 

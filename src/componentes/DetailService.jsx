@@ -27,11 +27,14 @@ function DetailService() {
   </div>
 
   {/* Right Section - Text Content */}
-  <div className="md:w-1/2 w-full flex flex-col justify-center p-4 ">
+  <div className="md:w-1/2 w-full bg-gray-50 flex flex-col justify-center p-4 ">
     <h3 className="text-lg md:text-2xl font-semibold mb-2">{service.title}</h3>
-    <p className="w-full h-[400px] overflow-auto text-base md:text-lg leading-relaxed  border-4 rounded-lg  border-gray-100 bg-gray-50 px-3.5 " dangerouslySetInnerHTML={{ __html: service.content }}>
+    <p className="w-full h-[400px] overflow-auto text-base md:text-lg leading-relaxed rounded-lg    " dangerouslySetInnerHTML={{ __html: service.content }}>
       {/* {service.content} */}
       </p>
+      <button onClick={()=>navigate('/contact')} className='flex justify-center mx-auto bg-blue-500 text-white cursor-pointer px-10  font-semibold text-xl rounded-lg mt-3.5  w-48'>
+      {service.button}
+    </button>
   </div>
 </div>
 

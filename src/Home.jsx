@@ -16,7 +16,7 @@ const Home=()=>{
       <Cont3></Cont3>
       <Cont4></Cont4>
       <Cont5></Cont5>
-      <Cont6></Cont6>
+      {/* <Cont6></Cont6> */}
       {/* <Cont6B></Cont6B> */}
 
       

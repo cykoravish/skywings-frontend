@@ -49,7 +49,7 @@ export default function Cont4() {
       <h2 className="text-lg text-purple-600 mt-4">
         Our complete assistance will be with you and we guide you accordingly.
       </h2>
-      <div className="flex flex-wrap justify-center gap-5 mt-6 px-4 ">
+      <div className="flex flex-wrap justify-center gap-5 mt-6 mx-10 px-10">
         {industries.map((industry, index) => (
           <div
             key={index}

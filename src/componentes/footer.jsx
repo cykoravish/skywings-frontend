@@ -4,6 +4,8 @@ import { HiPhone, HiMail } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import {useState} from 'react'
 import { Mail } from 'lucide-react';
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("")
@@ -26,18 +28,27 @@ const Footer = () => {
             <p className="text-gray-600 mb-6 w-40 lg:w-full">
              
             </p>
-            {/* <div className="flex gap-4">
-              <FaTwitter className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-blue-500" />
+            <div className="flex gap-4">
+            <a
+                href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
+                  target="_blank"
+              >
+                <FaLinkedinIn className="border border-blue-500 w-12 h-12 p-2 rounded-xl text-blue-600 hover:text-blue-700" />
+              </a>
+             
               <a
                 href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
                   target="_blank"
               >
-                <FaFacebook className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-blue-700" />
+                <FaFacebook className="border border-blue-500 w-12 h-12 p-2 rounded-full text-blue-600 hover:text-blue-700" />
               </a>
               <a href="https://www.instagram.com/assuredjob/" target="_blank">
-                <FaInstagram className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-pink-500" />
+                <FaInstagram className="border border-red-400 w-12 h-12 p-2 rounded-full text-red-600 hover:text-pink-500" />
               </a>
-            </div> */}
+              <a href="https://www.instagram.com/assuredjob/" target="_blank">
+                <FaXTwitter className="border border-black w-12 h-12 p-2 rounded-full text-black hover:text-black" />
+              </a>
+            </div>
           </div>
 
           {/* Second Section (Company Links) */}
@@ -69,9 +80,13 @@ const Footer = () => {
               <p className="font-bold text-blue-500 hover:text-blue-700 mb-2">
                 LEGAL
               </p>
-              <li className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
+             
+<li onClick={() => {navigate('/policy'), window.scrollTo(0,0)}} className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
                 Privacy Policy
               </li>
+
+
+
               <li className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
                 Terms & Conditions
               </li>
@@ -143,13 +158,18 @@ const Footer = () => {
           {/* Logo and Tagline */}
           <img src={logo} alt="SkyWings Logo" className="h-16 mb-4" />
           <p className="text-gray-600 mb-6 w-75">
-            Clarity gives you the blocks and components you need to create a
-            truly professional website.
+          
           </p>
 
           {/* Social Media Icons */}
           <div className="flex gap-4">
-            <FaTwitter className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-blue-500" />
+          <a
+              href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <FaLinkedinIn className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-blue-700" />
+            </a>
+           
             <a
               href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
               target="_blank"
@@ -158,6 +178,9 @@ const Footer = () => {
             </a>
             <a href="https://www.instagram.com/assuredjob/" target="_blank">
               <FaInstagram className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-pink-500" />
+            </a>
+            <a href="https://www.instagram.com/assuredjob/" target="_blank">
+              <FaXTwitter className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-black" />
             </a>
           </div>
 

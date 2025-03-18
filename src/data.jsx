@@ -1,22 +1,19 @@
-import img1 from "./assets/products/image33.png"
-import img2 from './assets/products/image 35.png'
-import img3 from './assets/products/image36.png'
-import img4 from './assets/products/image 37.png'
-import img5 from './assets/products/image 38.png'
-import img6 from './assets/products/image 39.png'
-import img7 from './assets/products/image 40.png'
-import img8 from './assets/products/image 41.png'
-import img9 from './assets/products/image 42.png'
-import img10 from './assets/products/image 43.png'
-import img11 from './assets/products/image 44.png'
-import img12 from './assets/products/image 45.png'
-import img13 from './assets/products/image 46.png'
-import img14 from './assets/products/image 47.png'
-import img15 from './assets/products/image 48.png'
-import img16 from './assets/products/image 49.png'
-import img17 from './assets/products/image 50.png'
-import img18 from './assets/products/image 51.png'
-import img19 from './assets/products/image 52.png'
+import img1 from "./assets/service/image33.png"
+import img2 from './assets/service/image35.png'
+import img3 from './assets/service/image36.png'
+import img5 from './assets/service/image38.png'
+import img6 from './assets/service/image39.png'
+import img7 from './assets/service/image40.png'
+import img9 from './assets/service/image43.png'
+
+import img11 from './assets/service/image44.png'
+import img12 from './assets/service/image45.png'
+import img13 from './assets/service/image46.png'
+import img14 from './assets/service/image47.png'
+import img15 from './assets/service/image48.png'
+import img16 from './assets/service/image49.png'
+import img17 from './assets/service/image50.png'
+import img19 from './assets/service/image52.png'
 
 
 export const jobs = [
@@ -351,12 +348,12 @@ import {useNavigate} from 'react-router-dom'
 <br />
 
 <h3 class="mt-12 mb-4 font-semibold">Why Choose Permanent Staffing?</h3>
-<ul class=" pl-5 space-y-2 list-none">
-    <li>✔️ Long-Term Workforce Stability – Hire dedicated professionals for core business roles.</li>
-    <li>✔️ Cost-Effective Hiring Solutions – Reduce frequent recruitment costs.</li>
-    <li>✔️ Pre-Vetted Talent Pool – Access qualified, screened candidates from diverse domains.</li>
-    <li>✔️ Industry-Specific Hiring Experts – Get candidates who meet your sector’s unique demands.</li>
-    <li>✔️ End-to-End Recruitment Support – From sourcing to onboarding, we handle everything.</li>
+<ul class=" pl-5 space-y-2 list-disc">
+    <li> Long-Term Workforce Stability – Hire dedicated professionals for core business roles.</li>
+    <li> Cost-Effective Hiring Solutions – Reduce frequent recruitment costs.</li>
+    <li> Pre-Vetted Talent Pool – Access qualified, screened candidates from diverse domains.</li>
+    <li> Industry-Specific Hiring Experts – Get candidates who meet your sector’s unique demands.</li>
+    <li> End-to-End Recruitment Support – From sourcing to onboarding, we handle everything.</li>
 </ul>
 <section class="mt-12">
     <h2 class="text-2xl font-bold text-gray-800">Industries We Serve for Permanent Hiring</h2>
@@ -369,12 +366,12 @@ import {useNavigate} from 'react-router-dom'
     <div class="mt-6">
         <h3 class="text-xl font-semibold text-gray-700">1. Information Technology (IT & Software)</h3>
         <p class="text-gray-600">Hire top IT professionals, including:</p>
-        <ul class=" list-inside text-gray-700 mt-2 space-y-1 list-none">
-            <li>✔️ Software Developers (Java, Python, .NET, Full Stack)</li>
-            <li>✔️ AI & Machine Learning Experts</li>
-            <li>✔️ Cloud Computing & DevOps Engineers</li>
-            <li>✔️ Cybersecurity Specialists</li>
-            <li>✔️ Data Analysts & Data Scientists</li>
+        <ul class=" list-inside text-gray-700 mt-2 space-y-1 list-disc">
+            <li> Software Developers (Java, Python, .NET, Full Stack)</li>
+            <li> AI & Machine Learning Experts</li>
+            <li> Cloud Computing & DevOps Engineers</li>
+            <li> Cybersecurity Specialists</li>
+            <li> Data Analysts & Data Scientists</li>
         </ul>
     </div>
 
@@ -382,12 +379,12 @@ import {useNavigate} from 'react-router-dom'
     <div class="mt-6">
         <h3 class="text-xl font-semibold text-gray-700">2. Banking, Financial Services & Insurance (BFSI)</h3>
         <p class="text-gray-600">Find skilled finance and banking professionals such as:</p>
-        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1 list-none">
-            <li>✔️ Investment Analysts & Wealth Managers</li>
-            <li>✔️ Chartered Accountants & Auditors</li>
-            <li>✔️ Risk & Compliance Officers</li>
-            <li>✔️ Insurance Underwriters</li>
-            <li>✔️ Loan & Mortgage Specialists</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1 list-disc">
+            <li> Investment Analysts & Wealth Managers</li>
+            <li> Chartered Accountants & Auditors</li>
+            <li> Risk & Compliance Officers</li>
+            <li> Insurance Underwriters</li>
+            <li> Loan & Mortgage Specialists</li>
         </ul>
     </div>
 
@@ -395,12 +392,12 @@ import {useNavigate} from 'react-router-dom'
     <div class="mt-6">
         <h3 class="text-xl font-semibold text-gray-700">3. Healthcare & Pharmaceuticals</h3>
         <p class="text-gray-600">We provide permanent staffing for hospitals, clinics, and pharmaceutical companies:</p>
-        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1 list-none">
-            <li>✔️ Doctors, Surgeons & Medical Officers</li>
-            <li>✔️ Registered Nurses & Healthcare Assistants</li>
-            <li>✔️ Medical Lab Technicians</li>
-            <li>✔️ Pharma Sales & Research Associates</li>
-            <li>✔️ Clinical Data Analysts</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1 list-disc">
+            <li> Doctors, Surgeons & Medical Officers</li>
+            <li> Registered Nurses & Healthcare Assistants</li>
+            <li> Medical Lab Technicians</li>
+            <li> Pharma Sales & Research Associates</li>
+            <li> Clinical Data Analysts</li>
         </ul>
     </div>
 
@@ -408,25 +405,25 @@ import {useNavigate} from 'react-router-dom'
     <div class="mt-6">
         <h3 class="text-xl font-semibold text-gray-700">4. Retail & FMCG</h3>
         <p class="text-gray-600">We help retail and consumer goods companies hire:</p>
-        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1 list-none">
-            <li>✔️ Sales Executives & Retail Managers</li>
-            <li>✔️ Supply Chain & Inventory Specialists</li>
-            <li>✔️ Brand Managers & Marketing Experts</li>
-            <li>✔️ E-commerce Operations Executives</li>
-            <li>✔️ Merchandising & Category Managers</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1 list-disc">
+            <li> Sales Executives & Retail Managers</li>
+            <li> Supply Chain & Inventory Specialists</li>
+            <li> Brand Managers & Marketing Experts</li>
+            <li> E-commerce Operations Executives</li>
+            <li> Merchandising & Category Managers</li>
         </ul>
     </div>
 
     <!-- Industry 5: Manufacturing & Engineering -->
-    <div class="mt-6">
+    <div class="mt-6 list-">
         <h3 class="text-xl font-semibold text-gray-700">5. Manufacturing & Engineering</h3>
         <p class="text-gray-600">We assist manufacturing and industrial companies in hiring:</p>
-        <ul class="list-inside text-gray-700 mt-2 space-y-1 list-none">
-            <li class='list-none'>✔️ Mechanical & Electrical Engineers</li>
-            <li>✔️ Production & Plant Managers</li>
-            <li>✔️ Quality Control & Assurance Officers</li>
-            <li>✔️ Industrial Safety &amp; Compliance Experts</li>
-            <li>✔️ AutoCAD &amp; Design Engineers</li>
+        <ul class="list-inside text-gray-700 mt-2 space-y-1 list-disc">
+            <li > Mechanical & Electrical Engineers</li>
+            <li> Production & Plant Managers</li>
+            <li> Quality Control & Assurance Officers</li>
+            <li> Industrial Safety &amp; Compliance Experts</li>
+            <li> AutoCAD &amp; Design Engineers</li>
         </ul>
     </div>
 </section>
@@ -435,12 +432,12 @@ import {useNavigate} from 'react-router-dom'
     <div>
         <h3 class="text-xl font-semibold text-gray-700">6. E-commerce & Startups</h3>
         <p class="text-gray-600">Scale your business with highly skilled startup talent:</p>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ Digital Marketing Specialists (SEO, PPC, Social Media)</li>
-            <li>✔️ UI/UX Designers & Web Developers</li>
-            <li>✔️ Business Development Executives</li>
-            <li>✔️ Customer Support & Operations Managers</li>
-            <li>✔️ Product Managers & Growth Hackers</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li> Digital Marketing Specialists (SEO, PPC, Social Media)</li>
+            <li> UI/UX Designers & Web Developers</li>
+            <li> Business Development Executives</li>
+            <li> Customer Support & Operations Managers</li>
+            <li> Product Managers & Growth Hackers</li>
         </ul>
     </div>
 
@@ -448,12 +445,12 @@ import {useNavigate} from 'react-router-dom'
     <div>
         <h3 class="text-xl font-semibold text-gray-700">7. Education & EdTech</h3>
         <p class="text-gray-600">We help schools, universities, and EdTech companies hire:</p>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ Professors & Lecturers</li>
-            <li>✔️ Curriculum Developers & Content Writers</li>
-            <li>✔️ Instructional Designers & E-Learning Experts</li>
-            <li>✔️ Academic Counselors & Student Advisors</li>
-            <li>✔️ Corporate Training & Learning Specialists</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li> Professors & Lecturers</li>
+            <li> Curriculum Developers & Content Writers</li>
+            <li> Instructional Designers & E-Learning Experts</li>
+            <li> Academic Counselors & Student Advisors</li>
+            <li> Corporate Training & Learning Specialists</li>
         </ul>
     </div>
 
@@ -461,12 +458,12 @@ import {useNavigate} from 'react-router-dom'
     <div>
         <h3 class="text-xl font-semibold text-gray-700">8. Automotive & Automobile Industry</h3>
         <p class="text-gray-600">Hire top professionals for automobile manufacturing & sales:</p>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ Automotive Engineers & Designers</li>
-            <li>✔️ Electric Vehicle (EV) Specialists</li>
-            <li>✔️ R&D and Product Development Engineers</li>
-            <li>✔️ Vehicle Sales & Service Executives</li>
-            <li>✔️ Supply Chain & Logistics Managers</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li> Automotive Engineers & Designers</li>
+            <li> Electric Vehicle (EV) Specialists</li>
+            <li> R&D and Product Development Engineers</li>
+            <li> Vehicle Sales & Service Executives</li>
+            <li> Supply Chain & Logistics Managers</li>
         </ul>
     </div>
 
@@ -474,12 +471,12 @@ import {useNavigate} from 'react-router-dom'
     <div>
         <h3 class="text-xl font-semibold text-gray-700">9. Telecom & Networking</h3>
         <p class="text-gray-600">Get the best telecom professionals for your growing business:</p>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ Network Engineers & Technicians</li>
-            <li>✔️ 5G Infrastructure Specialists</li>
-            <li>✔️ IoT & Smart Device Engineers</li>
-            <li>✔️ Telecommunications Analysts</li>
-            <li>✔️ IT Support & System Administrators</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li> Network Engineers & Technicians</li>
+            <li> 5G Infrastructure Specialists</li>
+            <li> IoT & Smart Device Engineers</li>
+            <li> Telecommunications Analysts</li>
+            <li> IT Support & System Administrators</li>
         </ul>
     </div>
 
@@ -487,12 +484,12 @@ import {useNavigate} from 'react-router-dom'
     <div>
         <h3 class="text-xl font-semibold text-gray-700">10. Hospitality & Travel Industry</h3>
         <p class="text-gray-600">We recruit hospitality and travel professionals, including:</p>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ Hotel & Resort Managers</li>
-            <li>✔️ Front Office & Guest Relations Executives</li>
-            <li>✔️ Tour & Travel Coordinators</li>
-            <li>✔️ Airline & Airport Staff</li>
-            <li>✔️ Food & Beverage Specialists</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li> Hotel & Resort Managers</li>
+            <li> Front Office & Guest Relations Executives</li>
+            <li> Tour & Travel Coordinators</li>
+            <li> Airline & Airport Staff</li>
+            <li> Food & Beverage Specialists</li>
         </ul>
     </div>
 
@@ -500,12 +497,12 @@ import {useNavigate} from 'react-router-dom'
     <div>
         <h3 class="text-xl font-semibold text-gray-700">11. Logistics & Supply Chain Management</h3>
         <p class="text-gray-600">Optimize your supply chain with skilled logistics professionals:</p>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ Warehouse & Distribution Managers</li>
-            <li>✔️ Freight & Transport Coordinators</li>
-            <li>✔️ Procurement & Vendor Management Specialists</li>
-            <li>✔️ Supply Chain Analysts</li>
-            <li>✔️ Logistics Operations Executives</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li> Warehouse & Distribution Managers</li>
+            <li> Freight & Transport Coordinators</li>
+            <li> Procurement & Vendor Management Specialists</li>
+            <li> Supply Chain Analysts</li>
+            <li> Logistics Operations Executives</li>
         </ul>
     </div>
 
@@ -513,12 +510,12 @@ import {useNavigate} from 'react-router-dom'
     <div>
         <h3 class="text-xl font-semibold text-gray-700">12. Media & Entertainment</h3>
         <p class="text-gray-600">Find top creative professionals for media, entertainment, and advertising:</p>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ Content Writers & Journalists</li>
-            <li>✔️ Video Editors & Animators</li>
-            <li>✔️ Graphic Designers & Branding Specialists</li>
-            <li>✔️ Social Media Influencers & Digital Creators</li>
-            <li>✔️ Event Managers & PR Experts</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li> Content Writers & Journalists</li>
+            <li> Video Editors & Animators</li>
+            <li> Graphic Designers & Branding Specialists</li>
+            <li> Social Media Influencers & Digital Creators</li>
+            <li> Event Managers & PR Experts</li>
         </ul>
     </div>
 
@@ -526,25 +523,25 @@ import {useNavigate} from 'react-router-dom'
     <div>
         <h3 class="text-xl font-semibold text-gray-700">13. Aerospace & Defense</h3>
         <p class="text-gray-600">Hire highly specialized professionals for the aerospace and defense sectors:</p>
-        <ul class="list-none list-inside text-gray-700 mt-2 space-y-1">
-            <li>✔️ Aerospace Engineers & Aviation Technicians</li>
-            <li>✔️ Defense Research & Development Experts</li>
-            <li>✔️ Aircraft Maintenance Engineers</li>
-            <li>✔️ Quality Control & Compliance Officers</li>
-            <li>✔️ Cybersecurity & National Security Specialists</li>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li> Aerospace Engineers & Aviation Technicians</li>
+            <li> Defense Research & Development Experts</li>
+            <li> Aircraft Maintenance Engineers</li>
+            <li> Quality Control & Compliance Officers</li>
+            <li> Cybersecurity & National Security Specialists</li>
         </ul>
     </div>
 
     <!-- Why AssuredJob -->
     <div class="mt-12 bg-gray-100 p-6 rounded-lg shadow">
         <h2 class="text-2xl font-bold text-gray-800">Why AssuredJob is the Best Permanent Staffing Agency?</h2>
-        <ul class="list-none list-inside text-gray-700 mt-4 space-y-2">
-            <li>✅ <strong>Industry-Focused Recruitment</strong> – We understand your sector’s hiring challenges.</li>
-            <li>✅ <strong>Fast Turnaround Time</strong> – We deliver qualified candidates quickly.</li>
-            <li>✅ <strong>AI-Driven Hiring Process</strong> – Advanced technology for efficient talent screening.</li>
-            <li>✅ <strong>Large Database of Pre-Screened Candidates</strong> – Get top talent instantly.</li>
-            <li>✅ <strong>End-to-End Recruitment Support</strong> – From sourcing to onboarding, we handle it all.</li>
-            <li>✅ <strong>100% Compliance & Payroll Management</strong> – Stay compliant with labor laws & regulations.</li>
+        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+            <li>    <strong>Industry-Focused Recruitment</strong> – We understand your sector’s hiring challenges.</li>
+            <li> <strong>Fast Turnaround Time</strong> – We deliver qualified candidates quickly.</li>
+            <li> <strong>AI-Driven Hiring Process</strong> – Advanced technology for efficient talent screening.</li>
+            <li> <strong>Large Database of Pre-Screened Candidates</strong> – Get top talent instantly.</li>
+            <li> <strong>End-to-End Recruitment Support</strong> – From sourcing to onboarding, we handle it all.</li>
+            <li> <strong>100% Compliance & Payroll Management</strong> – Stay compliant with labor laws & regulations.</li>
         </ul>
     </div>
 
@@ -552,16 +549,13 @@ import {useNavigate} from 'react-router-dom'
     <div class="mt-12 text-center">
         <h3 class="text-xl font-bold text-gray-800">Get Started with AssuredJob’s Permanent Staffing Solutions Today!</h3>
         <p class="text-gray-600 mt-2">Need skilled professionals to join your team? Looking for an expert recruitment partner?</p>
-        <button  class="mt-4 px-6 py-3 bg-gray-100 hover:bg-gray-300 text-gray-600 hover:text-gray-800 cursor-pointer font-semibold rounded-lg shadow ">
-            Contact Us Now
-        </button>
+       
     </div>
 </section>
 
 
 
-`
- },
+`, button:' Contact Us'},
     {id:2, title: "Temporary Staffing Services | AssuredJob", image: img2, content:`<header class="text-gray-600  py-6  text-2xl font-bold">
         Flexible Workforce Solutions for Your Business Needs
     </header>
@@ -571,20 +565,20 @@ import {useNavigate} from 'react-router-dom'
     </section>
     
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Choose Temporary Staffing?</h2>
-        <ul class="list-none pl-5 mt-3 space-y-2">
-            <li>✔️ Scalable Workforce Solutions – Quickly adjust to fluctuating business demands.</li>
-            <li>✔️ Cost-Effective Hiring – Reduce expenses on permanent salaries and benefits.</li>
-            <li>✔️ Faster Hiring & Deployment – Get pre-vetted professionals ready to work immediately.</li>
-            <li>✔️ End-to-End Compliance & Payroll Management – We handle EPF, ESIC, TDS, and labor law formalities.</li>
-            <li>✔️ Reduced HR Burden – Let us manage recruitment, onboarding, payroll, and exits.</li>
-            <li>✔️ Try Before You Hire – Convert top-performing temp staff into permanent employees.</li>
+        <h2 class="text-xl font-semibold text-gray-400">Why Choose Temporary Staffing?</h2>
+        <ul class="list-disc pl-5 mt-3 space-y-2">
+            <li> Scalable Workforce Solutions – Quickly adjust to fluctuating business demands.</li>
+            <li> Cost-Effective Hiring – Reduce expenses on permanent salaries and benefits.</li>
+            <li> Faster Hiring & Deployment – Get pre-vetted professionals ready to work immediately.</li>
+            <li> End-to-End Compliance & Payroll Management – We handle EPF, ESIC, TDS, and labor law formalities.</li>
+            <li> Reduced HR Burden – Let us manage recruitment, onboarding, payroll, and exits.</li>
+            <li> Try Before You Hire – Convert top-performing temp staff into permanent employees.</li>
         </ul>
     </section>
     
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Our Temporary Staffing Solutions</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+        <h2 class="text-xl font-semibold text-gray-400">Our Temporary Staffing Solutions</h2>
+        <div class="grid md:grid-cols-2  gap-6 mt-4">
             <div class="bg-white p-4 rounded-lg shadow-md">
                 <h3 class="font-semibold text-lg">Short-Term & Contract-Based Staffing</h3>
                 <ul class="list-disc pl-4 mt-2">
@@ -613,27 +607,27 @@ import {useNavigate} from 'react-router-dom'
     </section>
     
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Industries Benefiting from Temporary Staffing</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Industries Benefiting from Temporary Staffing</h2>
         <p class="mt-2">We provide temporary staffing solutions across multiple industries:</p>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Finance & Banking)</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BFSI (Finance & Banking)</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
         </div>
     </section>
     
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
-        <ul class="list-none pl-5 mt-3 space-y-2">
-            <li className='list-none'>✅ Fast & Flexible Hiring Solutions</li>
-            <li  className='list-none'>✅ AI-Driven Talent Matching</li>
-            <li  className='list-none'>✅ End-to-End HR & Payroll Management</li>
-            <li  className='list-none'>✅ Industry-Specific Hiring Expertise</li>
-            <li  className='list-none'>✅ Scalable Workforce Support</li>
-            <li  className='list-none'>✅ Risk-Free Hiring Model</li>
+        <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob?</h2>
+        <ul class="list-disc pl-5 mt-3 space-y-2">
+            <li className='list-disc'> Fast & Flexible Hiring Solutions</li>
+            <li  className='list-disc'> AI-Driven Talent Matching</li>
+            <li  className='list-disc'> End-to-End HR & Payroll Management</li>
+            <li  className='list-disc'> Industry-Specific Hiring Expertise</li>
+            <li  className='list-disc'> Scalable Workforce Support</li>
+            <li  className='list-disc'> Risk-Free Hiring Model</li>
         </ul>
     </section>
     
@@ -649,8 +643,8 @@ import {useNavigate} from 'react-router-dom'
         <p class="text-lg text-gray-700 text-center mb-8">Scale operations, reduce hiring costs, and maintain workforce flexibility with AssuredJob’s contract staffing services.</p>
         
         <section class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold text-blue-500 mb-4">Why Choose Contract Staffing?</h2>
-            <ul class="list-none pl-6 space-y-2 text-gray-700">
+            <h2 class="text-2xl font-semibold text-gray-400 mb-4">Why Choose Contract Staffing?</h2>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700">
                 <li><strong>Scalable Workforce Solutions</strong> – Quickly hire contract professionals.</li>
                 <li><strong>Cost-Effective Hiring Model</strong> – Save on full-time salaries.</li>
                 <li><strong>Faster Hiring & Deployment</strong> – Get pre-screened candidates instantly.</li>
@@ -661,7 +655,7 @@ import {useNavigate} from 'react-router-dom'
         </section>
         
         <section class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold text-blue-500 mb-4">Our Contract Staffing Solutions</h2>
+            <h2 class="text-2xl font-semibold text-gray-400 mb-4">Our Contract Staffing Solutions</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-gray-50 p-4 rounded-lg shadow">
                     <h3 class="text-lg font-semibold text-gray-700">Short-Term & Project-Based Staffing</h3>
@@ -683,26 +677,26 @@ import {useNavigate} from 'react-router-dom'
         </section>
         
         <section class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold text-blue-500 mb-4">Industries Benefiting from Contract Staffing</h2>
+            <h2 class="text-2xl font-semibold text-gray-400 mb-4">Industries Benefiting from Contract Staffing</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
-                <span>✔️ IT & Software Development</span>
-                <span>✔️ BFSI & Financial Services</span>
-                <span>✔️ Healthcare & Pharmaceuticals</span>
-                <span>✔️ Retail & E-commerce</span>
-                <span>✔️ Manufacturing & Engineering</span>
-                <span>✔️ Logistics & Supply Chain</span>
-                <span>✔️ Media & Entertainment</span>
-                <span>✔️ Hospitality & Tourism</span>
-                <span>✔️ Education & EdTech</span>
+                <span> IT & Software Development</span>
+                <span> BFSI & Financial Services</span>
+                <span> Healthcare & Pharmaceuticals</span>
+                <span> Retail & E-commerce</span>
+                <span> Manufacturing & Engineering</span>
+                <span> Logistics & Supply Chain</span>
+                <span> Media & Entertainment</span>
+                <span> Hospitality & Tourism</span>
+                <span> Education & EdTech</span>
             </div>
         </section>
         
         <section class="bg-white p-6 rounded-lg shadow-md text-center">
-            <h2 class="text-2xl font-semibold text-blue-500 mb-4">Get Started with AssuredJob Today!</h2>
+            <h2 class="text-2xl font-semibold text-gray-400 mb-4">Get Started with AssuredJob Today!</h2>
             <p class="text-gray-700 mb-4">Need skilled professionals for short-term projects? Looking for cost-effective workforce solutions?</p>
-            <a href="https://www.assuredjob.in" class="bg-gray-100 hover:bg-gray-300  text-gray-600 px-6 py-3 rounded-lg text-lg font-semibold  transition">Hire Now</a>
+           
         </section>
-    </div>`},
+    </div>`, button:' Hire Now'},
     // {id:4, title: "Executive Search", image: img4 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
     {id:5, title: "Recruitment Process Outsourcing (RPO) Services | AssuredJob", image: img5, content:`<div class="max-w-4xl mx-auto p-6">
         <h2 class="text-3xl font-bold  text-gray-700">Streamline Your Hiring with AssuredJob’s RPO Solutions</h2>
@@ -724,7 +718,7 @@ import {useNavigate} from 'react-router-dom'
         <div class="mt-4 bg-white shadow-lg p-4 rounded-lg">
             <h3 class="text-xl font-semibold">Full-Cycle RPO</h3>
             <p>Complete outsourcing model managing the entire recruitment lifecycle:</p>
-            <ul class="list-none list-inside mt-2 space-y-1">
+            <ul class="list-disc list-inside mt-2 space-y-1">
                 <li>Job Posting & Employer Branding</li>
                 <li>Talent Sourcing & AI-Driven Screening</li>
                 <li>Interview Coordination & Assessments</li>
@@ -734,7 +728,7 @@ import {useNavigate} from 'react-router-dom'
         <div class="mt-4 bg-white shadow-lg p-4 rounded-lg">
             <h3 class="text-xl font-semibold">Partial RPO</h3>
             <p>Outsource specific hiring functions like:</p>
-            <ul class="list-none list-inside mt-2 space-y-1">
+            <ul class="list-disc list-inside mt-2 space-y-1">
                 <li>Resume Screening & Shortlisting</li>
                 <li>Technical & Behavioral Assessments</li>
             </ul>
@@ -754,56 +748,54 @@ import {useNavigate} from 'react-router-dom'
         
         <h2 class="mt-6 text-2xl font-semibold text-center">Get Started Today!</h2>
         <p class="mt-2 text-center">Optimize your hiring process with AssuredJob's RPO solutions.</p>
-        <div class="mt-4 text-center">
-            <a href="#" class="bg-gray-100 text-gray-600 px-6 py-2 rounded-lg shadow-md ">Contact Us</a>
-        </div>
-    </div>`},
+       
+    </div>`, button:' Contact Us'},
     {id:6, title: "Skill Gap Assessment Services | AssuredJob", image: img6, content:`<div class="max-w-5xl mx-auto p-6">
         <h2 class="text-3xl font-bold text-gray-700">Identify Workforce Skill Gaps & Bridge Them for Business Growth</h2>
         <p class="mt-4 text-lg">AssuredJob’s Skill Gap Assessment Services help businesses analyze workforce capabilities, identify skill deficiencies, and implement training programs to enhance employee performance.</p>
 
         <h2 class="mt-6 text-2xl font-semibold">Why Skill Gap Assessment is Important?</h2>
-        <ul class=" pl-6 mt-2 space-y-2 list-none">
-            <li>✔️ Improve Workforce Efficiency – Identify areas where employees need training & development.</li>
-            <li>✔️ Enhance Employee Productivity – Address performance gaps to increase efficiency.</li>
-            <li>✔️ Stay Competitive in Your Industry – Ensure your team has in-demand skills for business success.</li>
-            <li>✔️ Reduce Hiring & Training Costs – Upskill your existing workforce instead of hiring externally.</li>
-            <li>✔️ Boost Employee Engagement & Retention – Provide employees with growth & career advancement opportunities.</li>
+        <ul class=" pl-6 mt-2 space-y-2 list-disc">
+            <li> Improve Workforce Efficiency – Identify areas where employees need training & development.</li>
+            <li> Enhance Employee Productivity – Address performance gaps to increase efficiency.</li>
+            <li> Stay Competitive in Your Industry – Ensure your team has in-demand skills for business success.</li>
+            <li> Reduce Hiring & Training Costs – Upskill your existing workforce instead of hiring externally.</li>
+            <li> Boost Employee Engagement & Retention – Provide employees with growth & career advancement opportunities.</li>
         </ul>
 
         <h2 class="mt-6 text-2xl font-semibold">Our Skill Gap Assessment Solutions</h2>
         <div class="mt-4 space-y-4">
             <div class="p-4 bg-white shadow rounded-lg">
                 <h3 class="text-xl font-semibold">1. Workforce Skills Assessment & Gap Analysis</h3>
-                <p>✅ AI-powered competency mapping & benchmarking</p>
-                <p>✅ Role-specific skill assessments & industry comparisons</p>
+                <p> AI-powered competency mapping & benchmarking</p>
+                <p> Role-specific skill assessments & industry comparisons</p>
             </div>
             <div class="p-4 bg-white shadow rounded-lg">
                 <h3 class="text-xl font-semibold">2. Technical & Soft Skills Evaluation</h3>
-                <p>✅ Domain-specific technical skills testing</p>
-                <p>✅ Leadership, communication, and problem-solving skill assessment</p>
+                <p> Domain-specific technical skills testing</p>
+                <p> Leadership, communication, and problem-solving skill assessment</p>
             </div>
             <div class="p-4 bg-white shadow rounded-lg">
                 <h3 class="text-xl font-semibold">3. Training & Upskilling Recommendations</h3>
-                <p>✅ Customized learning & development (L&D) programs</p>
-                <p>✅ Online courses, workshops, and on-the-job training plans</p>
+                <p> Customized learning & development (L&D) programs</p>
+                <p> Online courses, workshops, and on-the-job training plans</p>
             </div>
         </div>
 
         <h2 class="mt-6 text-2xl font-semibold">Industries Benefiting from Skill Gap Assessment</h2>
         <div class="grid grid-cols-2 gap-4 mt-4">
-            <div class="p-4 bg-white shadow rounded-lg">✔️ Information Technology (AI, Machine Learning, Cybersecurity)</div>
-            <div class="p-4 bg-white shadow rounded-lg">✔️ Banking & Financial Services (Risk Analysis, Fintech)</div>
-            <div class="p-4 bg-white shadow rounded-lg">✔️ Healthcare & Pharmaceuticals (Telemedicine, Medical Tech)</div>
-            <div class="p-4 bg-white shadow rounded-lg">✔️ Retail & E-commerce (Digital Marketing, Supply Chain)</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Information Technology (AI, Machine Learning, Cybersecurity)</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Banking & Financial Services (Risk Analysis, Fintech)</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Healthcare & Pharmaceuticals (Telemedicine, Medical Tech)</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Retail & E-commerce (Digital Marketing, Supply Chain)</div>
         </div>
 
         <h2 class="mt-6 text-2xl font-semibold">Why Choose AssuredJob?</h2>
         <ul class="list-disc pl-6 mt-2 space-y-2">
-            <li>✅ AI-Driven Skill Assessment & Data Analytics</li>
-            <li>✅ Customized Learning & Development Solutions</li>
-            <li>✅ Industry-Specific Talent Benchmarking</li>
-            <li>✅ Proven Upskilling & Reskilling Strategies</li>
+            <li> AI-Driven Skill Assessment & Data Analytics</li>
+            <li> Customized Learning & Development Solutions</li>
+            <li> Industry-Specific Talent Benchmarking</li>
+            <li> Proven Upskilling & Reskilling Strategies</li>
         </ul>
 
         <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Skill Gap Assessment Today!</h2>
@@ -816,13 +808,13 @@ import {useNavigate} from 'react-router-dom'
     <main class="max-w-6xl mx-auto p-6">
         <section class="bg-white p-6 rounded-lg shadow-md mb-6">
             <h2 class="text-2xl font-semibold mb-4">Why Invest in an Internship & Articleship Program?</h2>
-            <ul class="list-none list-inside space-y-2">
-                <li>✔️ Build a Talent Pipeline – Identify high-potential candidates for future hiring.</li>
-                <li>✔️ Cost-Effective Workforce Support – Get skilled interns & trainees at minimal hiring costs.</li>
-                <li>✔️ Enhance Brand Visibility – Strengthen your employer branding by offering structured programs.</li>
-                <li>✔️ Practical Training for Young Talent – Equip fresh graduates with industry-relevant skills.</li>
-                <li>✔️ Flexible Hiring Model – Convert top-performing interns into full-time employees.</li>
-                <li>✔️ Bridge the Skill Gap – Train freshers in job-specific technical & soft skills.</li>
+            <ul class="list-disc list-inside space-y-2">
+                <li> Build a Talent Pipeline – Identify high-potential candidates for future hiring.</li>
+                <li> Cost-Effective Workforce Support – Get skilled interns & trainees at minimal hiring costs.</li>
+                <li> Enhance Brand Visibility – Strengthen your employer branding by offering structured programs.</li>
+                <li> Practical Training for Young Talent – Equip fresh graduates with industry-relevant skills.</li>
+                <li> Flexible Hiring Model – Convert top-performing interns into full-time employees.</li>
+                <li> Bridge the Skill Gap – Train freshers in job-specific technical & soft skills.</li>
             </ul>
         </section>
         
@@ -867,26 +859,83 @@ import {useNavigate} from 'react-router-dom'
         <section class="bg-white p-6 rounded-lg shadow-md mb-6">
             <h2 class="text-2xl font-semibold mb-4">Industries Benefiting from Internship & Articleship Programs</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <span class="p-2 border rounded-lg">✔️ Information Technology</span>
-                <span class="p-2 border rounded-lg">✔️ Banking & Finance</span>
-                <span class="p-2 border rounded-lg">✔️ Healthcare & Pharmaceuticals</span>
-                <span class="p-2 border rounded-lg">✔️ Retail & E-commerce</span>
-                <span class="p-2 border rounded-lg">✔️ BPO & KPO</span>
-                <span class="p-2 border rounded-lg">✔️ Education & EdTech</span>
-                <span class="p-2 border rounded-lg">✔️ Media & Entertainment</span>
-                <span class="p-2 border rounded-lg">✔️ Manufacturing & Engineering</span>
-                <span class="p-2 border rounded-lg">✔️ Legal & Compliance</span>
+                <span class="p-2 border rounded-lg"> Information Technology</span>
+                <span class="p-2 border rounded-lg"> Banking & Finance</span>
+                <span class="p-2 border rounded-lg"> Healthcare & Pharmaceuticals</span>
+                <span class="p-2 border rounded-lg"> Retail & E-commerce</span>
+                <span class="p-2 border rounded-lg"> BPO & KPO</span>
+                <span class="p-2 border rounded-lg"> Education & EdTech</span>
+                <span class="p-2 border rounded-lg"> Media & Entertainment</span>
+                <span class="p-2 border rounded-lg"> Manufacturing & Engineering</span>
+                <span class="p-2 border rounded-lg"> Legal & Compliance</span>
             </div>
         </section>
         
         <section class="bg-gray-100 text-gray-600 p-6 rounded-lg text-center">
             <h2 class="text-2xl font-semibold mb-4">Get Started with AssuredJob’s Internship & Articleship Programs Today!</h2>
             <p class="mb-4">Bridge the skill gap, nurture young talent, and create future leaders with AssuredJob.</p>
-            <button  class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
-                Contact Us
-            </button>
+           
         </section>
-    </main>`},
+    </main>`, button:' Contact Us'},
+    {id:9, title: "Onboarding and Training Support | AssuredJob", image: img9, content : `<section class="max-w-5xl mx-auto p-6">
+        <h2 class="text-3xl font-bold text-gray-600">Seamless Employee Onboarding & Training for a Productive Workforce</h2>
+        <p class="mt-4">A well-structured onboarding and training program is essential for employee engagement, productivity, and retention. At AssuredJob, we provide comprehensive onboarding & training support to help businesses integrate new hires smoothly and equip them with the skills & knowledge needed to succeed in their roles.</p>
+    </section>
+    
+    <section class="max-w-5xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+        <h3 class="text-2xl font-bold text-gray-600">Why Onboarding & Training Support is Essential?</h3>
+        <ul class="mt-4 space-y-2 list-disc">
+            <li class="flex items-center"><span class="text-green-500 text-xl"></span> Faster Employee Integration – Reduce time-to-productivity with structured onboarding.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl"></span> Higher Employee Retention – Well-trained employees are more engaged & loyal.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl"></span> Enhanced Productivity – Employees perform better with proper training & knowledge transfer.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl"></span> Stronger Employer Branding – A positive onboarding experience improves employer reputation.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl"></span> Compliance & Policy Adherence – Ensures employees understand HR policies & workplace expectations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl"></span> Reduced Hiring Costs – Well-trained employees stay longer, reducing turnover costs.</li>
+        </ul>
+    </section>
+    
+    <section class="max-w-5xl mx-auto p-6 mt-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold text-gray-400">Our Onboarding & Training Solutions</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+            <div class="bg-gray-50 p-4 rounded-lg shadow">
+                <h4 class="font-bold text-lg">New Hire Onboarding Programs</h4>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Pre-boarding support (documentation, HR policy introduction, IT setup)</li>
+                    <li>Virtual & in-person orientation programs</li>
+                    <li>Company culture & compliance training</li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg shadow">
+                <h4 class="font-bold text-lg">Customized Employee Training Programs</h4>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Role-specific training for different job functions</li>
+                    <li>Technical, soft skills, and leadership training</li>
+                    <li>AI-powered personalized learning paths</li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg shadow">
+                <h4 class="font-bold text-lg">Learning & Development (L&D) Solutions</h4>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>E-learning modules & interactive training sessions</li>
+                    <li>Gamification & simulation-based learning</li>
+                    <li>Live instructor-led training & on-demand courses</li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg shadow">
+                <h4 class="font-bold text-lg">Employee Performance Coaching & Mentorship</h4>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Buddy programs & peer mentoring</li>
+                    <li>Performance tracking & feedback sessions</li>
+                    <li>Career development planning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer clas" text-white text-center py-6 mt-6">
+        <p class="text-lg font-bold">Partner with AssuredJob for Efficient Onboarding & Training Support!</p>
+        <p>Boost employee productivity, enhance job satisfaction, and streamline onboarding with AssuredJob’s expert training solutions!</p>
+    </footer>`},
     {id:11, title: "Onboarding &amp; Training Support Services | AssuredJob", image: img11 , content:` <header class=" text-gray-600 py-12 ">
         <h1 class="text-3xl font-bold">Seamless Employee Onboarding & Training</h1>
         <p class="mt-2 text-lg">Boost Productivity & Retention with Structured Learning & AI-Driven Solutions</p>
@@ -895,31 +944,31 @@ import {useNavigate} from 'react-router-dom'
     <!-- Introduction -->
     <section class="max-w-7xl mx-auto p-6">
         <p class="text-lg text-gray-700">
-            A well-structured onboarding and training program is essential for <strong class="text-blue-600">employee engagement, productivity, and retention.</strong> 
-            At AssuredJob, we provide <span class="text-blue-600">comprehensive onboarding & training</span> to help businesses integrate new hires smoothly 
+            A well-structured onboarding and training program is essential for <strong class="text-gray-400">employee engagement, productivity, and retention.</strong> 
+            At AssuredJob, we provide <span class="text-gray-400">comprehensive onboarding & training</span> to help businesses integrate new hires smoothly 
             and equip them with the right skills for success.
         </p>
     </section>
 
     <!-- Why Onboarding & Training? -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Onboarding & Training Support is Essential?</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Why Onboarding & Training Support is Essential?</h2>
         <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Faster Employee Integration – Reduce time-to-productivity with structured onboarding.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Higher Employee Retention – Well-trained employees are more engaged & loyal.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Enhanced Productivity – Employees perform better with proper training & knowledge transfer.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Stronger Employer Branding – A positive onboarding experience improves employer reputation.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Compliance & Policy Adherence – Ensures employees understand HR policies & workplace expectations.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Reduced Hiring Costs – Well-trained employees stay longer, reducing turnover costs.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Faster Employee Integration – Reduce time-to-productivity with structured onboarding.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Higher Employee Retention – Well-trained employees are more engaged & loyal.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Enhanced Productivity – Employees perform better with proper training & knowledge transfer.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Stronger Employer Branding – A positive onboarding experience improves employer reputation.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Compliance & Policy Adherence – Ensures employees understand HR policies & workplace expectations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Reduced Hiring Costs – Well-trained employees stay longer, reducing turnover costs.</li>
         </ul>
     </section>
 
     <!-- Our Solutions -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Our Onboarding & Training Solutions</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+        <h2 class="text-xl font-semibold text-gray-400">Our Onboarding & Training Solutions</h2>
+        <div class="grid md:grid-cols-2  gap-6 mt-4">
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">New Hire Onboarding Programs</h3>
+                <h3 class="font-semibold text-lg text-gray-400">New Hire Onboarding Programs</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>Pre-boarding support (documentation, IT setup)</li>
                     <li>Virtual & in-person orientation programs</li>
@@ -927,7 +976,7 @@ import {useNavigate} from 'react-router-dom'
                 </ul>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Customized Employee Training</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Customized Employee Training</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>Role-specific training for different job functions</li>
                     <li>Technical, soft skills, and leadership training</li>
@@ -935,7 +984,7 @@ import {useNavigate} from 'react-router-dom'
                 </ul>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Learning & Development (L&D)</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Learning & Development (L&D)</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>E-learning modules & interactive training</li>
                     <li>Gamification & simulation-based learning</li>
@@ -947,25 +996,25 @@ import {useNavigate} from 'react-router-dom'
 
     <!-- Industries Benefiting -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Industries Benefiting from Onboarding & Training</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Industries Benefiting from Onboarding & Training</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Finance & Banking)</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BFSI (Finance & Banking)</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
         </div>
     </section>
 
     <!-- Why Choose Us -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob?</h2>
         <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Structured & AI-Driven Onboarding Process</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Industry-Specific Training Solutions</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Blended Learning (Virtual, In-Person, Gamification)</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Scalable Training for Startups, SMEs & Enterprises</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Structured & AI-Driven Onboarding Process</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Industry-Specific Training Solutions</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Blended Learning (Virtual, In-Person, Gamification)</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Scalable Training for Startups, SMEs & Enterprises</li>
         </ul>
     </section>
 
@@ -973,10 +1022,8 @@ import {useNavigate} from 'react-router-dom'
     <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
         <h3 class="text-xl font-bold">Get Started with AssuredJob’s Onboarding & Training Support Today!</h3>
         <p class="mt-2">Need structured onboarding or upskilling programs?</p>
-        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
-            Contact Us
-        </button>
-    </footer>`},
+        
+    </footer>`, button:' Contact Us'},
     {id:12, title: "Pre-Placement Recruitment Services | AssuredJob", image: img12, content:`<!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
         <h1 class="text-3xl font-bold">Hire Top Talent Early with Pre-Placement Offer (PPO) Recruitment</h1>
@@ -986,31 +1033,31 @@ import {useNavigate} from 'react-router-dom'
     <!-- Introduction -->
     <section class="max-w-7xl mx-auto p-6">
         <p class="text-lg text-gray-700">
-            In today’s competitive job market, securing the <strong class="text-blue-600">best young talent before graduation</strong> is a game-changer. 
-            AssuredJob’s Pre-Placement Recruitment Services help companies <span class="text-blue-600">hire top-performing students</span> 
+            In today’s competitive job market, securing the <strong class="text-gray-400">best young talent before graduation</strong> is a game-changer. 
+            AssuredJob’s Pre-Placement Recruitment Services help companies <span class="text-gray-400">hire top-performing students</span> 
             through structured PPOs, ensuring reduced hiring costs and improved workforce quality.
         </p>
     </section>
 
     <!-- Why PPO Recruitment? -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Pre-Placement Recruitment is a Game-Changer?</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Why Pre-Placement Recruitment is a Game-Changer?</h2>
         <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Secure top graduates before competitors hire them.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Reduce hiring costs & time with internship-based hiring.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Ensure a seamless transition from training to employment.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Improve retention rates by hiring pre-assessed candidates.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Strengthen employer branding with PPO tie-ups.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Tailor hiring strategies to match your industry needs.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Secure top graduates before competitors hire them.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Reduce hiring costs & time with internship-based hiring.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Ensure a seamless transition from training to employment.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Improve retention rates by hiring pre-assessed candidates.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Strengthen employer branding with PPO tie-ups.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Tailor hiring strategies to match your industry needs.</li>
         </ul>
     </section>
 
     <!-- Our PPO Solutions -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Our Pre-Placement Recruitment Solutions</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+        <h2 class="text-xl font-semibold text-gray-400">Our Pre-Placement Recruitment Solutions</h2>
+        <div class="grid md:grid-cols-2  gap-6 mt-4">
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Internship-to-PPO Model</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Internship-to-PPO Model</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>Identify top interns & offer PPOs.</li>
                     <li>Performance-based hiring & live projects.</li>
@@ -1018,7 +1065,7 @@ import {useNavigate} from 'react-router-dom'
                 </ul>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Campus Recruitment & Tie-Ups</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Campus Recruitment & Tie-Ups</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>Direct hiring from top colleges & universities.</li>
                     <li>Final-year student placement drives.</li>
@@ -1026,7 +1073,7 @@ import {useNavigate} from 'react-router-dom'
                 </ul>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Skill-Based Assessments</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Skill-Based Assessments</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>AI-powered screening & psychometric tests.</li>
                     <li>Technical & domain-specific evaluations.</li>
@@ -1038,29 +1085,29 @@ import {useNavigate} from 'react-router-dom'
 
     <!-- Industries Benefiting -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Industries Benefiting from Pre-Placement Recruitment</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Industries Benefiting from Pre-Placement Recruitment</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Finance & Banking)</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ EdTech & Education</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Hospitality & Tourism</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Media & Entertainment</span>
+            <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BFSI (Finance & Banking)</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md"> EdTech & Education</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Hospitality & Tourism</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Media & Entertainment</span>
         </div>
     </section>
 
     <!-- Why Choose Us -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
-        <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>AI-driven talent screening for high-quality hires.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Exclusive access to campus talent.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Flexible PPO models (internships, hackathons, direct offers).</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Cost-effective hiring with pre-assessed candidates.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Enhanced employer branding & student engagement.</li>
+        <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob?</h2>
+        <ul class="mt-3 space-y-2 ">
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>AI-driven talent screening for high-quality hires.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Exclusive access to campus talent.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Flexible PPO models (internships, hackathons, direct offers).</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Cost-effective hiring with pre-assessed candidates.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Enhanced employer branding & student engagement.</li>
         </ul>
     </section>
 
@@ -1068,10 +1115,8 @@ import {useNavigate} from 'react-router-dom'
     <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
         <h3 class="text-xl font-bold">Get Started with AssuredJob’s Pre-Placement Recruitment Today!</h3>
         <p class="mt-2">Secure top talent before they enter the job market.</p>
-        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
-            Contact Us
-        </button>
-    </footer>` },
+       
+    </footer>`, button:' Contact Us' },
     {id:13,title:'Remote Talent Pooling Services | AssuredJob', image:img13, content:`<body class="bg-gray-100">
 
     <!-- Hero Section -->
@@ -1083,31 +1128,31 @@ import {useNavigate} from 'react-router-dom'
     <!-- Introduction -->
     <section class="max-w-7xl mx-auto p-6">
         <p class="text-lg text-gray-700">
-            In today’s <strong class="text-blue-600">digital-first world</strong>, businesses are leveraging remote talent to scale operations, 
+            In today’s <strong class="text-gray-400">digital-first world</strong>, businesses are leveraging remote talent to scale operations, 
             access global expertise, and reduce costs. AssuredJob specializes in 
-            <span class="text-blue-600">remote talent pooling</span>, helping companies find, vet, and onboard top remote professionals worldwide.
+            <span class="text-gray-400">remote talent pooling</span>, helping companies find, vet, and onboard top remote professionals worldwide.
         </p>
     </section>
 
     <!-- Why Remote Talent Pooling? -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Remote Talent Pooling?</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Why Remote Talent Pooling?</h2>
         <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Access a global talent pool with no geographic limitations.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Reduce infrastructure, relocation & operational costs.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Expand your workforce on-demand with remote hiring.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Boost productivity with highly efficient remote employees.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Promote diversity & inclusion with a global workforce.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Reduce time-to-hire with AI-driven pre-vetted candidates.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Access a global talent pool with no geographic limitations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Reduce infrastructure, relocation & operational costs.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Expand your workforce on-demand with remote hiring.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Boost productivity with highly efficient remote employees.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Promote diversity & inclusion with a global workforce.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Reduce time-to-hire with AI-driven pre-vetted candidates.</li>
         </ul>
     </section>
 
     <!-- Our Remote Talent Pooling Solutions -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Our Remote Talent Pooling Solutions</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+        <h2 class="text-xl font-semibold text-gray-400">Our Remote Talent Pooling Solutions</h2>
+        <div class="grid md:grid-cols-2  gap-6 mt-4">
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Remote Talent Sourcing & Screening</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Remote Talent Sourcing & Screening</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>AI-driven remote candidate sourcing & profiling.</li>
                     <li>Skill-based & industry-specific hiring.</li>
@@ -1115,7 +1160,7 @@ import {useNavigate} from 'react-router-dom'
                 </ul>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Virtual Interviews & Assessments</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Virtual Interviews & Assessments</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>Video interviews & behavioral assessments.</li>
                     <li>Technical & non-technical skills evaluation.</li>
@@ -1123,7 +1168,7 @@ import {useNavigate} from 'react-router-dom'
                 </ul>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Remote Onboarding & Compliance</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Remote Onboarding & Compliance</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>Digital documentation & contract signing.</li>
                     <li>Payroll & labor law compliance for remote teams.</li>
@@ -1135,29 +1180,29 @@ import {useNavigate} from 'react-router-dom'
 
     <!-- Industries Benefiting -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Industries Benefiting from Remote Talent Pooling</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Industries Benefiting from Remote Talent Pooling</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Finance & Banking)</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Media & Entertainment</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ EdTech & Education</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Consulting & Professional Services</span>
+            <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BFSI (Finance & Banking)</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Media & Entertainment</span>
+            <span class="bg-gray-200 p-2 rounded-md"> EdTech & Education</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Consulting & Professional Services</span>
         </div>
     </section>
 
     <!-- Why Choose Us -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob?</h2>
         <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Instant access to a global pre-vetted talent pool.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>AI-driven candidate matching for faster hiring.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Seamless virtual onboarding & legal compliance.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Customizable remote workforce solutions.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Secure, confidential & compliant hiring processes.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Instant access to a global pre-vetted talent pool.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>AI-driven candidate matching for faster hiring.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Seamless virtual onboarding & legal compliance.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Customizable remote workforce solutions.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Secure, confidential & compliant hiring processes.</li>
         </ul>
     </section>
 
@@ -1165,12 +1210,10 @@ import {useNavigate} from 'react-router-dom'
     <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
         <h3 class="text-xl font-bold">Get Started with AssuredJob’s Remote Talent Pooling Services Today!</h3>
         <p class="mt-2">Hire top remote talent and scale your workforce effortlessly.</p>
-        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
-            Contact Us
-        </button>
+       
     </footer>
 
-</body>`},
+</body>`, button:' Contact Us'},
     {id:14,title:'Payroll Management Services | AssuredJob', image:img14, content:`<body class="bg-gray-100">
 
     <!-- Hero Section -->
@@ -1183,30 +1226,30 @@ import {useNavigate} from 'react-router-dom'
     <section class="max-w-7xl mx-auto p-6">
         <p class="text-lg text-gray-700">
             Managing payroll processing, tax compliance, and employee benefits can be a complex challenge. 
-            <span class="text-blue-600 font-semibold">AssuredJob</span> provides end-to-end payroll management solutions to help companies 
+            <span class="text-gray-400 font-semibold">AssuredJob</span> provides end-to-end payroll management solutions to help companies 
             <strong>automate payroll, ensure 100% compliance, and handle payroll complexities</strong> efficiently.
         </p>
     </section>
 
     <!-- Why Outsource Payroll Management? -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Outsource Payroll Management?</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Why Outsource Payroll Management?</h2>
         <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>100% Statutory Compliance (EPF, ESIC, PT, TDS, Gratuity, Bonus Act).</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Error-Free Payroll Processing with Automated Calculations.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Cost & Time Efficiency – Reduce HR workload.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Secure Payroll Data Handling with Encryption.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Seamless Integration with HR & Accounting Systems.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✔️</span>Multi-Location Payroll Support – Manage payroll across India & globally.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>100% Statutory Compliance (EPF, ESIC, PT, TDS, Gratuity, Bonus Act).</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Error-Free Payroll Processing with Automated Calculations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Cost & Time Efficiency – Reduce HR workload.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Secure Payroll Data Handling with Encryption.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Seamless Integration with HR & Accounting Systems.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Multi-Location Payroll Support – Manage payroll across India & globally.</li>
         </ul>
     </section>
 
     <!-- Our Payroll Management Services -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Our Payroll Management Services</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+        <h2 class="text-xl font-semibold text-gray-400">Our Payroll Management Services</h2>
+        <div class="grid md:grid-cols-2  gap-6 mt-4">
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Salary Processing & Payroll Outsourcing</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Salary Processing & Payroll Outsourcing</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>Automated salary calculations & disbursements.</li>
                     <li>TDS, PF, ESIC, PT, and other deductions.</li>
@@ -1214,7 +1257,7 @@ import {useNavigate} from 'react-router-dom'
                 </ul>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Statutory Compliance & Tax Filing</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Statutory Compliance & Tax Filing</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>EPF, ESIC, PT, and labor law compliance.</li>
                     <li>Payroll tax (TDS) calculations & filings.</li>
@@ -1222,7 +1265,7 @@ import {useNavigate} from 'react-router-dom'
                 </ul>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-blue-600">Payroll Reports & Tax Documentation</h3>
+                <h3 class="font-semibold text-lg text-gray-400">Payroll Reports & Tax Documentation</h3>
                 <ul class="list-disc pl-5 mt-2 text-gray-700">
                     <li>Form 16, Form 24Q, and tax return assistance.</li>
                     <li>Salary breakup reports & payroll analytics.</li>
@@ -1234,29 +1277,29 @@ import {useNavigate} from 'react-router-dom'
 
     <!-- Industries We Serve -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Industries We Serve</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Industries We Serve</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Banking & Finance)</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Hospitality & Tourism</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Education & EdTech</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Logistics & Supply Chain</span>
+            <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BFSI (Banking & Finance)</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Hospitality & Tourism</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Education & EdTech</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Logistics & Supply Chain</span>
         </div>
     </section>
 
     <!-- Why Choose Us -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob?</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob?</h2>
         <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Automated Payroll Processing with AI-driven calculations.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>100% Compliance with Indian tax & labor laws.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Multi-Location & International Payroll Support.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Seamless HR & Finance System Integration.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2">✅</span>Secure & Confidential Payroll Data Handling.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Automated Payroll Processing with AI-driven calculations.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>100% Compliance with Indian tax & labor laws.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Multi-Location & International Payroll Support.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Seamless HR & Finance System Integration.</li>
+            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Secure & Confidential Payroll Data Handling.</li>
         </ul>
     </section>
 
@@ -1264,9 +1307,7 @@ import {useNavigate} from 'react-router-dom'
     <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
         <h3 class="text-xl font-bold">Get Started with AssuredJob’s Payroll Management Services!</h3>
         <p class="mt-2">Automate payroll, ensure compliance, and focus on business growth.</p>
-        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
-            Contact Us
-        </button>
+        
     </footer>
 
 </body>`},
@@ -1276,50 +1317,50 @@ import {useNavigate} from 'react-router-dom'
 
         <h2 class="mt-6 text-2xl font-semibold">Why Labour Compliance Management is Essential?</h2>
         <ul class="list-disc pl-6 mt-2 space-y-2">
-            <li>✔️ Avoid Legal Risks & Penalties – Stay updated with EPF, ESIC, PT, LWF, Bonus Act, and more.</li>
-            <li>✔️ Ensure Smooth Payroll Processing – Automate PF, ESIC, gratuity, and TDS deductions.</li>
-            <li>✔️ Stay Aligned with Government Regulations – Meet all state & central labour law mandates.</li>
-            <li>✔️ Improve Employer Brand & Trust – Show commitment to employee rights & fair labour practices.</li>
+            <li> Avoid Legal Risks & Penalties – Stay updated with EPF, ESIC, PT, LWF, Bonus Act, and more.</li>
+            <li> Ensure Smooth Payroll Processing – Automate PF, ESIC, gratuity, and TDS deductions.</li>
+            <li> Stay Aligned with Government Regulations – Meet all state & central labour law mandates.</li>
+            <li> Improve Employer Brand & Trust – Show commitment to employee rights & fair labour practices.</li>
         </ul>
 
         <h2 class="mt-6 text-2xl font-semibold">Our Labour Compliance Management Solutions</h2>
         <div class="mt-4 space-y-4">
             <div class="p-4 bg-white shadow rounded-lg">
                 <h3 class="text-xl font-semibold">1. Payroll Compliance & Statutory Deductions</h3>
-                <p>✅ EPF & ESIC management</p>
-                <p>✅ Professional Tax (PT), Labour Welfare Fund (LWF), and TDS deductions</p>
+                <p> EPF & ESIC management</p>
+                <p> Professional Tax (PT), Labour Welfare Fund (LWF), and TDS deductions</p>
             </div>
             <div class="p-4 bg-white shadow rounded-lg">
                 <h3 class="text-xl font-semibold">2. Contract Labour & Workforce Compliance</h3>
-                <p>✅ Adherence to the Contract Labour (Regulation & Abolition) Act</p>
-                <p>✅ Registration, licensing, and compliance management</p>
+                <p> Adherence to the Contract Labour (Regulation & Abolition) Act</p>
+                <p> Registration, licensing, and compliance management</p>
             </div>
             <div class="p-4 bg-white shadow rounded-lg">
                 <h3 class="text-xl font-semibold">3. Minimum Wages & Employee Benefits Compliance</h3>
-                <p>✅ Enforcement of state-wise minimum wages & fair pay structures</p>
-                <p>✅ Implementation of maternity benefits & gratuity schemes</p>
+                <p> Enforcement of state-wise minimum wages & fair pay structures</p>
+                <p> Implementation of maternity benefits & gratuity schemes</p>
             </div>
         </div>
 
         <h2 class="mt-6 text-2xl font-semibold">Industries Benefiting from Labour Compliance Management</h2>
         <div class="grid grid-cols-2 gap-4 mt-4">
-            <div class="p-4 bg-white shadow rounded-lg">✔️ Information Technology (IT & Software Development)</div>
-            <div class="p-4 bg-white shadow rounded-lg">✔️ Banking & Financial Services (BFSI)</div>
-            <div class="p-4 bg-white shadow rounded-lg">✔️ Healthcare & Pharmaceuticals</div>
-            <div class="p-4 bg-white shadow rounded-lg">✔️ Retail & E-commerce</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Information Technology (IT & Software Development)</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Banking & Financial Services (BFSI)</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Healthcare & Pharmaceuticals</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Retail & E-commerce</div>
         </div>
 
         <h2 class="mt-6 text-2xl font-semibold">Why Choose AssuredJob?</h2>
         <ul class="list-disc pl-6 mt-2 space-y-2">
-            <li>✅ 100% Legal Compliance Assurance</li>
-            <li>✅ AI-Driven Compliance Automation</li>
-            <li>✅ Multi-Industry Expertise</li>
-            <li>✅ End-to-End Payroll & HR Integration</li>
+            <li> 100% Legal Compliance Assurance</li>
+            <li> AI-Driven Compliance Automation</li>
+            <li> Multi-Industry Expertise</li>
+            <li> End-to-End Payroll & HR Integration</li>
         </ul>
 
         <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Labour Compliance Management Today!</h2>
         <p class="mt-4 text-lg">Stay compliant, avoid legal risks, and streamline workforce management with AssuredJob’s expert labour compliance solutions!</p>
-    </div>`},
+    </div>`, button:' Contact Us'},
     {id:16,title:'Freelance Recruiter Program | AssuredJob', image:img16 ,content:`<body class="bg-gray-100 font-sans">
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
@@ -1335,66 +1376,66 @@ import {useNavigate} from 'react-router-dom'
 
     <!-- Why Join -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Join AssuredJob as a Freelance Recruiter?</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Why Join AssuredJob as a Freelance Recruiter?</h2>
         <ul class="mt-3 space-y-2">
-            <li>✔️ Work from Anywhere – No office required! Work remotely at your convenience.</li>
-            <li>✔️ Earn High Commissions – Get paid for every successful hire.</li>
-            <li>✔️ Access to Top Job Openings – Work with leading companies across multiple industries.</li>
-            <li>✔️ AI-Driven Recruitment Platform – Use advanced tools to source, track, and place candidates.</li>
-            <li>✔️ No Investment Required – Start your recruitment career without any upfront costs.</li>
-            <li>✔️ Training & Support Provided – Learn best recruitment practices & hiring techniques.</li>
+            <li> Work from Anywhere – No office required! Work remotely at your convenience.</li>
+            <li> Earn High Commissions – Get paid for every successful hire.</li>
+            <li> Access to Top Job Openings – Work with leading companies across multiple industries.</li>
+            <li> AI-Driven Recruitment Platform – Use advanced tools to source, track, and place candidates.</li>
+            <li> No Investment Required – Start your recruitment career without any upfront costs.</li>
+            <li> Training & Support Provided – Learn best recruitment practices & hiring techniques.</li>
         </ul>
     </section>
 
     <!-- How It Works -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">How It Works?</h2>
-        <ol class="list-decimal pl-6 mt-3 space-y-2">
-            <li>✅ Register & Get Onboarded – Sign up, complete your profile & attend training sessions.</li>
-            <li>✅ Source & Screen Candidates – Use AI-driven tools & portals to find top candidates.</li>
-            <li>✅ Get Paid – Earn commissions for every successful hire with no limit on earnings.</li>
+        <h2 class="text-xl font-semibold text-gray-400">How It Works?</h2>
+        <ol class="list-disc pl-6 mt-3 space-y-2">
+            <li>Register & Get Onboarded – Sign up, complete your profile & attend training sessions.</li>
+            <li> Source & Screen Candidates – Use AI-driven tools & portals to find top candidates.</li>
+            <li> Get Paid – Earn commissions for every successful hire with no limit on earnings.</li>
         </ol>
     </section>
 
     <!-- Who Can Join? -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Who Can Become a Freelance Recruiter?</h2>
-        <ul class="mt-3 space-y-2">
-            <li>✔️ HR professionals & recruitment consultants.</li>
-            <li>✔️ Work-from-home professionals seeking flexibility.</li>
-            <li>✔️ Freelancers & independent consultants with strong networks.</li>
-            <li>✔️ Industry experts who can source top talent.</li>
-            <li>✔️ College placement coordinators & career counselors.</li>
-            <li>✔️ Stay-at-home parents, retirees & part-time job seekers.</li>
+        <h2 class="text-xl font-semibold text-gray-400">Who Can Become a Freelance Recruiter?</h2>
+        <ul class="mt-3 space-y-2 list-disc">
+            <li> HR professionals & recruitment consultants.</li>
+            <li> Work-from-home professionals seeking flexibility.</li>
+            <li> Freelancers & independent consultants with strong networks.</li>
+            <li> Industry experts who can source top talent.</li>
+            <li> College placement coordinators & career counselors.</li>
+            <li> Stay-at-home parents, retirees & part-time job seekers.</li>
         </ul>
     </section>
 
     <!-- Industries We Serve -->
     <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Industries & Job Roles We Recruit For</h2>
+        <h2 class="text-xl font-semibold text-gray-400">Industries & Job Roles We Recruit For</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-            <span class="bg-gray-200 p-2 rounded-md">✔️ IT & Software Development</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BFSI (Banking & Finance)</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Healthcare & Pharmaceuticals</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Retail & E-commerce</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Manufacturing & Engineering</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ BPO & KPO</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Education & EdTech</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Logistics & Supply Chain</span>
-            <span class="bg-gray-200 p-2 rounded-md">✔️ Media & Entertainment</span>
+            <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BFSI (Banking & Finance)</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
+            <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Education & EdTech</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Logistics & Supply Chain</span>
+            <span class="bg-gray-200 p-2 rounded-md"> Media & Entertainment</span>
         </div>
     </section>
 
     <!-- Why Choose Us -->
     <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-blue-600">Why Choose AssuredJob’s Freelance Recruiter Program?</h2>
-        <ul class="mt-3 space-y-2">
-            <li>✅ AI-Driven Recruitment Portal – Find jobs, track candidates, and earn commissions easily.</li>
-            <li>✅ High Earning Potential – Earn commissions on every successful hire.</li>
-            <li>✅ Flexible Working Hours – Work at your convenience.</li>
-            <li>✅ Access to a Wide Network of Job Openings.</li>
-            <li>✅ Recruitment Training & Support Provided.</li>
-            <li>✅ No Fixed Targets, No Investment Required.</li>
+        <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob’s Freelance Recruiter Program?</h2>
+        <ul class="mt-3 list-disc space-y-2">
+            <li> AI-Driven Recruitment Portal – Find jobs, track candidates, and earn commissions easily.</li>
+            <li> High Earning Potential – Earn commissions on every successful hire.</li>
+            <li> Flexible Working Hours – Work at your convenience.</li>
+            <li> Access to a Wide Network of Job Openings.</li>
+            <li> Recruitment Training & Support Provided.</li>
+            <li> No Fixed Targets, No Investment Required.</li>
         </ul>
     </section>
 
@@ -1402,29 +1443,27 @@ import {useNavigate} from 'react-router-dom'
     <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
         <h3 class="text-xl font-bold">Get Started with AssuredJob’s Freelance Recruiter Program Today!</h3>
         <p class="mt-2">Join India’s top freelance recruitment network and start earning today!</p>
-        <button class="mt-4 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
-            Sign Up Now
-        </button>
+       
     </footer>
-</body>`},
+</body>`, button:' Signup Now'},
     {id:17,title:'Outplacement Services | AssuredJobs', image:img17 ,content:`<body class=" text-gray-800">
     <header class="bg-gray-100 text-gray-600  p-6">
         <h1 class="text-3xl font-bold">Empowering Employees with Career Transition Support</h1>
     </header>
     
     <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
-        <h2 class="text-2xl font-semibold text-blue-600">Why Invest in Outplacement Services?</h2>
+        <h2 class="text-2xl font-semibold text-gray-400">Why Invest in Outplacement Services?</h2>
         <ul class="mt-4 space-y-2 text-gray-700">
-            <li>✔️ Protect Your Employer Brand – Show commitment to employee welfare during layoffs.</li>
-            <li>✔️ Reduce Legal & Compliance Risks – Ensure smooth transitions to prevent legal disputes.</li>
-            <li>✔️ Improve Employee Morale – Help affected employees find new opportunities quickly.</li>
-            <li>✔️ Minimize Business Disruptions – Maintain productivity during restructuring.</li>
-            <li>✔️ Cost-Effective Workforce Transition – Reduce severance costs with rapid job placement.</li>
+            <li> Protect Your Employer Brand – Show commitment to employee welfare during layoffs.</li>
+            <li> Reduce Legal & Compliance Risks – Ensure smooth transitions to prevent legal disputes.</li>
+            <li> Improve Employee Morale – Help affected employees find new opportunities quickly.</li>
+            <li> Minimize Business Disruptions – Maintain productivity during restructuring.</li>
+            <li> Cost-Effective Workforce Transition – Reduce severance costs with rapid job placement.</li>
         </ul>
     </section>
     
     <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
-        <h2 class="text-2xl font-semibold text-blue-600">Our Outplacement Solutions</h2>
+        <h2 class="text-2xl font-semibold text-gray-400">Our Outplacement Solutions</h2>
         <div class="grid md:grid-cols-2 gap-6 mt-4 text-gray-700">
             <div>
                 <h3 class="text-lg font-semibold">Career Counseling & Transition Planning</h3>
@@ -1462,35 +1501,33 @@ import {useNavigate} from 'react-router-dom'
     </section>
 
     <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
-        <h2 class="text-2xl font-semibold text-blue-600">Industries We Serve</h2>
+        <h2 class="text-2xl font-semibold text-gray-400">Industries We Serve</h2>
         <div class="grid md:grid-cols-2 gap-4 mt-4 text-gray-700">
             <ul class="list-disc ml-5">
-                <li>✔️ Information Technology (IT & Software Development)</li>
-                <li>✔️ Banking, Financial Services & Insurance (BFSI)</li>
-                <li>✔️ Healthcare & Pharmaceuticals</li>
-                <li>✔️ Retail & E-commerce</li>
-                <li>✔️ Manufacturing & Engineering</li>
+                <li> Information Technology (IT & Software Development)</li>
+                <li> Banking, Financial Services & Insurance (BFSI)</li>
+                <li> Healthcare & Pharmaceuticals</li>
+                <li> Retail & E-commerce</li>
+                <li> Manufacturing & Engineering</li>
             </ul>
             <ul class="list-disc ml-5">
-                <li>✔️ Business Process Outsourcing (BPO) & KPO</li>
-                <li>✔️ Education & EdTech</li>
-                <li>✔️ Hospitality & Tourism</li>
-                <li>✔️ Media & Entertainment</li>
-                <li>✔️ Startups & Small Businesses</li>
+                <li> Business Process Outsourcing (BPO) & KPO</li>
+                <li> Education & EdTech</li>
+                <li> Hospitality & Tourism</li>
+                <li> Media & Entertainment</li>
+                <li> Startups & Small Businesses</li>
             </ul>
         </div>
     </section>
 
     <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6 text-center">
-        <h2 class="text-2xl font-semibold text-blue-600">Get Started with AssuredJob’s Outplacement Services Today!</h2>
+        <h2 class="text-2xl font-semibold text-gray-400">Get Started with AssuredJob’s Outplacement Services Today!</h2>
         <p class="mt-4 text-gray-700">Help your employees transition smoothly, find new opportunities, and build successful careers with AssuredJob!</p>
-        <button class="mt-6 bg-blue-600 text-gray-600 px-6 py-3 rounded-lg shadow  transition">Contact Us</button>
+        
     </section>
     
-    <footer class="text-center p-4 mt-6 bg-gray-800 text-gray-600">
-        <p>&copy; 2025 AssuredJob. All rights reserved.</p>
-    </footer>
-</body>`},
+    
+</body>`, button:' Contact us '},
     // {id:18,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
     {id:19,title:'Talent Mapping & Market Intelligence Services | AssuredJob', image:img19 ,content:`<body class="bg-gray-100 text-gray-900">
     <header class=" text-gray-600  py-6">
@@ -1527,15 +1564,15 @@ import {useNavigate} from 'react-router-dom'
             <h2 class="text-xl font-semibold mb-4">Industries Benefiting from Our Services</h2>
             <p class="text-gray-700">Our data-driven talent insights & workforce analytics cater to multiple industries, ensuring businesses stay ahead in hiring & workforce planning.</p>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-gray-700">
-                <p>✔️ IT & Software Development</p>
-                <p>✔️ BFSI & Fintech</p>
-                <p>✔️ Healthcare & Pharmaceuticals</p>
-                <p>✔️ Retail & E-commerce</p>
-                <p>✔️ BPO & KPO</p>
-                <p>✔️ Manufacturing & Engineering</p>
-                <p>✔️ EdTech & Online Learning</p>
-                <p>✔️ Hospitality & Tourism</p>
-                <p>✔️ Logistics & Supply Chain</p>
+                <p> IT & Software Development</p>
+                <p> BFSI & Fintech</p>
+                <p> Healthcare & Pharmaceuticals</p>
+                <p> Retail & E-commerce</p>
+                <p> BPO & KPO</p>
+                <p> Manufacturing & Engineering</p>
+                <p> EdTech & Online Learning</p>
+                <p> Hospitality & Tourism</p>
+                <p> Logistics & Supply Chain</p>
             </div>
         </div>
     
@@ -1551,15 +1588,15 @@ import {useNavigate} from 'react-router-dom'
             </ul>
         </div>
     
-        <div class="bg-gray-100 text-gray-600 p-6 rounded-lg shadow-md mt-6 text-center">
+        <div class="bg-gray-100 text-gray-600 p-6 rounded-lg shadow-md mt-6 ">
             <h2 class="text-2xl font-semibold">Get Started with AssuredJob’s Talent Mapping & Market Intelligence Today!</h2>
-            <p class="mt-4">✅ Need insights on hiring trends & competitor benchmarking?</p>
-            <p>✅ Want to create a data-driven talent acquisition strategy?</p>
-            <p>✅ Looking to expand your workforce with strategic hiring intelligence?</p>
+            <p class="mt-4"> Need insights on hiring trends & competitor benchmarking?</p>
+            <p> Want to create a data-driven talent acquisition strategy?</p>
+            <p> Looking to expand your workforce with strategic hiring intelligence?</p>
             <p class="mt-4 text-lg font-bold">Partner with AssuredJob for Expert Talent Mapping & Market Intelligence Solutions!</p>
-            <button class="mt-6 bg-white text-blue-600 font-bold py-2 px-6 rounded-full shadow-md hover:bg-gray-200">Get Started</button>
+           
         </div>
     </section>
-</body>`},
+</body>`, button:' Get Started '},
     
   ];

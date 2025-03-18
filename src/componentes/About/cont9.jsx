@@ -1,9 +1,9 @@
-// import ig1 from "../../assets/products/image 55.png";
-// import ig2 from "../../assets/products/image 56.png";
+import ig1 from "../../assets/products/image 55.png";
+import ig2 from "../../assets/products/image 56.png";
 const Cont9 = () => {
   return (
     <>
-      {/* <div className="flex flex-col items-center px-4  w-full">
+      <div className="flex flex-col items-center px-4  w-full">
         <p className="text-center lg:text-xl font-semibold max-w-2xl mb-4 w-80 md:w-auto ">
           Sky Wings Advisors helps Indian businesses build stable, long-term
           workforces. Our permanent staffing solutions are designed to match
@@ -45,7 +45,7 @@ const Cont9 = () => {
             />
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

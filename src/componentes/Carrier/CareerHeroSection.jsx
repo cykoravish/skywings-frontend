@@ -10,7 +10,7 @@ const CareerHeroSection = () => {
     }
     return (
         <>
-            <section className="flex flex-col md:flex-row items-center justify-between mx-auto p-6 bg-white rounded-lg ">
+            <section className="flex flex-col md:flex-row items-center justify-between mx-10 p-6 bg-white rounded-lg ">
 
                 <div className="md:w-1/2 text-center md:text-left">
                     <h2 className="text-2xl font-bold text-[#000000]">

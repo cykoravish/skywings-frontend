@@ -1,6 +1,7 @@
-import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaLinkedin,   } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function SocialmediaConn() {
   return (
@@ -41,6 +42,14 @@ function SocialmediaConn() {
        className="text-red-500 rounded-lg  bg-transparent text-3xl hover:scale-110 duration-300 hover:shadow-[0_0_20px_5px] hover:shadow-red-500/50"
       >
         <FaYoutube className=' w-10 bg-transparent h-10'/>
+      </Link>
+      <Link
+        to=""
+        target="_blank"
+        rel="noopener noreferrer"
+       className="text-black rounded-lg  bg-transparent text-3xl hover:scale-110 duration-300 hover:shadow-[0_0_20px_5px] hover:shadow-black"
+      >
+        <FaXTwitter className=' w-10 bg-transparent h-10'/>
       </Link>
     </div>
     </>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import min from '../../../src/assets/carrier/mineus.png';
 import add from '../../../src/assets/carrier/addicon.png';
+import { useNavigate } from 'react-router-dom';
 const faqs = [
     {
         question: "How can I apply for jobs through AssuredJob.com?",
@@ -41,6 +42,7 @@ const faqs = [
 ];
 
 const FAQAccordion = () => {
+    const navigate = useNavigate();
 
     const [openIndex, setOpenIndex] = useState(null);
 
@@ -49,7 +51,7 @@ const FAQAccordion = () => {
     };
 
     return (
-        <div className="max-w-2xl mx-auto p-4 my-5">
+        <div className="max-w-2xl mx-auto px-10 my-5">
             <h2 className='text-[#101828] text-center text-2xl mt-4'>Frequently asked questions</h2>
             <p className='text-[#667085] text-center mb-4'>Everything you need to know about the product and billing.</p>
             {faqs.map((faq, index) => (
@@ -74,7 +76,9 @@ const FAQAccordion = () => {
                     )}
                 </div>
             ))}
+            <button onClick={()=>navigate('/faq')} className='flex justify-center mx-auto mt-1.5 px-10 py-1 rounded-lg border border-blue-500  text-lg font-medium text-blue-500 cursor-pointer'>See more ...</button>
         </div>
+    
     )
 }
 

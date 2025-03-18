@@ -75,8 +75,8 @@ const Nav = ({ setIsMobileMenuOpen }) => {
                 "Recruitment Process Outsourcing (RPO)",
                 "Skill Gap Assessment",
                 "Internship Program Management",
-                "Graduate Trainee Programs",
-                "Diversity & Inclusion Hiring Initiatives",
+                // "Graduate Trainee Programs",
+                // "Diversity & Inclusion Hiring Initiatives",
                 "Onboarding and Training Support",
                 "Pre-Placement Offer (PPO) Recruitment",
                 "Remote Talent Pooling",
@@ -158,7 +158,7 @@ const Nav = ({ setIsMobileMenuOpen }) => {
         </span>
 
         {openDropdown === "innovations" && (
-          <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white z-10 p-2">
+          <div className="absolute right-1 mt-2 w-48 rounded-md shadow-lg bg-white z-10 p-2">
             <a
               href="https://pool-campus.com/"
               className={`${baseStyles} block ${inactiveStyles}`}

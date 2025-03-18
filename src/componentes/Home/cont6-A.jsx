@@ -1,9 +1,18 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import group from "../../assets/products/Group (1).png";
-import group2 from "../../assets/products/Group.png";
+import img1 from "../../assets/Brand/e.png"
+import group2 from "../../assets/Brand/hdfc.jpg";
+import gr from "../../assets/Brand/img2.avif";
+import img2 from "../../assets/Brand/indiaFirst.png";
+import logo from "../../assets/Brand/logo_.png";
+import logo1 from "../../assets/Brand/name.png";
+import gro from "../../assets/Brand/e.png";
+import first from "../../assets/Brand/first.png";
 
-const images = [group2, group, group2, group, group2, group, group, group2, group, group2, group, group2];
+import grou from "../../assets/Brand/hhhh.jpg";
+
+
+const images = [img1, img2, group2, , logo, logo1, gr, , gro, , grou,first];
 
 const Cont6A = () => {
   return (

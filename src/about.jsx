@@ -6,7 +6,7 @@ const About =()=>{
     return(
         <>
         <Cont7/>
-        <Cont9/>
+        {/* <Cont9/> */}
         {/* <Cont8/> */}
         </>
     )

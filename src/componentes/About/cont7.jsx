@@ -27,22 +27,9 @@ const Cont7 = () => {
               stress-free and recruitment faster.
             </h2>
             <p className="text-gray-600 mb-4">
-              The world of job hunting and hiring can feel overwhelming. We&apos;re
-              here to change that. Whether you&apos;re just starting your career or
-              looking for your next big break, Assured Job simplifies the
-              process so you can focus on what matters.
+            Skywings Advisors Private Limited, headquartered in New Delhi, is a leading force in the placement and recruitment industry. Our expertise spans across diverse recruitment disciplines, including Legal, Finance, IT, Sales & Marketing, Healthcare, Automobile, Training & Education, Industrial & Warehouse, Construction, E-Commerce, and more. We are committed to understanding your business as deeply as you do—tailoring our services to align perfectly with your goals. Building that connection is paramount, allowing us to bring both comprehensive recruitment knowledge and cutting-edge assessment methods to the table.
             </p>
-            <p className="text-gray-600 mb-4">
-              The world of job hunting and hiring can feel overwhelming. We&apos;re
-              here to change that. Whether you&apos;re just starting your career or
-              looking for your next big break, Assured Job simplifies the
-              process so you can focus on what matters.
-            </p>
-            <p className="text-gray-600 mb-4">
-              Over the years, we&apos;ve grown into a trusted platform that connects
-              job seekers with opportunities that truly align with their skills
-              and aspirations.
-            </p>
+           
           </div>
 
           {/* RIGHT IMAGE */}

@@ -317,71 +317,6 @@ function Cont2() {
                         {/* <p className="text-gray-500 text-sm lg:text-base">
         {job.company}
       </p> */}
-<<<<<<< HEAD
-    </div>
-
-    <div className="pt-5  text-gray-600 space-y-1">
-    <p className="flex items-center space-x-2  text-xs sm:text-sm lg:text-base">
-  <MdLocationOn className="text-purple-500 w-4 h-4 sm:w-5 sm:h-5" />
-  <span className="flex flex-wrap min-h-8 max-h-12 w-full truncate">{job.location}</span>
-</p>
-      <p className="flex min-h-10 max-h-10 items-center text-xs sm:text-sm lg:text-base space-x-2">
-        <img
-          src={bag || "/placeholder.svg"}
-          alt="Experience Icon"
-          className="w-4 h-4 sm:w-5 sm:h-5"
-        />
-      <span className="truncate w-full">{job.experience}</span>
-        {/* <span>{job.job_start_date}</span> */}
-      </p>
-      <span className='flex gap-2 space-x-2.5 text-blue-500 font-semibold'>
-      <CalendarDays/>
-        {job.job_start_date ?? 'Not specified'}</span>
-       <Link to={`/jobdetails/${job.id}`}>
-                        <button className="mt-4 w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg py-1">
-                          View Details
-                        </button>
-                      </Link>
-    </div>
-  </div>
-))}
-
-            </div>
-            
-          </>
-        )}
-             
-        </div>
-      ) : (
-        /* Mobile and Tablet View - Carousel Layout */
-        <div className="w-full max-w-md mt-6 md:mt-10 px-2">
-          {/* Carousel Container */}
-          <div className="relative">
-            {/* Carousel Navigation - Left Arrow */}
-            {filteredJobs.length > 1 && (
-              <button 
-                onClick={prevSlide} 
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 z-10 bg-white rounded-full p-1.5 shadow-md hover:bg-gray-100"
-                aria-label="Previous job"
-              >
-                <FaChevronLeft className="text-purple-500" size={screenSize.isMobile ? 12 : 16} />
-              </button>
-            )}
-            
-            {/* Carousel Items */}
-            <div 
-              ref={carouselRef}
-              className="overflow-hidden"
-            >
-              <div className="flex transition-transform duration-300 ease-in-out">
-                {filteredJobs.length > 0 ? (
-                  <div className="min-w-full p-2">
-                    <div className="bg-white shadow-md rounded-2xl p-4 md:p-6 border border-gray-200">
-                      <div>
-                        <h3 className="text-base md:text-lg font-semibold">{filteredJobs[currentSlide].title}</h3>
-                        <p className="text-gray-500 text-sm md:text-base">{filteredJobs[currentSlide].company}</p>
-=======
->>>>>>> b8df874e5fcae10faa4a3011e5624a50b10c8a50
                       </div>
 
                       <div className="pt-5  text-gray-600 space-y-1">
@@ -398,7 +333,7 @@ function Cont2() {
                             className="w-4 h-4 sm:w-5 sm:h-5"
                           />
                           <span className="truncate w-full">
-                            {job.experience}
+                            {job.industry}
                           </span>
                           {/* <span>{job.job_start_date}</span> */}
                         </p>

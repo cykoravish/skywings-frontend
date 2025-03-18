@@ -2,7 +2,7 @@
 
 const JobCard = ({title,location,experience}) => {
     return (
-        <div className="bg-[#F7F7F7] shadow-md rounded-lg p-4 w-full max-w-xs">
+        <div className="bg-[#F7F7F7] mx-10 shadow-md rounded-lg p-4 w-full max-w-xs">
             <h3 className="text-lg font-semibold text-[#000000]">{title}</h3>
             <div className="flex items-center gap-2 text-[#707070] text-sm mt-2">
                 <span>📍 {location}</span>

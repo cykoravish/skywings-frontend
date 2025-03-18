@@ -5,64 +5,190 @@ import testm_1 from '../../assets/products/textm_1.jpg'
 import testm_2 from '../../assets/products/testm_2.webp'
 import testm_3 from '../../assets/products/testm_3.jpg'
 import testm_4 from '../../assets/products/testm_4.jpg'
-
+   
 const Cont5 = () => {
   const clientTestimonials =[
     {
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
+    text: '“Skywings Advisors has completely transformed our recruitment process. Their RPO solutions helped us reduce hiring time by 40% and ensured a continuous flow of top-tier candidates. We couldn’t have asked for a better recruitment partner.”',
     image: img,
-    name: 'Samantha Payne',
+    name: 'Talent Acquisition Head, Global Insurance Broking',
     ac: '@SamPanye12'
   },{
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
+    text: '“With Skywings managing our RPO needs, our HR team can now focus on strategic goals rather than operational hiring tasks. Their team is efficient, responsive, and deeply understands our industry.”',
     image: testm_1,
-    name: 'Samantha Payne',
+    name: ' Director - Human Resources, Leading BFSI Company',
     ac: '@SamPanye12'
   },{
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
+    text: '“We needed skilled professionals on short notice, and Skywings Advisors delivered. Their contract staffing solutions helped us scale quickly without any administrative hassles.”',
     image: testm_2,
-    name: 'Samantha Payne',
+    name: 'HR Manager, IT Consulting Firm',
     ac: '@SamPanye12'
   },{
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
+    text: '“Skywings Advisors has been instrumental in providing contract-based workforce solutions for our projects. Their candidate quality and compliance handling are outstanding.”',
     image: testm_3,
-    name: 'Samantha Payne',
+    name: 'Operations Head, Leading BPO',
     ac: '@SamPanye12'
   },{
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
+    text: '“Their flexible staffing solutions have allowed us to manage seasonal workloads efficiently. The Skywings team understands our needs and provides quick turnarounds.”',
     image: testm_4,
-    name: 'Samantha Payne',
+    name: 'HR Lead, Retail Company',
     ac: '@SamPanye12'
   }];
 
   const studentTestimonials =[
-   {
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
-      image: testm_1,
-      name: 'Samantha Payne',
-      ac: '@SamPanye12'
-    },{
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
-      image: testm_2,
-      name: 'Samantha Payne',
-      ac: '@SamPanye12'
-    },{
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
-      image: testm_3,
-      name: 'Samantha Payne',
-      ac: '@SamPanye12'
-    },{
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
-      image: testm_4,
-      name: 'Samantha Payne',
+  //  {
+  //     text: ' "AssuredJob.com made my dream of working at HDFC Bank come true! Their recruiter guided me through the process, making it smooth and efficient."',
+  //     image: testm_1,
+  //     name: 'Amit Sharma, Placed at HDFC Bank (Delhi)',
+  //     ac: '@SamPanye12'
+  //   },{
+  //     text: 'Thanks to their expert recruiters, I landed a high-paying job in life insurance at HDFC Life Insurance in just two weeks!',
+  //     image: testm_2,
+  //     name: 'Neha Patel, Placed at HDFC Life Insurance (Mumbai)',
+  //     ac: '@SamPanye12'
+  //   },{
+  //     text: '"A seamless banking job placement experience—AssuredJob.com got me hired at HDFC Sales quickly!"',
+  //     image: testm_3,
+  //     name: 'Rahul Verma, Placed at HDFC Sales (Bangalore)',
+  //     ac: '@SamPanye12'
+  //   },{
+  //     text: 'I switched from a sales role to financial services, thanks to AssuredJob.com and my placement at HDB Financial Services!',
+  //     image: testm_4,
+  //     name: 'Priya Iyer, Placed at HDB Financial Services (Chennai)',
+  //     ac: '@SamPanye12'
+  //   }, {
+  //     text: 'AssuredJob.com provided career guidance, and now I work at HDFC Bank in a managerial role!',
+  //     image: img,
+  //     name: 'Vikram Singh, Placed at HDFC Bank (Pune)',
+  //     ac: '@SamPanye12'
+  //   },
+  //   {
+  //     text: 'Their banking sector recruitment experts helped me secure my job at HDFC Bank faster than I expected!',
+  //     image: img,
+  //     name: 'Nilesh Rao, Placed at HDFC Bank (Hyderabad)',
+  //     ac: '@SamPanye12'
+  //   },
+//     {
+//       text: "I was struggling to break into the insurance sector, but AssuredJob.com placed me in HDFC Life Insurance effortlessly!",
+//       image: img,
+//       name: 'Sonal Mehta, Placed at HDFC Life Insurance (Jaipur)',
+//       ac: '@SamPanye12'
+//     },
+//     {
+//       text: "Best private banking recruitment agency! I got placed at Kotak Mahindra Bank hassle-free!",
+//       image: img,
+//       name: 'Anjali Gupta, Placed at Kotak Mahindra Bank (Noida)',
+//       ac: '@SamPanye12'
+//     },
+//     {
+//       text: "AssuredJob.com helped me secure a role in life insurance sales at Kotak Mahindra Life Insurance!",
+//       image: img,
+//       name: 'Rajesh Nair, Placed at Kotak Mahindra Life Insurance (Kochi)',
+//       ac: '@SamPanye12'
+//     }, {
+//       text: "I was looking for a customer service job in banking, and AssuredJob.com made it possible with Kotak Mahindra Bank!",
+//       image: img,
+//       name: 'Sneha Joshi, Placed at Kotak Mahindra Bank (Hyderabad)',
+//       ac: '@SamPanye12'
+//     }, {
+//       text: "A smooth recruitment process—I got placed at Kotak Mahindra Life Insurance with the best salary in my field!",
+//       image: img,
+//       name: 'Manish Bhatia, Placed at Kotak Mahindra Life Insurance (Chandigarh)',
+//       ac: '@SamPanye12'
+//     }, {
+//       text:"Their banking sector job listings are excellent! I found my perfect role at Kotak Mahindra Bank!",
+//       image: img,
+//       name: 'Pooja Mehta, Placed at Kotak Mahindra Bank (Indore)',
+//       ac: '@SamPanye12'
+//     }, {
+//       text:"Looking for an insurance sales career? AssuredJob.com got me placed at Kotak Life Insurance in 10 days!",
+//       image: img,
+//       name: 'Rahul Taneja, Placed at Kotak Mahindra Life Insurance (Patna)',
+//       ac: '@SamPanye12'
+//     }, {
+//       text:"I was unsure about my career path, but AssuredJob.com placed me at Kotak Mahindra Bank, and I couldn’t be happier!"
+// ,
+//       image: img,
+//       name: 'Varsha Kapoor, Placed at Kotak Mahindra Bank (Ahmedabad)',
+//       ac: '@SamPanye12'
+//     }, 
+// {
+//       text:"I wanted a career in wealth management, and AssuredJob.com got me hired at Nuvama Wealth Management!",
+//       image: img,
+//       name: 'Arjun Reddy, Placed at Nuvama Wealth Management (Visakhapatnam)',
+//       ac: '@SamPanye12'
+//     }, 
+{
+      text:"Best job consultancy for finance professionals—I joined Nuvama Wealth Management in no time!",
+      image: img,
+      name: 'Swati Choudhary, Placed at Nuvama Wealth Management (Noida)',
       ac: '@SamPanye12'
     }, {
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quidem culpa iste possimus minus ad ipsum expedita sed.',
+      text:"AssuredJob.com helped me switch from banking to investment advisory at Motilal Oswal!",
       image: img,
-      name: 'Samantha Payne',
+      name: 'Rohit Malhotra, Placed at Motilal Oswal Financial Services (Lucknow)',
       ac: '@SamPanye12'
-    },
+    }, {
+      text:"I got my first finance job at Nuvama, and their recruitment process was smooth and transparent!",
+      image: img,
+      name: 'Kavita Pillai, Placed at Nuvama Wealth Management (Thiruvananthapuram)',
+      ac: '@SamPanye12'
+    }, {
+      text:"Highly recommend AssuredJob.com for anyone looking for wealth management careers!",
+      image: img,
+      name: 'Sandeep Yadav, Placed at Motilal Oswal Financial Services (Bhopal)',
+      ac: '@SamPanye12'
+    }, {
+      text:"I was looking for a portfolio management role, and AssuredJob.com helped me get placed at Nuvama!",
+      image: img,
+      name: 'Ankur Mathur, Placed at Nuvama Wealth Management (Nagpur)',
+      ac: '@SamPanye12'
+    }, 
   ];
+
+  const freelancer =[
+    {
+      text:'FreelanceRecruiter.in provides access to a premium candidate database and job portals, making hiring effortless!',
+      name:'Amit Sharma, Delhi'
+    },{
+      text:"Unlike other platforms, they provide a ready-made recruiter database, saving me hours of sourcing candidates.",
+      name:'Neha Patel, Mumbai'
+    },{
+      text:"With their internal talent database and CRM, I focus on recruiting rather than manual sourcing!",
+      name:'Rahul Verma, Bangalore'
+    },{
+      text:"The AI-powered database helps me match candidates faster. The best freelance recruiting platform!",
+      name:'Priya Iyer, Chennai'
+    },
+    // {
+    //   text:"AssuredJob.com offers job portal access and verified leads, making hiring faster and stress-free!",
+    //   name:'Vikram Singh, Pune'
+    // },
+    // {
+    //   text:"Their recruitment training program helped me refine my sourcing skills and close better deals!",
+    //   name:'Anjali Gupta, Jaipur'
+    // },{
+    //   text:"I started with zero experience, but their one-on-one recruiter training made me confident in hiring.",
+    //   name:'Rajesh Nair, Kochi'
+    // },{
+    //   text:"FreelanceRecruiter.in provides live training sessions that helped me master industry trends and negotiations.",
+    //   name:'Sneha Joshi, Hyderabad'
+    // },{
+    //   text:"The continuous learning support helped me boost my placements and increase my earnings.",
+    //   name:'Manish Bhatia, Chandigarh'
+    // },{
+    //   text:"Their freelancer recruiter training helped me get better conversion rates and handle clients like a pro!",
+    //   name:'Pooja Mehta, Indore'
+    // },{
+    //   text:"I shifted from other freelancing platforms to AssuredJob.com because of their higher recruiter payouts!",
+    //   name:'Arjun Reddy, Visakhapatnam'
+    // },
+   
+    {
+      text:"Unlike other freelance platforms, they offer exclusive recruiter access to top companies!",
+      name:'Harish Kumar, Nashik'
+    },
+  ]
 
  
   const [isMobile, setIsMobile] = useState(false);
@@ -197,10 +323,10 @@ const Cont5 = () => {
     <div key={index} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center w-full md:w-auto lg:w-auto h-full">
       <p className="text-gray-700 text-sm mb-4">{data.text}</p>
       <div className="flex items-center mt-auto w-full">
-        <img src={data.image} alt="Profile" className="w-12 h-12 rounded-full object-cover m-2" />
-        <div className="text-left">
+        {/* <img src={data.image} alt="Profile" className="w-12 h-12 rounded-full object-cover m-2" /> */}
+        <div className="text-center">
           <p className="text-sm font-semibold text-gray-800">{data.name}</p>
-          <span className="text-xs text-gray-500">{data.ac}</span>
+          {/* <span className="text-xs text-gray-500">{data.ac}</span> */}
         </div>
       </div>
     </div>
@@ -314,6 +440,40 @@ const Cont5 = () => {
             </div>
           ) : (
             studentTestimonials.map((data, index) => renderTestimonialCard(data, index))
+          )}
+        </div>
+      </div>
+
+      <p className="text-purple-600 mt-8 text-lg">
+        Read what our FreeLance Recruiters have to say
+      </p>
+      
+      {/* free lancer Testimonials */}
+      <div className="mt-6 relative">
+        {isMobile && renderCarouselControls(studentCurrentIndex, studentTestimonials.length, prevStudentSlide, nextStudentSlide)}
+        
+        <div 
+          className={`
+            ${isMobile 
+              ? 'flex overflow-hidden mx-auto px-4' 
+              : 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 place-items-center mx-4 lg:mx-20'
+            }
+          `}
+          onTouchStart={handleStudentTouchStart}
+          onTouchMove={handleStudentTouchMove}
+          onTouchEnd={handleStudentTouchEnd}
+        >
+          {isMobile ? (
+            <div className={`flex transition-transform duration-300 ease-in-out w-full gap-4`}
+                 style={{ width: `${100 * visibleStudentTestimonials.length}%` }}>
+              {visibleStudentTestimonials.map((data, index) => (
+                <div key={index} className="flex-shrink-0" style={{ width: `${100 / visibleCount}%` }}>
+                  {renderTestimonialCard(data, index)}
+                </div>
+              ))}
+            </div>
+          ) : (
+            freelancer.map((data, index) => renderTestimonialCard(data, index))
           )}
         </div>
       </div>

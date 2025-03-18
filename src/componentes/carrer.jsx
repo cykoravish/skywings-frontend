@@ -82,7 +82,7 @@ const Career = () => {
             <div className="flex flex-col items-center gap-5 py-15 bg-white">
                 <h2 className="text-[#000000] text-2xl font-[500]">Why Work with Us?</h2>
 
-                <div className="hidden md:flex justify-between gap-4 px-7 py-2 b ">
+                <div className="hidden md:flex justify-between gap-4 mx-10 px-7 py-2 b ">
                     {cards.map((card, index) => (
                         <Card key={index} title={card.title} description={card.description} />
                     ))}
