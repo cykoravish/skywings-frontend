@@ -14,10 +14,21 @@ import b from '../../assets/Brand/c.png';
 import c from '../../assets/Brand/d.webp';
 import d from '../../assets/Brand/e.png';
 import f from '../../assets/Brand/f.png';
-import g from '../../assets/Brand/g.webp'
-
-
-const images = [img1, img2, group2, , logo, logo1, gr, , gro, , grou,first, a, b,c,d ,f,g];
+import g from '../../assets/Brand/g.webp';
+import h from '../../assets/Brand/h.png';
+import i from '../../assets/Brand/i.webp';
+import j from '../../assets/Brand/j.png';
+import k from '../../assets/Brand/k.png';
+import l from '../../assets/Brand/l.png';
+import m from '../../assets/Brand/m.webp';
+import n from '../../assets/Brand/n.webp';
+import o from '../../assets/Brand/o.png';
+import p from '../../assets/Brand/p.png';
+import q from '../../assets/Brand/q.png';
+import r from '../../assets/Brand/r.png';
+import s from '../../assets/Brand/s.png';
+import t from '../../assets/Brand/t.png';
+const images = [img1, img2, group2, , logo, logo1, gr, , gro, , grou,first, a, b,c,d ,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t];
 
 const Cont6A = () => {
   return (

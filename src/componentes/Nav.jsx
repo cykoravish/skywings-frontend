@@ -75,7 +75,7 @@ const Nav = ({ setIsMobileMenuOpen }) => {
                 "Recruitment Process Outsourcing (RPO)",
                 "Skill Gap Assessment",
                 "Internship Program Management",
-                // "Graduate Trainee Programs",
+                
                 // "Diversity & Inclusion Hiring Initiatives",
                 "Onboarding and Training Support",
                 "Pre-Placement Offer (PPO) Recruitment",
@@ -86,6 +86,7 @@ const Nav = ({ setIsMobileMenuOpen }) => {
                 "Outplacement Services",
                 "HR Consulting and Strategy",
                 "Talent Mapping and Market Intelligence",
+                "Graduate Trainee Programs",
             ].map((service, index) => (
               <NavLink
                 key={index}

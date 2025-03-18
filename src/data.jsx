@@ -15,6 +15,7 @@ import img15 from './assets/service/image48.png'
 import img16 from './assets/service/image49.png'
 import img17 from './assets/service/image50.png'
 import img19 from './assets/service/image52.png'
+import img20 from './assets/service/image41.png'
 
 
 export const jobs = [
@@ -698,7 +699,30 @@ import {useNavigate} from 'react-router-dom'
            
         </section>
     </div>`, button:' Hire Now'},
-    {id:4, title: "Executive Search", image: img8 , content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
+    {id:4, title: "Executive Search", image: img8 , content:` <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        
+        <p class="text-lg mb-6">We specialize in Executive Search, identifying and recruiting top-tier leadership talent that aligns with your company’s vision and strategic goals. Our expertise spans across industries, ensuring that you gain access to highly skilled professionals who drive business growth and innovation.</p>
+        
+        <h2 class="text-2xl font-semibold text-gray-800 mb-3">Why Choose Our Executive Search Services?</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li><strong>Industry-Specific Expertise</strong> – Our team of specialized recruiters understands the unique leadership demands of different industries, ensuring a perfect match for your organization.</li>
+            <li><strong>Global Talent Access</strong> – We leverage our extensive network to identify and attract exceptional leadership talent both nationally and internationally.</li>
+            <li><strong>Confidential & Discreet Hiring</strong> – We conduct searches with the highest level of confidentiality, protecting your business interests and sensitive hiring processes.</li>
+            <li><strong>Comprehensive Assessment</strong> – Our rigorous evaluation process includes skill assessments, cultural fit analysis, and leadership potential assessment to ensure long-term success.</li>
+            <li><strong>Speed & Efficiency</strong> – We streamline the executive hiring process while maintaining quality, ensuring your leadership roles are filled with the best candidates within a reasonable timeframe.</li>
+        </ul>
+        
+        <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">Our Process</h2>
+        <ol class="list-decimal list-inside space-y-2 text-gray-700">
+            <li><strong>Understanding Your Needs</strong> – We engage with key stakeholders to define the role requirements, organizational culture, and strategic goals.</li>
+            <li><strong>Talent Mapping & Market Research</strong> – Our research-driven approach identifies top leadership talent across industries.</li>
+            <li><strong>Candidate Evaluation & Shortlisting</strong> – A thorough screening process ensures only the most suitable candidates are presented.</li>
+            <li><strong>Confidential Negotiations & Offer Management</strong> – We facilitate seamless negotiations to secure the best leadership talent for your business.</li>
+            <li><strong>Post-Hire Support</strong> – We ensure smooth onboarding and transition for leadership hires, maximizing their impact on your organization.</li>
+        </ol>
+        
+        <p class="mt-6 text-lg font-semibold text-gray-800">Partner with Skywings Advisors for executive hiring that transforms your business with visionary leadership.</p>
+    </div>`},
     {id:5, title: "Recruitment Process Outsourcing (RPO) Services | AssuredJob", image: img5, content:`<div class="max-w-4xl mx-auto p-6">
         <h2 class="text-3xl font-bold  text-gray-700">Streamline Your Hiring with AssuredJob’s RPO Solutions</h2>
         <p class="mt-4 text-lg text-gray-700">Struggling with high-volume hiring, talent shortages, or lengthy recruitment cycles?</p>
@@ -937,94 +961,94 @@ import {useNavigate} from 'react-router-dom'
         <p class="text-lg font-bold">Partner with AssuredJob for Efficient Onboarding & Training Support!</p>
         <p>Boost employee productivity, enhance job satisfaction, and streamline onboarding with AssuredJob’s expert training solutions!</p>
     </footer>`},
-    {id:11, title: "Onboarding &amp; Training Support Services | AssuredJob", image: img11 , content:` <header class=" text-gray-600 py-12 ">
-        <h1 class="text-3xl font-bold">Seamless Employee Onboarding & Training</h1>
-        <p class="mt-2 text-lg">Boost Productivity & Retention with Structured Learning & AI-Driven Solutions</p>
-    </header>
+    // {id:11, title: "Onboarding &amp; Training Support Services | AssuredJob", image: img11 , content:` <header class=" text-gray-600 py-12 ">
+    //     <h1 class="text-3xl font-bold">Seamless Employee Onboarding & Training</h1>
+    //     <p class="mt-2 text-lg">Boost Productivity & Retention with Structured Learning & AI-Driven Solutions</p>
+    // </header>
 
-    <!-- Introduction -->
-    <section class="max-w-7xl mx-auto p-6">
-        <p class="text-lg text-gray-700">
-            A well-structured onboarding and training program is essential for <strong class="text-gray-400">employee engagement, productivity, and retention.</strong> 
-            At AssuredJob, we provide <span class="text-gray-400">comprehensive onboarding & training</span> to help businesses integrate new hires smoothly 
-            and equip them with the right skills for success.
-        </p>
-    </section>
+    // <!-- Introduction -->
+    // <section class="max-w-7xl mx-auto p-6">
+    //     <p class="text-lg text-gray-700">
+    //         A well-structured onboarding and training program is essential for <strong class="text-gray-400">employee engagement, productivity, and retention.</strong> 
+    //         At AssuredJob, we provide <span class="text-gray-400">comprehensive onboarding & training</span> to help businesses integrate new hires smoothly 
+    //         and equip them with the right skills for success.
+    //     </p>
+    // </section>
 
-    <!-- Why Onboarding & Training? -->
-    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-gray-400">Why Onboarding & Training Support is Essential?</h2>
-        <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Faster Employee Integration – Reduce time-to-productivity with structured onboarding.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Higher Employee Retention – Well-trained employees are more engaged & loyal.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Enhanced Productivity – Employees perform better with proper training & knowledge transfer.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Stronger Employer Branding – A positive onboarding experience improves employer reputation.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Compliance & Policy Adherence – Ensures employees understand HR policies & workplace expectations.</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Reduced Hiring Costs – Well-trained employees stay longer, reducing turnover costs.</li>
-        </ul>
-    </section>
+    // <!-- Why Onboarding & Training? -->
+    // <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+    //     <h2 class="text-xl font-semibold text-gray-400">Why Onboarding & Training Support is Essential?</h2>
+    //     <ul class="mt-3 space-y-2">
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Faster Employee Integration – Reduce time-to-productivity with structured onboarding.</li>
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Higher Employee Retention – Well-trained employees are more engaged & loyal.</li>
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Enhanced Productivity – Employees perform better with proper training & knowledge transfer.</li>
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Stronger Employer Branding – A positive onboarding experience improves employer reputation.</li>
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Compliance & Policy Adherence – Ensures employees understand HR policies & workplace expectations.</li>
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Reduced Hiring Costs – Well-trained employees stay longer, reducing turnover costs.</li>
+    //     </ul>
+    // </section>
 
-    <!-- Our Solutions -->
-    <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-gray-400">Our Onboarding & Training Solutions</h2>
-        <div class="grid md:grid-cols-2  gap-6 mt-4">
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-gray-400">New Hire Onboarding Programs</h3>
-                <ul class="list-disc pl-5 mt-2 text-gray-700">
-                    <li>Pre-boarding support (documentation, IT setup)</li>
-                    <li>Virtual & in-person orientation programs</li>
-                    <li>Company culture & compliance training</li>
-                </ul>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-gray-400">Customized Employee Training</h3>
-                <ul class="list-disc pl-5 mt-2 text-gray-700">
-                    <li>Role-specific training for different job functions</li>
-                    <li>Technical, soft skills, and leadership training</li>
-                    <li>AI-powered personalized learning paths</li>
-                </ul>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="font-semibold text-lg text-gray-400">Learning & Development (L&D)</h3>
-                <ul class="list-disc pl-5 mt-2 text-gray-700">
-                    <li>E-learning modules & interactive training</li>
-                    <li>Gamification & simulation-based learning</li>
-                    <li>Live instructor-led training & on-demand courses</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    // <!-- Our Solutions -->
+    // <section class="max-w-7xl mx-auto p-6 mt-6">
+    //     <h2 class="text-xl font-semibold text-gray-400">Our Onboarding & Training Solutions</h2>
+    //     <div class="grid md:grid-cols-2  gap-6 mt-4">
+    //         <div class="bg-white p-4 rounded-lg shadow-md">
+    //             <h3 class="font-semibold text-lg text-gray-400">New Hire Onboarding Programs</h3>
+    //             <ul class="list-disc pl-5 mt-2 text-gray-700">
+    //                 <li>Pre-boarding support (documentation, IT setup)</li>
+    //                 <li>Virtual & in-person orientation programs</li>
+    //                 <li>Company culture & compliance training</li>
+    //             </ul>
+    //         </div>
+    //         <div class="bg-white p-4 rounded-lg shadow-md">
+    //             <h3 class="font-semibold text-lg text-gray-400">Customized Employee Training</h3>
+    //             <ul class="list-disc pl-5 mt-2 text-gray-700">
+    //                 <li>Role-specific training for different job functions</li>
+    //                 <li>Technical, soft skills, and leadership training</li>
+    //                 <li>AI-powered personalized learning paths</li>
+    //             </ul>
+    //         </div>
+    //         <div class="bg-white p-4 rounded-lg shadow-md">
+    //             <h3 class="font-semibold text-lg text-gray-400">Learning & Development (L&D)</h3>
+    //             <ul class="list-disc pl-5 mt-2 text-gray-700">
+    //                 <li>E-learning modules & interactive training</li>
+    //                 <li>Gamification & simulation-based learning</li>
+    //                 <li>Live instructor-led training & on-demand courses</li>
+    //             </ul>
+    //         </div>
+    //     </div>
+    // </section>
 
-    <!-- Industries Benefiting -->
-    <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-        <h2 class="text-xl font-semibold text-gray-400">Industries Benefiting from Onboarding & Training</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-            <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
-            <span class="bg-gray-200 p-2 rounded-md"> BFSI (Finance & Banking)</span>
-            <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
-            <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
-            <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
-            <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
-        </div>
-    </section>
+    // <!-- Industries Benefiting -->
+    // <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+    //     <h2 class="text-xl font-semibold text-gray-400">Industries Benefiting from Onboarding & Training</h2>
+    //     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+    //         <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
+    //         <span class="bg-gray-200 p-2 rounded-md"> BFSI (Finance & Banking)</span>
+    //         <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
+    //         <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
+    //         <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
+    //         <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
+    //     </div>
+    // </section>
 
-    <!-- Why Choose Us -->
-    <section class="max-w-7xl mx-auto p-6 mt-6">
-        <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob?</h2>
-        <ul class="mt-3 space-y-2">
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Structured & AI-Driven Onboarding Process</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Industry-Specific Training Solutions</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Blended Learning (Virtual, In-Person, Gamification)</li>
-            <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Scalable Training for Startups, SMEs & Enterprises</li>
-        </ul>
-    </section>
+    // <!-- Why Choose Us -->
+    // <section class="max-w-7xl mx-auto p-6 mt-6">
+    //     <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob?</h2>
+    //     <ul class="mt-3 space-y-2">
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Structured & AI-Driven Onboarding Process</li>
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Industry-Specific Training Solutions</li>
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Blended Learning (Virtual, In-Person, Gamification)</li>
+    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Scalable Training for Startups, SMEs & Enterprises</li>
+    //     </ul>
+    // </section>
 
-    <!-- CTA Footer -->
-    <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
-        <h3 class="text-xl font-bold">Get Started with AssuredJob’s Onboarding & Training Support Today!</h3>
-        <p class="mt-2">Need structured onboarding or upskilling programs?</p>
+    // <!-- CTA Footer -->
+    // <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
+    //     <h3 class="text-xl font-bold">Get Started with AssuredJob’s Onboarding & Training Support Today!</h3>
+    //     <p class="mt-2">Need structured onboarding or upskilling programs?</p>
         
-    </footer>`, button:' Contact Us'},
+    // </footer>`, button:' Contact Us'},
     {id:9, title: "Pre-Placement Recruitment Services | AssuredJob", image: img12, content:`<!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
         <h1 class="text-3xl font-bold">Hire Top Talent Early with Pre-Placement Offer (PPO) Recruitment</h1>
@@ -1215,7 +1239,7 @@ import {useNavigate} from 'react-router-dom'
     </footer>
 
 </body>`, button:' Contact Us'},
-    {id:14,title:'Payroll Management Services | AssuredJob', image:img14, content:`<body class="bg-gray-100">
+    {id:11,title:'Payroll Management Services | AssuredJob', image:img14, content:`<body class="bg-gray-100">
 
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
@@ -1312,6 +1336,7 @@ import {useNavigate} from 'react-router-dom'
     </footer>
 
 </body>`},
+   
     {id:12,title:'Labour Compliance Management Services | AssuredJob', image:img15, content:`<div class="max-w-5xl mx-auto p-6">
         <h2 class="text-3xl font-bold text-gray-700">Ensure 100% Compliance with Indian Labour Laws & Regulations</h2>
         <p class="mt-4 text-lg">AssuredJob provides end-to-end labour compliance management services, ensuring businesses stay legally compliant while focusing on their core operations.</p>
@@ -1447,7 +1472,7 @@ import {useNavigate} from 'react-router-dom'
        
     </footer>
 </body>`, button:' Signup Now'},
-    {id:17,title:'Outplacement Services | AssuredJobs', image:img17 ,content:`<body class=" text-gray-800">
+    {id:14,title:'Outplacement Services | AssuredJobs', image:img17 ,content:`<body class=" text-gray-800">
     <header class="bg-gray-100 text-gray-600  p-6">
         <h1 class="text-3xl font-bold">Empowering Employees with Career Transition Support</h1>
     </header>
@@ -1529,8 +1554,77 @@ import {useNavigate} from 'react-router-dom'
     
     
 </body>`, button:' Contact us '},
-    {id:16,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
-    {id:19,title:'Talent Mapping & Market Intelligence Services | AssuredJob', image:img19 ,content:`<body class="bg-gray-100 text-gray-900">
+    {id:15,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
+    {id:16,title:'Talent Mapping & Market Intelligence Services | AssuredJob', image:img19 ,content:`<body class="bg-gray-100 text-gray-900">
+    <header class=" text-gray-600  py-6">
+        <h1 class="text-3xl font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
+    </header>
+    
+    <section class="container mx-auto p-6">
+        <p class="text-lg text-gray-700 mb-6">In today’s competitive job market, businesses need a data-driven recruitment strategy to attract and retain top talent. AssuredJob’s Talent Mapping & Market Intelligence Services provide deep industry insights, competitor benchmarking, and workforce planning solutions.</p>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Why Talent Mapping & Market Intelligence is Crucial?</h2>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li>Identify Future Talent Needs – Forecast hiring trends.</li>
+                <li>Gain Competitor Insights – Benchmark against industry leaders.</li>
+                <li>Attract & Retain Top Talent – Understand salary benchmarks.</li>
+                <li>Reduce Hiring Time & Costs – Build a pre-qualified talent pipeline.</li>
+                <li>Enhance Employer Branding – Position your company competitively.</li>
+                <li>Data-Driven Workforce Planning – Make informed hiring decisions.</li>
+            </ul>
+        </div>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-xl font-semibold mb-4">Our Talent Mapping & Market Intelligence Solutions</h2>
+            <ol class="list-decimal pl-6 text-gray-700">
+                <li><strong>Workforce Talent Mapping & Future Hiring Trends:</strong> Analyzing skill availability, market demand & geographical distribution.</li>
+                <li><strong>Competitor Benchmarking & Salary Insights:</strong> Compare hiring trends, salaries, and retention strategies.</li>
+                <li><strong>Industry-Specific Talent Insights & Hiring Analytics:</strong> Real-time hiring trends & demand-supply analysis.</li>
+                <li><strong>AI-Powered Candidate Profiling & Predictive Hiring:</strong> Identifying high-potential candidates with AI-driven assessments.</li>
+                <li><strong>Global Talent Acquisition & Workforce Expansion Planning:</strong> Best hiring locations, remote hiring intelligence.</li>
+            </ol>
+        </div>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-xl font-semibold mb-4">Industries Benefiting from Our Services</h2>
+            <p class="text-gray-700">Our data-driven talent insights & workforce analytics cater to multiple industries, ensuring businesses stay ahead in hiring & workforce planning.</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-gray-700">
+                <p> IT & Software Development</p>
+                <p> BFSI & Fintech</p>
+                <p> Healthcare & Pharmaceuticals</p>
+                <p> Retail & E-commerce</p>
+                <p> BPO & KPO</p>
+                <p> Manufacturing & Engineering</p>
+                <p> EdTech & Online Learning</p>
+                <p> Hospitality & Tourism</p>
+                <p> Logistics & Supply Chain</p>
+            </div>
+        </div>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-xl font-semibold mb-4">Why Choose AssuredJob?</h2>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li>AI-Driven Market Intelligence & Real-time Hiring Trends.</li>
+                <li>Custom Workforce Planning Strategies.</li>
+                <li>Competitive Benchmarking & Salary Analysis.</li>
+                <li>Faster Hiring with Predictive Models.</li>
+                <li>Employer Branding Enhancement.</li>
+                <li>Scalable Talent Acquisition Solutions.</li>
+            </ul>
+        </div>
+    
+        <div class="bg-gray-100 text-gray-600 p-6 rounded-lg shadow-md mt-6 ">
+            <h2 class="text-2xl font-semibold">Get Started with AssuredJob’s Talent Mapping & Market Intelligence Today!</h2>
+            <p class="mt-4"> Need insights on hiring trends & competitor benchmarking?</p>
+            <p> Want to create a data-driven talent acquisition strategy?</p>
+            <p> Looking to expand your workforce with strategic hiring intelligence?</p>
+            <p class="mt-4 text-lg font-bold">Partner with AssuredJob for Expert Talent Mapping & Market Intelligence Solutions!</p>
+           
+        </div>
+    </section>
+</body>`, button:' Get Started '},
+{id:17,title:'Graduate Training Program (GTP) | AssuredJob', image:img20 ,content:`<body class="bg-gray-100 text-gray-900">
     <header class=" text-gray-600  py-6">
         <h1 class="text-3xl font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
     </header>
