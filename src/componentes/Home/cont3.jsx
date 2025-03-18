@@ -29,7 +29,7 @@ function Cont3() {
         <p className="text-purple-700 mb-8 text-center ">
           Our complete assistance will be with you, and we guide you accordingly.
         </p>
-        <div   className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-24 w-full  ">
+        <div   className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-24 px-10 w-full  ">
         {list.slice(0, 8).map((service, index) => (
   <div
     key={index}

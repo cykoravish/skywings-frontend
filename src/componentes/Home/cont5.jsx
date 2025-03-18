@@ -9,7 +9,7 @@ import testm_4 from '../../assets/products/testm_4.jpg'
 const Cont5 = () => {
   const clientTestimonials =[
     {
-    text: '“Skywings Advisors has completely transformed our recruitment process. Their RPO solutions helped us reduce hiring time by 40% and ensured a continuous flow of top-tier candidates. We couldn’t have asked for a better recruitment partner.”',
+    text: '“Skywings Advisors has completely transformed our recruitment process. Their RPO solutions helped us reduce hiring time by 40% and ensured a continuous flow of top-tier candidates. ”',
     image: img,
     name: 'Talent Acquisition Head, Global Insurance Broking',
     ac: '@SamPanye12'

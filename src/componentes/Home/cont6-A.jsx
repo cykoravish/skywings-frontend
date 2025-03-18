@@ -23,7 +23,7 @@ const Cont6A = () => {
       </h2>
 
       {/* Responsive Grid Layout */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-2 sm:px-4 max-w-screen-xl mx-auto">
+      <div className="grid grid-cols-2 mx-5 lg:mx-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-2 sm:px-4 max-w-screen-xl ">
         {images.map((img, index) => (
           <div
             key={index}

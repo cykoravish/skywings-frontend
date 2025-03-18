@@ -351,13 +351,8 @@ function Cont2() {
                             className="w-4 h-4 sm:w-5 sm:h-5"
                           />
                           <span className="truncate w-full">
-<<<<<<< HEAD
                             {job.industry}
                           </span>
-=======
-                            {job.experience}
-                          </span> */}
->>>>>>> c7b437bdbdac5331d1f8af819a17ec091c09abb9
                           {/* <span>{job.job_start_date}</span> */}
                         </p>
                         <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
