@@ -222,7 +222,7 @@ function Job() {
                   <MdLocationOn className="text-purple-500 min-w-5 max-w-5 h-4 sm:w-5 sm:h-5" />{" "}
                   {job.city} {!job.city ? "" : ","} {job.country}
                 </p>
-                <span className="min-h-12 max-h-14 text-gray-600 flex items-center gap-2.5 mb-3">
+                {/* <span className="min-h-12 max-h-14 text-gray-600 flex items-center gap-2.5 mb-3">
                   skills:{" "}
                   {job.skills &&
                     decodeEntities(job.skills)
@@ -232,7 +232,7 @@ function Job() {
                       ) // trims, removes quotes, limits to 10 chars
                       .slice(0, 2)
                       .join(", ")}
-                </span>
+                </span> */}
                 <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
                   <CalendarDays />
                   {job.job_start_date ? job.job_start_date : "Not Specified"}
