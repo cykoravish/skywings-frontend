@@ -207,7 +207,7 @@ function Job() {
         ) : error ? (
           <p className="text-red-500">{error}</p>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-5 lg:mx-10">
             {filteredJobs.map((job) => (
               <div
                 key={job.id}

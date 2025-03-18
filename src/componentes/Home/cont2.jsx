@@ -333,7 +333,7 @@ function Cont2() {
                             {job.city} {!job.city ? "" : ","} {job.country}
                           </span>
                         </p>
-                        <p className="flex min-h-10 max-h-10 items-center text-xs sm:text-sm lg:text-base space-x-2">
+                        {/* <p className="flex min-h-10 max-h-10 items-center text-xs sm:text-sm lg:text-base space-x-2"> */}
                         {/* <span className="min-h-12 max-h-14 text-gray-600 flex items-center gap-2.5 mb-3">
                   skills:{" "}
                   {job.skills &&
@@ -354,7 +354,7 @@ function Cont2() {
                             {job.industry}
                           </span>
                           {/* <span>{job.job_start_date}</span> */}
-                        </p>
+                        {/* </p> */}
                         <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
                           <CalendarDays />
                           {job.job_start_date}
