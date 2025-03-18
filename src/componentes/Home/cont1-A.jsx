@@ -1,9 +1,9 @@
 const Cont1A=()=>{
     const box = [
-        { number: "1000+", text: "Total placement" },
+        { number: "10,000+", text: "Total placement" },
         { number: "1000+", text: "Active jobs" },
         { number: "100+", text: "Companies" },
-        { number: "100000+", text: "Registered Users" },
+        { number: "1,00,000+", text: "Registered Users" },
       ];
     return(
         <>
