@@ -3,7 +3,7 @@ import React from "react";
 import img1 from "../../assets/Brand/e.png"
 import group2 from "../../assets/Brand/hdfc.jpg";
 import gr from "../../assets/Brand/img2.avif";
-import img2 from "../../assets/Brand/indiaFirst.png";
+import img2 from "../../assets/Brand/IndiaFirst.png";
 import logo from "../../assets/Brand/logo_.png";
 import logo1 from "../../assets/Brand/name.png";
 import gro from "../../assets/Brand/e.png";
