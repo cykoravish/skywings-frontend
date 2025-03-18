@@ -18,7 +18,7 @@ function DetailService() {
     <button onClick={()=> navigate("/services")} className='text-gray-400 font-semibold flex px-10 mx-10 cursor-pointer gap-3 border-gray-400  py-1 rounded-lg'><p className='flex items-center'><FaArrowLeft/></p><p>Back</p></button>
     <div className="flex flex-col md:flex-row w-full mt-4 gap-4">
   {/* Left Section - Image */}
-  <div className="md:w-1/2 w-full p-4">
+  <div className="md:w-1/2 w-full p-4 mx-10">
     <img
       className="w-full h-auto object-cover rounded-lg shadow-md"
       src={service.image}
