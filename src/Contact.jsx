@@ -1,5 +1,6 @@
 import Cont5 from "./componentes/Home/cont5";
 import { Mail } from 'lucide-react';
+import img from './assets/gmail.jpg'
 import { Phone } from 'lucide-react'
 function Contact() {
   return (
@@ -31,22 +32,23 @@ function Contact() {
   <div className="flex flex-col space-y-3">
     {/* Email Section */}
     <div className="flex  items-center space-x-3">
-      <Mail className="w-8 h-8 text-blue-500  " />
+    <img src={img} className="w-8 h-8" alt="" />
       <li className="list-none">hiring@assuredjob.com</li>
       
 </div> 
 <div className="flex items-center space-x-3">
-      <Mail className="w-8 h-8 text-blue-500  " />
+
+      <img src={img} className="w-8 h-8" alt="" />
       <li className="list-none">careers@assuredjob.com</li>
       
 </div>
 <div className="flex items-center space-x-3">
-      <Mail className="w-8 h-8 text-blue-500  " />
+<img src={img} className="w-8 h-8" alt="" />
       <li className="list-none">business@assuredjob.com</li>
       
 </div>
 <div className="flex items-center space-x-3">
-      <Mail className="w-8 h-8 text-blue-500  " />
+<img src={img} className="w-8 h-8" alt="" />
       <li className="list-none">hr@assuredjob.com</li>
       
 </div>
