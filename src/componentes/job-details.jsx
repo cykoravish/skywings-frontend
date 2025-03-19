@@ -14,6 +14,9 @@ const JobDetails = () => {
   const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
   const form = useRef();
+
+  const [showFullText, setShowFullText] = useState(false);
+
   // const [isOpen, setIsOpen] = useState(false);
   // const toggleModal = () => setIsOpen(!isOpen);
   // const closeModal = () => setIsOpen(false);
@@ -36,6 +39,14 @@ const JobDetails = () => {
   const [relatedJobs, setRelatedJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const description = job?.description || job?.details?.summary || "";
+  const cleanDescription = description
+    .replace(/&amp;/g, "&")
+    .replace(/&ndash;/g, "–")
+    .replace(/&ldquo;/g, "“")
+    .replace(/&rdquo;/g, "”");
+  const toggleText = () => setShowFullText(!showFullText);
 
   // Fetch job details and related jobs
   useEffect(() => {
@@ -143,7 +154,7 @@ const JobDetails = () => {
         {/* ------------------------- Job Listings (Left Side) ------------------------- */}
         <div className="flex flex-col w-full md:w-6/12 items-center">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-            {relatedJobs.slice(0, 6).map((relatedJob, index) => (
+            {relatedJobs.slice(0, showFullText ? 10 : 6).map((relatedJob, index) => (
               <div key={index} className="bg-[#F7F7F7] rounded-2xl p-6">
                 <div className="flex items-center space-x-3">
                   <div>
@@ -215,8 +226,22 @@ const JobDetails = () => {
             <div className="mt-4">
               <h3 className="text-lg font-semibold">About the Job:</h3>
               <p className="text-gray-600 mt-2">
-                {job.details?.summary || job.description}
+                {/* {console.log("job details: ", job.description)} */}
+                {/* {job.description || job.details?.summary} */}
+                {showFullText
+                  ? cleanDescription
+                  : `${cleanDescription.slice(0, 300)}...`}
               </p>
+              {console.log("cleanDescription: ", cleanDescription)}
+              {/* Button to toggle text */}
+              {cleanDescription.length > 300 && (
+                <button
+                  onClick={toggleText}
+                  className="mt-2 text-blue-600 hover:underline focus:outline-none"
+                >
+                  {showFullText ? "See Less ▲" : "See More ▼"}
+                </button>
+              )}
             </div>
 
             <div className="mt-4">
@@ -277,11 +302,11 @@ const JobDetails = () => {
                 </p>
               )}
             </div>
-{console.log("apply url: ", job)}
+            {console.log("apply url: ", job)}
             <button
               className="mt-4 py-2 px-4 bg-green-600 text-white rounded-lg hover:bg-green-700"
               // onClick={toggleModal}
-              onClick={() => window.open(job.apply_job, '_blank')}
+              onClick={() => window.open(job.apply_job, "_blank")}
             >
               Apply Now
             </button>
