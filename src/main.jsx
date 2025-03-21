@@ -19,6 +19,7 @@ import Nws from './componentes/news/Nws'
 import Upload from './componentes/Upload'
 import Faq from './componentes/Faq'
 import PrivacyPolicy from './componentes/PrivacyPolicy'
+import ArticleDetails from './componentes/blog/blogdetails'
 
 
 
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
     {path:'/upload', element: <Upload/>},
     {path:'/faq', element: <Faq/>},
     {path:'/policy', element: <PrivacyPolicy/>},
-
+    {path:"/article/:id", element:<ArticleDetails />} 
 
 
   ]

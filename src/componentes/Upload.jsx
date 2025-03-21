@@ -52,16 +52,44 @@ function Upload() {
               </div>
 
               {/* Contact Number */}
-              <div>
-                <label className="block text-gray-800 text-lg mb-1">
-                  Contact Number
-                </label>
-                <input
-                  type="tel"
-                  className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400  outline-none"
-                  placeholder="8766478286"
-                />
-              </div>
+<div>
+  <label className="block text-gray-800 text-lg mb-1">Contact Number</label>
+  <input
+    type="tel"
+    className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
+    placeholder="8766478286"
+  />
+</div>
+
+{/* Job Applied For */}
+<div>
+  <label className="block text-gray-800 text-lg mb-1">Job Applied For</label>
+  <input
+    type="text"
+    className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
+    placeholder="Enter Job Title"
+  />
+</div>
+
+{/* City */}
+<div>
+  <label className="block text-gray-800 text-lg mb-1">City</label>
+  <input
+    type="text"
+    className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
+    placeholder="Enter City"
+  />
+</div>
+
+{/* State */}
+<div>
+  <label className="block text-gray-800 text-lg mb-1">State</label>
+  <input
+    type="text"
+    className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
+    placeholder="Enter State"
+  />
+</div>
 
               {/* Upload Resume */}
               <div>
