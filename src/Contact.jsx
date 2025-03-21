@@ -2,6 +2,7 @@ import Cont5 from "./componentes/Home/cont5";
 import { Mail } from 'lucide-react';
 import img from './assets/gmail.jpg'
 import { Phone } from 'lucide-react'
+import { HiPhone, HiMail } from "react-icons/hi";
 function Contact() {
   return (
     <>
@@ -32,26 +33,27 @@ function Contact() {
   <div className="flex flex-col space-y-3">
     {/* Email Section */}
     <div className="flex  items-center space-x-3">
-    <img src={img} className="w-8 h-8" alt="" />
+    <HiMail className="w-5 h-5 text-blue-500" alt="" />
       <li className="list-none">hiring@assuredjob.com</li>
       
 </div> 
 <div className="flex items-center space-x-3">
 
-      <img src={img} className="w-8 h-8" alt="" />
+      <HiMail className="w-5 h-5 text-blue-500" alt="" />
       <li className="list-none">careers@assuredjob.com</li>
       
 </div>
 <div className="flex items-center space-x-3">
-<img src={img} className="w-8 h-8" alt="" />
+<HiMail className="w-5 h-5 text-blue-500" alt="" />
       <li className="list-none">business@assuredjob.com</li>
       
 </div>
-<div className="flex items-center space-x-3">
-<img src={img} className="w-8 h-8" alt="" />
-      <li className="list-none">hr@assuredjob.com</li>
+<div className="flex items-center  space-x-3">
+<HiMail className="w-5 h-5 text-blue-500" alt="" />
+      <li className="list-none">hr@assurejob.com</li>
       
 </div>
+
 
       {/* <p className="text-lg font-semibold text-zinc-800">hr@assuredjob.com</p>
       <p className="text-lg font-semibold text-zinc-800"> <Mail/>hiring@assuredjob.com</p>
@@ -74,12 +76,12 @@ function Contact() {
     
 
 <div className="flex items-center space-x-3">
-      <Phone className="w-8 h-8 text-blue-500  " />
+      <Phone className="w-5 h-5 text-blue-500  " />
       <li className="list-none">+91 8368002731</li>
       
 </div>
 <div className="flex items-center space-x-3">
-          <Phone className="w-8 h-8 text-blue-500  " />
+          <Phone className="w-5 h-5 text-blue-500  " />
     
       <li className="list-none">+91-8860159136</li>
       

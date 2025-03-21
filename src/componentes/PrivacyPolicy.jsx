@@ -3,7 +3,7 @@ import React from 'react';
 function PrivacyPolicy() {
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Cookie Policy</h1>
+      <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
       {/* <span className="bg-purple-200 text-purple-700 text-xs font-semibold px-3 py-1 my-2 rounded-full">
         COOKIE POLICY
       </span>{" "} */}
