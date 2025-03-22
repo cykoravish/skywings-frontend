@@ -15,10 +15,10 @@ function DetailService() {
     
   return (
    <>
-    <button onClick={()=> navigate("/services")} className='text-gray-400 font-semibold flex px-10 mx-10 cursor-pointer gap-3 border-gray-400  py-1 rounded-lg'><p className='flex items-center'><FaArrowLeft/></p><p>Back</p></button>
-    <div className="flex flex-col md:flex-row w-full mt-4 gap-4">
+    <button onClick={()=> navigate("/services")} className='text-gray-400 font-semibold flex mx-10 cursor-pointer gap-3 border-gray-400  py-1 rounded-lg'><p className='flex items-center'><FaArrowLeft/></p><p>Back</p></button>
+    <div className="flex flex-col md:flex-row w-full mt-4 gap-4 ">
   {/* Left Section - Image */}
-  <div className="md:w-1/2 w-full p-4 mx-10">
+  <div className="md:w-1/2 w-full  mx-10">
     <img
       className="w-full h-auto object-cover rounded-lg shadow-md"
       src={service.image}
@@ -27,12 +27,12 @@ function DetailService() {
   </div>
 
   {/* Right Section - Text Content */}
-  <div className="md:w-1/2 w-full bg-gray-50 flex flex-col justify-center p-4 ">
+  <div className="md:w-1/2 w-full bg-gray-50 flex flex-col justify-center  mr-14 ">
     <h3 className="text-lg md:text-2xl font-semibold mb-2">{service.title}</h3>
     <p className="w-full h-[400px] overflow-auto text-base md:text-lg leading-relaxed rounded-lg    " dangerouslySetInnerHTML={{ __html: service.content }}>
       {/* {service.content} */}
       </p>
-      <button onClick={()=>navigate('/contact')} className='flex justify-center mx-auto bg-blue-500 text-white cursor-pointer px-10  font-semibold text-xl rounded-lg mt-3.5  w-48'>
+      <button onClick={()=>navigate('/contact')} className='flex justify-center mx-auto border hover:bg-blue-500 hover:text-white py-1 border-blue-500 text-blue-500 cursor-pointer px-10 text-xl rounded-lg mt-3.5  w-48'>
       {service.button}
     </button>
   </div>
@@ -40,7 +40,7 @@ function DetailService() {
 
 
 
-    <div className="grid mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full px-10 ">
+    <div className="grid  mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 w-full px-12 ">
           {list.map((service, index) => (
             <div
             key={index}

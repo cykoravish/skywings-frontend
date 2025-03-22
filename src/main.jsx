@@ -19,7 +19,7 @@ import Nws from './componentes/news/Nws'
 import Upload from './componentes/Upload'
 import Faq from './componentes/Faq'
 import PrivacyPolicy from './componentes/PrivacyPolicy'
-
+import Disclaimer from './componentes/Disclaimer'
 
 
 const router = createBrowserRouter([
@@ -41,6 +41,7 @@ const router = createBrowserRouter([
     {path:'/upload', element: <Upload/>},
     {path:'/faq', element: <Faq/>},
     {path:'/policy', element: <PrivacyPolicy/>},
+    {path:'/disclaimer', element: <Disclaimer/>},
 
 
 

@@ -1,14 +1,37 @@
 @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  
-  .animate-scroll {
-    animation: scroll 100s linear infinite;
-    width: max-content;
+  100% {
+    transform: translateX(-50%);
   }
-  
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.animate-scroll_smaller {
+  display: flex;
+  animation: scroll 4s linear infinite;
+}
+
+.animate-scroll_smaller {
+  display: flex;
+  animation: scroll 4s linear infinite;
+}

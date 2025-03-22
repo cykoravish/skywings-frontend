@@ -21,32 +21,32 @@ const Footer = () => {
     <>
       <div className=" w-full hidden md:block">
         {/* Footer Grid Section */}
-        <div className=" footer grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-30 p-6 gap-5 lg:mx-20">
+        <div className=" footer grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 p-6 gap-5 ">
           {/* First Section (Logo & Social Icons) */}
           <div className="first ">
             <img src={logo} alt="Logo" className="mb-6 w-32" />
             <p className="text-gray-600 mb-6 w-40 lg:w-full">
              
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-2">
             <a
                 href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
                   target="_blank"
               >
-                <FaLinkedinIn className="border border-blue-500 w-12 h-12 p-2 rounded-xl text-blue-600 hover:text-blue-700" />
+                <FaLinkedinIn className=" border-blue-500 w-6 h-6 p-0.5 text-blue-600 hover:text-blue-700" />
               </a>
              
               <a
                 href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
                   target="_blank"
               >
-                <FaFacebook className="border border-blue-500 w-12 h-12 p-2 rounded-full text-blue-600 hover:text-blue-700" />
+                <FaFacebook className="border-blue-500 w-6 h-6   text-blue-600 hover:text-blue-700" />
               </a>
               <a href="https://www.instagram.com/assuredjob/" target="_blank">
-                <FaInstagram className="border border-red-400 w-12 h-12 p-2 rounded-full text-red-600 hover:text-pink-500" />
+                <FaInstagram className="border-red-400 w-6 h-6  text-red-600 hover:text-pink-500" />
               </a>
               <a href="https://www.instagram.com/assuredjob/" target="_blank">
-                <FaXTwitter className="border border-black w-12 h-12 p-2 rounded-full text-black hover:text-black" />
+                <FaXTwitter className=" border-black w-6 h-6  text-black hover:text-black" />
               </a>
             </div>
           </div>
@@ -87,28 +87,40 @@ const Footer = () => {
 
 
 
-              {/* <li className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
+              <li onClick={() => {navigate('/disclaimer'), window.scrollTo(0,0)}}  className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
                 Terms & Conditions
-              </li> */}
+              </li>
             </ul>
           </div>
 
           {/* Fourth Section (Contact) */}
-          <div className="fourth  ">
-            <ul>
-              <p className="font-bold text-blue-500 hover:text-blue-700 mb-2">
-                CONTACT
-              </p>
-              <li className="text-gray-600 mb-1 flex items-center">
-                <HiPhone className="mr-2 text-gray-600 hover:text-blue-500" />{" "}
-                +91-8860159136
-              </li>
-              <li className="text-gray-600 mb-1 flex items-center">
-                <HiMail className="mr-2 text-gray-600 hover:text-blue-500" />{" "}
-                hr@assuredjob.com
-              </li>
-            </ul>
-          </div>
+          <div className="fourth">
+      <ul>
+        <p className="font-bold text-blue-500 hover:text-blue-700 mb-2">CONTACT</p>
+
+        <li className="text-gray-600 mb-1 flex items-center">
+          <HiPhone className="mr-2 text-gray-600 hover:text-blue-500" />
+          <a href="tel:+918860159136" className="hover:text-blue-500">
+            +91-8860159136
+          </a>
+        </li>
+        <li className="text-gray-600 mb-1 flex items-center">
+          <HiPhone className="mr-2 text-gray-600 hover:text-blue-500" />
+          <a href="tel:+918860159136" className="hover:text-blue-500">
+          +91 8368002731
+          </a>
+        </li>
+
+        {["hr", "careers", "hiring", "business"].map((email, index) => (
+          <li key={index} className="text-gray-600 mb-1 flex items-center">
+            <HiMail className="mr-2 w-4 h-4 text-gray-600 hover:text-blue-500" />
+            <a href={`mailto:${email}@assuredjob.com`} className="hover:text-blue-500">
+              {email}@assuredjob.com
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
         </div>
 
         {/* Newsletter Section */}
@@ -167,20 +179,20 @@ const Footer = () => {
               href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
               target="_blank"
             >
-              <FaLinkedinIn className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-blue-700" />
+              <FaLinkedinIn className=" w-8 h-8    text-blue-700" />
             </a>
            
             <a
               href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
               target="_blank"
             >
-              <FaFacebook className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-blue-700" />
+              <FaFacebook className=" w-8 h-8 text-blue-700" />
             </a>
             <a href="https://www.instagram.com/assuredjob/" target="_blank">
-              <FaInstagram className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-pink-500" />
+              <FaInstagram className="w-8 h-8 text-pink-500" />
             </a>
             <a href="https://www.instagram.com/assuredjob/" target="_blank">
-              <FaXTwitter className="border border-gray-400 w-8 h-8 p-2 rounded-full text-gray-600 hover:text-black" />
+              <FaXTwitter className=" w-8 h-8  hover:text-black" />
             </a>
           </div>
 
@@ -213,10 +225,10 @@ const Footer = () => {
                 <p className="font-bold text-blue-500 hover:text-blue-700 mb-2">
                   LEGAL
                 </p>
-                <li className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
+                <li onClick={() => {navigate('/policy'), window.scrollTo(0,0)}}  className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
                   Privacy Policy
                 </li>
-                <li className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
+                <li onClick={() => {navigate('/disclaimer'), window.scrollTo(0,0)}}  className="text-gray-600 mb-1 hover:text-gray-800 cursor-pointer">
                   Terms & Conditions
                 </li>
               </ul>
@@ -232,10 +244,21 @@ const Footer = () => {
                   <HiPhone className="mr-2 text-gray-600 hover:text-blue-500" />{" "}
                   91 8860 1591 36
                 </li>
-                <li className="text-gray-600 mb-1 flex items-center">
-                  <HiMail className="mr-2 text-gray-600 hover:text-blue-500" />{" "}
-                  hr@assuredjob.com
-                </li>
+              
+        <li className="text-gray-600 mb-1 flex items-center">
+          <HiPhone className="mr-2 text-gray-600 hover:text-blue-500" />
+          <a href="tel:+918860159136" className="hover:text-blue-500">
+          +91 8368002731
+          </a>
+        </li>
+        {["hr", "careers", "hiring", "business"].map((email, index) => (
+          <li key={index} className="text-gray-600 mb-1 flex items-center w-full">
+            <HiMail className="mr-2 w-1/12 h-4 text-gray-600 hover:text-blue-500" />
+            <a  href={`mailto:${email}@assuredjob.com`} className="hover:text-blue-500 w-9/12">
+              {email}@assuredjob.com
+            </a>
+          </li>
+        ))}
               </ul>
             </div>
           </div>
@@ -273,7 +296,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center text-center  py-4 ">
           <hr className="w-[85%] border-gray-300" />
           <p className="text-gray-600 text-sm mt-2">
-            © Copyright 2022, All Rights Reserved by Skywing
+            © Copyright 2025, All Rights Reserved by Skywing
           </p>
         </div>
       </footer>

@@ -639,7 +639,7 @@ import {useNavigate} from 'react-router-dom'
         <p>Looking for cost-effective workforce solutions?</p>
         <p>Want to scale your team with flexible temp hiring?</p>
         <p class="mt-4 font-bold">Partner with AssuredJob for Hassle-Free Temporary Staffing Solutions!</p>
-    </footer>`},
+    </footer>`, button:' Contact Us'},
     {id:3, title: "Contract Staffing Services | AssuredJob", image: img3, content:`<div class="max-w-6xl mx-auto p-6">
         <h2 class="text-2xl font-bold text-gray-700 mb-6">Flexible & Cost-Effective Contract Staffing Solutions</h2>
         <p class="text-lg text-gray-700 text-center mb-8">Scale operations, reduce hiring costs, and maintain workforce flexibility with AssuredJob’s contract staffing services.</p>
@@ -698,7 +698,7 @@ import {useNavigate} from 'react-router-dom'
             <p class="text-gray-700 mb-4">Need skilled professionals for short-term projects? Looking for cost-effective workforce solutions?</p>
            
         </section>
-    </div>`, button:' Hire Now'},
+    </div>`, button:' Contact Us'},
     {id:4, title: "Executive Search", image: img8 , content:` <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
         
         <p class="text-lg mb-6">We specialize in Executive Search, identifying and recruiting top-tier leadership talent that aligns with your company’s vision and strategic goals. Our expertise spans across industries, ensuring that you gain access to highly skilled professionals who drive business growth and innovation.</p>
@@ -722,7 +722,7 @@ import {useNavigate} from 'react-router-dom'
         </ol>
         
         <p class="mt-6 text-lg font-semibold text-gray-800">Partner with Skywings Advisors for executive hiring that transforms your business with visionary leadership.</p>
-    </div>`},
+    </div>`, button:' Contact Us'},
     {id:5, title: "Recruitment Process Outsourcing (RPO) Services | AssuredJob", image: img5, content:`<div class="max-w-4xl mx-auto p-6">
         <h2 class="text-3xl font-bold  text-gray-700">Streamline Your Hiring with AssuredJob’s RPO Solutions</h2>
         <p class="mt-4 text-lg text-gray-700">Struggling with high-volume hiring, talent shortages, or lengthy recruitment cycles?</p>
@@ -825,7 +825,7 @@ import {useNavigate} from 'react-router-dom'
 
         <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Skill Gap Assessment Today!</h2>
         <p class="mt-4 text-lg">Future-proof your workforce, enhance employee skills, and drive business success with AssuredJob’s Skill Gap Assessment Services!</p>
-    </div>`},
+    </div>`, button:' Contact Us'},
     {id:7, title: "Internship & Articleship Programs | AssuredJob", image: img7, content:`<header class=" text-gray-600 p-6 text-2xl font-bold">
         Build a Skilled Workforce with Structured Internship & Articleship Programs
     </header>
@@ -960,7 +960,7 @@ import {useNavigate} from 'react-router-dom'
     <footer clas" text-white text-center py-6 mt-6">
         <p class="text-lg font-bold">Partner with AssuredJob for Efficient Onboarding & Training Support!</p>
         <p>Boost employee productivity, enhance job satisfaction, and streamline onboarding with AssuredJob’s expert training solutions!</p>
-    </footer>`},
+    </footer>`, button:' Contact Us'},
     // {id:11, title: "Onboarding &amp; Training Support Services | AssuredJob", image: img11 , content:` <header class=" text-gray-600 py-12 ">
     //     <h1 class="text-3xl font-bold">Seamless Employee Onboarding & Training</h1>
     //     <p class="mt-2 text-lg">Boost Productivity & Retention with Structured Learning & AI-Driven Solutions</p>
@@ -1335,7 +1335,7 @@ import {useNavigate} from 'react-router-dom'
         
     </footer>
 
-</body>`},
+</body>`, button:' Contact Us'},
    
     {id:12,title:'Labour Compliance Management Services | AssuredJob', image:img15, content:`<div class="max-w-5xl mx-auto p-6">
         <h2 class="text-3xl font-bold text-gray-700">Ensure 100% Compliance with Indian Labour Laws & Regulations</h2>
@@ -1471,7 +1471,7 @@ import {useNavigate} from 'react-router-dom'
         <p class="mt-2">Join India’s top freelance recruitment network and start earning today!</p>
        
     </footer>
-</body>`, button:' Signup Now'},
+</body>`, button:' Contact Us'},
     {id:14,title:'Outplacement Services | AssuredJobs', image:img17 ,content:`<body class=" text-gray-800">
     <header class="bg-gray-100 text-gray-600  p-6">
         <h1 class="text-3xl font-bold">Empowering Employees with Career Transition Support</h1>
@@ -1554,7 +1554,7 @@ import {useNavigate} from 'react-router-dom'
     
     
 </body>`, button:' Contact us '},
-    {id:15,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m"},
+    {id:15,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m", button:' Contact Us'},
     {id:16,title:'Talent Mapping & Market Intelligence Services | AssuredJob', image:img19 ,content:`<body class="bg-gray-100 text-gray-900">
     <header class=" text-gray-600  py-6">
         <h1 class="text-3xl font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
@@ -1692,6 +1692,6 @@ import {useNavigate} from 'react-router-dom'
            
         </div>
     </section>
-</body>`, button:' Get Started '},
+</body>`, button:' Contact Us'},
     
   ];
