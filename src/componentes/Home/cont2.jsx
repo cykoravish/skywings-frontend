@@ -177,12 +177,12 @@ function Cont2() {
 
   const filteredJobs = jobs?.results
     ?.filter((job) => {
-      const jobTitleMatch = job.position_title
+      const jobTitleMatch = job.job_title
         ?.toLowerCase()
         .includes(jobSearch.toLowerCase());
       const companyMatch =
-        job.company && typeof job.company === "string"
-          ? job.company.toLowerCase().includes(jobSearch.toLowerCase())
+        job.client && typeof job.company === "string"
+          ? job.client.toLowerCase().includes(jobSearch.toLowerCase())
           : false;
 
       return jobTitleMatch || companyMatch;
@@ -192,9 +192,7 @@ function Cont2() {
         ?.toLowerCase()
         .includes(locationSearch.toLowerCase());
 
-      const postalCodeMatch = job.postal_code
-        ?.toString()
-        .includes(locationSearch);
+      const postalCodeMatch = job.zip_code?.toString().includes(locationSearch);
 
       // Match either city or postal code (or both)
       return cityMatch || postalCodeMatch;
@@ -318,7 +316,7 @@ function Cont2() {
                     >
                       <div className="">
                         <h3 className="min-h-[52px] max-h-[52px]  flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold min-clamp-2-lines max-clamp-2-lines">
-                          {job.position_title}
+                          {job.job_title}
                         </h3>
 
                         {/* <p className="text-gray-500 text-sm lg:text-base">
@@ -333,6 +331,12 @@ function Cont2() {
                             {job.city} {!job.city ? "" : ","} {job.country}
                           </span>
                         </p>
+
+                        <div className="space-y-1 mb-2">
+                          <p className="text-gray-600 font-semibold">
+                            Experience: <span>{job.experience} yr</span>
+                          </p>
+                        </div>
                         {/* <p className="flex min-h-10 max-h-10 items-center text-xs sm:text-sm lg:text-base space-x-2"> */}
                         {/* <span className="min-h-12 max-h-14 text-gray-600 flex items-center gap-2.5 mb-3">
                   skills:{" "}
@@ -345,13 +349,13 @@ function Cont2() {
                       .slice(0, 2)
                       .join(", ")}
                 </span> */}
-                          {/* <img
+                        {/* <img
                             src={bag || "/placeholder.svg"}
                             alt="Experience Icon"
                             className="w-4 h-4 sm:w-5 sm:h-5"
                           />
                           <span className="truncate w-full">
-                            {job.industry}
+                            {job.client}
                           </span>
                           {/* <span>{job.job_start_date}</span> */}
                         {/* </p> */}

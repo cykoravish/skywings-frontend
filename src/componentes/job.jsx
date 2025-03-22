@@ -91,12 +91,12 @@ function Job() {
   //   .filter((job) => job.location.toLowerCase().includes(locationSearch.toLowerCase()));
   const filteredJobs = jobs?.results
     ?.filter((job) => {
-      const jobTitleMatch = job.position_title
+      const jobTitleMatch = job.job_title
         ?.toLowerCase()
         .includes(jobSearch.toLowerCase());
       const companyMatch =
-        job.company && typeof job.company === "string"
-          ? job.company.toLowerCase().includes(jobSearch.toLowerCase())
+        job.client && typeof job.company === "string"
+          ? job.client.toLowerCase().includes(jobSearch.toLowerCase())
           : false;
 
       return jobTitleMatch || companyMatch;
@@ -214,7 +214,7 @@ function Job() {
                 className="bg-white shadow-md p-4 rounded-lg border border-gray-200"
               >
                 <h3 className="min-h-[36px] max-h-[52px]  flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold clamp-2-lines">
-                  {job.position_title}
+                  {job.job_title}
                 </h3>
 
                 {/* <p className="text-gray-500">{job.company}</p> */}
@@ -222,6 +222,9 @@ function Job() {
                   <MdLocationOn className="text-purple-500 min-w-5 max-w-5 h-4 sm:w-5 sm:h-5" />{" "}
                   {job.city} {!job.city ? "" : ","} {job.country}
                 </p>
+                <div>
+                  <p className="text-gray-600 font-semibold">Experience: <span>{job.experience} yr</span></p>
+                </div>
                 {/* <span className="min-h-12 max-h-14 text-gray-600 flex items-center gap-2.5 mb-3">
                   skills:{" "}
                   {job.skills &&

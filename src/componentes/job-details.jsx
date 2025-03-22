@@ -40,7 +40,7 @@ const JobDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const description = job?.description || job?.details?.summary || "";
+  const description = job?.job_description || job?.details?.summary || "";
   const cleanDescription = description
     .replace(/&amp;/g, "&")
     .replace(/&ndash;/g, "–")
@@ -48,13 +48,15 @@ const JobDetails = () => {
     .replace(/&rdquo;/g, "”");
   const toggleText = () => setShowFullText(!showFullText);
 
+  const filterSingleJob = (jobs) => jobs.find((job) => job.id === id);
+
   // Fetch job details and related jobs
   useEffect(() => {
     const fetchJobDetails = async () => {
       try {
         setLoading(true);
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/jobs/${id}`
+          `${import.meta.env.VITE_API_URL}/api/jobs`
         );
 
         if (!response.ok) {
@@ -62,8 +64,9 @@ const JobDetails = () => {
         }
 
         const data = await response.json();
-        console.log("single job api data: ", data);
-        setJob(data);
+        console.log("single job api data: ", data.results);
+        const singleJOb = filterSingleJob(data.results);
+        setJob(singleJOb);
         setError(null);
       } catch (err) {
         console.error("Error fetching job details:", err);
@@ -93,7 +96,9 @@ const JobDetails = () => {
         }
 
         const data = await response.json();
-        setRelatedJobs(data.filter((j) => j.id.toString() !== id.toString()));
+        setRelatedJobs(
+          data.results.filter((j) => j.id.toString() !== id.toString())
+        );
       } catch (err) {
         console.error("Error fetching related jobs:", err);
         // Fallback to local data if API fails
@@ -154,72 +159,88 @@ const JobDetails = () => {
         {/* ------------------------- Job Listings (Left Side) ------------------------- */}
         <div className="flex flex-col w-full md:w-6/12 items-center">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-            {relatedJobs.slice(0, showFullText ? 10 : 6).map((relatedJob, index) => (
-              <div key={index} className="bg-[#F7F7F7] rounded-2xl p-6">
-                <div className="flex items-center space-x-3">
-                  <div>
-                    <h3 className="md:text-lg text-sm font-semibold">
-                      {relatedJob.title}
-                    </h3>
-                    {/* <p className="text-gray-500">{relatedJob.company}</p> */}
+            {relatedJobs
+              .slice(0, showFullText ? 10 : 6)
+              .map((relatedJob, index) => (
+                <div key={index} className="bg-[#F7F7F7] rounded-2xl p-6">
+                  <div className="flex items-center space-x-3">
+                    <div>
+                      <h3 className="md:text-lg text-sm font-semibold">
+                        {relatedJob.title}
+                      </h3>
+                      {/* <p className="text-gray-500">{relatedJob.company}</p> */}
+                    </div>
                   </div>
-                </div>
 
-                <div className="mt-4 text-gray-600 space-y-2">
-                  <p className="flex items-center space-x-2">
-                    <MdLocationOn />
-                    <span>{relatedJob.location}</span>
-                  </p>
-                  <p className="flex items-center text-sm lg:text-base space-x-2">
-                    <img src={bag || "/placeholder.svg"} alt="" />
+                  <div className="mt-4 text-gray-600 space-y-2">
+
+                  <div className="">
+                        <h3 className="min-h-[52px] max-h-[52px]  flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold min-clamp-2-lines max-clamp-2-lines">
+                          {relatedJob.job_title}
+                        </h3>
+                      </div>
+                    <p className="flex items-center space-x-2">
+                      <MdLocationOn />
+                      <span>{relatedJob.location}</span>
+                    </p>
+                    {/* <p className="flex items-center text-sm lg:text-base space-x-2">
+                      <img src={bag || "/placeholder.svg"} alt="" />
+                      <span>
+                        {relatedJob.experience || "Experience not specified"}
+                      </span>
+                    </p> */}
                     <span>
-                      {relatedJob.experience || "Experience not specified"}
+                      {relatedJob.job_start_date || "Date of posting not Found"}
                     </span>
-                  </p>
-                  <span>
-                    {relatedJob.job_start_date || "Date of posting not Found"}
-                  </span>
+                  </div>
+                  <div className="space-y-1 mb-2">
+                    <p className="text-gray-600 font-semibold">
+                      Experience: <span>{relatedJob.experience} yr</span>
+                    </p>
+                  </div>
+                  <button
+                    className="mt-4 w-full py-2 border-2 border-purple-500 text-purple-500 font-semibold rounded-lg hover:bg-purple-100 transition cursor-pointer"
+                    onClick={() => {
+                      navigate(`/jobdetails/${relatedJob.id}`);
+                      window.scrollTo(0, 0); // Scroll to top when navigating
+                    }}
+                  >
+                    View Details
+                  </button>
                 </div>
-
-                <button
-                  className="mt-4 w-full py-2 border-2 border-purple-500 text-purple-500 font-semibold rounded-lg hover:bg-purple-100 transition cursor-pointer"
-                  onClick={() => {
-                    navigate(`/jobdetails/${relatedJob.id}`);
-                    window.scrollTo(0, 0); // Scroll to top when navigating
-                  }}
-                >
-                  View Details
-                </button>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
 
         {/* ------------------------- Job Details (Right Side) ------------------------- */}
         <div className="bg-white w-full md:w-6/12 p-6 rounded-lg shadow-lg">
           <div>
-            <h2 className="text-2xl font-bold text-purple-600">{job.title}</h2>
+            <h2 className="text-2xl font-bold text-purple-600">
+              {job.job_title}
+            </h2>
             <p className="mt-2 text-gray-700">
-              <strong>Company:</strong> {job.company}
+              <strong>Company:</strong> {job.client}
             </p>
             <p className="text-gray-700">
-              <strong>Location:</strong> {job.location}
+              <strong>Location:</strong>{" "}
+              {job.location || job.city || job.states || job.country}
             </p>
             <p className="text-gray-700">
               <strong>Experience:</strong>{" "}
               {job.experience || "Experience not specified"}
+              {job.experience && "yr"}
             </p>
             <p className="text-gray-700">
               <strong>Job posted:</strong> {formatJobDate(job.job_start_date)}
             </p>
             {job.salary && (
               <p className="text-gray-700">
-                <strong>Salary:</strong> {job.salary}
+                <strong>Salary:</strong> {job.pay_rate___salary}
               </p>
             )}
-            {job.jobCode && (
+            {job.job_code && (
               <p className="text-gray-700">
-                <strong>Job Code:</strong> {job.jobCode}
+                <strong>Job Code:</strong> {job.job_code}
               </p>
             )}
 
@@ -244,7 +265,8 @@ const JobDetails = () => {
               )}
             </div>
 
-            <div className="mt-4">
+            {/* key responsiblities need to do  */}
+            {/* <div className="mt-4">
               <h3 className="text-lg font-semibold">Key Responsibilities:</h3>
               <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-600">
                 {Array.isArray(job.details.responsibilities) ? (
@@ -258,9 +280,9 @@ const JobDetails = () => {
                   </li>
                 )}
               </ul>
-            </div>
-
-            {job.details?.qualifications &&
+            </div> */}
+            {/* need to do  */}
+            {/* {job.details?.qualifications &&
               job.details.qualifications.length > 0 && (
                 <div className="mt-4">
                   <h3 className="text-lg font-semibold">Qualifications:</h3>
@@ -270,13 +292,13 @@ const JobDetails = () => {
                     ))}
                   </ul>
                 </div>
-              )}
+              )} */}
 
             {job.details?.skills && job.details.skills.length > 0 && (
               <div className="mt-4">
                 <h3 className="text-lg font-semibold">Skills:</h3>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {job.details.skills.map((skill, idx) => (
+                  {job.primary_skills.split.map((skill, idx) => (
                     <span
                       key={idx}
                       className="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-sm"
@@ -289,12 +311,13 @@ const JobDetails = () => {
             )}
 
             <div className="mt-4">
-              <p className="text-gray-600">
+              {/* <p className="text-gray-600">
                 <strong>Total Experience:</strong>{" "}
                 {job.experience || "Experience not specified"}
-              </p>
+              </p> */}
               <p className="text-gray-600">
-                <strong>Work Location:</strong> {job.location}
+                <strong>Work Location:</strong>{" "}
+                {job.location || job.city || job.states || job.country}
               </p>
               {job.remoteOpportunity && (
                 <p className="text-gray-600">
