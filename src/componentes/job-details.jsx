@@ -41,11 +41,49 @@ const JobDetails = () => {
   const [error, setError] = useState(null);
 
   const description = job?.job_description || job?.details?.summary || "";
-  const cleanDescription = description
-    .replace(/&amp;/g, "&")
-    .replace(/&ndash;/g, "–")
-    .replace(/&ldquo;/g, "“")
-    .replace(/&rdquo;/g, "”");
+
+  function cleanHtmlContent(htmlString) {
+    // Create a temporary DOM element
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = htmlString;
+    
+    // Get the text content (this automatically removes all HTML tags)
+    let cleanText = tempDiv.textContent || tempDiv.innerText || '';
+    
+    // Replace common HTML entities
+    const htmlEntities = {
+      '&amp;': '&',
+      '&ndash;': '–',
+      '&mdash;': '—',
+      '&ldquo;': '"',
+      '&rdquo;': '"',
+      '&lsquo;': "'",
+      '&rsquo;': "'",
+      '&nbsp;': ' ',
+      '&lt;': '<',
+      '&gt;': '>',
+      '&quot;': '"',
+      '&#39;': "'"
+    };
+    
+    // Replace all HTML entities
+    Object.entries(htmlEntities).forEach(([entity, replacement]) => {
+      cleanText = cleanText.replace(new RegExp(entity, 'g'), replacement);
+    });
+    
+    // Normalize whitespace
+    cleanText = cleanText.replace(/\s+/g, ' ').trim();
+    
+    // Format for readability (preserve structure)
+    cleanText = cleanText.replace(/(Designation:|Grade:|Location:|Industry:|Education:|CTC:|Exp\.|Role:|Job Requirement:)/g, '\n$1');
+    cleanText = cleanText.replace(/\s*-\s*/g, '\n- ');
+    
+    return cleanText;
+  }
+
+
+  const cleanDescription = cleanHtmlContent(description)
+
   const toggleText = () => setShowFullText(!showFullText);
 
   const filterSingleJob = (jobs) => jobs.find((job) => job.id === id);
