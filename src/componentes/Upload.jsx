@@ -26,74 +26,74 @@ function Upload() {
             <h3 className="text-2xl font-bold text-gray-800 text-center md:text-left">
               Submit Your Resume
             </h3>
-            <div className="mt-4 space-y-4">
+            <div className="mt-4 space-y-2">
               {/* Full Name */}
               <div>
-                <label className="block text-gray-800 text-lg mb-1">
+                <label className="block text-gray-800 text-base mb-1">
                   Full Name
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400  outline-none"
+                  className="w-full px-2 py-1 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400  outline-none"
                   placeholder="Rahul"
                 />
               </div>
 
               {/* Email */}
               <div>
-                <label className="block text-gray-800 text-lg mb-1">
+                <label className="block text-gray-800 text-base mb-1">
                   E-mail
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400  outline-none"
+                  className="w-full px-2 py-1 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400  outline-none"
                   placeholder="xyz@gmail.com"
                 />
               </div>
 
               {/* Contact Number */}
 <div>
-  <label className="block text-gray-800 text-lg mb-1">Contact Number</label>
+  <label className="block text-gray-800 text-base mb-1">Contact Number</label>
   <input
     type="tel"
-    className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
+    className="w-full px-2 py-1 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
     placeholder="8766478286"
   />
 </div>
 
 {/* Job Applied For */}
 <div>
-  <label className="block text-gray-800 text-lg mb-1">Job Applied For</label>
+  <label className="block text-gray-800 text-base mb-1">Job Applied For</label>
   <input
     type="text"
-    className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
+    className="w-full px-2 py-1 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
     placeholder="Enter Job Title"
   />
 </div>
 
 {/* City */}
 <div>
-  <label className="block text-gray-800 text-lg mb-1">City</label>
+  <label className="block text-gray-800 text-base mb-1">City</label>
   <input
     type="text"
-    className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
+    className="w-full px-2 py-1 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
     placeholder="Enter City"
   />
 </div>
 
 {/* State */}
 <div>
-  <label className="block text-gray-800 text-lg mb-1">State</label>
+  <label className="block text-gray-800 text-base mb-1">State</label>
   <input
     type="text"
-    className="w-full px-4 py-2 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
+    className="w-full px-2 py-1 rounded-lg bg-gray-100 text-zinc-700 placeholder-gray-400 outline-none"
     placeholder="Enter State"
   />
 </div>
 
               {/* Upload Resume */}
               <div>
-                <label className="block text-gray-800 text-lg mb-1">
+                <label className="block text-gray-800 text-base mb-1">
                   Upload Resume
                 </label>
                 <div className="flex flex-col items-center justify-center w-full border-2 border-dashed border-gray-400 py-6 px-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100 transition">

@@ -28,7 +28,7 @@ function DetailService() {
 
   {/* Right Section - Text Content */}
   <div className="md:w-1/2 w-full bg-gray-50 flex flex-col justify-center  mr-14 ">
-    <h3 className="text-lg md:text-2xl font-semibold mb-2">{service.title}</h3>
+    <h3 className="text-lg md:text-2xl text-center font-semibold mb-2">{service.title}</h3>
     <p className="w-full h-[400px] overflow-auto text-base md:text-lg leading-relaxed rounded-lg    " dangerouslySetInnerHTML={{ __html: service.content }}>
       {/* {service.content} */}
       </p>

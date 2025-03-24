@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky z-30 top-0   w-full h-[15vh] lg:px-14 flex items-center justify-between shadow-md lg:backdrop-blur-3xl bg-white ">
+    <header className="sticky z-30 top-0   py-2 w-full px-5 md:px-10 lg:px-14 flex items-center justify-between shadow-md lg:backdrop-blur-3xl bg-white ">
       {/* Logo */}
       <div className="flex-shrink-0">
         <NavLink to="/">
