@@ -7,7 +7,7 @@ const Cont1A=()=>{
       ];
     return(
         <>
-        <div className="bg-[#f5f5f5] py-8">
+        <div className="bg-[#f5f5f5] py-8 flex justify-center ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 lg:mx-10 mx-5 max-w-screen-xl ">
           {box.map((items, index) => (
             <div

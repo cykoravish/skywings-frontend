@@ -115,108 +115,108 @@ const Cont5 = () => {
            {
               text: ' "AssuredJob.com made my dream of working at HDFC Bank come true! Their recruiter guided me through the process, making it smooth and efficient."',
               image: testm_1,
-              name: 'Amit Sharma, Placed at HDFC Bank (Delhi)',
-              ac: '@SamPanye12'
+              name: 'Amit Sharma, Placed at HDFC Bank',
+              ac: 'Delhi'
             },{
               text: 'Thanks to their expert recruiters, I landed a high-paying job in life insurance at HDFC Life Insurance in just two weeks!',
               image: testm_2,
-              name: 'Neha Patel, Placed at HDFC Life Insurance (Mumbai)',
-              ac: '@SamPanye12'
+              name: 'Neha Patel, Placed at HDFC Life Insurance ',
+              ac: 'Mumbai'
             },{
               text: '"A seamless banking job placement experience—AssuredJob.com got me hired at HDFC Sales quickly!"',
               image: testm_3,
-              name: 'Rahul Verma, Placed at HDFC Sales (Bangalore)',
-              ac: '@SamPanye12'
+              name: 'Rahul Verma, Placed at HDFC Sales ',
+              ac: ''
             },{
               text: 'I switched from a sales role to financial services, thanks to AssuredJob.com and my placement at HDB Financial Services!',
               image: testm_4,
-              name: 'Priya Iyer, Placed at HDB Financial Services (Chennai)',
-              ac: '@SamPanye12'
+              name: 'Priya Iyer, Placed at HDB Financial Services ',
+              ac: 'Chennai'
             }, {
               text: 'AssuredJob.com provided career guidance, and now I work at HDFC Bank in a managerial role!',
               image: img,
-              name: 'Vikram Singh, Placed at HDFC Bank (Pune)',
-              ac: '@SamPanye12'
+              name: 'Vikram Singh, Placed at HDFC Bank ',
+              ac: 'Pune'
             },
             {
               text: 'Their banking sector recruitment experts helped me secure my job at HDFC Bank faster than I expected!',
               image: img,
-              name: 'Nilesh Rao, Placed at HDFC Bank (Hyderabad)',
-              ac: '@SamPanye12'
+              name: 'Nilesh Rao, Placed at HDFC Bank ',
+              ac: 'Hyderabad'
             },
             {
               text: "I was struggling to break into the insurance sector, but AssuredJob.com placed me in HDFC Life Insurance effortlessly!",
               image: img,
-              name: 'Sonal Mehta, Placed at HDFC Life Insurance (Jaipur)',
-              ac: '@SamPanye12'
+              name: 'Sonal Mehta, Placed at HDFC Life Insurance ',
+              ac: 'Jaipur'
             },
             {
               text: "Best private banking recruitment agency! I got placed at Kotak Mahindra Bank hassle-free!",
               image: img,
-              name: 'Anjali Gupta, Placed at Kotak Mahindra Bank (Noida)',
-              ac: '@SamPanye12'
+              name: 'Anjali Gupta, Placed at Kotak Mahindra Bank ',
+              ac: 'Noida'
             },
             {
               text: "AssuredJob.com helped me secure a role in life insurance sales at Kotak Mahindra Life Insurance!",
               image: img,
-              name: 'Rajesh Nair, Placed at Kotak Mahindra Life Insurance (Kochi)',
-              ac: '@SamPanye12'
+              name: 'Rajesh Nair, Placed at Kotak Mahindra Life Insurance ',
+              ac: 'Kochi'
             }, {
               text: "I was looking for a customer service job in banking, and AssuredJob.com made it possible with Kotak Mahindra Bank!",
               image: img,
-              name: 'Sneha Joshi, Placed at Kotak Mahindra Bank (Hyderabad)',
-              ac: '@SamPanye12'
+              name: 'Sneha Joshi, Placed at Kotak Mahindra Bank ',
+              ac: 'Hyderabad'
             }, {
               text: "A smooth recruitment process—I got placed at Kotak Mahindra Life Insurance with the best salary in my field!",
               image: img,
-              name: 'Manish Bhatia, Placed at Kotak Mahindra Life Insurance (Chandigarh)',
-              ac: '@SamPanye12'
+              name: 'Manish Bhatia, Placed at Kotak Mahindra Life Insurance ',
+              ac: 'Chandigarh'
             }, {
               text:"Their banking sector job listings are excellent! I found my perfect role at Kotak Mahindra Bank!",
               image: img,
-              name: 'Pooja Mehta, Placed at Kotak Mahindra Bank (Indore)',
-              ac: '@SamPanye12'
+              name: 'Pooja Mehta, Placed at Kotak Mahindra Bank',
+              ac: 'Indore'
             }, {
               text:"Looking for an insurance sales career? AssuredJob.com got me placed at Kotak Life Insurance in 10 days!",
               image: img,
-              name: 'Rahul Taneja, Placed at Kotak Mahindra Life Insurance (Patna)',
-              ac: '@SamPanye12'
+              name: 'Rahul Taneja, Placed at Kotak Mahindra Life Insurance ',
+              ac: 'Patna'
             }, {
               text:"I was unsure about my career path, but AssuredJob.com placed me at Kotak Mahindra Bank, and I couldn't be happier!"
         ,
               image: img,
-              name: 'Varsha Kapoor, Placed at Kotak Mahindra Bank (Ahmedabad)',
-              ac: '@SamPanye12'
+              name: 'Varsha Kapoor, Placed at Kotak Mahindra Bank ',
+              ac: 'Ahmedabad'
             }, {
               text:"I wanted a career in wealth management, and AssuredJob.com got me hired at Nuvama Wealth Management!",
               image: img,
-              name: 'Arjun Reddy, Placed at Nuvama Wealth Management (Visakhapatnam)',
-              ac: '@SamPanye12'
+              name: 'Arjun Reddy, Placed at Nuvama Wealth Management ',
+              ac: 'Visakhapatnam'
             }, {
               text:"Best job consultancy for finance professionals—I joined Nuvama Wealth Management in no time!",
               image: img,
-              name: 'Swati Choudhary, Placed at Nuvama Wealth Management (Noida)',
-              ac: '@SamPanye12'
+              name: 'Swati Choudhary, Placed at Nuvama Wealth Management ',
+              ac: 'Noida'
             }, {
               text:"AssuredJob.com helped me switch from banking to investment advisory at Motilal Oswal!",
               image: img,
-              name: 'Rohit Malhotra, Placed at Motilal Oswal Financial Services (Lucknow)',
-              ac: '@SamPanye12'
+              name: 'Rohit Malhotra, Placed at Motilal Oswal Financial Services ',
+              ac: 'Lucknow'
             }, {
               text:"I got my first finance job at Nuvama, and their recruitment process was smooth and transparent!",
               image: img,
-              name: 'Kavita Pillai, Placed at Nuvama Wealth Management (Thiruvananthapuram)',
-              ac: '@SamPanye12'
+              name: 'Kavita Pillai, Placed at Nuvama Wealth Management ',
+              ac: 'Thiruvananthapuram'
             }, {
               text:"Highly recommend AssuredJob.com for anyone looking for wealth management careers!",
               image: img,
-              name: 'Sandeep Yadav, Placed at Motilal Oswal Financial Services (Bhopal)',
-              ac: '@SamPanye12'
+              name: 'Sandeep Yadav, Placed at Motilal Oswal Financial Services ',
+              ac: 'Bhopal'
             }, {
               text:"I was looking for a portfolio management role, and AssuredJob.com helped me get placed at Nuvama!",
               image: img,
-              name: 'Ankur Mathur, Placed at Nuvama Wealth Management (Nagpur)',
-              ac: '@SamPanye12'
+              name: 'Ankur Mathur, Placed at Nuvama Wealth Management ',
+              ac: 'Nagpur'
             }, 
           ];
         
@@ -381,12 +381,12 @@ const Cont5 = () => {
     <div key={index} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center  w-full h-full mx-auto transition-all duration-300 hover:shadow-xl">
       <p className="text-gray-700 text-sm mb-4 ">{data.text}</p>
       <div className="flex items-center mt-auto w-full">
-        {data.image && (
+        {/* {data.image && (
           <img src={data.image} alt="Profile" className="w-14 h-14 rounded-full object-cover m-2 border-2 border-purple-200" />
-        )}
+        )} */}
         <div className="text-left ml-2 flex-1">
-          <p className="text-sm font-semibold text-gray-800">{data.name}</p>
-          {data.ac && <span className="text-xs text-purple-500">{data.ac}</span>}
+          <p className="text-sm text-center font-semibold text-gray-800">{data.name}</p>
+          { <span className="text-xs flex justify-center text-purple-500">{data.ac}</span>}
         </div>
       </div>
     </div>

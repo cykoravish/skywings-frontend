@@ -339,9 +339,9 @@ import {useNavigate} from 'react-router-dom'
 
  export const list = [
   
-    {id:1, title: "Permanent Staffing Services | Hire Top Talent Across Industries with AssuredJob", image: img1, content:`<h3 class="font-bold text-gray-600 text-2xl">Secure Long-Term Talent with Our Permanent Hiring Solutions</h3>
+    {id:1, title: "Permanent Staffing Services | Hire Top Talent Across Industries with AssuredJob", image: img1, content:`<h3 class="font-bold text-center text-gray-600 text-2xl">Secure Long-Term Talent with Our Permanent Hiring Solutions</h3>
 <br />
-<p>
+<p class='px-10'>
   Finding the right full-time employees is essential for sustained business success. At AssuredJob, 
   we provide permanent staffing services tailored to your specific industry needs. 
   Our AI-driven recruitment strategies, expert talent sourcing, and rigorous screening process 
@@ -349,15 +349,15 @@ import {useNavigate} from 'react-router-dom'
 </p>
 <br />
 
-<h3 class="mt-12 mb-4 font-semibold">Why Choose Permanent Staffing?</h3>
-<ul class=" pl-5 space-y-2 list-disc">
-    <li> Long-Term Workforce Stability – Hire dedicated professionals for core business roles.</li>
-    <li> Cost-Effective Hiring Solutions – Reduce frequent recruitment costs.</li>
-    <li> Pre-Vetted Talent Pool – Access qualified, screened candidates from diverse domains.</li>
-    <li> Industry-Specific Hiring Experts – Get candidates who meet your sector’s unique demands.</li>
-    <li> End-to-End Recruitment Support – From sourcing to onboarding, we handle everything.</li>
+<h3 class="mt-12 mb-4 px-10 font-semibold">Why Choose Permanent Staffing?</h3>
+<ul class=" pl-5 space-y-2 px-10 list-none">
+    <li class='px-10'> Long-Term Workforce Stability – Hire dedicated professionals for core business roles.</li>
+    <li class='px-10'> Cost-Effective Hiring Solutions – Reduce frequent recruitment costs.</li>
+    <li class='px-10'> Pre-Vetted Talent Pool – Access qualified, screened candidates from diverse domains.</li>
+    <li class='px-10'> Industry-Specific Hiring Experts – Get candidates who meet your sector’s unique demands.</li>
+    <li class='px-10'> End-to-End Recruitment Support – From sourcing to onboarding, we handle everything.</li>
 </ul>
-<section class="mt-12">
+<section class="mt-12 px-10">
     <h2 class="text-2xl font-bold text-gray-800">Industries We Serve for Permanent Hiring</h2>
     <p class="text-gray-600 mt-2">
         We specialize in industry-specific permanent staffing solutions, ensuring that
@@ -429,7 +429,7 @@ import {useNavigate} from 'react-router-dom'
         </ul>
     </div>
 </section>
-<section class="mt-12 space-y-8">
+<section class="mt-12 space-y-8 px-10">
     <!-- Industry 6: E-commerce & Startups -->
     <div>
         <h3 class="text-xl font-semibold text-gray-700">6. E-commerce & Startups</h3>
@@ -558,7 +558,7 @@ import {useNavigate} from 'react-router-dom'
 
 
 `, button:' Contact Us'},
-    {id:2, title: "Temporary Staffing Services | AssuredJob", image: img2, content:`<header class="text-gray-600  py-6  text-2xl font-bold">
+    {id:2, title: "Temporary Staffing Services | AssuredJob", image: img2, content:`<header class="text-gray-600  py-6  text-2xl font-bold px-10">
         Flexible Workforce Solutions for Your Business Needs
     </header>
     
@@ -641,7 +641,7 @@ import {useNavigate} from 'react-router-dom'
         <p class="mt-4 font-bold">Partner with AssuredJob for Hassle-Free Temporary Staffing Solutions!</p>
     </footer>`, button:' Contact Us'},
     {id:3, title: "Contract Staffing Services | AssuredJob", image: img3, content:`<div class="max-w-6xl mx-auto p-6">
-        <h2 class="text-2xl font-bold text-gray-700 mb-6">Flexible & Cost-Effective Contract Staffing Solutions</h2>
+        <h2 class="text-2xl font-bold text-gray-700 mb-6 text-center">Flexible & Cost-Effective Contract Staffing Solutions</h2>
         <p class="text-lg text-gray-700 text-center mb-8">Scale operations, reduce hiring costs, and maintain workforce flexibility with AssuredJob’s contract staffing services.</p>
         
         <section class="bg-white p-6 rounded-lg shadow-md mb-8">
