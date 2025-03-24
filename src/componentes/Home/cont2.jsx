@@ -209,15 +209,13 @@ function Cont2() {
 
   return (
     <>
-      <div className="bg-gray-100 px-10  z-10 sticky top-15 sm:top-15 md:top-21 w-full ">
+      {/* <div className="bg-gray-100 px-10  z-10 sticky top-15 sm:top-15 md:top-21 w-full ">
         <form
           action="/search"
           method="GET"
           className="flex flex-col gap-3 p-3 md:p-4 rounded-lg shadow bg-white mx-auto w-full md:w-11/12 max-w-4xl"
         >
-          {/* First row: Job Search Input and Location Input */}
           <div className="flex flex-col sm:flex-row gap-3">
-            {/* Job Search Input */}
             <div className="relative flex-1">
               <FaSearch
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
@@ -235,7 +233,6 @@ function Cont2() {
               />
             </div>
 
-            {/* Location Input */}
             <div className="relative flex-1">
               <FaMapMarkerAlt
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
@@ -255,19 +252,16 @@ function Cont2() {
               <p>search {jobs.count} jobs</p>
             </button>
 
-            {/* Submit Button */}
-            {/* <button
-  type="button" // Change from submit to button
-  onClick={handleSearch} // Add click event
-  className="bg-blue-500 text-white rounded-lg hover:bg-blue-800 transition px-4 py-2 sm:w-40 text-sm md:text-base"
->
-  Find a job
-</button> */}
+            <button
+              type="button"
+              onClick={handleSearch}
+              className="bg-blue-500 text-white rounded-lg hover:bg-blue-800 transition px-4 py-2 sm:w-40 text-sm md:text-base"
+            >
+              Find a job
+            </button>
           </div>
 
-          {/* Second row: Current Location button and display */}
           <div className="flex flex-col sm:flex-row items-center gap-3">
-            {/* Use Current Location Button */}
             <p
               onClick={handleGetCurrentLocation}
               className="flex items-center justify-center gap-2 bg-white hover:underline rounded-lg px-3 py-2 text-gray-700 cursor-pointer transition w-full sm:w-auto text-sm md:text-base"
@@ -279,16 +273,15 @@ function Cont2() {
               {isLoading ? "Getting location..." : "Use Current Location"}
             </p>
 
-            {/* Display Current Location */}
-            {/* {currentLocation && (
-      <div className="text-gray-700 text-xs sm:text-sm flex-1 mt-2 sm:mt-0">
-        <span className="font-medium">Current: </span>
-        {currentLocation}
-      </div>
-    )} */}
+            {currentLocation && (
+              <div className="text-gray-700 text-xs sm:text-sm flex-1 mt-2 sm:mt-0">
+                <span className="font-medium">Current: </span>
+                {currentLocation}
+              </div>
+            )}
           </div>
         </form>
-      </div>
+      </div> */}
 
       {/* Job Cards Section */}
       <div className="flex flex-col items-center w-full p-3 md:p-6 bg-[#F9F5FF]">
@@ -497,15 +490,18 @@ function Cont2() {
             </button>
           </div>
         )}
-        <button
-          onClick={() => {
-            navigate("/job");
-            window.scrollTo(0, 0); // Scroll to top
-          }}
-          className="text-blue-500 px-14 mt-10 rounded-full hover:bg-blue-500 hover:text-white mb-10 font-semibold py-2 border border-blue-500"
-        >
-          See more
-        </button>
+
+        {location.pathname !== "/career" && (
+          <button
+            onClick={() => {
+              navigate("/job");
+              window.scrollTo(0, 0); // Scroll to top
+            }}
+            className="text-blue-500 px-14 mt-10 rounded-full hover:bg-blue-500 hover:text-white mb-10 font-semibold py-2 border border-blue-500"
+          >
+            See more
+          </button>
+        )}
       </div>
     </>
   );
