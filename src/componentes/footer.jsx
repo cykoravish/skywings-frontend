@@ -24,16 +24,16 @@ const Footer = () => {
         <div className=" footer grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 p-6 gap-5 ">
           {/* First Section (Logo & Social Icons) */}
           <div className="first ">
-            <img src={logo} alt="Logo" className="mb-6 w-32" />
+            <img src={logo} alt="Logo" className="mb-6 " />
             <p className="text-gray-600 mb-6 w-40 lg:w-full">
              
             </p>
-            <div className="flex gap-2">
+            <div className="flex gap-3">
             <a
                 href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
                   target="_blank"
               >
-                <FaLinkedinIn className=" border-blue-500 w-6 h-6 p-0.5 text-blue-600 hover:text-blue-700" />
+                <FaLinkedinIn className=" border-blue-500 ml-2.5 w-6 h-6 p-0.5 text-blue-600 hover:text-blue-700" />
               </a>
              
               <a
@@ -124,7 +124,8 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Section */}
-        <div className="border-t border-slate-700 pt-6 sm:pt-8 pb-6 mb-4">
+        <hr className="w-[85%] border-gray-300 mx-auto" />
+        <div className=" w-[85%] border-slate-700 pt-6 sm:pt-8 pb-6 mb-4">
           <div className="max-w-md mx-auto text-center px-4">
             <h3 className="text-xl sm:text-2xl font-bold mb-2">Newsletter</h3>
             <p className="text-sm sm:text-base text-slate-500 mb-4">
@@ -155,8 +156,8 @@ const Footer = () => {
         {/* Bottom Footer Section */}
         <div className="flex flex-col items-center justify-center text-center  py-4 ">
           <hr className="w-[85%] border-gray-300" />
-          <p className="text-gray-600 text-sm mt-2">
-            © Copyright 2022, All Rights Reserved by Skywing
+          <p className="text-gray-600 text-base mt-2">
+            © Copyright 2025, All Rights Reserved by Skywing | Powered by <span onClick={()=>navigate()} className='text-blue-600 font-semibold cursor-pointer hover:underline'>Novanectar Services Pvt. Ltd.</span>
           </p>
         </div>
       </div>

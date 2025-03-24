@@ -20,6 +20,7 @@ import Upload from './componentes/Upload'
 import Faq from './componentes/Faq'
 import PrivacyPolicy from './componentes/PrivacyPolicy'
 import ArticleDetails from './componentes/blog/blogdetails'
+import Disclaimer from './componentes/Disclaimer';
 
 
 
@@ -42,8 +43,8 @@ const router = createBrowserRouter([
     {path:'/upload', element: <Upload/>},
     {path:'/faq', element: <Faq/>},
     {path:'/policy', element: <PrivacyPolicy/>},
-    {path:"/article/:id", element:<ArticleDetails />} 
-
+    {path:"/article/:id", element:<ArticleDetails />} ,
+    {path:'/disclaimer', element: <Disclaimer/>},
 
   ]
 }

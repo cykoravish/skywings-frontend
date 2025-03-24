@@ -3,7 +3,32 @@ import { Mail } from 'lucide-react';
 import img from './assets/gmail.jpg'
 import { Phone } from 'lucide-react'
 import { HiPhone, HiMail } from "react-icons/hi";
+import React, { useState } from "react";
+
 function Contact() {
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
+  
+const countryCityMap = {
+  usa: ["New York", "Los Angeles", "Chicago", "San Francisco", "Miami"],
+  canada: ["Toronto", "Vancouver", "Montreal", "Calgary", "Ottawa"],
+  uk: ["London", "Manchester", "Birmingham", "Liverpool", "Edinburgh"],
+  australia: ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide"],
+  germany: ["Berlin", "Hamburg", "Munich", "Frankfurt", "Cologne"],
+  france: ["Paris", "Lyon", "Marseille", "Toulouse", "Nice"],
+  india: [
+    "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai",
+    "Kolkata", "Pune", "Jaipur", "Ahmedabad", "Lucknow"
+  ],
+  japan: ["Tokyo", "Osaka", "Kyoto", "Nagoya", "Fukuoka"],
+  china: ["Beijing", "Shanghai", "Shenzhen", "Guangzhou", "Chengdu"],
+  brazil: ["São Paulo", "Rio de Janeiro", "Brasilia", "Salvador", "Fortaleza"],
+  "south-africa": ["Cape Town", "Johannesburg", "Durban", "Pretoria", "Port Elizabeth"],
+  russia: ["Moscow", "Saint Petersburg", "Novosibirsk", "Yekaterinburg", "Kazan"],
+  mexico: ["Mexico City", "Guadalajara", "Monterrey", "Cancún", "Puebla"],
+  italy: ["Rome", "Milan", "Naples", "Florence", "Venice"],
+  spain: ["Madrid", "Barcelona", "Valencia", "Seville", "Bilbao"],
+};
   return (
     <>
       {/* Header Section */}
@@ -146,7 +171,7 @@ function Contact() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-gray-700 font-medium"
+                className="block text-black font-medium"
               >
                 Email
               </label>
@@ -157,96 +182,59 @@ function Contact() {
                 className="w-full px-4 py-2 text-black mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
+            <div className="flex flex-col gap-4">
+      {/* Country Field */}
+      <div>
+        <label htmlFor="country" className="block text-gray-700 font-medium">
+          Country
+        </label>
+        <select
+          id="country"
+          className="w-full text-gray-400 px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+          value={selectedCountry}
+          onChange={(e) => {
+            setSelectedCountry(e.target.value);
+            setSelectedCity(""); // Reset city when country changes
+          }}
+        >
+          <option value="" disabled>
+            Select a country
+          </option>
+          {Object.keys(countryCityMap).map((country) => (
+            <option key={country} value={country}>
+              {country.charAt(0).toUpperCase() + country.slice(1)}
+            </option>
+          ))}
+        </select>
+      </div>
 
-            {/* City Field */}
-            <div>
-  <label htmlFor="city" className="block text-gray-700 font-medium">
-    City
-  </label>
-  <div>
-  
-  <select
-    id="city"
-    className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-400"
-  >
-    <option value="" disabled selected>
-  Select a city
-</option>
-<option value="mumbai">Mumbai</option>
-<option value="delhi">Delhi</option>
-<option value="bangalore">Bangalore</option>
-<option value="hyderabad">Hyderabad</option>
-<option value="chennai">Chennai</option>
-<option value="kolkata">Kolkata</option>
-<option value="pune">Pune</option>
-<option value="jaipur">Jaipur</option>
-<option value="ahmedabad">Ahmedabad</option>
-<option value="lucknow">Lucknow</option>
-<option value="chandigarh">Chandigarh</option>
-<option value="bhopal">Bhopal</option>
-<option value="indore">Indore</option>
-<option value="patna">Patna</option>
-<option value="kochi">Kochi</option>
-<option value="bhubaneswar">Bhubaneswar</option>
-<option value="visakhapatnam">Visakhapatnam</option>
-<option value="nagpur">Nagpur</option>
-<option value="surat">Surat</option>
-<option value="varanasi">Varanasi</option>
-<option value="guwahati">Guwahati</option>
-<option value="dehradun">Dehradun</option>
-<option value="madurai">Madurai</option>
-<option value="coimbatore">Coimbatore</option>
-<option value="amritsar">Amritsar</option>
-<option value="meerut">Meerut</option>
-<option value="ranchi">Ranchi</option>
-<option value="vadodara">Vadodara</option>
-<option value="nashik">Nashik</option>
-<option value="rajkot">Rajkot</option>
-<option value="mysore">Mysore</option>
-<option value="trivandrum">Thiruvananthapuram</option>
-<option value="jodhpur">Jodhpur</option>
-<option value="udaipur">Udaipur</option>
-<option value="gwalior">Gwalior</option>
-<option value="jamshedpur">Jamshedpur</option>
-
-  </select>
-</div>
-
-</div>
+      {/* City Field */}
+      <div>
+        <label htmlFor="city" className="block text-gray-700 font-medium">
+          City
+        </label>
+        <select
+          id="city"
+          className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-400"
+          value={selectedCity}
+          onChange={(e) => setSelectedCity(e.target.value)}
+          disabled={!selectedCountry}
+        >
+          <option value="" disabled>
+            {selectedCountry ? "Select a city" : "Select a country first"}
+          </option>
+          {selectedCountry &&
+            countryCityMap[selectedCountry].map((city) => (
+              <option key={city} value={city}>
+                {city}
+              </option>
+            ))}
+        </select>
+      </div>
+    </div>
 
 
-            {/* Country Field */}
-            <div>
-              <label
-                htmlFor="country"
-                className="block text-gray-700 font-medium"
-              >
-                Country
-              </label>
-              <select
-    id="country"
-    className="w-full text-gray-400 px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-  >
-    <option value="" disabled selected>
-      Select a country
-    </option>
-    <option value="usa">United States</option>
-    <option value="canada">Canada</option>
-    <option value="uk">United Kingdom</option>
-    <option value="australia">Australia</option>
-    <option value="germany">Germany</option>
-    <option value="france">France</option>
-    <option value="india">India</option>
-    <option value="japan">Japan</option>
-    <option value="china">China</option>
-    <option value="brazil">Brazil</option>
-    <option value="south-africa">South Africa</option>
-    <option value="russia">Russia</option>
-    <option value="mexico">Mexico</option>
-    <option value="italy">Italy</option>
-    <option value="spain">Spain</option>
-  </select>
-            </div>
+          
 
             {/* Enquire Field */}
             <div>

@@ -90,7 +90,7 @@ const Career = () => {
                 <Element name="full_time">
                 <div className='flex justify-between w-full px-7'>
                     <p className='font-semibold'>Open Position (10)</p>
-                    <p className='pr-8'>Send Your Resume :careers@assuredjob.com</p>
+                    <p className=''>Send Your Resume : careers@assuredjob.com</p>
                 </div>
                 <Cont2 className='z-40'/>
                 </Element>
@@ -105,8 +105,10 @@ const Career = () => {
                     <Arrows nextSlide={nextCardSlide} prevSlide={prevCardSlide} />
                 </div>
                 <div className='flex w-full flex-col'>
-                    <h3 className='text-center font-semibold'>Scan Code</h3>
-                    <div className="w-full bg-white-200 py-10 px-4">
+                <span className="bg-purple-200 w-20  w-28 flex justify-center mx-auto text-purple-700 text-xs lg:text-base font-semibold px-3 py-1  mt-10 rounded-full">
+        Scan code
+      </span>
+                    <div className="w-full bg-white-200 py-4 px-4">
                     <div className="grid w-full justify-center mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-12 py-10">
   {scan.map((list, index) => (
     <div key={index} className="flex flex-col items-center bg-white shadow-lg rounded-lg pt-5">

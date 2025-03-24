@@ -6,8 +6,8 @@ const Blog=()=>{
   return(
     <>
     <Cont10></Cont10>
-    <Cont11></Cont11>
-    <Cont12></Cont12>
+    {/* <Cont11></Cont11>
+    <Cont12></Cont12> */}
     </>
   )
 }

@@ -2,150 +2,195 @@ import React from "react";
 import "./infinite.css";
 
 // Import Images
-import group2 from "../../assets/Brand/hdfc.jpg";
-import gr from "../../assets/Brand/img2.avif";
-import img2 from "../../assets/Brand/IndiaFirst.png";
-import logo from "../../assets/Brand/logo_.png";
-import first from "../../assets/Brand/first.png";
-import grou from "../../assets/Brand/hhhh.jpg";
-import a from "../../assets/Brand/b.webp";
-import b from "../../assets/Brand/c.png";
-import c from "../../assets/Brand/d.webp";
-import d from "../../assets/Brand/e.png";
-import f from "../../assets/Brand/f.png";
-import g from "../../assets/Brand/g.webp";
-import h from "../../assets/Brand/h.png";
-import i from "../../assets/Brand/i.webp";
-import j from "../../assets/Brand/j.png";
-import k from "../../assets/Brand/k.png";
-import l from "../../assets/Brand/l.png";
-import m from "../../assets/Brand/m.webp";
-import n from "../../assets/Brand/n.webp";
-import o from "../../assets/Brand/o.png";
-import p from "../../assets/Brand/p.png";
-import q from "../../assets/Brand/q.png";
-import r from "../../assets/Brand/r.png";
-import s from "../../assets/Brand/s.png";
-import t from "../../assets/Brand/t.png";
-import "./infinite.css";
+// import group2 from "../../../public/Brand/hdfc.jpg";
+
+// import gr from "../../../public/Brand/img2.avif";
+// import img2 from "../../../public/Brand/IndiaFirst.png";
+// import logo from "../../../public/Brand/logo_.png";
+// import first from "../../../public/Brand/first.png";
+// import grou from "../../../public/Brand/hhhh.jpg";
+// import a from "../../../public/Brand/b.webp";
+// import b from "../../../public/Brand/c.png";
+// import c from "../../../public/Brand/d.webp";
+// import d from "../../../public/Brand/e.png";
+// import f from "../../../public/Brand/f.png";
+// import g from "../../../public/Brand/g.webp";
+// import h from "../../../public/Brand/h.png";
+// import i from "../../../public/Brand/i.webp";
+// import j from "../../../public/Brand/j.png";
+// import k from "../../../public/Brand/k.png";
+// import l from "../../../public/Brand/l.png";
+// import m from "../../../public/Brand/m.webp";
+// import n from "../../../public/Brand/n.webp";
+// import o from "../../../public/Brand/o.png";
+// import p from "../../../public/Brand/p.png";
+// import q from "../../../public/Brand/q.png";
+// import r from "../../../public/Brand/r.png";
+// import s from "../../../public/Brand/s.png";
+// import t from "../../../public/Brand/t.png";
+
+const image=[
+  "/Brand/hdfc.jpg",
+  "/Brand/img2.avif",
+  "/Brand/IndiaFirst.png",
+ 
+  "/Brand/first.png",
+  "/Brand/hhhh.jpg",
+ "/Brand/c.png",
+  "/Brand/d.webp",
+  "/Brand/e.png",
+  "/Brand/f.png",
+  "/Brand/g.webp",
+  "/Brand/h.png",
+  "/Brand/hdfc.jpg",
+  "/Brand/img2.avif",
+  "/Brand/IndiaFirst.png",
+ 
+  "/Brand/first.png",
+  "/Brand/hhhh.jpg",
+ "/Brand/c.png",
+  "/Brand/d.webp",
+  "/Brand/e.png",
+  "/Brand/f.png",
+  "/Brand/g.webp",
+  "/Brand/h.png",
+  "/Brand/hdfc.jpg",
+  "/Brand/img2.avif",
+  "/Brand/IndiaFirst.png",
+ 
+  "/Brand/first.png",
+  "/Brand/hhhh.jpg",
+ "/Brand/c.png",
+  "/Brand/d.webp",
+  "/Brand/e.png",
+  "/Brand/f.png",
+  "/Brand/g.webp",
+  "/Brand/h.png",
+
+ 
+
+]
 
 const images = [
-  // img1,
-  img2,
-  d,
-  f,
-  g,
-  h,
-  i,
-  j,
-  k,
-  l,
-  m,
-  n,
-  o,
-  p,
-  q,
-  r,
-  s,
-  // tgroup2,
-  logo,
-  // logo1,
-  gr,
-  // gro,
-  grou,
-  first,
-  a,
-  b,
-  c,
-  // tgroup2,
-  // tgroup2,
-  logo,
-  // tgroup2,
-  // tgroup2,
-  r,
-  // tgroup2,
+  "/Brand/i.webp",
+  "/Brand/j.png",
+   "/Brand/k.png",
+  "/Brand/l.png",
+  "/Brand/m.webp",
+  "/Brand/n.webp",
+  "/Brand/o.png",
+  "/Brand/p.png",
+  "/Brand/q.png",
+  "/Brand/r.png",
+  "/Brand/s.png",
+  "/Brand/t.png",
+  "/Brand/i.webp",
+  "/Brand/j.png",
+   "/Brand/k.png",
+  "/Brand/l.png",
+  "/Brand/m.webp",
+  "/Brand/n.webp",
+  "/Brand/o.png",
+  "/Brand/p.png",
+  "/Brand/q.png",
+  "/Brand/r.png",
+  "/Brand/s.png",
+  "/Brand/t.png",
+  "/Brand/i.webp",
+  "/Brand/j.png",
+   "/Brand/k.png",
+  "/Brand/l.png",
+  "/Brand/m.webp",
+  "/Brand/n.webp",
+  "/Brand/o.png",
+  "/Brand/p.png",
+  "/Brand/q.png",
+  "/Brand/r.png",
+  "/Brand/s.png",
+  "/Brand/t.png",
+  "/Brand/i.webp",
+  "/Brand/j.png",
+   "/Brand/k.png",
+  "/Brand/l.png",
+  "/Brand/m.webp",
+  "/Brand/n.webp",
+  "/Brand/o.png",
+  "/Brand/p.png",
+  "/Brand/q.png",
+  "/Brand/r.png",
+  "/Brand/s.png",
+  "/Brand/t.png",
+  "/Brand/i.webp",
+  "/Brand/j.png",
+   "/Brand/k.png",
+  "/Brand/l.png",
+  "/Brand/m.webp",
+  "/Brand/n.webp",
+  "/Brand/o.png",
+  "/Brand/p.png",
+  "/Brand/q.png",
+  "/Brand/r.png",
+  "/Brand/s.png",
+  "/Brand/t.png",
 ];
 
-const image = [
-  t,
-  s,
-  r,
-  h,
-  g,
-  f,
-  d,
-  c,
-  // logo1,
-  logo,
-  group2,
-  b,
-  a,
-  first,
-  grou,
-  // gro,
-  gr,
-  q,
-  p,
-  o,
-  n,
-  m,
-  l,
-  k,
-  j,
-  i,
-];
 
 const Cont6A = () => {
   return (
-    <>
-      <div className="flex flex-col">
-        <section className="py-10 bg-white text-center">
-          {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-800 mb-8">
-            Top Partnership
-          </h2>
+    
+    <div className="flex flex-col">
+    <section className="py-10 bg-white text-center">
+      {/* Heading */}
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-800 mb-8">
+        Top Partnership
+      </h2>
 
-          {/* Infinite Scrolling Wrapper */}
-          <div className="overflow-hidden w-full">
-            <div className="flex space-x-2 animate-scroll">
-              {[...images, ...images].map((img, index) => (
-                <div
-                  key={index}
-                  className="bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center min-h-[80px]"
-                >
-                  <img
-                    src={img}
-                    alt={`Partner ${index + 1}`}
-                    className="h-10 sm:h-12 object-contain"
-                  />
-                </div>
-              ))}
+      {/* Infinite Scrolling Wrapper */}
+      <div className="overflow-hidden w-full">
+        <div className="flex space-x-3 animate-scroll">
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className="bg-gray-100 p-2 rounded-lg flex justify-center items-center min-h-[80px] max-h-[100px] min-w-[160px]"
+            >
+              <img
+                src={img}
+                alt={`Partner ${index + 1}`}
+                className="bg-gray-100 h-20 w-[200px]"
+              />
             </div>
-          </div>
-        </section>
-        <section className="py-10 bg-white text-center">
-          {/* Heading */}
-
-          {/* Infinite Scrolling Wrapper */}
-          <div className="overflow-hidden w-full">
-            <div className="flex space-x-2 animate-scroll">
-              {[...image, ...images].map((img, index) => (
-                <div
-                  key={index}
-                  className="bg-gray-100 p-4 rounded-lg shadow-md flex justify-center items-center min-h-[80px]"
-                >
-                  <img
-                    src={img}
-                    alt={`Partner ${index + 1}`}
-                    className="h-10 sm:h-12 object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+          ))}
+        </div>
       </div>
-    </>
+
+      
+    </section>
+    <section className="py-10 bg-white text-center">
+      
+      {/* Infinite Scrolling Wrapper */}
+      <div className="overflow-hidden w-full">
+        <div className="flex space-x-3 animate-scroll">
+          {image.map((img, index) => (
+            <div
+              key={index}
+              className="bg-gray-100 p-2 rounded-lg flex justify-center items-center min-h-[80px] max-h-[100px] min-w-[160px]"
+            >
+              <img
+                src={img}
+                alt={`Partner ${index + 1}`}
+                className="bg-gray-100 h-20 w-[200px]"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      
+    </section>
+  
+  </div>
+
+  
   );
 };
 

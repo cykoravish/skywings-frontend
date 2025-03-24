@@ -63,27 +63,28 @@ const Nav = ({toggle, fun}) => {
       items: [
         { name: "About", path: "/about" },
         { name: "Career", path: "/carrers" },
-        { name: "Contact", path: "/contact" },
+        { name: "Contact us", path: "/contact" },
+        {name:"Send Your Resume", path:"/upload"}
       ],
     },
     {
       label: "Resources",
       items: [
         { name: "Blogs", path: "/blog" },
-        { name: "News", path: "/news" },
+        
       ],
     },
     {
       label: "Innovations",
       items: [
         {
-          name: "Pool Campus",
+          name: "pool-campus.com",
           path: "https://pool-campus.com/",
           external: true,
         },
         {
-          name: "Freelancer",
-          path: "https://www.freelancer.in/",
+          name: "freelancerecruiter.in",
+          path: "https://www.freelancerecruiter.in/",
           external: true,
         },
       ],
@@ -93,8 +94,8 @@ const Nav = ({toggle, fun}) => {
 
  return (
   <nav className="flex flex-col lg:flex-row items-start lg:items-center space-x-4 h-auto w-full relative">
-      <NavLink to="/" className="text-sm font-medium" onClick={closeMenuOnMobile}>
-        Home
+      <NavLink to="/job" className="text-sm font-medium" onClick={closeMenuOnMobile}>
+        Job
       </NavLink>
       {menuItems.map((menu, index) => (
         <div
@@ -124,7 +125,7 @@ const Nav = ({toggle, fun}) => {
             <div className="relative">
             <div className={
                 menu.label === "Services"
-                  ? "lg:fixed flex-col lg:flex-row  z-40 flex lg:ml-auto lg:mr-12 lg:left-0 lg:right-0  bg-white lg:space-y-10 lg:grid lg:grid-cols-5 px-4 lg:rounded-md lg:shadow-lg w-10/12 h-auto"
+                  ? "lg:fixed flex-col lg:flex-row  z-40 flex lg:ml-auto lg:mr-12 lg:left-0 lg:right-0  bg-white py-2.5 lg:grid lg:grid-cols-5 px-4 lg:rounded-md lg:shadow-lg w-10/12 h-auto"
                   : "lg:absolute lg:left-0 w-56 lg:rounded-md lg:shadow-lg bg-white transition-all px-2 duration-200 ease-in-out z-10"
               }>
                 {menu.items.map((item, idx) =>

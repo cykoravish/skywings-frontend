@@ -6,11 +6,13 @@ import sigleman from "../../assets/products/image(4).png";
 import concentration from "../../assets/products/image(5).png";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 // import {imgy} from "../../assets/products/image (4).png";
 
 
 const Cont10=()=> {
+  const navigate = useNavigate();
 // console.log("imgy", imgy)
     const articles = [
         {
@@ -157,17 +159,17 @@ txt8:"Results.",
   txt21: "Merely defining and laying down components of a successful culture is not sufficient. In fact following and believing in it is very crucial for its success, which is why should be - 'Walk the Talk'. A culture of leadership thrives best when employees are recognized for their contribution and where applauses and rewards follow suit.",
           
         },
-        // {
-        //   id:4,
-        //   image: desktop,
-        //   author: "Admin",
-        //   date: "December 25, 2015",
-        //   jobtype:"Interview Tips",
-        //   title: "Basic questions asked in any job Interview",
-        //   description:
-        //     "It’s a well known fact that looking at a candidate’s past behaviour is the best way to predict their future",
-        //   tags: ["Design", "Research"],
-        // },
+        {
+          id:4,
+          image: desktop,
+          author: "Admin",
+          date: "December 25, 2015",
+          jobtype:"Interview Tips",
+          title: "Basic questions asked in any job Interview",
+          description:
+            "It’s a well known fact that looking at a candidate’s past behaviour is the best way to predict their future",
+          tags: ["Design", "Research"],
+        },
       ];
   return (
     <>
@@ -182,6 +184,7 @@ txt8:"Results.",
         <div
           key={index}
           className="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          onClick={()=>navigate(`/article/${article.id}`)}
         >
           <img
             src={article.image}
@@ -210,7 +213,7 @@ txt8:"Results.",
             </div> */}
              {/* Link to the blogDetails page */}
              <Link
-                to={`/article/${article.id}`}
+               
                 state={article} // Pass article data
                 className="text-purple-500 font-semibold"
               >
