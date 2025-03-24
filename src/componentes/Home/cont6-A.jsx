@@ -156,7 +156,7 @@ const Cont6A = () => {
               <img
                 src={img}
                 alt={`Partner ${index + 1}`}
-                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-none "
+                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-fill "
               />
             </div>
           ))}
@@ -178,7 +178,7 @@ const Cont6A = () => {
               <img
                 src={img}
                 alt={`Partner ${index + 1}`}
-                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-none"
+                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-fill"
               />
             </div>
           ))}
