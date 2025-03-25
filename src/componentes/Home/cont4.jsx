@@ -46,10 +46,10 @@ export default function Cont4() {
       <span className="bg-purple-200 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">
         INDUSTRIES
       </span>
-      <h2 className="text-lg text-purple-600 mt-4">
+      <h2 className="text-lg text-purple-600 mt-4 px-10">
         Our complete assistance will be with you and we guide you accordingly.
       </h2>
-      <div className="flex flex-wrap justify-center gap-5 mt-6 mx-10 px-10">
+      <div className="hidden md:flex flex-wrap justify-center gap-5 mt-6 mx-10 px-10">
         {industries.map((industry, index) => (
           <div
             key={index}
@@ -59,6 +59,24 @@ export default function Cont4() {
             <span className="text-sm font-medium">{industry.name}</span>
           </div>
         ))}
+      </div>
+      <div className='flex '>
+      <div className="flex flex-wrap gap-5=">
+      <div className="flex flex-wrap justify-center gap-1 space-y-3 pl-2 pr-1.5 mt-10 max-w-full">
+  {industries.map((industry) => (
+    <div key={industry.name} className="w-24 flex items-center">
+      <div className="w-10/12 flex">
+        <span className="text-base w-1/3">
+          <img src={industry.icon} alt={industry.name} className="max-w-full h-auto" />
+        </span>
+        <span className="w-2/3 text-sm font-medium truncate">{industry.name}</span>
+      </div>
+    </div>
+  ))}
+</div>
+
+</div>
+
       </div>
     </div>
 {/* -------------------------------Top Partnership---------------------------- */}
