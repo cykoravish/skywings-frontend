@@ -1390,7 +1390,7 @@ import {useNavigate} from 'react-router-dom'
     {id:13,title:'Freelance Recruiter Program | AssuredJob', image:img16 ,content:`<body class="bg-gray-100 font-sans">
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
-        <h1 class="text-3xl font-bold">Earn Big with AssuredJob’s Freelance Recruiter Program</h1>
+        <h2 class="text-3xl font-bold text-center px-3">Earn Big with AssuredJob’s Freelance Recruiter Program</h2>
         <p class="mt-2 text-lg">Work remotely, earn high commissions, and build a successful career in recruitment.</p>
     </header>
     

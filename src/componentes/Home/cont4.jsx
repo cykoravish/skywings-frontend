@@ -60,7 +60,7 @@ export default function Cont4() {
           </div>
         ))}
       </div>
-      <div className='flex '>
+      <div className='md:hidden flex '>
       <div className="flex flex-wrap gap-5=">
       <div className="flex flex-wrap justify-center gap-1 space-y-3 pl-2 pr-1.5 mt-10 max-w-full">
   {industries.map((industry) => (
