@@ -12,7 +12,7 @@ const Cont1A=()=>{
           {box.map((items, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-white shadow-md rounded-lg"
+              className="text-center px-3 py-6 bg-white shadow-md rounded-lg"
             >
               <p className="font-bold text-2xl text-[#647DE7]">
                 {items.number}

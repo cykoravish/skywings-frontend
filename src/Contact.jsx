@@ -18,7 +18,7 @@ const countryCityMap = {
   france: ["Paris", "Lyon", "Marseille", "Toulouse", "Nice"],
   india: [
     "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai",
-    "Kolkata", "Pune", "Jaipur", "Ahmedabad", "Lucknow"
+    "Kolkata", "Pune", "Jaipur", "Ahmedabad", "Lucknow", "Other"
   ],
   japan: ["Tokyo", "Osaka", "Kyoto", "Nagoya", "Fukuoka"],
   china: ["Beijing", "Shanghai", "Shenzhen", "Guangzhou", "Chengdu"],
