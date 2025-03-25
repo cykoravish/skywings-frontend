@@ -16,7 +16,7 @@ const ArticleDetails = () => {
         {article.title}
       </div>
 
-      <div className="flex flex-wrap items-center space-x-2 text-gray-600 text-lg ml-5 sm:ml-10 md:ml-20 mt-5 bg-gray-200 w-fit px-3 py-1 rounded-lg">
+      {/* <div className="flex flex-wrap items-center space-x-2 text-gray-600 text-lg ml-5 sm:ml-10 md:ml-20 mt-5 bg-gray-200 w-fit px-3 py-1 rounded-lg">
         <span className="hover:text-blue-500 cursor-pointer">Home</span>
         <FaGreaterThan className="text-xs" />
         <span className="hover:text-blue-500 cursor-pointer">Blog</span>
@@ -24,7 +24,7 @@ const ArticleDetails = () => {
         <span className="text-purple-500 font-medium">{article.jobtype}</span>
         <FaGreaterThan className="text-xs" />
         <span className="text-gray-900 font-medium">{article.title}</span>
-      </div>
+      </div> */}
 
       <div className="text-right font-semibold mr-5 ">
         Posted by{" "}
