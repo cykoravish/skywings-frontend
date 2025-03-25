@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import img from '../../assets/products/image.png';
-import testm_1 from '../../assets/products/textm_1.jpg';
-import testm_2 from '../../assets/products/testm_2.webp';
-import testm_3 from '../../assets/products/testm_3.jpg';
-import testm_4 from '../../assets/products/testm_4.jpg';
-   
+import React, { useState, useEffect } from "react";
+import img from "../../assets/products/image.png";
+import testm_1 from "../../assets/products/textm_1.jpg";
+import testm_2 from "../../assets/products/testm_2.webp";
+import testm_3 from "../../assets/products/testm_3.jpg";
+import testm_4 from "../../assets/products/testm_4.jpg";
+
 const Cont5 = () => {
    
     const clientTestimonials = [
@@ -349,34 +349,42 @@ const Cont5 = () => {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width < 640) {
-        setScreenSize('xs');
+        setScreenSize("xs");
         setVisibleCount(1);
       } else if (width < 768) {
-        setScreenSize('sm');
+        setScreenSize("sm");
         setVisibleCount(2);
       } else if (width < 1024) {
-        setScreenSize('md');
+        setScreenSize("md");
         setVisibleCount(3);
       } else {
-        setScreenSize('lg');
-        setVisibleCount(5); 
+        setScreenSize("lg");
+        setVisibleCount(5);
       }
     };
-    
+
     handleResize();
-    window.addEventListener('resize', handleResize);
-    
+    window.addEventListener("resize", handleResize);
+
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  
   useEffect(() => {
-    const clientInterval = setInterval(() => nextSlide(clientTestimonials.length, setClientCurrentIndex), 5000);
-    const studentInterval = setInterval(() => nextSlide(studentTestimonials.length, setStudentCurrentIndex), 5000);
-    const freelancerInterval = setInterval(() => nextSlide(freelancer.length, setFreelancerCurrentIndex), 5000);
-    
+    const clientInterval = setInterval(
+      () => nextSlide(clientTestimonials.length, setClientCurrentIndex),
+      5000
+    );
+    const studentInterval = setInterval(
+      () => nextSlide(studentTestimonials.length, setStudentCurrentIndex),
+      5000
+    );
+    const freelancerInterval = setInterval(
+      () => nextSlide(freelancer.length, setFreelancerCurrentIndex),
+      5000
+    );
+
     return () => {
       clearInterval(clientInterval);
       clearInterval(studentInterval);
@@ -386,33 +394,32 @@ const Cont5 = () => {
 
   // Carousel navigation functions
   const nextSlide = (totalItems, setIndex) => {
-    setIndex(prevIndex => (prevIndex + 1) % totalItems);
+    setIndex((prevIndex) => (prevIndex + 1) % totalItems);
   };
 
   const prevSlide = (totalItems, setIndex) => {
-    setIndex(prevIndex => (prevIndex - 1 + totalItems) % totalItems);
+    setIndex((prevIndex) => (prevIndex - 1 + totalItems) % totalItems);
   };
 
-  // events triggring 
+  // events triggring
   const handleTouchStart = (e) => {
     setTouchStart(e.targetTouches[0].clientX);
   };
-  
+
   const handleTouchMove = (e) => {
     setTouchEnd(e.targetTouches[0].clientX);
   };
-  
+
   const handleTouchEnd = (totalItems, setIndex) => {
     if (touchStart - touchEnd > 50) {
       nextSlide(totalItems, setIndex);
     }
-    
+
     if (touchStart - touchEnd < -50) {
       prevSlide(totalItems, setIndex);
     }
   };
 
-  
   const getVisibleTestimonials = (testimonials, currentIndex) => {
     const result = [];
     for (let i = 0; i < visibleCount; i++) {
@@ -422,21 +429,39 @@ const Cont5 = () => {
     return result;
   };
 
-  const visibleClientTestimonials = getVisibleTestimonials(clientTestimonials, clientCurrentIndex);
-  const visibleStudentTestimonials = getVisibleTestimonials(studentTestimonials, studentCurrentIndex);
-  const visibleFreelancerTestimonials = getVisibleTestimonials(freelancer, freelancerCurrentIndex);
+  const visibleClientTestimonials = getVisibleTestimonials(
+    clientTestimonials,
+    clientCurrentIndex
+  );
+  const visibleStudentTestimonials = getVisibleTestimonials(
+    studentTestimonials,
+    studentCurrentIndex
+  );
+  const visibleFreelancerTestimonials = getVisibleTestimonials(
+    freelancer,
+    freelancerCurrentIndex
+  );
 
-  // Testimonial card 
+  // Testimonial card
   const renderTestimonialCard = (data, index) => (
-    <div key={index} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center  w-full h-full mx-auto transition-all duration-300 hover:shadow-xl">
+    <div
+      key={index}
+      className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center  w-full h-full mx-auto transition-all duration-300 hover:shadow-xl"
+    >
       <p className="text-gray-700 text-sm mb-4 ">{data.text}</p>
       <div className="flex items-center mt-auto w-full">
         {/* {data.image && (
           <img src={data.image} alt="Profile" className="w-14 h-14 rounded-full object-cover m-2 border-2 border-purple-200" />
         )} */}
         <div className="text-left ml-2 flex-1">
-          <p className="text-sm text-center font-semibold text-gray-800">{data.name}</p>
-          { <span className="text-xs flex justify-center text-purple-500">{data.ac}</span>}
+          <p className="text-sm text-center font-semibold text-gray-800">
+            {data.name}
+          </p>
+          {
+            <span className="text-xs flex justify-center text-purple-500">
+              {data.ac}
+            </span>
+          }
         </div>
       </div>
     </div>
@@ -446,91 +471,117 @@ const Cont5 = () => {
   const renderPaginationIndicators = (currentIndex, totalItems) => (
     <div className="flex justify-center space-x-2 mt-6">
       {Array.from({ length: Math.min(5, totalItems) }).map((_, idx) => (
-        <span 
-          key={idx} 
+        <span
+          key={idx}
           className={`h-2.5 w-2.5 rounded-full transition-all duration-300 ${
-            idx === currentIndex % Math.min(5, totalItems) ? 'bg-purple-600 w-4' : 'bg-gray-300'
+            idx === currentIndex % Math.min(5, totalItems)
+              ? "bg-purple-600 w-4"
+              : "bg-gray-300"
           }`}
         />
       ))}
     </div>
   );
 
-  const renderCarousel = (testimonials, visibleTestimonials, currentIndex, setIndex, title) => (
+  const renderCarousel = (
+    testimonials,
+    visibleTestimonials,
+    currentIndex,
+    setIndex,
+    title
+  ) => (
     <div className="w-full max-w-8xl mx-auto my-10">
-      <p className="text-purple-600 mb-4 text-xl font-medium">
-        {title}
-      </p>
-      
+      <p className="text-purple-600 mb-4 text-xl font-medium">{title}</p>
+
       <div className="mt-6 relative">
         <div className="relative px-2 md:px-2">
-          
-          <button 
-            onClick={() => prevSlide(testimonials.length, setIndex)} 
+          <button
+            onClick={() => prevSlide(testimonials.length, setIndex)}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-purple-300 bg-opacity-50 text-white rounded-full w-10 h-10 shadow-md hover:bg-purple-600 hover:bg-opacity-80 transition hidden md:flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-purple-400"
             aria-label="Previous testimonial"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
             </svg>
           </button>
-          
-        
-          <button 
-            onClick={() => nextSlide(testimonials.length, setIndex)} 
+
+          <button
+            onClick={() => nextSlide(testimonials.length, setIndex)}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-purple-300 bg-opacity-50 text-white rounded-full w-10 h-10 shadow-md hover:bg-purple-600 hover:bg-opacity-80 transition hidden md:flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-purple-400"
             aria-label="Next testimonial"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
-          
-          <div 
+
+          <div
             className="flex overflow-hidden mx-auto w-full"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={() => handleTouchEnd(testimonials.length, setIndex)}
           >
             <div className="flex transition-transform duration-500 ease-in-out w-full gap-3 justify-center">
-            {visibleTestimonials.map((data, index) => (
-  <div
-    key={index}
-    className="flex-shrink-0 w-full md:w-auto"
-    style={{ width: `${95 / visibleCount}%`, maxWidth: "320px" }}
-  >
-    {renderTestimonialCard(data, index)}
-  </div>
-))}
-
+              {visibleTestimonials.map((data, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-full md:w-auto"
+                  style={{ width: `${95 / visibleCount}%`, maxWidth: "320px" }}
+                >
+                  {renderTestimonialCard(data, index)}
+                </div>
+              ))}
             </div>
           </div>
         </div>
-        
+
         {/* Mobile navigation  */}
         <div className="md:hidden flex justify-center mt-6">
-          <button 
-            onClick={() => prevSlide(testimonials.length, setIndex)} 
+          <button
+            onClick={() => prevSlide(testimonials.length, setIndex)}
             className="bg-purple-300 bg-opacity-70 text-white rounded-full p-3 mx-4 shadow-md hover:bg-purple-600 hover:bg-opacity-80 transition focus:outline-none focus:ring-2 focus:ring-purple-400"
             aria-label="Previous testimonial"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
             </svg>
           </button>
-          
-          <button 
-            onClick={() => nextSlide(testimonials.length, setIndex)} 
+
+          <button
+            onClick={() => nextSlide(testimonials.length, setIndex)}
             className="bg-purple-300 bg-opacity-70 text-white rounded-full p-3 mx-4 shadow-md hover:bg-purple-600 hover:bg-opacity-80 transition focus:outline-none focus:ring-2 focus:ring-purple-400"
             aria-label="Next testimonial"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
         </div>
-        
-        
+
         {renderPaginationIndicators(currentIndex, testimonials.length)}
       </div>
     </div>
@@ -544,28 +595,28 @@ const Cont5 = () => {
       <h1 className="text-4xl text-[#42307D] font-bold my-6">
         Don&apos;t just take our word for it
       </h1>
-     
+
       {renderCarousel(
-        clientTestimonials, 
-        visibleClientTestimonials, 
-        clientCurrentIndex, 
-        setClientCurrentIndex, 
+        clientTestimonials,
+        visibleClientTestimonials,
+        clientCurrentIndex,
+        setClientCurrentIndex,
         "Read what our clients have to say"
       )}
-      
+
       {renderCarousel(
-        studentTestimonials, 
-        visibleStudentTestimonials, 
-        studentCurrentIndex, 
-        setStudentCurrentIndex, 
+        studentTestimonials,
+        visibleStudentTestimonials,
+        studentCurrentIndex,
+        setStudentCurrentIndex,
         "See what our recently joined candidates have to say"
       )}
-      
+
       {renderCarousel(
-        freelancer, 
-        visibleFreelancerTestimonials, 
-        freelancerCurrentIndex, 
-        setFreelancerCurrentIndex, 
+        freelancer,
+        visibleFreelancerTestimonials,
+        freelancerCurrentIndex,
+        setFreelancerCurrentIndex,
         "Read what our Freelance Recruiters have to say"
       )}
     </div>
