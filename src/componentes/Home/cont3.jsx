@@ -29,7 +29,7 @@ function Cont3() {
         <p className="text-purple-700 mb-8 text-center ">
           Our complete assistance will be with you, and we guide you accordingly.
         </p>
-        <div   className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-24 px-10 w-full  ">
+        <div   className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-10 w-full  ">
         {list.slice(0, 8).map((service, index) => (
   <div
     key={index}
@@ -37,8 +37,8 @@ function Cont3() {
     className="bg-[#F5F5F5] rounded-xl overflow-hidden cursor-pointer"
   >
     <img src={service.image} alt={service.title} className="w-full h-40 object-cover" />
-    <div className="p-4">
-      <h3 className="text-lg font-semibold">{service.title}</h3>
+    <div className="py-4">
+      <h3 className="text-base font-semibold">{service.title}</h3>
       <a href="#" className="text-blue-500 text-sm font-medium mt-2 inline-flex items-center">
         View Details →
       </a>
