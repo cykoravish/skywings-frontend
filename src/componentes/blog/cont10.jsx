@@ -340,36 +340,44 @@ const Cont10 = () => {
           <br /> solutions, and update
         </p>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 lg:mx-20 w-85 m-auto md:w-auto   ">
         {articles.map((article, index) => (
-          <div
+          <Link
+            to={`/article/${article.id}`}
+            state={article} // Pass article data
+            className="text-purple-500 font-semibold"
             key={index}
-            className="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
-            <img
-              src={article.image}
-              alt={article.title}
-              className="w-full object-cover"
-            />
-            <div className="p-4 relative">
-              {" "}
-              {/* relative for arrow*/}
-              <MdArrowOutward className="absolute right-3 top-5" />
-              <h3 className="text-lg font-semibold mb-2 w-80">
-                {article.title}
-              </h3>
-              <p className="text-sm text-purple-500 mb-2">
-                <span className="text-black font-semibold">
-                  {article.jobtype}{" "}
-                </span>
-                <span className="text-black">| By :</span> {article.author} {""}
-                <span className="text-black">| Last Updates: </span>{" "}
-                {article.date}
-              </p>
-              <p className="text-gray-500 text-sm mb-4">
-                {article.description}
-              </p>
-              {/* <div className="flex flex-wrap gap-2 mb-4">
+            <div
+              key={index}
+              className="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-full object-cover"
+              />
+              <div className="p-4 relative">
+                {" "}
+                {/* relative for arrow*/}
+                <MdArrowOutward className="absolute right-3 top-5" />
+                <h3 className="text-lg font-semibold mb-2 w-80">
+                  {article.title}
+                </h3>
+                <p className="text-sm text-purple-500 mb-2">
+                  <span className="text-black font-semibold">
+                    {article.jobtype}{" "}
+                  </span>
+                  <span className="text-black">| By :</span> {article.author}{" "}
+                  {""}
+                  <span className="text-black">| Last Updates: </span>{" "}
+                  {article.date}
+                </p>
+                <p className="text-gray-500 text-sm mb-4">
+                  {article.description}
+                </p>
+                {/* <div className="flex flex-wrap gap-2 mb-4">
               {article.tags.map((tag, tagIndex) => (
                 <span
                   key={tagIndex}
@@ -380,16 +388,10 @@ const Cont10 = () => {
               ))}
               
             </div> */}
-              {/* Link to the blogDetails page */}
-              <Link
-                to={`/article/${article.id}`}
-                state={article} // Pass article data
-                className="text-purple-500 font-semibold"
-              >
-                Read More...
-              </Link>
+                <p>Read More...</p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </>
