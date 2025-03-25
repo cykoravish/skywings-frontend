@@ -270,7 +270,7 @@ const Cont5 = () => {
             }
           ];
         
-          const freelancer =[
+          const freelancer  =[
             {
               text:'FreelanceRecruiter.in provides access to a premium candidate database and job portals, making hiring effortless!',
               name:'Amit Sharma, Delhi'

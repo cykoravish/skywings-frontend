@@ -558,7 +558,7 @@ import {useNavigate} from 'react-router-dom'
 
 
 `, button:' Contact Us'},
-    {id:2, title: "Temporary Staffing Services | AssuredJob", image: img2, content:`<header class="text-gray-600  py-6  text-2xl font-bold px-10">
+    {id:2, title: "Temporary Staffing Services | AssuredJob", image: img2, content:`<header class="text-gray-600 text-center py-6  text-2xl font-bold px-10">
         Flexible Workforce Solutions for Your Business Needs
     </header>
     
@@ -641,7 +641,7 @@ import {useNavigate} from 'react-router-dom'
         <p class="mt-4 font-bold">Partner with AssuredJob for Hassle-Free Temporary Staffing Solutions!</p>
     </footer>`, button:' Contact Us'},
     {id:3, title: "Contract Staffing Services | AssuredJob", image: img3, content:`<div class="max-w-6xl mx-auto p-6">
-        <h2 class="text-2xl font-bold text-gray-700 mb-6 text-center">Flexible & Cost-Effective Contract Staffing Solutions</h2>
+        <h2 class="text-2xl text-center font-bold text-gray-700 mb-6 text-center">Flexible & Cost-Effective Contract Staffing Solutions</h2>
         <p class="text-lg text-gray-700 text-center mb-8">Scale operations, reduce hiring costs, and maintain workforce flexibility with AssuredJob’s contract staffing services.</p>
         
         <section class="bg-white p-6 rounded-lg shadow-md mb-8">
@@ -724,7 +724,7 @@ import {useNavigate} from 'react-router-dom'
         <p class="mt-6 text-lg font-semibold text-gray-800">Partner with Skywings Advisors for executive hiring that transforms your business with visionary leadership.</p>
     </div>`, button:' Contact Us'},
     {id:5, title: "Recruitment Process Outsourcing (RPO) Services | AssuredJob", image: img5, content:`<div class="max-w-4xl mx-auto p-6">
-        <h2 class="text-3xl font-bold  text-gray-700">Streamline Your Hiring with AssuredJob’s RPO Solutions</h2>
+        <h2 class="text-2xl font-bold text-center  text-gray-700">Streamline Your Hiring with AssuredJob’s RPO Solutions</h2>
         <p class="mt-4 text-lg text-gray-700">Struggling with high-volume hiring, talent shortages, or lengthy recruitment cycles?</p>
         <p class="mt-2">AssuredJob’s Recruitment Process Outsourcing (RPO) services offer a scalable, cost-effective solution to optimize your hiring process, reduce time-to-fill, and improve candidate quality.</p>
         
@@ -776,7 +776,7 @@ import {useNavigate} from 'react-router-dom'
        
     </div>`, button:' Contact Us'},
     {id:6, title: "Skill Gap Assessment Services | AssuredJob", image: img6, content:`<div class="max-w-5xl mx-auto p-6">
-        <h2 class="text-3xl font-bold text-gray-700">Identify Workforce Skill Gaps & Bridge Them for Business Growth</h2>
+        <h2 class="text-2xl text-center font-bold text-gray-700">Identify Workforce Skill Gaps & Bridge Them for Business Growth</h2>
         <p class="mt-4 text-lg">AssuredJob’s Skill Gap Assessment Services help businesses analyze workforce capabilities, identify skill deficiencies, and implement training programs to enhance employee performance.</p>
 
         <h2 class="mt-6 text-2xl font-semibold">Why Skill Gap Assessment is Important?</h2>
@@ -826,7 +826,7 @@ import {useNavigate} from 'react-router-dom'
         <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Skill Gap Assessment Today!</h2>
         <p class="mt-4 text-lg">Future-proof your workforce, enhance employee skills, and drive business success with AssuredJob’s Skill Gap Assessment Services!</p>
     </div>`, button:' Contact Us'},
-    {id:7, title: "Internship & Articleship Programs | AssuredJob", image: img7, content:`<header class=" text-gray-600 p-6 text-2xl font-bold">
+    {id:7, title: "Internship & Articleship Programs | AssuredJob", image: img7, content:`<header class=" text-gray-600 text-center p-6 text-2xl font-bold">
         Build a Skilled Workforce with Structured Internship & Articleship Programs
     </header>
     
@@ -903,7 +903,7 @@ import {useNavigate} from 'react-router-dom'
         </section>
     </main>`, button:' Contact Us'},
     {id:8, title: "Onboarding and Training Support | AssuredJob", image: img9, content : `<section class="max-w-5xl mx-auto p-6">
-        <h2 class="text-3xl font-bold text-gray-600">Seamless Employee Onboarding & Training for a Productive Workforce</h2>
+        <h2 class="text-2xl text-c font-bold text-center text-gray-600">Seamless Employee Onboarding & Training for a Productive Workforce</h2>
         <p class="mt-4">A well-structured onboarding and training program is essential for employee engagement, productivity, and retention. At AssuredJob, we provide comprehensive onboarding & training support to help businesses integrate new hires smoothly and equip them with the skills & knowledge needed to succeed in their roles.</p>
     </section>
     
@@ -962,7 +962,7 @@ import {useNavigate} from 'react-router-dom'
         <p>Boost employee productivity, enhance job satisfaction, and streamline onboarding with AssuredJob’s expert training solutions!</p>
     </footer>`, button:' Contact Us'},
     // {id:11, title: "Onboarding &amp; Training Support Services | AssuredJob", image: img11 , content:` <header class=" text-gray-600 py-12 ">
-    //     <h1 class="text-3xl font-bold">Seamless Employee Onboarding & Training</h1>
+    //     <h1 class="text-2xl font-bold">Seamless Employee Onboarding & Training</h1>
     //     <p class="mt-2 text-lg">Boost Productivity & Retention with Structured Learning & AI-Driven Solutions</p>
     // </header>
 
@@ -1051,7 +1051,7 @@ import {useNavigate} from 'react-router-dom'
     // </footer>`, button:' Contact Us'},
     {id:9, title: "Pre-Placement Recruitment Services | AssuredJob", image: img12, content:`<!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
-        <h1 class="text-3xl font-bold">Hire Top Talent Early with Pre-Placement Offer (PPO) Recruitment</h1>
+        <h1 class="text-2xl text-center font-bold">Hire Top Talent Early with Pre-Placement Offer (PPO) Recruitment</h1>
         <p class="mt-2 text-lg">Connect with high-potential candidates before they enter the workforce.</p>
     </header>
 
@@ -1146,7 +1146,7 @@ import {useNavigate} from 'react-router-dom'
 
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
-        <h1 class="text-3xl font-bold">Access Top Remote Talent & Build a Future-Ready Workforce</h1>
+        <h1 class="text-2xl text-center font-bold">Access Top Remote Talent & Build a Future-Ready Workforce</h1>
         <p class="mt-2 text-lg">Expand your business, reduce hiring costs, and access top global talent with AssuredJob.</p>
     </header>
 
@@ -1243,7 +1243,7 @@ import {useNavigate} from 'react-router-dom'
 
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
-        <h1 class="text-3xl font-bold">Seamless Payroll Processing & Compliance</h1>
+        <h1 class="text-2xl text-center font-bold">Seamless Payroll Processing & Compliance</h1>
         <p class="mt-2 text-lg">Automate payroll, ensure compliance, and streamline salary disbursement with AssuredJob.</p>
     </header>
 
@@ -1338,7 +1338,7 @@ import {useNavigate} from 'react-router-dom'
 </body>`, button:' Contact Us'},
    
     {id:12,title:'Labour Compliance Management Services | AssuredJob', image:img15, content:`<div class="max-w-5xl mx-auto p-6">
-        <h2 class="text-3xl font-bold text-gray-700">Ensure 100% Compliance with Indian Labour Laws & Regulations</h2>
+        <h2 class="text-2xl text-center font-bold text-gray-700">Ensure 100% Compliance with Indian Labour Laws & Regulations</h2>
         <p class="mt-4 text-lg">AssuredJob provides end-to-end labour compliance management services, ensuring businesses stay legally compliant while focusing on their core operations.</p>
 
         <h2 class="mt-6 text-2xl font-semibold">Why Labour Compliance Management is Essential?</h2>
@@ -1390,7 +1390,7 @@ import {useNavigate} from 'react-router-dom'
     {id:13,title:'Freelance Recruiter Program | AssuredJob', image:img16 ,content:`<body class="bg-gray-100 font-sans">
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
-        <h2 class="text-3xl font-bold text-center px-3">Earn Big with AssuredJob’s Freelance Recruiter Program</h2>
+        <h2 class="text-2xl text-center font-bold text-center px-3">Earn Big with AssuredJob’s Freelance Recruiter Program</h2>
         <p class="mt-2 text-lg">Work remotely, earn high commissions, and build a successful career in recruitment.</p>
     </header>
     
@@ -1474,7 +1474,7 @@ import {useNavigate} from 'react-router-dom'
 </body>`, button:' Contact Us'},
     {id:14,title:'Outplacement Services | AssuredJobs', image:img17 ,content:`<body class=" text-gray-800">
     <header class="bg-gray-100 text-gray-600  p-6">
-        <h1 class="text-3xl font-bold">Empowering Employees with Career Transition Support</h1>
+        <h1 class="text-2xl text-center font-bold">Empowering Employees with Career Transition Support</h1>
     </header>
     
     <section class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
@@ -1557,7 +1557,7 @@ import {useNavigate} from 'react-router-dom'
     {id:15,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m", button:' Contact Us'},
     {id:16,title:'Talent Mapping & Market Intelligence Services | AssuredJob', image:img19 ,content:`<body class="bg-gray-100 text-gray-900">
     <header class=" text-gray-600  py-6">
-        <h1 class="text-3xl font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
+        <h1 class="text-2xl text-center font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
     </header>
     
     <section class="container mx-auto p-6">
@@ -1626,7 +1626,7 @@ import {useNavigate} from 'react-router-dom'
 </body>`, button:' Get Started '},
 {id:17,title:'Graduate Training Program (GTP) | AssuredJob', image:img20 ,content:`<body class="bg-gray-100 text-gray-900">
     <header class=" text-gray-600  py-6">
-        <h1 class="text-3xl font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
+        <h2 class="text-2xl text-center font-bold">Strategic Talent Insights for Smarter Workforce Planning</h2>
     </header>
     
     <section class="container mx-auto p-6">
