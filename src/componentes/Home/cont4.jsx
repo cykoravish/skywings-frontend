@@ -1,31 +1,30 @@
-import img from '../../assets/products/Vector (4).png'
-import img1 from '../../assets/products/Vector2.png';
-import img2 from '../../assets/products/Vector (3).png'
-import img5 from '../../assets/products/Vector (5).png'
-import img6 from '../../assets/products/Vector (6).png'
-import img7 from '../../assets/products/Vector (7).png'
-import img8 from '../../assets/products/Vector (8).png'
-import img9 from '../../assets/products/Vector (9).png'
-import img10 from '../../assets/products/Vector (10).png'
-import img11 from '../../assets/products/Vector (11).png'
-import img12 from '../../assets/products/Vector (12).png'
-import img13 from '../../assets/products/Frame.png'
-import img14 from '../../assets/products/Vector (14).png'
-import img15 from '../../assets/products/Vector (15).png'
-import img16 from '../../assets/products/Vector (16).png'
-import img17 from '../../assets/products/Frame1.png'
-import Cont6A from './cont6-A';
-import Cont1A from './cont1-A';
+import img from "../../assets/products/Vector (4).png";
+import img1 from "../../assets/products/Vector2.png";
+import img2 from "../../assets/products/Vector (3).png";
+import img5 from "../../assets/products/Vector (5).png";
+import img6 from "../../assets/products/Vector (6).png";
+import img7 from "../../assets/products/Vector (7).png";
+import img8 from "../../assets/products/Vector (8).png";
+import img9 from "../../assets/products/Vector (9).png";
+import img10 from "../../assets/products/Vector (10).png";
+import img11 from "../../assets/products/Vector (11).png";
+import img12 from "../../assets/products/Vector (12).png";
+import img13 from "../../assets/products/Frame.png";
+import img14 from "../../assets/products/Vector (14).png";
+import img15 from "../../assets/products/Vector (15).png";
+import img16 from "../../assets/products/Vector (16).png";
+import img17 from "../../assets/products/Frame1.png";
+import Cont6A from "./cont6-A";
+import Cont1A from "./cont1-A";
 export default function Cont4() {
-  
   const industries = [
-    { name: "Edtech", icon:img },
+    { name: "Edtech", icon: img },
     { name: "Sales & Marketing", icon: img1 },
     { name: "Engineering", icon: img2 },
     { name: "Health care", icon: img5 },
     { name: "IT & ITES", icon: img6 },
     { name: "Manufacturing", icon: img7 },
-    { name: "Telecom/ISP", icon:img8 },
+    { name: "Telecom/ISP", icon: img8 },
     { name: "FMCG", icon: img8 },
     { name: "Fintech", icon: img9 },
     { name: "BFSI/NBFC", icon: img10 },
@@ -35,53 +34,73 @@ export default function Cont4() {
     { name: "Medical/Pharmaceuticals", icon: img14 },
     { name: "Educational/Training", icon: img17 },
     { name: "Automobile", icon: img16 },
-    { name: "Retail", icon: img},
+    { name: "Retail", icon: img },
     { name: "Construction", icon: img15 },
     { name: "E-Commerce", icon: img15 },
   ];
 
   return (
     <>
-    <div className="bg-purple-50 py-12 text-center">
-      <span className="bg-purple-200 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">
-        INDUSTRIES
-      </span>
-      <h2 className="text-lg text-purple-600 mt-4 px-10">
-        Our complete assistance will be with you and we guide you accordingly.
-      </h2>
-      <div className="hidden md:flex flex-wrap justify-center gap-5 mt-6 mx-10 px-10">
-        {industries.map((industry, index) => (
-          <div
-            key={index}
-            className="flex items-center gap-3 bg-gray-200 rounded-lg shadow-sm hover:bg-gray-300 cursor-pointer lg:w-50  md:px-4 md:py-2  px-4 py-5 "
-          >
-            <span className="text-lg"><img src={industry.icon} alt="" /></span>
-            <span className="text-sm font-medium">{industry.name}</span>
-          </div>
-        ))}
-      </div>
-      <div className='md:hidden flex '>
-      <div className="flex flex-wrap gap-5=">
-      <div className="flex flex-wrap justify-center gap-1 space-y-3 pl-2 pr-1.5 mt-10 max-w-full">
-  {industries.map((industry) => (
-    <div key={industry.name} className="w-24 flex items-center">
-      <div className="w-10/12 flex">
-        <span className="text-base w-1/3">
-          <img src={industry.icon} alt={industry.name} className="max-w-full h-auto" />
+      <div className="bg-purple-50 py-12 text-center">
+        <span className="bg-purple-200 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">
+          INDUSTRIES
         </span>
-        <span className="w-2/3 text-sm font-medium truncate">{industry.name}</span>
-      </div>
-    </div>
-  ))}
-</div>
+        <h2 className="text-lg text-purple-600 mt-4">
+          Our complete assistance will be with you and we guide you accordingly.
+        </h2>
+        {/* <div className="w-full max-w-7xl mx-auto px-2 py-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
+            {industries.map((industry, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-2 bg-gray-200 rounded-lg shadow-sm hover:bg-gray-300 cursor-pointer p-2"
+                style={{
+                  transition: "background-color 0.2s ease",
+                }}
+              >
+                <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center">
+                  <img
+                    src={industry.icon || "/placeholder.svg"}
+                    alt=""
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="text-xs sm:text-sm font-medium overflow-hidden text-ellipsis">
+                  {industry.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div> */}
 
-</div>
-
+        <div className="w-full max-w-7xl  px-10 py-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
+            {industries.map((industry, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-2 bg-gray-200 rounded-lg shadow-sm hover:bg-gray-300 cursor-pointer p-2"
+                style={{
+                  transition: "background-color 0.2s ease",
+                }}
+              >
+                <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center">
+                  <img
+                    src={industry.icon || "/placeholder.svg"}
+                    alt=""
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="text-xs sm:text-sm font-medium overflow-hidden text-ellipsis">
+                  {industry.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
-{/* -------------------------------Top Partnership---------------------------- */}
-   <Cont6A></Cont6A>
-   <Cont1A></Cont1A> 
-</>
+      {/* -------------------------------Top Partnership---------------------------- */}
+      <Cont6A></Cont6A>
+      <Cont1A></Cont1A>
+    </>
   );
 }

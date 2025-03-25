@@ -40,16 +40,16 @@ function DetailService() {
 
 
 
-    <div className="grid  mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 w-full px-12 ">
+    <div className="grid  mt-16 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 w-full px-10 ">
           {list.map((service, index) => (
             <div
             key={index}
             onClick={() => handleClick(service)} // ✅ Passing service explicitly
-            className="bg-[#F5F5F5] rounded-xl overflow-hidden cursor-pointer"
+            className="bg-[#F5F5F5] rounded-sm overflow-hidden cursor-pointer"
           >
             <img src={service.image} alt={service.title} className="w-full h-40 object-cover" />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold">{service.title}</h3>
+            <div className="">
+              <h3 className="text-base font-semibold">{service.title}</h3>
               <a href="#" className="text-blue-500 text-sm font-medium mt-2 inline-flex items-center">
                 View Details →
               </a>

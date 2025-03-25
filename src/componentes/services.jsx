@@ -19,12 +19,14 @@ function Services() {
         <p className="text-purple-700 mb-8 text-center">
           Our complete assistance will be with you, and we guide you accordingly.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-20 w-full lg:w-auto ">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-4 w-full lg:w-auto ">
           {list.map((service, index) => (
-            <div key={index} className="bg-[#F5F5F5]  overflow-hidden">
+            <div key={index} 
+            onClick={() => handleClick(service)}
+            className="bg-[#F5F5F5]  overflow-hidden">
               <img src={service.image} alt={service.title} className="w-full h-40 object-cover" />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold">{service.title}</h3>
+              <div className="">
+                <h3 className="text-base font-semibold">{service.title}</h3>
                 <a href="#" onClick={() => navigate(`/DetailService/${service.id}`)} className="text-blue-500 text-sm font-medium mt-2 inline-flex items-center">
                   View Details →
                 </a>
