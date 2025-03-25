@@ -125,8 +125,8 @@ const Nav = ({toggle, fun}) => {
             <div className="relative">
             <div className={
                 menu.label === "Services"
-                ? "lg:fixed lg:left-0 w-10/12 lg:right-0 mt-4  bg-white  grid grid-cols-2 space-x-3 lg:space-y-10 lg:grid-cols-6 px-4 lg:rounded-md lg:shadow-lg  mx-auto h-auto"
-                : "lg:absolute lg:left-0 w-56 lg:rounded-md lg:shadow-lg bg-white transition-all px-2 duration-200 ease-in-out z-10"
+                ? "lg:fixed lg:left-0 w-12/12 lg:right-0 mt-4  bg-white  grid grid-cols-2 space-x-3 lg:space-y-5 lg:grid-cols-6 px-4 lg:rounded-md lg:shadow-lg   h-auto"
+                : "lg:absolute lg:left-0 w-56 lg:rounded-md lg:shadow-lg bg-white transition-all  duration-200 ease-in-out z-10"
               }>
                 {menu.items.map((item, idx) =>
                   item.external ? (
