@@ -157,7 +157,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center text-center  py-4 ">
           <hr className="w-[85%] border-gray-300" />
           <p className="text-gray-600 text-base mt-2">
-            © Copyright 2025, All Rights Reserved by Skywing | Powered by <span onClick={()=>navigate()} className='text-blue-600 font-semibold cursor-pointer hover:underline'>Novanectar Services Pvt. Ltd.</span>
+            © Copyright 2025, All Rights Reserved by Skywing | Powered by <span onClick={() => window.open('https://novanectar.co.in/', '_blank')} className='text-blue-600 font-semibold cursor-pointer hover:underline'>Novanectar Services Pvt. Ltd.</span>
           </p>
         </div>
       </div>
@@ -296,8 +296,8 @@ const Footer = () => {
         
         <div className="flex flex-col items-center justify-center text-center  py-4 ">
           <hr className="w-[85%] border-gray-300" />
-          <p className="text-gray-600 text-sm mt-2">
-            © Copyright 2025, All Rights Reserved by Skywing
+          <p className="text-gray-600 text-base mt-2">
+            © Copyright 2025, All Rights Reserved by Skywing | Powered by <span onClick={() => window.open('https://novanectar.co.in/', '_blank')} className='text-blue-600 font-semibold cursor-pointer hover:underline'>Novanectar Services Pvt. Ltd.</span>
           </p>
         </div>
       </footer>
