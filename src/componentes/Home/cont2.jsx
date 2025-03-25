@@ -198,7 +198,7 @@ function Cont2() {
 
   return (
     <>
-      <div className="bg-gray-100 px-10  z-10 sticky top-15 sm:top-15 md:top-21 w-full ">
+      <div className="bg-gray-100 px-10  z-10 sticky top-14 pt-1.5 md:top-21 w-full ">
         <form
           action="/search"
           method="GET"

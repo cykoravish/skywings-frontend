@@ -2,7 +2,12 @@ import { list } from '../data.jsx'
 import Cont5 from './Home/cont5'
 import { useNavigate } from 'react-router-dom';
 function Services() {
-  const navigate = useNavigate();
+ 
+    const navigate = useNavigate();
+      const handleClick = (service) => {
+        navigate(`/DetailService/${service.id}`);
+        window.scrollTo(0, 0);
+      };
    
   
     return (
@@ -16,7 +21,7 @@ function Services() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-20 w-full lg:w-auto ">
           {list.map((service, index) => (
-            <div key={index} className="bg-[#F5F5F5]  overflow-hidden">
+            <div key={index}   onClick={() => handleClick(service)}  className="bg-[#F5F5F5]  overflow-hidden">
               <img src={service.image} alt={service.title} className="w-full h-40 object-cover" />
               <div className="p-4">
                 <h3 className="text-lg font-semibold">{service.title}</h3>

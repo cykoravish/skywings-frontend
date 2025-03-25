@@ -29,7 +29,7 @@ const Navbar = () => {
           isMobileMenuOpen
             ? "fixed inset-0 w-full h-screen overflow-y-scroll lg:overflow-y-visible lg:bg-transparent z-50 flex flex-col items-start p-6"
             : "hidden"
-        } lg:block lg:w-auto lg:static top-[15vh] w-full lg:h-auto lg:top-0 lg:mr-8 bg-white lg:bg-transparent shadow-md lg:shadow-none overflow-y-scroll lg:overflow-y-visible`}
+        } lg:block lg:w-auto lg:static top-[6vh] w-full lg:h-auto lg:top-0 lg:mr-8 bg-white lg:bg-transparent shadow-md lg:shadow-none overflow-y-scroll lg:overflow-y-visible`}
       >
         <div className="w-full h-auto p-2 border-red-800">
           <Nav toggle={isMobileMenuOpen} fun={setIsMobileMenuOpen}/>

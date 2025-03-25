@@ -1,33 +1,7 @@
 import React from "react";
 import "./infinite.css";
 
-// Import Images
-// import group2 from "../../../public/Brand/hdfc.jpg";
 
-// import gr from "../../../public/Brand/img2.avif";
-// import img2 from "../../../public/Brand/IndiaFirst.png";
-// import logo from "../../../public/Brand/logo_.png";
-// import first from "../../../public/Brand/first.png";
-// import grou from "../../../public/Brand/hhhh.jpg";
-// import a from "../../../public/Brand/b.webp";
-// import b from "../../../public/Brand/c.png";
-// import c from "../../../public/Brand/d.webp";
-// import d from "../../../public/Brand/e.png";
-// import f from "../../../public/Brand/f.png";
-// import g from "../../../public/Brand/g.webp";
-// import h from "../../../public/Brand/h.png";
-// import i from "../../../public/Brand/i.webp";
-// import j from "../../../public/Brand/j.png";
-// import k from "../../../public/Brand/k.png";
-// import l from "../../../public/Brand/l.png";
-// import m from "../../../public/Brand/m.webp";
-// import n from "../../../public/Brand/n.webp";
-// import o from "../../../public/Brand/o.png";
-// import p from "../../../public/Brand/p.png";
-// import q from "../../../public/Brand/q.png";
-// import r from "../../../public/Brand/r.png";
-// import s from "../../../public/Brand/s.png";
-// import t from "../../../public/Brand/t.png";
 
 const image=[
   "/Brand/hdfc.jpg",
@@ -156,7 +130,7 @@ const Cont6A = () => {
               <img
                 src={img}
                 alt={`Partner ${index + 1}`}
-                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-none "
+                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-fill "
               />
             </div>
           ))}
@@ -178,7 +152,7 @@ const Cont6A = () => {
               <img
                 src={img}
                 alt={`Partner ${index + 1}`}
-                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-none"
+                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-fill"
               />
             </div>
           ))}
