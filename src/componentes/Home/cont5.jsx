@@ -217,7 +217,57 @@ const Cont5 = () => {
               image: img,
               name: 'Ankur Mathur, Placed at Nuvama Wealth Management ',
               ac: 'Nagpur'
-            }, 
+            }, {
+              text:"Their banking sector job listings are excellent! I found my perfect role at Kotak Mahindra Bank!",
+              image: img,
+              name: 'Pooja Mehta, Placed at Kotak Mahindra Bank  ',
+              ac: 'Indore'
+            }, {
+              text:"Looking for an insurance sales career? AssuredJob.com got me placed at Kotak Life Insurance in 10 days!",
+              image: img,
+              name: 'Rahul Taneja, Placed at Kotak Mahindra Life Insurance ',
+              ac: 'Patna'
+            }, {
+              text:"I was unsure about my career path, but AssuredJob.com placed me at Kotak Mahindra Bank, and I couldn’t be happier!",
+              image: img,
+              name: 'Varsha Kapoor, Placed at Kotak Mahindra Bank ',
+              ac: 'Ahmedabad'
+            }, {
+              text:"AssuredJob.com helped me switch from banking to investment advisory at Motilal Oswal!",
+              image: img,
+              name: 'Rohit Malhotra, Placed at Motilal Oswal Financial Service ',
+              ac: 'Lucknow'
+            }, {
+              text:"I got my first finance job at Nuvama, and their recruitment process was smooth and transparent!",
+              image: img,
+              name: 'Kavita Pillai, Placed at Nuvama Wealth Management ',
+              ac: 'Thiruvananthapuram'
+            }, {
+              text:"Highly recommend AssuredJob.com for anyone looking for wealth management careers!",
+              image: img,
+              name: 'Sandeep Yadav, Placed at Motilal Oswal Financial Services ',
+              ac: 'NaSandeep Yadav, Placed at Motilal Oswal Financial Servicesgpur'
+            }, {
+              text:"I was looking for a portfolio management role, and AssuredJob.com helped me get placed at Nuvama!",
+              image: img,
+              name: 'Ankur Mathur, Placed at Nuvama Wealth Management',
+              ac: 'Nagpur'
+            }, {
+              text:"My career in financial consulting started thanks to Motilal Oswal, where I was placed by AssuredJob.com!",
+              image: img,
+              name: 'Nikita Sharma, Placed at Motilal Oswal Financial Services',
+              ac: 'Delhi'
+            }, {
+              text:"A great IT job portal—I secured a role at Sutherland Global Services in customer support!",
+              image: img,
+              name: 'Nisha Kapoor, Placed at Sutherland Global Services ',
+              ac: 'Ghaziabad'
+            }, {
+              text:"AssuredJob.com’s tech job listings helped me land a developer role at AeonX Digital!",
+              image: img,
+              name: 'Kunal Saxena, Placed at AeonX Digital ',
+              ac: 'Meerut'
+            }
           ];
         
           const freelancer =[
