@@ -139,28 +139,7 @@ const Cont6A = () => {
 
       
     </section>
-    <section className="py-10 bg-white text-center">
-      
-      {/* Infinite Scrolling Wrapper */}
-      <div className="overflow-hidden w-full">
-        <div className="flex space-x-3 animate-scroll">
-          {image.map((img, index) => (
-            <div
-              key={index}
-              className="bg-gray-100 p-2 rounded-lg flex justify-center items-center min-h-[70px] lg:min-h-[80px] max-h-[70px] lg:max-h-[100px] min-w-[100px] lg:min-w-[160px]"
-            >
-              <img
-                src={img}
-                alt={`Partner ${index + 1}`}
-                className="bg-gray-100 h-20 w-[200px] object-contain lg:object-fill"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      
-    </section>
+   
   
   </div>
 
