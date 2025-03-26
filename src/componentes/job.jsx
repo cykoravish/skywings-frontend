@@ -345,26 +345,52 @@ function Job() {
     }
   }
 
-  // Filter jobs based on search criteria
-  const filteredJobs = jobs?.results
-    ?.filter((job) => {
-      if (!jobSearch) return true
+  // Add a function to sort jobs by date (newest first)
+  // Place this before the return statement
 
-      const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
-      const companyMatch = job.client?.toLowerCase().includes(jobSearch.toLowerCase())
-      const skillsMatch = job.skills?.toLowerCase().includes(jobSearch.toLowerCase())
+  // Sort jobs based on creation date or start date (newest first)
+  const sortJobsByDate = (jobs) => {
+    if (!jobs || !Array.isArray(jobs)) return []
 
-      return jobTitleMatch || companyMatch || skillsMatch
+    return [...jobs].sort((a, b) => {
+      // Try to use creation_date if available
+      if (a.creation_date && b.creation_date) {
+        return new Date(b.creation_date) - new Date(a.creation_date)
+      }
+
+      // Fall back to job_start_date
+      if (a.job_start_date && b.job_start_date) {
+        return new Date(b.job_start_date) - new Date(a.job_start_date)
+      }
+
+      // If no dates available, keep original order
+      return 0
     })
-    .filter((job) => {
-      if (!locationSearch) return true
+  }
 
-      const cityMatch = job.city?.toLowerCase().includes(locationSearch.toLowerCase())
-      const countryMatch = job.country?.toLowerCase().includes(locationSearch.toLowerCase())
-      const postalCodeMatch = job.zip_code?.toString().includes(locationSearch)
+  // Update the filteredJobs definition to use the sorting function
+  // Replace the existing filteredJobs definition with this:
+  const filteredJobs = sortJobsByDate(
+    jobs?.results
+      ?.filter((job) => {
+        if (!jobSearch) return true
 
-      return cityMatch || countryMatch || postalCodeMatch
-    })
+        const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
+        const companyMatch = job.client?.toLowerCase().includes(jobSearch.toLowerCase())
+        const skillsMatch = job.skills?.toLowerCase().includes(jobSearch.toLowerCase())
+
+        return jobTitleMatch || companyMatch || skillsMatch
+      })
+      .filter((job) => {
+        if (!locationSearch) return true
+
+        const cityMatch = job.city?.toLowerCase().includes(locationSearch.toLowerCase())
+        const countryMatch = job.country?.toLowerCase().includes(locationSearch.toLowerCase())
+        const postalCodeMatch = job.zip_code?.toString().includes(locationSearch)
+
+        return cityMatch || countryMatch || postalCodeMatch
+      }),
+  )
 
   function decodeEntities(encodedString) {
     if (!encodedString) return ""

@@ -162,27 +162,49 @@ function Cont2() {
     return "grid-cols-1"
   }
 
+  // Sort jobs based on creation date or start date (newest first)
+  const sortJobsByDate = (jobs) => {
+    if (!jobs || !Array.isArray(jobs)) return []
+
+    return [...jobs].sort((a, b) => {
+      // Try to use creation_date if available
+      if (a.creation_date && b.creation_date) {
+        return new Date(b.creation_date) - new Date(a.creation_date)
+      }
+
+      // Fall back to job_start_date
+      if (a.job_start_date && b.job_start_date) {
+        return new Date(b.job_start_date) - new Date(a.job_start_date)
+      }
+
+      // If no dates available, keep original order
+      return 0
+    })
+  }
+
   // Filter jobs based on search criteria
-  const filteredJobs = jobs?.results
-    ?.filter((job) => {
-      if (!jobSearch) return true
+  const filteredJobs = sortJobsByDate(
+    jobs?.results
+      ?.filter((job) => {
+        if (!jobSearch) return true
 
-      const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
-      const companyMatch = job.client?.toLowerCase().includes(jobSearch.toLowerCase())
-      const skillsMatch = job.skills?.toLowerCase().includes(jobSearch.toLowerCase())
+        const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
+        const companyMatch = job.client?.toLowerCase().includes(jobSearch.toLowerCase())
+        const skillsMatch = job.skills?.toLowerCase().includes(jobSearch.toLowerCase())
 
-      return jobTitleMatch || companyMatch || skillsMatch
-    })
-    .filter((job) => {
-      if (!locationSearch) return true
+        return jobTitleMatch || companyMatch || skillsMatch
+      })
+      .filter((job) => {
+        if (!locationSearch) return true
 
-      const cityMatch = job.city?.toLowerCase().includes(locationSearch.toLowerCase())
-      const countryMatch = job.country?.toLowerCase().includes(locationSearch.toLowerCase())
-      const postalCodeMatch = job.zip_code?.toString().includes(locationSearch)
+        const cityMatch = job.city?.toLowerCase().includes(locationSearch.toLowerCase())
+        const countryMatch = job.country?.toLowerCase().includes(locationSearch.toLowerCase())
+        const postalCodeMatch = job.zip_code?.toString().includes(locationSearch)
 
-      return cityMatch || countryMatch || postalCodeMatch
-    })
-    .slice(0, 5)
+        return cityMatch || countryMatch || postalCodeMatch
+      })
+      .slice(0, 5),
+  )
 
   function decodeEntities(encodedString) {
     if (!encodedString) return ""
