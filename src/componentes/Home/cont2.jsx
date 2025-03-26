@@ -1,4 +1,3 @@
-"use client"
 
 /* eslint-disable no-unused-vars */
 
@@ -8,17 +7,17 @@ import { Link } from "react-router-dom"
 import { CalendarDays } from "lucide-react"
 import { FaSearch, FaMapMarkerAlt, FaLocationArrow, FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 
 function Cont2() {
   const navigate = useNavigate()
-  // const [filteredJobs, setFilteredJobs] = useState([]);
   const [jobSearch, setJobSearch] = useState("")
   const [locationSearch, setLocationSearch] = useState("")
   const [currentLocation, setCurrentLocation] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [jobs, setJobs] = useState([])
+  const [jobs, setJobs] = useState({ count: 0, results: [] })
+  const [initialJobs, setInitialJobs] = useState({ count: 0, results: [] })
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [screenSize, setScreenSize] = useState({
@@ -26,8 +25,12 @@ function Cont2() {
     isTablet: false,
     isDesktop: true,
   })
+  const [searchTimeout, setSearchTimeout] = useState(null)
+  const [isSearching, setIsSearching] = useState(false)
 
   const carouselRef = useRef(null)
+  const initialLoadRef = useRef(true)
+  const abortControllerRef = useRef(null)
 
   // Check screen size with more granular breakpoints
   useEffect(() => {
@@ -116,10 +119,12 @@ function Cont2() {
     }
   }, [currentSlide, screenSize.isDesktop])
 
-  // Second useEffect - Just for fetching jobs (no currentSlide dependency)
+  // Initial load of jobs
   useEffect(() => {
     const fetchJobs = async () => {
-      console.log("calling all jobs api")
+      if (!initialLoadRef.current) return
+
+      console.log("Initial loading of jobs")
       try {
         setLoading(true)
         const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs`)
@@ -127,23 +132,28 @@ function Cont2() {
           throw new Error(`HTTP error! Status: ${response.status}`)
         }
         const data = await response.json()
-        console.log("response of all job api: ", data)
+        console.log("Response of initial job load:", data)
         setJobs(data)
+        setInitialJobs(data) // Store initial jobs for reference
         setError(null)
+        initialLoadRef.current = false
       } catch (err) {
         console.error("Error fetching jobs:", err)
         setError("Failed to load jobs. Please try again later.")
-        // Fallback to local data if API fails
-        // import("../../data").then((module) => {
-        //   setJobs(module.jobs);
-        // });
       } finally {
         setLoading(false)
       }
     }
 
     fetchJobs()
-  }, [screenSize.isDesktop]) // Only re-fetch when screen size category changes
+
+    // Cleanup function to cancel any pending requests when component unmounts
+    return () => {
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort()
+      }
+    }
+  }, [])
 
   // Determine number of columns based on screen size
   const getGridCols = () => {
@@ -152,56 +162,134 @@ function Cont2() {
     return "grid-cols-1"
   }
 
-  // const filteredJobs = jobs?.results
-  //   ?.filter((job) => {
-  //     const jobTitleMatch = job.position_title
-  //       ?.toLowerCase()
-  //       .includes(jobSearch.toLowerCase());
-  //     const companyMatch =
-  //       job.company && typeof job.company === "string"
-  //         ? job.company.toLowerCase().includes(jobSearch.toLowerCase())
-  //         : false;
-  //     return jobTitleMatch || companyMatch;
-  //   })
-  //   .filter((job) =>
-  //     job.city?.toLowerCase().includes(locationSearch.toLowerCase())
-  //   )
-  //   .slice(0, 5);
-
+  // Filter jobs based on search criteria
   const filteredJobs = jobs?.results
     ?.filter((job) => {
-      const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
-      const companyMatch =
-        job.client && typeof job.company === "string"
-          ? job.client.toLowerCase().includes(jobSearch.toLowerCase())
-          : false
+      if (!jobSearch) return true
 
-      return jobTitleMatch || companyMatch
+      const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
+      const companyMatch = job.client?.toLowerCase().includes(jobSearch.toLowerCase())
+      const skillsMatch = job.skills?.toLowerCase().includes(jobSearch.toLowerCase())
+
+      return jobTitleMatch || companyMatch || skillsMatch
     })
     .filter((job) => {
-      const cityMatch = job.city?.toLowerCase().includes(locationSearch.toLowerCase())
+      if (!locationSearch) return true
 
+      const cityMatch = job.city?.toLowerCase().includes(locationSearch.toLowerCase())
+      const countryMatch = job.country?.toLowerCase().includes(locationSearch.toLowerCase())
       const postalCodeMatch = job.zip_code?.toString().includes(locationSearch)
 
-      // Match either city or postal code (or both)
-      return cityMatch || postalCodeMatch
+      return cityMatch || countryMatch || postalCodeMatch
     })
     .slice(0, 5)
 
-  console.log("filteredJobs:", filteredJobs)
-
   function decodeEntities(encodedString) {
+    if (!encodedString) return ""
     const textarea = document.createElement("textarea")
     textarea.innerHTML = encodedString
     return textarea.value
   }
 
+  // Improved debounced search function
+  const handleSearch = useCallback(() => {
+    // Clear any existing timeout
+    if (searchTimeout) {
+      clearTimeout(searchTimeout)
+    }
+
+    // Cancel any ongoing fetch requests
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort()
+    }
+
+    // If both search fields are empty, restore initial jobs
+    if (!jobSearch && !locationSearch) {
+      setJobs(initialJobs)
+      setIsSearching(false)
+      return
+    }
+
+    // Set a flag to indicate search is in progress
+    setIsSearching(true)
+
+    // Create a new timeout
+    const timeout = setTimeout(async () => {
+      try {
+        setLoading(true)
+
+        // Create a new AbortController for this request
+        abortControllerRef.current = new AbortController()
+        const signal = abortControllerRef.current.signal
+
+        const params = new URLSearchParams()
+        if (jobSearch) params.append("query", jobSearch)
+        if (locationSearch) params.append("location", locationSearch)
+
+        console.log(`Searching jobs with params: ${params.toString()}`)
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/searchjobs?${params.toString()}`, { signal })
+
+        if (signal.aborted) {
+          console.log("Search request was aborted")
+          return
+        }
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`)
+        }
+
+        const data = await response.json()
+        console.log(`Found ${data.count} matching jobs`)
+        setJobs(data)
+        setError(null)
+        setCurrentSlide(0) // Reset to first slide when search results change
+      } catch (err) {
+        if (err.name === "AbortError") {
+          console.log("Search request was aborted")
+        } else {
+          console.error("Error searching jobs:", err)
+          setError("Failed to search jobs. Please try again later.")
+        }
+      } finally {
+        setLoading(false)
+        setIsSearching(false)
+      }
+    }, 500) // 500ms delay
+
+    setSearchTimeout(timeout)
+  }, [jobSearch, locationSearch, initialJobs])
+
+  // Auto-search when inputs change
+  useEffect(() => {
+    handleSearch()
+  }, [jobSearch, locationSearch, handleSearch])
+
+  // Handle manual search button click
+  const handleSearchClick = (e) => {
+    e.preventDefault()
+
+    // Clear any existing timeout to execute search immediately
+    if (searchTimeout) {
+      clearTimeout(searchTimeout)
+      setSearchTimeout(null)
+    }
+
+    handleSearch()
+  }
+
+  // Handle clearing search inputs
+  const handleClearSearch = () => {
+    setJobSearch("")
+    setLocationSearch("")
+    setJobs(initialJobs)
+    setCurrentSlide(0)
+  }
+
   return (
     <>
-      <div className="bg-gray-100 px-10  z-10 sticky top-14 pt-1.5 md:top-21 w-full ">
+      <div className="bg-gray-100 px-10 z-10 sticky top-14 pt-1.5 md:top-21 w-full">
         <form
-          action="/search"
-          method="GET"
+          onSubmit={handleSearchClick}
           className="flex flex-col gap-3 p-3 md:p-4 rounded-lg shadow bg-white mx-auto w-full md:w-11/12 max-w-4xl"
         >
           <div className="flex flex-col sm:flex-row gap-3">
@@ -215,11 +303,20 @@ function Cont2() {
                 name="job"
                 value={jobSearch}
                 onChange={(e) => setJobSearch(e.target.value)}
-                placeholder="job title or Keyword"
+                placeholder="Job title or Keyword"
                 aria-label="Job Search"
                 className="w-full pl-10 pr-4 py-2 outline-0 border rounded text-sm md:text-base"
-                required
               />
+              {jobSearch && (
+                <button
+                  type="button"
+                  onClick={() => setJobSearch("")}
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                  aria-label="Clear job search"
+                >
+                  ✕
+                </button>
+              )}
             </div>
 
             <div className="relative flex-1">
@@ -236,19 +333,24 @@ function Cont2() {
                 aria-label="Location"
                 className="w-full pl-10 pr-4 py-2 outline-0 border rounded text-sm md:text-base"
               />
+              {locationSearch && (
+                <button
+                  type="button"
+                  onClick={() => setLocationSearch("")}
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                  aria-label="Clear location search"
+                >
+                  ✕
+                </button>
+              )}
             </div>
-            <button className="px-4 text-lg py-2 bg-blue-500 text-white  rounded-lg ">
-              <p>search {jobs.count} jobs</p>
+            <button
+              type="submit"
+              disabled={isSearching}
+              className={`px-4 text-lg py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-800 transition ${isSearching ? "opacity-70 cursor-not-allowed" : ""}`}
+            >
+              <p>{isSearching ? "Searching..." : `Search ${initialJobs.count || 0} jobs`}</p>
             </button>
-
-            {/* Submit Button */}
-            {/* <button
-  type="button" // Change from submit to button
-  onClick={handleSearch} // Add click event
-  className="bg-blue-500 text-white rounded-lg hover:bg-blue-800 transition px-4 py-2 sm:w-40 text-sm md:text-base"
->
-  Find a job
-</button> */}
           </div>
 
           {/* Second row: Current Location button and display */}
@@ -262,13 +364,19 @@ function Cont2() {
               {isLoading ? "Getting location..." : "Use Current Location"}
             </p>
 
-            {/* Display Current Location */}
-            {/* {currentLocation && (
-      <div className="text-gray-700 text-xs sm:text-sm flex-1 mt-2 sm:mt-0">
-        <span className="font-medium">Current: </span> 
-        {currentLocation}
-      </div>
-    )} */}
+            {currentLocation && (
+              <div className="text-gray-700 text-xs sm:text-sm flex-1 mt-2 sm:mt-0">
+                <span className="font-medium">Current: </span>
+                {currentLocation}
+              </div>
+            )}
+
+            {/* Clear all filters button */}
+            {(jobSearch || locationSearch) && (
+              <button type="button" onClick={handleClearSearch} className="text-blue-500 hover:text-blue-700 text-sm">
+                Clear all filters
+              </button>
+            )}
           </div>
         </form>
       </div>
@@ -286,71 +394,60 @@ function Cont2() {
               <div className="text-red-500 bg-red-100 p-4 rounded-lg">{error}</div>
             ) : (
               <>
-                {/* <h2>total jobs: {jobs.count}</h2> */}
-                <div className={`grid ${getGridCols()}  gap-2 mt-6  w-full max-w-6xl`}>
-                  {filteredJobs?.map((job, index) => (
-                    <div
-                      key={index}
-                      className="bg-white shadow-md rounded-2xl px-1 md:px-3.5 py-4 md:py-6 border w-full border-gray-200 transition-transform hover:scale-102 hover:shadow-lg min-h-[220px] flex flex-col  "
-                    >
-                      <div className="">
-                        <h3 className="min-h-[52px] max-h-[52px]  flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold min-clamp-2-lines max-clamp-2-lines">
-                          {job.job_title}
-                        </h3>
-
-                        {/* <p className="text-gray-500 text-sm lg:text-base">
-        {job.company}
-      </p> */}
-                      </div>
-
-                      <div className="pt-5  text-gray-600 space-y-1">
-                        <p className="flex items-center space-x-2  text-xs sm:text-sm lg:text-base">
-                          <MdLocationOn className="text-purple-500 w-4 h-4 sm:w-5 sm:h-5" />
-                          <span className="flex flex-wrap min-h-8 max-h-12 w-full truncate">
-                            {job.city} {!job.city ? "" : ","} {job.country}
-                          </span>
-                        </p>
-
-                        <div className="space-y-1 mb-2">
-                          <p className="text-gray-600 font-semibold">
-                            Experience: <span>{job.experience} yr</span>
-                          </p>
-                        </div>
-                        {/* <p className="flex min-h-10 max-h-10 items-center text-xs sm:text-sm lg:text-base space-x-2"> */}
-                        {/* <span className="min-h-12 max-h-14 text-gray-600 flex items-center gap-2.5 mb-3">
-                  skills:{" "}
-                  {job.skills &&
-                    decodeEntities(job.skills)
-                      .split(",")
-                      .map((skill) =>
-                        skill.trim().replace(/^"|"$/g, "").slice(0, 10)
-                      ) // trims, removes quotes, limits to 10 chars
-                      .slice(0, 2)
-                      .join(", ")}
-                </span> */}
-                        {/* <img
-                            src={bag || "/placeholder.svg"}
-                            alt="Experience Icon"
-                            className="w-4 h-4 sm:w-5 sm:h-5"
-                          />
-                          <span className="truncate w-full">
-                            {job.client}
-                          </span>
-                          {/* <span>{job.job_start_date}</span> */}
-                        {/* </p> */}
-                        <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
-                          <CalendarDays />
-                          {job.job_start_date}
-                        </span>
-                        <Link to={`/jobdetails/${job.id}`}>
-                          <button className="mt-4 w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg py-1">
-                            View Details
-                          </button>
-                        </Link>
-                      </div>
-                    </div>
-                  ))}
+                <div className="text-center mb-4">
+                  <h2 className="text-lg font-semibold">
+                    {jobSearch || locationSearch
+                      ? `Found ${jobs.count || 0} matching jobs`
+                      : `Showing ${Math.min(5, jobs.results?.length || 0)} of ${initialJobs.count || 0} jobs`}
+                  </h2>
                 </div>
+                {filteredJobs?.length > 0 ? (
+                  <div className={`grid ${getGridCols()} gap-2 mt-6 w-full max-w-6xl`}>
+                    {filteredJobs.map((job, index) => (
+                      <div
+                        key={job.id || index}
+                        className="bg-white shadow-md rounded-2xl px-1 md:px-3.5 py-4 md:py-6 border w-full border-gray-200 transition-transform hover:scale-102 hover:shadow-lg min-h-[220px] flex flex-col"
+                      >
+                        <div className="">
+                          <h3 className="min-h-[52px] max-h-[52px] flex items-center break-words text-base sm:text-lg lg:text-lg font-semibold min-clamp-2-lines max-clamp-2-lines">
+                            {job.job_title}
+                          </h3>
+                        </div>
+
+                        <div className="pt-5 text-gray-600 space-y-1">
+                          <p className="flex items-center space-x-2 text-xs sm:text-sm lg:text-base">
+                            <MdLocationOn className="text-purple-500 w-4 h-4 sm:w-5 sm:h-5" />
+                            <span className="flex flex-wrap min-h-8 max-h-12 w-full truncate">
+                              {job.city} {!job.city ? "" : ","} {job.country}
+                            </span>
+                          </p>
+
+                          <div className="space-y-1 mb-2">
+                            <p className="text-gray-600 font-semibold">
+                              Experience: <span>{job.experience} yr</span>
+                            </p>
+                          </div>
+                          <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
+                            <CalendarDays />
+                            {job.job_start_date}
+                          </span>
+                          <Link to={`/jobdetails/${job.id}`}>
+                            <button className="mt-4 w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg py-1">
+                              View Details
+                            </button>
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center p-6 bg-white rounded-lg shadow mt-6 w-full max-w-md">
+                    <p className="text-gray-600">No jobs found matching your search criteria.</p>
+                    <button onClick={handleClearSearch} className="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg">
+                      Clear filters
+                    </button>
+                  </div>
+                )}
               </>
             )}
           </div>
@@ -385,7 +482,7 @@ function Cont2() {
                       <div className="bg-white shadow-md rounded-2xl p-4 md:p-6 border border-gray-200">
                         <div>
                           <h3 className="text-base md:text-lg font-semibold min-h-[52px] max-h-[52px] flex items-center break-words min-clamp-2-lines max-clamp-2-lines">
-                            {filteredJobs[currentSlide].job_title}
+                            {filteredJobs[currentSlide]?.job_title}
                           </h3>
                         </div>
 
@@ -393,21 +490,21 @@ function Cont2() {
                           <p className="flex items-center text-xs md:text-sm space-x-2">
                             <MdLocationOn className="text-purple-500 w-4 h-4 sm:w-5 sm:h-5" />
                             <span className="flex flex-wrap min-h-8 max-h-12 w-full truncate">
-                              {filteredJobs[currentSlide].city} {!filteredJobs[currentSlide].city ? "" : ","}{" "}
-                              {filteredJobs[currentSlide].country}
+                              {filteredJobs[currentSlide]?.city} {!filteredJobs[currentSlide]?.city ? "" : ","}{" "}
+                              {filteredJobs[currentSlide]?.country}
                             </span>
                           </p>
                           <div className="space-y-1 mb-2">
                             <p className="text-gray-600 font-semibold">
-                              Experience: <span>{filteredJobs[currentSlide].experience} yr</span>
+                              Experience: <span>{filteredJobs[currentSlide]?.experience} yr</span>
                             </p>
                           </div>
                           <span className="flex gap-2 space-x-2.5 text-blue-500 font-semibold">
                             <CalendarDays />
-                            {filteredJobs[currentSlide].job_start_date}
+                            {filteredJobs[currentSlide]?.job_start_date}
                           </span>
                         </div>
-                        <Link to={`/jobdetails/${filteredJobs[currentSlide].id}`}>
+                        <Link to={`/jobdetails/${filteredJobs[currentSlide]?.id}`}>
                           <button className="mt-3 md:mt-4 w-full py-1.5 md:py-2 border-2 border-blue-500 text-blue-500 font-semibold rounded-lg hover:bg-blue-500 hover:text-white transition cursor-pointer text-sm md:text-base">
                             View Details
                           </button>
@@ -432,10 +529,7 @@ function Cont2() {
               <div className="text-center p-6 bg-white rounded-lg shadow mt-6 w-full max-w-md">
                 <p className="text-gray-600 text-sm md:text-base">No jobs found matching your search criteria.</p>
                 <button
-                  onClick={() => {
-                    setJobSearch("")
-                    setLocationSearch("")
-                  }}
+                  onClick={handleClearSearch}
                   className="mt-3 px-4 py-2 bg-purple-500 text-white rounded-lg text-sm md:text-base"
                 >
                   Clear filters
