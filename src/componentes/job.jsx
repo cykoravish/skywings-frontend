@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom"
 import { MdLocationOn } from "react-icons/md"
 import { Link } from "react-router-dom"
 import { FaSearch, FaMapMarkerAlt, FaLocationArrow } from "react-icons/fa"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import { CalendarDays, ChevronLeft, ChevronRight } from "lucide-react"
 import Cont1 from "./Home/cont1"
 
@@ -26,6 +26,16 @@ function Job() {
     previous: null,
     results: [],
   })
+  const [initialJobs, setInitialJobs] = useState({
+    count: 0,
+    num_pages: 0,
+    limit: 20,
+    page_number: 1,
+    page_count: 0,
+    next: null,
+    previous: null,
+    results: [],
+  })
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   // Add currentPage state to track the current page
@@ -35,37 +45,108 @@ function Job() {
     isTablet: false,
     isDesktop: true,
   })
+  const [isSearching, setIsSearching] = useState(false)
 
+  const abortControllerRef = useRef(null)
+  const initialLoadRef = useRef(true)
+  const debounceTimerRef = useRef(null)
+  const prevSearchParamsRef = useRef("")
+
+  // Check screen size with more granular breakpoints
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const width = window.innerWidth
+      setScreenSize({
+        isMobile: width < 640,
+        isTablet: width >= 640 && width < 1024,
+        isDesktop: width >= 1024,
+      })
+    }
+
+    checkScreenSize()
+    window.addEventListener("resize", checkScreenSize)
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize)
+    }
+  }, [])
+
+  // Initial data fetch and page changes
   useEffect(() => {
     // Get page from URL or default to 1
     const pageParam = searchParams.get("page")
     const initialPage = pageParam ? Number.parseInt(pageParam) : 1
     setCurrentPage(initialPage)
 
+    // Store current search params to compare later
+    const currentSearchParamsString = searchParams.toString()
+
+    // Skip if the search params haven't changed (prevents duplicate fetches)
+    if (currentSearchParamsString === prevSearchParamsRef.current && !initialLoadRef.current) {
+      return
+    }
+
+    prevSearchParamsRef.current = currentSearchParamsString
+
     const fetchJobs = async () => {
       try {
         setLoading(true)
+
+        // Cancel any ongoing fetch requests
+        if (abortControllerRef.current) {
+          abortControllerRef.current.abort()
+        }
+
+        // Create a new AbortController for this request
+        abortControllerRef.current = new AbortController()
+        const signal = abortControllerRef.current.signal
+
         // Update API call to include page parameter
         const response = await fetch(
           `${import.meta.env.VITE_API_URL}/api/jobs${initialPage > 1 ? `?page=${initialPage}` : ""}`,
+          { signal },
         )
+
+        if (signal.aborted) return
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`)
         }
 
         const data = await response.json()
-        console.log("data: ", data)
-        setJobs(data)
-        setError(null)
+        console.log("Initial data fetch:", data)
+
+        // Only update state if the request wasn't aborted
+        if (!signal.aborted) {
+          setJobs(data)
+
+          // Store initial jobs data for reference
+          if (initialLoadRef.current) {
+            setInitialJobs(data)
+            initialLoadRef.current = false
+          }
+
+          setError(null)
+          setLoading(false)
+        }
       } catch (err) {
-        console.error("Error fetching jobs:", err)
-        setError("Failed to load jobs. Please try again later.")
-      } finally {
-        setLoading(false)
+        // Only update error state if the request wasn't aborted
+        if (err.name !== "AbortError") {
+          console.error("Error fetching jobs:", err)
+          setError("Failed to load jobs. Please try again later.")
+          setLoading(false)
+        }
       }
     }
+
     fetchJobs()
+
+    // Cleanup function to cancel any pending requests when component unmounts
+    return () => {
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort()
+      }
+    }
   }, [searchParams]) // Add searchParams as dependency to refetch when page changes
 
   const handleGetCurrentLocation = () => {
@@ -86,6 +167,13 @@ function Job() {
               "Current Location"
             setCurrentLocation(locationName)
             setLocationSearch(locationName)
+
+            // Trigger search with the new location
+            if (debounceTimerRef.current) {
+              clearTimeout(debounceTimerRef.current)
+              debounceTimerRef.current = null
+            }
+            debouncedSearch()
           } catch (error) {
             console.error("Error getting location name:", error)
             setCurrentLocation("Unable to get location")
@@ -113,26 +201,173 @@ function Job() {
     window.scrollTo(0, 0)
   }
 
+  // Debounced search function
+  const debouncedSearch = useCallback(() => {
+    // If both search fields are empty, restore initial jobs
+    if (!jobSearch && !locationSearch) {
+      setJobs(initialJobs)
+      setIsSearching(false)
+      return
+    }
+
+    // Set a flag to indicate search is in progress
+    setIsSearching(true)
+    setLoading(true)
+
+    // Clear any existing timeout
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current)
+    }
+
+    // Create a new timeout
+    debounceTimerRef.current = setTimeout(async () => {
+      try {
+        // Cancel any ongoing fetch requests
+        if (abortControllerRef.current) {
+          abortControllerRef.current.abort()
+        }
+
+        // Create a new AbortController for this request
+        abortControllerRef.current = new AbortController()
+        const signal = abortControllerRef.current.signal
+
+        const params = new URLSearchParams()
+        if (jobSearch) params.append("query", jobSearch)
+        if (locationSearch) params.append("location", locationSearch)
+
+        // Reset to page 1 when searching
+        setCurrentPage(1)
+
+        // Update search params without triggering a navigation
+        const newSearchParams = new URLSearchParams({ page: "1" })
+        setSearchParams(newSearchParams, { replace: true })
+        prevSearchParamsRef.current = newSearchParams.toString()
+
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/searchjobs?${params.toString()}`, { signal })
+
+        if (signal.aborted) return
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`)
+        }
+
+        const data = await response.json()
+        console.log("Search results:", data)
+
+        // Format the search results to match the expected pagination format
+        const formattedData = {
+          ...data,
+          num_pages: Math.ceil(data.count / 20), // Assuming 20 items per page
+          page_number: 1,
+          limit: 20,
+          page_count: data.results.length,
+        }
+
+        setJobs(formattedData)
+        setError(null)
+      } catch (err) {
+        // Only update error state if the request wasn't aborted
+        if (err.name !== "AbortError") {
+          console.error("Error searching jobs:", err)
+          setError("Failed to search jobs. Please try again later.")
+        }
+      } finally {
+        setLoading(false)
+        setIsSearching(false)
+        debounceTimerRef.current = null
+      }
+    }, 500) // 500ms delay
+  }, [jobSearch, locationSearch, initialJobs, setSearchParams])
+
+  // Handle input changes with debounce
+  const handleJobSearchChange = (e) => {
+    setJobSearch(e.target.value)
+
+    // If both fields are empty after this change, restore initial jobs
+    if (e.target.value === "" && locationSearch === "") {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current)
+        debounceTimerRef.current = null
+      }
+      setJobs(initialJobs)
+      setIsSearching(false)
+      setLoading(false)
+      return
+    }
+
+    debouncedSearch()
+  }
+
+  const handleLocationSearchChange = (e) => {
+    setLocationSearch(e.target.value)
+
+    // If both fields are empty after this change, restore initial jobs
+    if (e.target.value === "" && jobSearch === "") {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current)
+        debounceTimerRef.current = null
+      }
+      setJobs(initialJobs)
+      setIsSearching(false)
+      setLoading(false)
+      return
+    }
+
+    debouncedSearch()
+  }
+
+  // Handle manual search button click
+  const handleSearchClick = (e) => {
+    e.preventDefault()
+
+    // Clear any existing timeout to execute search immediately
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current)
+      debounceTimerRef.current = null
+    }
+
+    debouncedSearch()
+  }
+
+  // Handle clearing search inputs
+  const handleClearSearch = () => {
+    setJobSearch("")
+    setLocationSearch("")
+    setJobs(initialJobs)
+    setCurrentPage(1)
+    setSearchParams({ page: "1" })
+    setLoading(false)
+    setIsSearching(false)
+
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current)
+      debounceTimerRef.current = null
+    }
+  }
+
+  // Filter jobs based on search criteria
   const filteredJobs = jobs?.results
     ?.filter((job) => {
-      const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
-      const companyMatch =
-        job.client && typeof job.client === "string"
-          ? job.client.toLowerCase().includes(jobSearch.toLowerCase())
-          : false
+      if (!jobSearch) return true
 
-      return jobTitleMatch || companyMatch
+      const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
+      const companyMatch = job.client?.toLowerCase().includes(jobSearch.toLowerCase())
+      const skillsMatch = job.skills?.toLowerCase().includes(jobSearch.toLowerCase())
+
+      return jobTitleMatch || companyMatch || skillsMatch
     })
     .filter((job) => {
-      const cityMatch = job.city?.toLowerCase().includes(locationSearch.toLowerCase())
+      if (!locationSearch) return true
 
+      const cityMatch = job.city?.toLowerCase().includes(locationSearch.toLowerCase())
+      const countryMatch = job.country?.toLowerCase().includes(locationSearch.toLowerCase())
       const postalCodeMatch = job.zip_code?.toString().includes(locationSearch)
 
-      // Match either city or postal code (or both)
-      return !locationSearch || cityMatch || postalCodeMatch
+      return cityMatch || countryMatch || postalCodeMatch
     })
 
   function decodeEntities(encodedString) {
+    if (!encodedString) return ""
     const textarea = document.createElement("textarea")
     textarea.innerHTML = encodedString
     return textarea.value
@@ -180,11 +415,7 @@ function Job() {
       <Cont1 />
       <div className="bg-gray-100 sticky top-20 w-full z-10">
         <form
-          // Update form submission to reset to page 1 when searching
-          onSubmit={(e) => {
-            e.preventDefault()
-            setSearchParams({ page: "1" })
-          }}
+          onSubmit={handleSearchClick}
           className="flex flex-col gap-3 p-3 md:p-4 rounded-lg shadow bg-white mx-auto w-full md:w-11/12 max-w-4xl"
         >
           {/* First row: Job Search Input and Location Input */}
@@ -199,11 +430,32 @@ function Job() {
                 type="text"
                 name="job"
                 value={jobSearch}
-                onChange={(e) => setJobSearch(e.target.value)}
+                onChange={handleJobSearchChange}
                 placeholder="Search by job or skill"
                 aria-label="Job Search"
                 className="w-full pl-10 pr-4 py-2 outline-0 border rounded text-sm md:text-base"
               />
+              {jobSearch && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setJobSearch("")
+
+                    // If location is also empty, restore initial jobs
+                    if (locationSearch === "") {
+                      setJobs(initialJobs)
+                      setIsSearching(false)
+                      setLoading(false)
+                    } else {
+                      debouncedSearch()
+                    }
+                  }}
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                  aria-label="Clear job search"
+                >
+                  ✕
+                </button>
+              )}
             </div>
 
             {/* Location Input */}
@@ -216,17 +468,39 @@ function Job() {
                 type="text"
                 name="location"
                 value={locationSearch}
-                onChange={(e) => setLocationSearch(e.target.value)}
+                onChange={handleLocationSearchChange}
                 placeholder="Location"
                 aria-label="Location"
                 className="w-full pl-10 pr-4 py-2 outline-0 border rounded text-sm md:text-base"
               />
+              {locationSearch && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLocationSearch("")
+
+                    // If job search is also empty, restore initial jobs
+                    if (jobSearch === "") {
+                      setJobs(initialJobs)
+                      setIsSearching(false)
+                      setLoading(false)
+                    } else {
+                      debouncedSearch()
+                    }
+                  }}
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                  aria-label="Clear location search"
+                >
+                  ✕
+                </button>
+              )}
             </div>
             <button
               type="submit"
-              className="px-4 text-lg py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+              disabled={isSearching}
+              className={`px-4 text-lg py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition ${isSearching ? "opacity-70 cursor-not-allowed" : ""}`}
             >
-              <p>Search {jobs.count} jobs</p>
+              <p>{isSearching ? "Searching..." : `Search ${jobs.count} jobs`}</p>
             </button>
           </div>
 
@@ -240,6 +514,20 @@ function Job() {
               <FaLocationArrow className="text-blue-500" size={screenSize.isMobile ? 12 : 16} />
               {isLoading ? "Getting location..." : "Use Current Location"}
             </p>
+
+            {currentLocation && (
+              <div className="text-gray-700 text-xs sm:text-sm flex-1 mt-2 sm:mt-0">
+                <span className="font-medium">Current: </span>
+                {currentLocation}
+              </div>
+            )}
+
+            {/* Clear all filters button */}
+            {(jobSearch || locationSearch) && (
+              <button type="button" onClick={handleClearSearch} className="text-blue-500 hover:text-blue-700 text-sm">
+                Clear all filters
+              </button>
+            )}
           </div>
         </form>
       </div>
@@ -253,6 +541,13 @@ function Job() {
           <p className="text-red-500 text-center">{error}</p>
         ) : (
           <>
+            {/* Search results summary */}
+            {(jobSearch || locationSearch) && (
+              <div className="text-center mb-6">
+                <h2 className="text-lg font-semibold">Found {jobs.count || 0} matching jobs</h2>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-5 lg:mx-10">
               {filteredJobs && filteredJobs.length > 0 ? (
                 filteredJobs.map((job) => (
@@ -287,12 +582,20 @@ function Job() {
               ) : (
                 <div className="col-span-full text-center py-10">
                   <p className="text-gray-500 text-lg">No jobs found matching your search criteria.</p>
+                  {(jobSearch || locationSearch) && (
+                    <button
+                      onClick={handleClearSearch}
+                      className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+                    >
+                      Clear filters
+                    </button>
+                  )}
                 </div>
               )}
             </div>
 
             {/* Add Pagination Component */}
-            {jobs.num_pages > 1 && (
+            {jobs.num_pages > 1 && filteredJobs.length > 0 && (
               <div className="flex justify-center mt-8">
                 <nav className="flex items-center gap-1">
                   {/* Previous Page Button */}
