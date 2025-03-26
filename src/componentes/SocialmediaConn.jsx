@@ -15,7 +15,7 @@ function SocialmediaConn() {
   rel="noopener noreferrer"
   className="text-green-500 rounded-lg text-3xl hover:scale-110 duration-300 hover:shadow-[0_0_20px_5px] hover:shadow-green-500/50"
 >
-  <FaWhatsapp className="w-10 h-10 text-green-500" />
+  <FaWhatsapp className="w-9 h-9 text-green-500" />
 </Link>
 
 
@@ -25,7 +25,7 @@ function SocialmediaConn() {
         rel="noopener noreferrer"
         className="text-red-500 rounded-lg text-3xl hover:scale-110 duration-300 hover:shadow-[0_0_20px_5px] hover:shadow-red-500/50"
       >
-        <FaInstagram  className='w-10 h-10'/>
+        <FaInstagram  className='w-9 h-9'/>
       </Link>
       <Link
         to="https://www.linkedin.com/company/skywings-advisors-pvt-ltd/"
@@ -33,7 +33,7 @@ function SocialmediaConn() {
         rel="noopener noreferrer"
        className="text-blue-500 rounded-lg text-3xl hover:scale-110 duration-300 hover:shadow-[0_0_20px_5px] hover:shadow-blue-500/50"
       >
-        <FaLinkedin className='w-10 h-10'/>
+        <FaLinkedin className='w-9 h-9'/>
       </Link>
       <Link
         to="https://www.youtube.com/in/in/YOUR_PROFILE_NAME_HERE"
@@ -41,7 +41,7 @@ function SocialmediaConn() {
         rel="noopener noreferrer"
        className="text-red-500 rounded-lg  bg-transparent text-3xl hover:scale-110 duration-300 hover:shadow-[0_0_20px_5px] hover:shadow-red-500/50"
       >
-        <FaYoutube className=' w-10 bg-transparent h-10'/>
+        <FaYoutube className=' w-9 bg-transparent h-9'/>
       </Link>
       <Link
         to=""
@@ -49,7 +49,7 @@ function SocialmediaConn() {
         rel="noopener noreferrer"
        className="text-black rounded-lg  bg-transparent text-3xl hover:scale-110 duration-300 hover:shadow-[0_0_20px_5px] hover:shadow-black"
       >
-        <FaXTwitter className=' w-10 bg-transparent h-10'/>
+        <FaXTwitter className=' w-9 bg-transparent h-9'/>
       </Link>
     </div>
     </>
