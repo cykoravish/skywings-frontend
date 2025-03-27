@@ -5,7 +5,6 @@ const ArticleDetails = () => {
   const { id } = useParams(); // Get article ID from URL
   const location = useLocation();
   const article = location.state; // Get article data from state
-
   if (!article) {
     return <h2 className="text-center text-red-500 ">Article Not Found</h2>;
   }

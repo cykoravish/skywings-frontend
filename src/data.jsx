@@ -1,345 +1,537 @@
-import img1 from "./assets/service/image33.png"
-import img2 from './assets/service/image35.png'
-import img3 from './assets/service/image36.png'
-import img5 from './assets/service/image38.png'
-import img6 from './assets/service/image39.png'
-import img7 from './assets/service/image40.png'
-import img9 from './assets/service/image43.png'
-import img8 from './assets/service/image51.png';
-import img18 from './assets/service/image42.png'
-import img11 from './assets/service/image44.png'
-import img12 from './assets/service/image45.png'
-import img13 from './assets/service/image46.png'
-import img14 from './assets/service/image47.png'
-import img15 from './assets/service/image48.png'
-import img16 from './assets/service/image49.png'
-import img17 from './assets/service/image50.png'
-import img19 from './assets/service/image52.png'
-import img20 from './assets/service/image41.png'
-
+import img1 from "./assets/service/image33.png";
+import img2 from "./assets/service/image35.png";
+import img3 from "./assets/service/image36.png";
+import img5 from "./assets/service/image38.png";
+import img6 from "./assets/service/image39.png";
+import img7 from "./assets/service/image40.png";
+import img9 from "./assets/service/image43.png";
+import img8 from "./assets/service/image51.png";
+import img18 from "./assets/service/image42.png";
+import img11 from "./assets/service/image44.png";
+import img12 from "./assets/service/image45.png";
+import img13 from "./assets/service/image46.png";
+import img14 from "./assets/service/image47.png";
+import img15 from "./assets/service/image48.png";
+import img16 from "./assets/service/image49.png";
+import img17 from "./assets/service/image50.png";
+import img19 from "./assets/service/image52.png";
+import img20 from "./assets/service/image41.png";
 
 export const jobs = [
-    
-    {id:1, title: "Software Engineer", company: "TechVision", location: "Hyderabad", experience: "3 Years of experience", description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ], }},
-    {id:2, title: "Product Manager", company: "InnovateHub", location: "Bangalore", experience: "7 Years of experience", description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:3, title: "Data Analyst", company: "DataWorks", location: "Pune", experience: "2 Years of experience", description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:4, title: "HR Specialist", company: "PeopleFirst", location: "Mumbai", experience: "4 Years of experience", description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:5, title: "Marketing Executive", company: "BrandBoost", location: "Delhi", experience: "3 Years of experience", description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:6, title: "Frontend Developer", company: "CodeCrafters", location: "Chennai", experience: "2 Years of experience", description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:7, title: "Backend Developer", company: "ServerSide Inc.", location: "Kolkata", experience: "3 Years of experience" , description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:8, title: "UI/UX Designer", company: "PixelPerfection", location: "Bangalore", experience: "5 Years of experience" , description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:9, title: "Business Analyst", company: "BizConsult", location: "Noida", experience: "4 Years of experience" , description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:10, title: "DevOps Engineer", company: "CloudMasters", location: "Pune", experience: "6 Years of experience" , description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:11, title: "Sales Manager", company: "QuickSales", location: "Hyderabad", experience: "5 Years of experience" , description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:12, title: "Content Writer", company: "WordSmiths", location: "Chennai", experience: "2 Years of experience" , description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:13, title: "Operations Manager", company: "EfficientOps", location: "Delhi", experience: "8 Years of experience" , description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:14, title: "Project Coordinator", company: "TaskFlow", location: "Bangalore", experience: "3 Years of experience" , description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:15, title: "System Administrator", company: "SecureNet", location: "Mumbai", experience: "5 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:16, title: "Digital Marketing Specialist", company: "AdExperts", location: "Kolkata", experience: "4 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:17, title: "Technical Support Engineer", company: "HelpDesk Pro", location: "Noida", experience: "2 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:18, title: "QA Engineer", company: "BugBusters", location: "Chennai", experience: "3 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:19, title: "QA Engineer", company: "BugBusters", location: "Chennai", experience: "3 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:20, title: "QA Engineer", company: "BugBusters", location: "Chennai", experience: "3 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:21, title: "QA Engineer", company: "BugBusters", location: "Chennai", experience: "3 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:22, title: "Finance Analyst", company: "MoneyMatters", location: "Bangalore", experience: "5 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:23, title: "Creative Director", company: "DesignPulse", location: "Delhi", experience: "7 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-    {id:24, title: "Network Engineer", company: "NetConnect", location: "Pune", experience: "4 Years of experience" ,  description:
-        "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
-      details: {
-        summary:
-          "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
-        responsibilities: [
-          "Identify consumer trends and build new-age content-driven platforms.",
-          "Design and leverage relevant content for platforms.",
-          "Structure platforms for multiple revenue streams.",
-          "Grow online and offline communities.",
-          "Manage stakeholders and ensure IP execution.",
-          "Gain revenue across sponsorship, brand solutions, and media spends.",
-        ],} },
-  
-   
-  ];
-import {useNavigate} from 'react-router-dom'
+  {
+    id: 1,
+    title: "Software Engineer",
+    company: "TechVision",
+    location: "Hyderabad",
+    experience: "3 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 2,
+    title: "Product Manager",
+    company: "InnovateHub",
+    location: "Bangalore",
+    experience: "7 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 3,
+    title: "Data Analyst",
+    company: "DataWorks",
+    location: "Pune",
+    experience: "2 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 4,
+    title: "HR Specialist",
+    company: "PeopleFirst",
+    location: "Mumbai",
+    experience: "4 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 5,
+    title: "Marketing Executive",
+    company: "BrandBoost",
+    location: "Delhi",
+    experience: "3 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 6,
+    title: "Frontend Developer",
+    company: "CodeCrafters",
+    location: "Chennai",
+    experience: "2 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 7,
+    title: "Backend Developer",
+    company: "ServerSide Inc.",
+    location: "Kolkata",
+    experience: "3 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 8,
+    title: "UI/UX Designer",
+    company: "PixelPerfection",
+    location: "Bangalore",
+    experience: "5 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 9,
+    title: "Business Analyst",
+    company: "BizConsult",
+    location: "Noida",
+    experience: "4 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 10,
+    title: "DevOps Engineer",
+    company: "CloudMasters",
+    location: "Pune",
+    experience: "6 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 11,
+    title: "Sales Manager",
+    company: "QuickSales",
+    location: "Hyderabad",
+    experience: "5 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 12,
+    title: "Content Writer",
+    company: "WordSmiths",
+    location: "Chennai",
+    experience: "2 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 13,
+    title: "Operations Manager",
+    company: "EfficientOps",
+    location: "Delhi",
+    experience: "8 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 14,
+    title: "Project Coordinator",
+    company: "TaskFlow",
+    location: "Bangalore",
+    experience: "3 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 15,
+    title: "System Administrator",
+    company: "SecureNet",
+    location: "Mumbai",
+    experience: "5 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 16,
+    title: "Digital Marketing Specialist",
+    company: "AdExperts",
+    location: "Kolkata",
+    experience: "4 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 17,
+    title: "Technical Support Engineer",
+    company: "HelpDesk Pro",
+    location: "Noida",
+    experience: "2 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 18,
+    title: "QA Engineer",
+    company: "BugBusters",
+    location: "Chennai",
+    experience: "3 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 19,
+    title: "QA Engineer",
+    company: "BugBusters",
+    location: "Chennai",
+    experience: "3 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 20,
+    title: "QA Engineer",
+    company: "BugBusters",
+    location: "Chennai",
+    experience: "3 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 21,
+    title: "QA Engineer",
+    company: "BugBusters",
+    location: "Chennai",
+    experience: "3 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 22,
+    title: "Finance Analyst",
+    company: "MoneyMatters",
+    location: "Bangalore",
+    experience: "5 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 23,
+    title: "Creative Director",
+    company: "DesignPulse",
+    location: "Delhi",
+    experience: "7 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+  {
+    id: 24,
+    title: "Network Engineer",
+    company: "NetConnect",
+    location: "Pune",
+    experience: "4 Years of experience",
+    description:
+      "Lead the creation and execution of intellectual properties and collaborative content while driving brand solutions.",
+    details: {
+      summary:
+        "Lead IP creation, platform innovation, and revenue generation through partnerships and brand solutions.",
+      responsibilities: [
+        "Identify consumer trends and build new-age content-driven platforms.",
+        "Design and leverage relevant content for platforms.",
+        "Structure platforms for multiple revenue streams.",
+        "Grow online and offline communities.",
+        "Manage stakeholders and ensure IP execution.",
+        "Gain revenue across sponsorship, brand solutions, and media spends.",
+      ],
+    },
+  },
+];
+import { useNavigate } from "react-router-dom";
 
- export const list = [
-  
-    {id:1, title: "Permanent Staffing Services | Hire Top Talent Across Industries with AssuredJob", image: img1, content:`<h3 class="font-bold text-center text-gray-600 text-2xl">Secure Long-Term Talent with Our Permanent Hiring Solutions</h3>
+export const list = [
+  {
+    id: 1,
+    title:
+      "Permanent Staffing Services | Hire Top Talent Across Industries with AssuredJob",
+    image: img1,
+    content: `<h3 class="font-bold text-center text-gray-600 text-2xl">Secure Long-Term Talent with Our Permanent Hiring Solutions</h3>
 <br />
 <p class='px-10'>
   Finding the right full-time employees is essential for sustained business success. At AssuredJob, 
@@ -557,8 +749,14 @@ import {useNavigate} from 'react-router-dom'
 
 
 
-`, button:' Contact Us'},
-    {id:2, title: "Temporary Staffing Services | AssuredJob", image: img2, content:`<header class="text-gray-600 text-center py-6  text-2xl font-bold px-10">
+`,
+    button: " Contact Us",
+  },
+  {
+    id: 2,
+    title: "Temporary Staffing Services | AssuredJob",
+    image: img2,
+    content: `<header class="text-gray-600 text-center py-6  text-2xl font-bold px-10">
         Flexible Workforce Solutions for Your Business Needs
     </header>
     
@@ -639,8 +837,14 @@ import {useNavigate} from 'react-router-dom'
         <p>Looking for cost-effective workforce solutions?</p>
         <p>Want to scale your team with flexible temp hiring?</p>
         <p class="mt-4 font-bold">Partner with AssuredJob for Hassle-Free Temporary Staffing Solutions!</p>
-    </footer>`, button:' Contact Us'},
-    {id:3, title: "Contract Staffing Services | AssuredJob", image: img3, content:`<div class="max-w-6xl mx-auto p-6">
+    </footer>`,
+    button: " Contact Us",
+  },
+  {
+    id: 3,
+    title: "Contract Staffing Services | AssuredJob",
+    image: img3,
+    content: `<div class="max-w-6xl mx-auto p-6">
         <h2 class="text-2xl text-center font-bold text-gray-700 mb-6 text-center">Flexible & Cost-Effective Contract Staffing Solutions</h2>
         <p class="text-lg text-gray-700 text-center mb-8">Scale operations, reduce hiring costs, and maintain workforce flexibility with AssuredJob’s contract staffing services.</p>
         
@@ -698,8 +902,14 @@ import {useNavigate} from 'react-router-dom'
             <p class="text-gray-700 mb-4">Need skilled professionals for short-term projects? Looking for cost-effective workforce solutions?</p>
            
         </section>
-    </div>`, button:' Contact Us'},
-    {id:4, title: "Executive Search", image: img8 , content:` <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+    </div>`,
+    button: " Contact Us",
+  },
+  {
+    id: 4,
+    title: "Executive Search",
+    image: img8,
+    content: ` <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
         
         <p class="text-lg mb-6">We specialize in Executive Search, identifying and recruiting top-tier leadership talent that aligns with your company’s vision and strategic goals. Our expertise spans across industries, ensuring that you gain access to highly skilled professionals who drive business growth and innovation.</p>
         
@@ -722,8 +932,14 @@ import {useNavigate} from 'react-router-dom'
         </ol>
         
         <p class="mt-6 text-lg font-semibold text-gray-800">Partner with Skywings Advisors for executive hiring that transforms your business with visionary leadership.</p>
-    </div>`, button:' Contact Us'},
-    {id:5, title: "Recruitment Process Outsourcing (RPO) Services | AssuredJob", image: img5, content:`<div class="max-w-4xl mx-auto p-6">
+    </div>`,
+    button: " Contact Us",
+  },
+  {
+    id: 5,
+    title: "Recruitment Process Outsourcing (RPO) Services | AssuredJob",
+    image: img5,
+    content: `<div class="max-w-4xl mx-auto p-6">
         <h2 class="text-2xl font-bold text-center  text-gray-700">Streamline Your Hiring with AssuredJob’s RPO Solutions</h2>
         <p class="mt-4 text-lg text-gray-700">Struggling with high-volume hiring, talent shortages, or lengthy recruitment cycles?</p>
         <p class="mt-2">AssuredJob’s Recruitment Process Outsourcing (RPO) services offer a scalable, cost-effective solution to optimize your hiring process, reduce time-to-fill, and improve candidate quality.</p>
@@ -774,8 +990,14 @@ import {useNavigate} from 'react-router-dom'
         <h2 class="mt-6 text-2xl font-semibold text-center">Get Started Today!</h2>
         <p class="mt-2 text-center">Optimize your hiring process with AssuredJob's RPO solutions.</p>
        
-    </div>`, button:' Contact Us'},
-    {id:6, title: "Skill Gap Assessment Services | AssuredJob", image: img6, content:`<div class="max-w-5xl mx-auto p-6">
+    </div>`,
+    button: " Contact Us",
+  },
+  {
+    id: 6,
+    title: "Skill Gap Assessment Services | AssuredJob",
+    image: img6,
+    content: `<div class="max-w-5xl mx-auto p-6">
         <h2 class="text-2xl text-center font-bold text-gray-700">Identify Workforce Skill Gaps & Bridge Them for Business Growth</h2>
         <p class="mt-4 text-lg">AssuredJob’s Skill Gap Assessment Services help businesses analyze workforce capabilities, identify skill deficiencies, and implement training programs to enhance employee performance.</p>
 
@@ -825,8 +1047,14 @@ import {useNavigate} from 'react-router-dom'
 
         <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Skill Gap Assessment Today!</h2>
         <p class="mt-4 text-lg">Future-proof your workforce, enhance employee skills, and drive business success with AssuredJob’s Skill Gap Assessment Services!</p>
-    </div>`, button:' Contact Us'},
-    {id:7, title: "Internship & Articleship Programs | AssuredJob", image: img7, content:`<header class=" text-gray-600 text-center p-6 text-2xl font-bold">
+    </div>`,
+    button: " Contact Us",
+  },
+  {
+    id: 7,
+    title: "Internship & Articleship Programs | AssuredJob",
+    image: img7,
+    content: `<header class=" text-gray-600 text-center p-6 text-2xl font-bold">
         Build a Skilled Workforce with Structured Internship & Articleship Programs
     </header>
     
@@ -901,8 +1129,97 @@ import {useNavigate} from 'react-router-dom'
             <p class="mb-4">Bridge the skill gap, nurture young talent, and create future leaders with AssuredJob.</p>
            
         </section>
-    </main>`, button:' Contact Us'},
-    {id:8, title: "Onboarding and Training Support | AssuredJob", image: img9, content : `<section class="max-w-5xl mx-auto p-6">
+    </main>`,
+    button: " Contact Us",
+  },
+  {
+    id: 8,
+    title: "Diversity & Inclusion Hiring Initiatives | AssuredJob",
+    image: img7,
+    content: `<header class=" text-gray-600 text-center p-6 text-2xl font-bold">
+        Build a Diverse & Inclusive Workforce with AssuredJob
+    </header>
+    
+    <main class="max-w-6xl mx-auto p-6">
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Why Diversity & Inclusion in Hiring Matters?</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Enhanced Innovation & Creativity – Diverse teams bring unique perspectives, leading to better problem-solving.</li>
+                <li>Improved Employer Branding – Organizations with inclusive hiring practices attract top talent.</li>
+                <li>Higher Employee Engagement & Retention – A culture of inclusion leads to increased job satisfaction.</li>
+                <li>Better Business Performance – Studies show that diverse companies perform 30% better than industry peers.</li>
+                <li>Legal & Compliance Benefits – Stay compliant with global diversity and anti-discrimination laws.</li>
+            </ul>
+        </section>
+        
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Our Diversity Hiring Solutions</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold">Women-Centric Hiring Initiatives</h3>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Women Leadership Hiring (CXO, Director, VP-Level)</li>
+                        <li>Return-to-Work Programs for Women on Career Breaks or sabbaticals</li>
+                        <li>STEM Women Hiring (IT, Engineering, AI & ML Experts)</li>
+                        <li>Diversity Quota Hiring Compliance for Organizations</li>
+                    </ul>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold">Hiring People with Disabilities (PWD)</h3>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Accessible Workplace Solutions & Assistive Technologies</li>
+                        <li>Inclusive Hiring Policies & Job Role Customization</li>
+                        <li>Corporate Sensitization & Training Programs</li>
+                    </ul>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold">LGBTQ+ Inclusive Hiring Programs</h3>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Safe & Inclusive Hiring Practices</li>
+                        <li>Policy Development for LGBTQ+ Workplace Inclusion</li>
+                        <li>Leadership & Mentorship Programs for LGBTQ+ Employees</li>
+                    </ul>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold">Veteran & Armed Forces Transition Hiring</h3>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Job Placements for Retired Armed Forces Personnel</li>
+                        <li>Leadership Hiring for Veteran Officers.</li>
+                        <li>Skill Development & Career Guidance for Veterans</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Industries Benefiting from Internship & Articleship Programs</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <span class="p-2 border rounded-lg"> Information Technology</span>
+                <span class="p-2 border rounded-lg"> Banking & Finance</span>
+                <span class="p-2 border rounded-lg"> Healthcare & Pharmaceuticals</span>
+                <span class="p-2 border rounded-lg"> Retail & E-commerce</span>
+                <span class="p-2 border rounded-lg"> BPO & KPO</span>
+                <span class="p-2 border rounded-lg"> Education & EdTech</span>
+                <span class="p-2 border rounded-lg"> Media & Entertainment</span>
+                <span class="p-2 border rounded-lg"> Manufacturing & Engineering</span>
+                <span class="p-2 border rounded-lg"> Legal & Compliance</span>
+            </div>
+        </section>
+        
+        <section class="bg-gray-100 text-gray-600 p-6 rounded-lg text-center">
+            <h2 class="text-2xl font-semibold mb-4">Get Started with AssuredJob’s Internship & Articleship Programs Today!</h2>
+            <p class="mb-4">Bridge the skill gap, nurture young talent, and create future leaders with AssuredJob.</p>
+           
+        </section>
+    </main>`,
+    button: " Contact Us",
+  },
+
+  {
+    id: 9,
+    title: "Onboarding and Training Support | AssuredJob",
+    image: img9,
+    content: `<section class="max-w-5xl mx-auto p-6">
         <h2 class="text-2xl text-c font-bold text-center text-gray-600">Seamless Employee Onboarding & Training for a Productive Workforce</h2>
         <p class="mt-4">A well-structured onboarding and training program is essential for employee engagement, productivity, and retention. At AssuredJob, we provide comprehensive onboarding & training support to help businesses integrate new hires smoothly and equip them with the skills & knowledge needed to succeed in their roles.</p>
     </section>
@@ -960,96 +1277,14 @@ import {useNavigate} from 'react-router-dom'
     <footer clas" text-white text-center py-6 mt-6">
         <p class="text-lg font-bold">Partner with AssuredJob for Efficient Onboarding & Training Support!</p>
         <p>Boost employee productivity, enhance job satisfaction, and streamline onboarding with AssuredJob’s expert training solutions!</p>
-    </footer>`, button:' Contact Us'},
-    // {id:11, title: "Onboarding &amp; Training Support Services | AssuredJob", image: img11 , content:` <header class=" text-gray-600 py-12 ">
-    //     <h1 class="text-2xl font-bold">Seamless Employee Onboarding & Training</h1>
-    //     <p class="mt-2 text-lg">Boost Productivity & Retention with Structured Learning & AI-Driven Solutions</p>
-    // </header>
-
-    // <!-- Introduction -->
-    // <section class="max-w-7xl mx-auto p-6">
-    //     <p class="text-lg text-gray-700">
-    //         A well-structured onboarding and training program is essential for <strong class="text-gray-400">employee engagement, productivity, and retention.</strong> 
-    //         At AssuredJob, we provide <span class="text-gray-400">comprehensive onboarding & training</span> to help businesses integrate new hires smoothly 
-    //         and equip them with the right skills for success.
-    //     </p>
-    // </section>
-
-    // <!-- Why Onboarding & Training? -->
-    // <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-    //     <h2 class="text-xl font-semibold text-gray-400">Why Onboarding & Training Support is Essential?</h2>
-    //     <ul class="mt-3 space-y-2">
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Faster Employee Integration – Reduce time-to-productivity with structured onboarding.</li>
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Higher Employee Retention – Well-trained employees are more engaged & loyal.</li>
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Enhanced Productivity – Employees perform better with proper training & knowledge transfer.</li>
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Stronger Employer Branding – A positive onboarding experience improves employer reputation.</li>
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Compliance & Policy Adherence – Ensures employees understand HR policies & workplace expectations.</li>
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Reduced Hiring Costs – Well-trained employees stay longer, reducing turnover costs.</li>
-    //     </ul>
-    // </section>
-
-    // <!-- Our Solutions -->
-    // <section class="max-w-7xl mx-auto p-6 mt-6">
-    //     <h2 class="text-xl font-semibold text-gray-400">Our Onboarding & Training Solutions</h2>
-    //     <div class="grid md:grid-cols-2  gap-6 mt-4">
-    //         <div class="bg-white p-4 rounded-lg shadow-md">
-    //             <h3 class="font-semibold text-lg text-gray-400">New Hire Onboarding Programs</h3>
-    //             <ul class="list-disc pl-5 mt-2 text-gray-700">
-    //                 <li>Pre-boarding support (documentation, IT setup)</li>
-    //                 <li>Virtual & in-person orientation programs</li>
-    //                 <li>Company culture & compliance training</li>
-    //             </ul>
-    //         </div>
-    //         <div class="bg-white p-4 rounded-lg shadow-md">
-    //             <h3 class="font-semibold text-lg text-gray-400">Customized Employee Training</h3>
-    //             <ul class="list-disc pl-5 mt-2 text-gray-700">
-    //                 <li>Role-specific training for different job functions</li>
-    //                 <li>Technical, soft skills, and leadership training</li>
-    //                 <li>AI-powered personalized learning paths</li>
-    //             </ul>
-    //         </div>
-    //         <div class="bg-white p-4 rounded-lg shadow-md">
-    //             <h3 class="font-semibold text-lg text-gray-400">Learning & Development (L&D)</h3>
-    //             <ul class="list-disc pl-5 mt-2 text-gray-700">
-    //                 <li>E-learning modules & interactive training</li>
-    //                 <li>Gamification & simulation-based learning</li>
-    //                 <li>Live instructor-led training & on-demand courses</li>
-    //             </ul>
-    //         </div>
-    //     </div>
-    // </section>
-
-    // <!-- Industries Benefiting -->
-    // <section class="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-    //     <h2 class="text-xl font-semibold text-gray-400">Industries Benefiting from Onboarding & Training</h2>
-    //     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-    //         <span class="bg-gray-200 p-2 rounded-md"> IT & Software Development</span>
-    //         <span class="bg-gray-200 p-2 rounded-md"> BFSI (Finance & Banking)</span>
-    //         <span class="bg-gray-200 p-2 rounded-md"> Healthcare & Pharmaceuticals</span>
-    //         <span class="bg-gray-200 p-2 rounded-md"> Retail & E-commerce</span>
-    //         <span class="bg-gray-200 p-2 rounded-md"> BPO & KPO</span>
-    //         <span class="bg-gray-200 p-2 rounded-md"> Manufacturing & Engineering</span>
-    //     </div>
-    // </section>
-
-    // <!-- Why Choose Us -->
-    // <section class="max-w-7xl mx-auto p-6 mt-6">
-    //     <h2 class="text-xl font-semibold text-gray-400">Why Choose AssuredJob?</h2>
-    //     <ul class="mt-3 space-y-2">
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Structured & AI-Driven Onboarding Process</li>
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Industry-Specific Training Solutions</li>
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Blended Learning (Virtual, In-Person, Gamification)</li>
-    //         <li class="flex items-center"><span class="text-green-500 text-xl mr-2"></span>Scalable Training for Startups, SMEs & Enterprises</li>
-    //     </ul>
-    // </section>
-
-    // <!-- CTA Footer -->
-    // <footer class="bg-gray-100 text-gray-600 py-8 text-center mt-8">
-    //     <h3 class="text-xl font-bold">Get Started with AssuredJob’s Onboarding & Training Support Today!</h3>
-    //     <p class="mt-2">Need structured onboarding or upskilling programs?</p>
-        
-    // </footer>`, button:' Contact Us'},
-    {id:9, title: "Pre-Placement Recruitment Services | AssuredJob", image: img12, content:`<!-- Hero Section -->
+    </footer>`,
+    button: " Contact Us",
+  },
+  {
+    id: 10,
+    title: "Pre-Placement Recruitment Services | AssuredJob",
+    image: img12,
+    content: `<!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
         <h1 class="text-2xl text-center font-bold">Hire Top Talent Early with Pre-Placement Offer (PPO) Recruitment</h1>
         <p class="mt-2 text-lg">Connect with high-potential candidates before they enter the workforce.</p>
@@ -1141,8 +1376,14 @@ import {useNavigate} from 'react-router-dom'
         <h3 class="text-xl font-bold">Get Started with AssuredJob’s Pre-Placement Recruitment Today!</h3>
         <p class="mt-2">Secure top talent before they enter the job market.</p>
        
-    </footer>`, button:' Contact Us' },
-    {id:10,title:'Remote Talent Pooling Services | AssuredJob', image:img13, content:`<body class="bg-gray-100">
+    </footer>`,
+    button: " Contact Us",
+  },
+  {
+    id: 11,
+    title: "Remote Talent Pooling Services | AssuredJob",
+    image: img13,
+    content: `<body class="bg-gray-100">
 
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
@@ -1238,8 +1479,14 @@ import {useNavigate} from 'react-router-dom'
        
     </footer>
 
-</body>`, button:' Contact Us'},
-    {id:11,title:'Payroll Management Services | AssuredJob', image:img14, content:`<body class="bg-gray-100">
+</body>`,
+    button: " Contact Us",
+  },
+  {
+    id: 12,
+    title: "Payroll Management Services | AssuredJob",
+    image: img14,
+    content: `<body class="bg-gray-100">
 
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
@@ -1335,9 +1582,15 @@ import {useNavigate} from 'react-router-dom'
         
     </footer>
 
-</body>`, button:' Contact Us'},
-   
-    {id:12,title:'Labour Compliance Management Services | AssuredJob', image:img15, content:`<div class="max-w-5xl mx-auto p-6">
+</body>`,
+    button: " Contact Us",
+  },
+
+  {
+    id: 13,
+    title: "Labour Compliance Management Services | AssuredJob",
+    image: img15,
+    content: `<div class="max-w-5xl mx-auto p-6">
         <h2 class="text-2xl text-center font-bold text-gray-700">Ensure 100% Compliance with Indian Labour Laws & Regulations</h2>
         <p class="mt-4 text-lg">AssuredJob provides end-to-end labour compliance management services, ensuring businesses stay legally compliant while focusing on their core operations.</p>
 
@@ -1386,8 +1639,14 @@ import {useNavigate} from 'react-router-dom'
 
         <h2 class="mt-6 text-2xl font-semibold text-gray-700">Get Started with AssuredJob’s Labour Compliance Management Today!</h2>
         <p class="mt-4 text-lg">Stay compliant, avoid legal risks, and streamline workforce management with AssuredJob’s expert labour compliance solutions!</p>
-    </div>`, button:' Contact Us'},
-    {id:13,title:'Freelance Recruiter Program | AssuredJob', image:img16 ,content:`<body class="bg-gray-100 font-sans">
+    </div>`,
+    button: " Contact Us",
+  },
+  {
+    id: 14,
+    title: "Freelance Recruiter Program | AssuredJob",
+    image: img16,
+    content: `<body class="bg-gray-100 font-sans">
     <!-- Hero Section -->
     <header class=" text-gray-600 py-12 ">
         <h2 class="text-2xl text-center font-bold text-center px-3">Earn Big with AssuredJob’s Freelance Recruiter Program</h2>
@@ -1471,8 +1730,14 @@ import {useNavigate} from 'react-router-dom'
         <p class="mt-2">Join India’s top freelance recruitment network and start earning today!</p>
        
     </footer>
-</body>`, button:' Contact Us'},
-    {id:14,title:'Outplacement Services | AssuredJobs', image:img17 ,content:`<body class=" text-gray-800">
+</body>`,
+    button: " Contact Us",
+  },
+  {
+    id: 15,
+    title: "Outplacement Services | AssuredJobs",
+    image: img17,
+    content: `<body class=" text-gray-800">
     <header class="bg-gray-100 text-gray-600  p-6">
         <h1 class="text-2xl text-center font-bold">Empowering Employees with Career Transition Support</h1>
     </header>
@@ -1553,9 +1818,22 @@ import {useNavigate} from 'react-router-dom'
     </section>
     
     
-</body>`, button:' Contact us '},
-    {id:15,title:'HR Consulting and Strategy', image:img18 ,content:"Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m", button:' Contact Us'},
-    {id:16,title:'Talent Mapping & Market Intelligence Services | AssuredJob', image:img19 ,content:`<body class="bg-gray-100 text-gray-900">
+</body>`,
+    button: " Contact us ",
+  },
+  {
+    id: 16,
+    title: "HR Consulting and Strategy",
+    image: img18,
+    content:
+      "Skywings Advisors helps Indian businesses build stable, long-term workforces. Our permanent staffing solutions are designed to match candidates committed to long-term  growth with your company’s values and goals. We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality   We handle the entire recruitment cycle,  allowing you to focus on growth while we ensure a smooth onboarding experience for quality  hires.m",
+    button: " Contact Us",
+  },
+  {
+    id: 17,
+    title: "Talent Mapping & Market Intelligence Services | AssuredJob",
+    image: img19,
+    content: `<body class="bg-gray-100 text-gray-900">
     <header class=" text-gray-600  py-6">
         <h1 class="text-2xl text-center font-bold">Strategic Talent Insights for Smarter Workforce Planning</h1>
     </header>
@@ -1623,8 +1901,14 @@ import {useNavigate} from 'react-router-dom'
            
         </div>
     </section>
-</body>`, button:' Get Started '},
-{id:17,title:'Graduate Training Program (GTP) | AssuredJob', image:img20 ,content:`<body class="bg-gray-100 text-gray-900">
+</body>`,
+    button: " Get Started ",
+  },
+  {
+    id: 18,
+    title: "Graduate Training Program (GTP) | AssuredJob",
+    image: img20,
+    content: `<body class="bg-gray-100 text-gray-900">
     <header class=" text-gray-600  py-6">
         <h2 class="text-2xl text-center font-bold">Strategic Talent Insights for Smarter Workforce Planning</h2>
     </header>
@@ -1692,6 +1976,7 @@ import {useNavigate} from 'react-router-dom'
            
         </div>
     </section>
-</body>`, button:' Contact Us'},
-    
-  ];
+</body>`,
+    button: " Contact Us",
+  },
+];
