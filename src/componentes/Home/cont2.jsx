@@ -190,7 +190,7 @@ function Cont2() {
 
         const jobTitleMatch = job.job_title?.toLowerCase().includes(jobSearch.toLowerCase())
         const companyMatch = job.client?.toLowerCase().includes(jobSearch.toLowerCase())
-        const skillsMatch = job.skills?.toLowerCase().includes(jobSearch.toLowerCase())
+        const skillsMatch = job.primary_skills?.toLowerCase().includes(jobSearch.toLowerCase())
 
         return jobTitleMatch || companyMatch || skillsMatch
       })
