@@ -13,7 +13,6 @@ const Footer = () => {
   const handleSubscribe = (e) => {
     e.preventDefault();
     // Handle subscription logic here
-    console.log("Subscribing email:", email);
     setEmail("");
     // You could add toast notification or other feedback here
   };

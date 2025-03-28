@@ -118,7 +118,6 @@ function Job() {
         }
 
         const data = await response.json();
-        console.log("Initial data fetch:", data);
 
         // Only update state if the request wasn't aborted
         if (!signal.aborted) {
@@ -259,7 +258,6 @@ function Job() {
         }
 
         const data = await response.json();
-        console.log("Search results:", data);
 
         // Format the search results to match the expected pagination format
         const formattedData = {

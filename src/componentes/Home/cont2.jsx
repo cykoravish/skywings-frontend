@@ -128,11 +128,8 @@ function Cont2() {
   useEffect(() => {
     const fetchJobs = async () => {
       if (!initialLoadRef.current) return;
-
-      console.log("Initial loading of jobs");
       try {
         setLoading(true);
-        console.log("env: ", import.meta.env.VITE_API_URL);
         const response = await fetch(
           `${import.meta.env.VITE_API_URL}/api/jobs`
         );
@@ -140,7 +137,6 @@ function Cont2() {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Response of initial job load:", data);
         setJobs(data);
         setInitialJobs(data); // Store initial jobs for reference
         setError(null);
@@ -269,7 +265,6 @@ function Cont2() {
         if (jobSearch) params.append("query", jobSearch);
         if (locationSearch) params.append("location", locationSearch);
 
-        console.log(`Searching jobs with params: ${params.toString()}`);
         const response = await fetch(
           `${import.meta.env.VITE_API_URL}/api/searchjobs?${params.toString()}`,
           { signal }
@@ -285,7 +280,6 @@ function Cont2() {
         }
 
         const data = await response.json();
-        console.log(`Found ${data.count} matching jobs`);
         setJobs(data);
         setError(null);
         setCurrentSlide(0); // Reset to first slide when search results change

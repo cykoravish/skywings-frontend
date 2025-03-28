@@ -118,7 +118,6 @@ function CareerPageJobs() {
   // Fetch jobs data
   useEffect(() => {
     const fetchJobs = async () => {
-      console.log("calling all jobs api")
       try {
         setLoading(true)
         const response = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs`)
@@ -126,7 +125,6 @@ function CareerPageJobs() {
           throw new Error(`HTTP error! Status: ${response.status}`)
         }
         const data = await response.json()
-        console.log("response of career job api: ", data)
         setJobs(data)
         setError(null)
       } catch (err) {
