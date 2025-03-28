@@ -165,7 +165,7 @@ function CareerPageJobs() {
       // Match either city or postal code (or both)
       return cityMatch || postalCodeMatch
     })
-
+console.log("filteredJobs: ", filteredJobs)
   // Get visible jobs based on the current count
   const visibleJobs = filteredJobs?.slice(0, visibleJobsCount)
 

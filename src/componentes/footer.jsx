@@ -27,7 +27,7 @@ const Footer = () => {
             <p className="text-gray-600 mb-6 w-40 lg:w-full"></p>
             <div className="flex gap-3">
               <a
-                href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
+                href="https://www.linkedin.com/company/skywings-advisors-pvt-ltd/"
                 target="_blank"
               >
                 <FaLinkedinIn className=" border-blue-500 ml-2.5 w-6 h-6 p-0.5 text-blue-600 hover:text-blue-700" />
@@ -42,7 +42,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/assuredjob/" target="_blank">
                 <FaInstagram className="border-red-400 w-6 h-6  text-red-600 hover:text-pink-500" />
               </a>
-              <a href="https://www.instagram.com/assuredjob/" target="_blank">
+              <a href="" target="_blank">
                 <FaXTwitter className=" border-black w-6 h-6  text-black hover:text-black" />
               </a>
             </div>
@@ -216,7 +216,7 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex gap-4">
             <a
-              href="https://www.facebook.com/www.assuredjob.in?mibextid=ZbWKwL"
+              href="https://www.linkedin.com/company/skywings-advisors-pvt-ltd/"
               target="_blank"
             >
               <FaLinkedinIn className=" w-8 h-8    text-blue-700" />
@@ -231,7 +231,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/assuredjob/" target="_blank">
               <FaInstagram className="w-8 h-8 text-pink-500" />
             </a>
-            <a href="https://www.instagram.com/assuredjob/" target="_blank">
+            <a href="" target="_blank">
               <FaXTwitter className=" w-8 h-8  hover:text-black" />
             </a>
           </div>

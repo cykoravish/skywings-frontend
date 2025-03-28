@@ -138,6 +138,7 @@ function Cont2() {
         }
         const data = await response.json();
         setJobs(data);
+        console.log("initial jobs: ", data);
         setInitialJobs(data); // Store initial jobs for reference
         setError(null);
         initialLoadRef.current = false;
@@ -458,6 +459,7 @@ function Cont2() {
                         } jobs`}
                   </h2>
                 </div>
+                {console.log("filtered jobs: ", filteredJobs)}
                 {filteredJobs?.length > 0 ? (
                   <div
                     className={`grid ${getGridCols()} gap-2 mt-6 w-full max-w-6xl`}
