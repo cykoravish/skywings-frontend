@@ -6,7 +6,6 @@ function DetailService() {
     const navigate = useNavigate();
     const {id} = useParams();
     const service = list.find((service) => service.id === Number(id));
-    console.log(service);
 
     const handleClick = (service) => {
       navigate(`/DetailService/${service.id}`);
