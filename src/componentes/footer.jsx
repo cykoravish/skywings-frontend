@@ -154,7 +154,7 @@ const Footer = () => {
 
         {/* Newsletter Section */}
         <hr className="w-[85%] border-gray-300 mx-auto" />
-        <div className=" w-[85%] border-slate-700 pt-6 sm:pt-8 pb-6 mb-4">
+        <div className="flex justify-center mx-auto w-[85%] border-slate-700 pt-6 sm:pt-8 pb-6 mb-4">
           <div className="max-w-md mx-auto text-center px-4">
             <h3 className="text-xl sm:text-2xl font-bold mb-2">Newsletter</h3>
             <p className="text-sm sm:text-base text-slate-500 mb-4">
